@@ -1,0 +1,21 @@
+2015-10-30 00:33:00,427 - [INFO] - from play in pool-35-thread-5 
+Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+
+2015-10-30 00:35:05,635 - [INFO] - from play in play-internal-execution-context-1 
+datasource [jdbc:h2:file:data/db;DB_CLOSE_DELAY=-1] bound to JNDI as DefaultDS
+
+2015-10-30 00:35:05,942 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:h2:file:data/db
+
+2015-10-30 00:35:07,361 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2015-10-30 00:36:39,241 - [INFO] - from play in play-internal-execution-context-1 
+datasource [jdbc:h2:file:data/db;DB_CLOSE_DELAY=-1] bound to JNDI as DefaultDS
+
+2015-10-30 00:36:39,244 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:h2:file:data/db
+
+2015-10-30 00:36:39,393 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+

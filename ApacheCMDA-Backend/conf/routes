@@ -54,6 +54,7 @@ GET			  /users/getAllUsers/json																	@controllers.UserController.getA
 POST		  /users/isUserValid																		@controllers.UserController.isUserValid
 DELETE		  /users/delete/userName/:userName/password/:password										@controllers.UserController.deleteUserByUserNameandPassword(userName: String, password: String)
 POST          /userService/login                                                                        @controllers.UserController.login
+GET           /userService/loginTest/json                                                               @controllers.UserController.loginTest(format: String="json")
 
 # Map static resources from the /public folder to the /assets URL path
 GET           /assets/*file                                                                             controllers.Assets.at(path="/public", file)

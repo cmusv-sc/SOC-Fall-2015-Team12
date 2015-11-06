@@ -1,5 +1,5 @@
 [0m[[0mdebug[0m] [0mCopy resource mappings: [0m
-[0m[[0mdebug[0m] [0m	(/Users/Qiyao/SOC-Fall-2015/ApacheCMDA-Frontend/conf/application.conf,/Users/Qiyao/SOC-Fall-2015/ApacheCMDA-Frontend/target/scala-2.10/classes/application.conf)[0m
-[0m[[0mdebug[0m] [0m	(/Users/Qiyao/SOC-Fall-2015/ApacheCMDA-Frontend/conf/META-INF,/Users/Qiyao/SOC-Fall-2015/ApacheCMDA-Frontend/target/scala-2.10/classes/META-INF)[0m
-[0m[[0mdebug[0m] [0m	(/Users/Qiyao/SOC-Fall-2015/ApacheCMDA-Frontend/conf/routes,/Users/Qiyao/SOC-Fall-2015/ApacheCMDA-Frontend/target/scala-2.10/classes/routes)[0m
-[0m[[0mdebug[0m] [0m	(/Users/Qiyao/SOC-Fall-2015/ApacheCMDA-Frontend/conf/META-INF/persistence.xml,/Users/Qiyao/SOC-Fall-2015/ApacheCMDA-Frontend/target/scala-2.10/classes/META-INF/persistence.xml)[0m
+[0m[[0mdebug[0m] [0m	(/Users/feifei/SOC-Fall-2015-Team12/ApacheCMDA-Frontend/conf/application.conf,/Users/feifei/SOC-Fall-2015-Team12/ApacheCMDA-Frontend/target/scala-2.10/classes/application.conf)[0m
+[0m[[0mdebug[0m] [0m	(/Users/feifei/SOC-Fall-2015-Team12/ApacheCMDA-Frontend/conf/META-INF,/Users/feifei/SOC-Fall-2015-Team12/ApacheCMDA-Frontend/target/scala-2.10/classes/META-INF)[0m
+[0m[[0mdebug[0m] [0m	(/Users/feifei/SOC-Fall-2015-Team12/ApacheCMDA-Frontend/conf/routes,/Users/feifei/SOC-Fall-2015-Team12/ApacheCMDA-Frontend/target/scala-2.10/classes/routes)[0m
+[0m[[0mdebug[0m] [0m	(/Users/feifei/SOC-Fall-2015-Team12/ApacheCMDA-Frontend/conf/META-INF/persistence.xml,/Users/feifei/SOC-Fall-2015-Team12/ApacheCMDA-Frontend/target/scala-2.10/classes/META-INF/persistence.xml)[0m

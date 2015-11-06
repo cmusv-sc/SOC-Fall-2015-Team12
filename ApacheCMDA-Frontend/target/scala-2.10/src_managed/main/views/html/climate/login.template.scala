@@ -85,10 +85,10 @@ Seq[Any](format.raw/*18.40*/("""
 """),_display_(Seq[Any](/*42.2*/helper/*42.8*/.form(routes.User.getLoginResult())/*42.43*/ {_display_(Seq[Any](format.raw/*42.45*/("""
 <div class="ui-widget col-sm-offset-3 col-sm-7">
    <div class = "form-group">
-      """),_display_(Seq[Any](/*45.8*/inputText(userSetForm("User Name"), 'class -> "form-control", 'id -> "username", '_label -> Messages("User Name"), 'placeholder -> "Mike Wang", 'size->40))),format.raw/*45.162*/("""
+      """),_display_(Seq[Any](/*45.8*/inputText(userSetForm("userName"), 'class -> "form-control", 'id -> "username", '_label -> Messages("User Name"), 'placeholder -> "Mike Wang", 'size->40))),format.raw/*45.161*/("""
    </div>
    <div class = "form-group">
-      """),_display_(Seq[Any](/*48.8*/inputText(userSetForm("Password"), 'class -> "form-control", 'id -> "password", '_label -> Messages("Password"), 'placeholder -> "******", 'size->40))),format.raw/*48.157*/("""
+      """),_display_(Seq[Any](/*48.8*/inputText(userSetForm("password"), 'class -> "form-control", 'id -> "password", '_label -> Messages("Password"), 'placeholder -> "******", 'size->40))),format.raw/*48.157*/("""
    </div>
 
    <div align="center">
@@ -96,7 +96,8 @@ Seq[Any](format.raw/*18.40*/("""
    </div>
 
 """)))})),format.raw/*55.2*/("""
-""")))})))}
+""")))})),format.raw/*56.2*/("""
+"""))}
     }
     
     def render(userSetForm:play.data.Form[UserSet]): play.api.templates.HtmlFormat.Appendable = apply(userSetForm)
@@ -108,11 +109,11 @@ Seq[Any](format.raw/*18.40*/("""
 }
                 /*
                     -- GENERATED --
-                    DATE: Thu Nov 05 21:39:09 PST 2015
-                    SOURCE: /Users/Qiyao/SOC-Fall-2015/ApacheCMDA-Frontend/app/views/climate/login.scala.html
-                    HASH: 1264930ff248329ca2d0736c9c443532a77e72dd
-                    MATRIX: 3194->1204|3326->1263|3341->1270|3426->1274|3477->1289|3492->1295|3554->1335|3857->1610|3886->1611|3949->1646|3978->1647|4012->1654|4040->1655|4105->1692|4134->1693|4168->1700|4196->1701|4229->1707|4257->1708|4311->1242|4340->1261|4368->1722|4406->1725|4442->1752|4481->1753|4519->1756|4556->1771|4640->1820|4654->1826|4698->1861|4738->1863|4860->1950|5037->2104|5120->2152|5292->2301|5425->2403
-                    LINES: 56->18|59->22|59->22|61->22|62->23|62->23|62->23|67->28|67->28|68->29|68->29|69->30|69->30|70->31|70->31|71->32|71->32|72->33|72->33|75->18|77->21|78->35|80->37|80->37|80->37|82->39|82->39|85->42|85->42|85->42|85->42|88->45|88->45|91->48|91->48|98->55
+                    DATE: Fri Nov 06 10:26:41 PST 2015
+                    SOURCE: /Users/feifei/SOC-Fall-2015-Team12/ApacheCMDA-Frontend/app/views/climate/login.scala.html
+                    HASH: 944aa3765aebac1220717cadaf4cb2bb9fc03a33
+                    MATRIX: 3194->1204|3326->1263|3341->1270|3426->1274|3477->1289|3492->1295|3554->1335|3857->1610|3886->1611|3949->1646|3978->1647|4012->1654|4040->1655|4105->1692|4134->1693|4168->1700|4196->1701|4229->1707|4257->1708|4311->1242|4340->1261|4368->1722|4406->1725|4442->1752|4481->1753|4519->1756|4556->1771|4640->1820|4654->1826|4698->1861|4738->1863|4860->1950|5036->2103|5119->2151|5291->2300|5424->2402|5457->2404
+                    LINES: 56->18|59->22|59->22|61->22|62->23|62->23|62->23|67->28|67->28|68->29|68->29|69->30|69->30|70->31|70->31|71->32|71->32|72->33|72->33|75->18|77->21|78->35|80->37|80->37|80->37|82->39|82->39|85->42|85->42|85->42|85->42|88->45|88->45|91->48|91->48|98->55|99->56
                     -- GENERATED --
                 */
             

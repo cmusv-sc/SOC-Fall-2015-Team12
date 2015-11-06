@@ -1,4 +1,4 @@
-[0m[[0minfo[0m] [0mUpdating {file:/Users/Victoria/Documents/18655/team12/SOC-Fall-2015/ApacheCMDA-Backend/project/}apachecmda-backend-build...[0m
+[0m[[0minfo[0m] [0mUpdating {file:/Users/feifei/SOC-Fall-2015-Team12/ApacheCMDA-Backend/project/}apachecmda-backend-build...[0m
 [0m[[0mdebug[0m] [0m:: resolving dependencies :: default#apachecmda-backend-build;0.1-SNAPSHOT[0m
 [0m[[0mdebug[0m] [0m	confs: [compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool][0m
 [0m[[0mdebug[0m] [0m	validate = true[0m
@@ -112,12 +112,12 @@
 [0m[[0mdebug[0m] [0m	typesafe-ivy-releases: revision in cache: com.typesafe.play#play-exceptions;2.3.7[0m
 [0m[[0mdebug[0m] [0m	found com.typesafe.play#play-exceptions;2.3.7 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#build-link;2.3.7->com.typesafe.play#play-exceptions;2.3.7 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#build-link;2.3.7->com.typesafe.play#play-exceptions;2.3.7 [compile->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#build-link;2.3.7->com.typesafe.play#play-exceptions;2.3.7 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#build-link;2.3.7->com.typesafe.play#play-exceptions;2.3.7 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#build-link;2.3.7->com.typesafe.play#play-exceptions;2.3.7 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#build-link;2.3.7->com.typesafe.play#play-exceptions;2.3.7 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#build-link;2.3.7->com.typesafe.play#play-exceptions;2.3.7 [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#build-link;2.3.7->com.typesafe.play#play-exceptions;2.3.7 [compile->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#build-link;2.3.7->com.typesafe.play#play-exceptions;2.3.7 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#build-link;2.3.7->org.javassist#javassist;3.18.2-GA [compile->master(*)][0m
 [0m[[0minfo[0m] [0mResolving org.javassist#javassist;3.18.2-GA ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.javassist#javassist;3.18.2-GA {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
@@ -125,12 +125,12 @@
 [0m[[0mdebug[0m] [0m	typesafe-ivy-releases: revision in cache: org.javassist#javassist;3.18.2-GA[0m
 [0m[[0mdebug[0m] [0m	found org.javassist#javassist;3.18.2-GA in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#build-link;2.3.7->org.javassist#javassist;3.18.2-GA [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#build-link;2.3.7->org.javassist#javassist;3.18.2-GA [compile->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#build-link;2.3.7->org.javassist#javassist;3.18.2-GA [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#build-link;2.3.7->org.javassist#javassist;3.18.2-GA [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#build-link;2.3.7->org.javassist#javassist;3.18.2-GA [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#build-link;2.3.7->org.javassist#javassist;3.18.2-GA [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#build-link;2.3.7->org.javassist#javassist;3.18.2-GA [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#build-link;2.3.7->org.javassist#javassist;3.18.2-GA [compile->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#build-link;2.3.7->org.javassist#javassist;3.18.2-GA [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#build-link;2.3.7->com.typesafe.play#play-exceptions;2.3.7 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#build-link;2.3.7->com.typesafe.play#play-exceptions;2.3.7 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#build-link;2.3.7->org.javassist#javassist;3.18.2-GA [runtime->runtime(*)][0m
@@ -378,9 +378,9 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.7->com.google.guava#guava;16.0.1 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.7->com.google.guava#guava;16.0.1 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.7->com.google.guava#guava;16.0.1 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.7->com.google.guava#guava;16.0.1 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.7->com.google.guava#guava;16.0.1 [compile->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.7->com.google.guava#guava;16.0.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.7->com.google.guava#guava;16.0.1 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#sbt-plugin;2.3.7->org.avaje.ebeanorm#avaje-ebeanorm-agent;3.2.2 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving org.avaje.ebeanorm#avaje-ebeanorm-agent;3.2.2 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.avaje.ebeanorm#avaje-ebeanorm-agent;3.2.2 {compile=[default(compile)]}[0m
@@ -560,16 +560,16 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.commons#commons-compress;1.7->org.tukaani#xz;1.4 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.commons#commons-compress;1.7->org.tukaani#xz;1.4 [compile->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.commons#commons-compress;1.7->org.tukaani#xz;1.4 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.vafer#jdeb;1.3->org.apache.commons#commons-compress;1.7 [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.vafer#jdeb;1.3->org.apache.commons#commons-compress;1.7 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.vafer#jdeb;1.3->org.apache.commons#commons-compress;1.7 [compile->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.vafer#jdeb;1.3->org.apache.commons#commons-compress;1.7 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.commons#commons-compress;1.7->org.tukaani#xz;1.4 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.commons#commons-compress;1.7->org.tukaani#xz;1.4 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.vafer#jdeb;1.3->org.apache.commons#commons-compress;1.7 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.vafer#jdeb;1.3->org.apache.commons#commons-compress;1.7 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.vafer#jdeb;1.3->org.apache.commons#commons-compress;1.7 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.vafer#jdeb;1.3->org.apache.commons#commons-compress;1.7 [compile->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.vafer#jdeb;1.3->org.apache.commons#commons-compress;1.7 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.vafer#jdeb;1.3->org.apache.commons#commons-compress;1.7 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.vafer#jdeb;1.3->org.apache.commons#commons-compress;1.7 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.vafer#jdeb;1.3->org.apache.commons#commons-compress;1.7 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.vafer#jdeb;1.3->org.apache.maven#maven-core;3.2.2 [compile->master(*)][0m
 [0m[[0minfo[0m] [0mResolving org.apache.maven#maven-core;3.2.2 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.apache.maven#maven-core;3.2.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
@@ -12829,8 +12829,8 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.sbt#sbt-js-engine;1.0.1!sbt-js-engine.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.sbt#sbt-webdriver;1.0.0!sbt-webdriver.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-library;2.10.4!scala-library.jar[0m
-[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-sbt#io;0.13.5!io.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-sbt#io;0.13.5!io.jar(src)[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-sbt#io;0.13.5!io.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-sbt#control;0.13.5!control.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-compiler;2.10.4!scala-compiler.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scalacheck#scalacheck_2.10;1.11.1!scalacheck_2.10.jar[0m
@@ -12957,8 +12957,8 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.ow2.asm#asm-debug-all;5.0.1!asm-debug-all.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-sbt#sbt;0.13.5!sbt.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-sbt#main;0.13.5!main.jar[0m
-[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-sbt#compiler-interface;0.13.5!compiler-interface-src.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-sbt#compiler-interface;0.13.5!compiler-interface-bin.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-sbt#compiler-interface;0.13.5!compiler-interface-src.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-sbt#precompiled-2_8_2;0.13.5!compiler-interface-bin.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-sbt#precompiled-2_9_2;0.13.5!compiler-interface-bin.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-sbt#precompiled-2_9_3;0.13.5!compiler-interface-bin.jar[0m
@@ -12997,19 +12997,19 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-sbt#apply-macro;0.13.5!apply-macro.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#jline;2.10.4!jline.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.fusesource.jansi#jansi;1.4!jansi.jar[0m
-[0m[[0mdebug[0m] [0m:: resolution report :: resolve 12246ms :: artifacts dl 360ms[0m
-[0m[[0mdebug[0m] [0m	report for default#apachecmda-backend-build;0.1-SNAPSHOT compile produced in /Users/Victoria/Documents/18655/team12/SOC-Fall-2015/ApacheCMDA-Backend/project/target/resolution-cache/reports/default-apachecmda-backend-build-compile.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#apachecmda-backend-build;0.1-SNAPSHOT runtime produced in /Users/Victoria/Documents/18655/team12/SOC-Fall-2015/ApacheCMDA-Backend/project/target/resolution-cache/reports/default-apachecmda-backend-build-runtime.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#apachecmda-backend-build;0.1-SNAPSHOT test produced in /Users/Victoria/Documents/18655/team12/SOC-Fall-2015/ApacheCMDA-Backend/project/target/resolution-cache/reports/default-apachecmda-backend-build-test.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#apachecmda-backend-build;0.1-SNAPSHOT provided produced in /Users/Victoria/Documents/18655/team12/SOC-Fall-2015/ApacheCMDA-Backend/project/target/resolution-cache/reports/default-apachecmda-backend-build-provided.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#apachecmda-backend-build;0.1-SNAPSHOT optional produced in /Users/Victoria/Documents/18655/team12/SOC-Fall-2015/ApacheCMDA-Backend/project/target/resolution-cache/reports/default-apachecmda-backend-build-optional.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#apachecmda-backend-build;0.1-SNAPSHOT compile-internal produced in /Users/Victoria/Documents/18655/team12/SOC-Fall-2015/ApacheCMDA-Backend/project/target/resolution-cache/reports/default-apachecmda-backend-build-compile-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#apachecmda-backend-build;0.1-SNAPSHOT runtime-internal produced in /Users/Victoria/Documents/18655/team12/SOC-Fall-2015/ApacheCMDA-Backend/project/target/resolution-cache/reports/default-apachecmda-backend-build-runtime-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#apachecmda-backend-build;0.1-SNAPSHOT test-internal produced in /Users/Victoria/Documents/18655/team12/SOC-Fall-2015/ApacheCMDA-Backend/project/target/resolution-cache/reports/default-apachecmda-backend-build-test-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#apachecmda-backend-build;0.1-SNAPSHOT plugin produced in /Users/Victoria/Documents/18655/team12/SOC-Fall-2015/ApacheCMDA-Backend/project/target/resolution-cache/reports/default-apachecmda-backend-build-plugin.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#apachecmda-backend-build;0.1-SNAPSHOT sources produced in /Users/Victoria/Documents/18655/team12/SOC-Fall-2015/ApacheCMDA-Backend/project/target/resolution-cache/reports/default-apachecmda-backend-build-sources.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#apachecmda-backend-build;0.1-SNAPSHOT docs produced in /Users/Victoria/Documents/18655/team12/SOC-Fall-2015/ApacheCMDA-Backend/project/target/resolution-cache/reports/default-apachecmda-backend-build-docs.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#apachecmda-backend-build;0.1-SNAPSHOT pom produced in /Users/Victoria/Documents/18655/team12/SOC-Fall-2015/ApacheCMDA-Backend/project/target/resolution-cache/reports/default-apachecmda-backend-build-pom.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#apachecmda-backend-build;0.1-SNAPSHOT scala-tool produced in /Users/Victoria/Documents/18655/team12/SOC-Fall-2015/ApacheCMDA-Backend/project/target/resolution-cache/reports/default-apachecmda-backend-build-scala-tool.xml[0m
-[0m[[0mdebug[0m] [0m	resolve done (12246ms resolve - 360ms download)[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 4165ms :: artifacts dl 83ms[0m
+[0m[[0mdebug[0m] [0m	report for default#apachecmda-backend-build;0.1-SNAPSHOT compile produced in /Users/feifei/SOC-Fall-2015-Team12/ApacheCMDA-Backend/project/target/resolution-cache/reports/default-apachecmda-backend-build-compile.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#apachecmda-backend-build;0.1-SNAPSHOT runtime produced in /Users/feifei/SOC-Fall-2015-Team12/ApacheCMDA-Backend/project/target/resolution-cache/reports/default-apachecmda-backend-build-runtime.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#apachecmda-backend-build;0.1-SNAPSHOT test produced in /Users/feifei/SOC-Fall-2015-Team12/ApacheCMDA-Backend/project/target/resolution-cache/reports/default-apachecmda-backend-build-test.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#apachecmda-backend-build;0.1-SNAPSHOT provided produced in /Users/feifei/SOC-Fall-2015-Team12/ApacheCMDA-Backend/project/target/resolution-cache/reports/default-apachecmda-backend-build-provided.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#apachecmda-backend-build;0.1-SNAPSHOT optional produced in /Users/feifei/SOC-Fall-2015-Team12/ApacheCMDA-Backend/project/target/resolution-cache/reports/default-apachecmda-backend-build-optional.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#apachecmda-backend-build;0.1-SNAPSHOT compile-internal produced in /Users/feifei/SOC-Fall-2015-Team12/ApacheCMDA-Backend/project/target/resolution-cache/reports/default-apachecmda-backend-build-compile-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#apachecmda-backend-build;0.1-SNAPSHOT runtime-internal produced in /Users/feifei/SOC-Fall-2015-Team12/ApacheCMDA-Backend/project/target/resolution-cache/reports/default-apachecmda-backend-build-runtime-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#apachecmda-backend-build;0.1-SNAPSHOT test-internal produced in /Users/feifei/SOC-Fall-2015-Team12/ApacheCMDA-Backend/project/target/resolution-cache/reports/default-apachecmda-backend-build-test-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#apachecmda-backend-build;0.1-SNAPSHOT plugin produced in /Users/feifei/SOC-Fall-2015-Team12/ApacheCMDA-Backend/project/target/resolution-cache/reports/default-apachecmda-backend-build-plugin.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#apachecmda-backend-build;0.1-SNAPSHOT sources produced in /Users/feifei/SOC-Fall-2015-Team12/ApacheCMDA-Backend/project/target/resolution-cache/reports/default-apachecmda-backend-build-sources.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#apachecmda-backend-build;0.1-SNAPSHOT docs produced in /Users/feifei/SOC-Fall-2015-Team12/ApacheCMDA-Backend/project/target/resolution-cache/reports/default-apachecmda-backend-build-docs.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#apachecmda-backend-build;0.1-SNAPSHOT pom produced in /Users/feifei/SOC-Fall-2015-Team12/ApacheCMDA-Backend/project/target/resolution-cache/reports/default-apachecmda-backend-build-pom.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#apachecmda-backend-build;0.1-SNAPSHOT scala-tool produced in /Users/feifei/SOC-Fall-2015-Team12/ApacheCMDA-Backend/project/target/resolution-cache/reports/default-apachecmda-backend-build-scala-tool.xml[0m
+[0m[[0mdebug[0m] [0m	resolve done (4165ms resolve - 83ms download)[0m
 [0m[[0minfo[0m] [0mDone updating.[0m

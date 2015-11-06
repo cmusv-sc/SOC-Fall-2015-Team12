@@ -87,8 +87,8 @@ Seq[Any](format.raw/*19.1*/("""
 }
                 /*
                     -- GENERATED --
-                    DATE: Fri Oct 30 00:30:32 PDT 2015
-                    SOURCE: /Users/Qiyao/SOC-Fall-2015/ApacheCMDA-Frontend/app/views/flash_message.scala.html
+                    DATE: Fri Nov 06 09:34:10 PST 2015
+                    SOURCE: /Users/feifei/SOC-Fall-2015-Team12/ApacheCMDA-Frontend/app/views/flash_message.scala.html
                     HASH: bc76ec21b6e0d1e7a199f2dd57bbafc261199186
                     MATRIX: 3274->1221|3311->1223|3350->1253|3390->1255|3517->1346|3531->1351|3566->1364|3683->1450|3721->1453|3762->1485|3802->1487|3907->1556|3921->1561|3958->1576|4075->1662
                     LINES: 60->19|61->20|61->20|61->20|64->23|64->23|64->23|68->27|70->29|70->29|70->29|73->32|73->32|73->32|77->36

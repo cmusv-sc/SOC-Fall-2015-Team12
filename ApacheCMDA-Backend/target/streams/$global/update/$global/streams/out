@@ -1,4 +1,4 @@
-[0m[[0minfo[0m] [0mUpdating {file:/Users/Victoria/Documents/18655/team12/SOC-Fall-2015/ApacheCMDA-Backend/}root...[0m
+[0m[[0minfo[0m] [0mUpdating {file:/Users/feifei/SOC-Fall-2015-Team12/ApacheCMDA-Backend/}root...[0m
 [0m[[0mdebug[0m] [0m:: resolving dependencies :: apachecmda_backend#apachecmda_backend_2.11;1.0-SNAPSHOT[0m
 [0m[[0mdebug[0m] [0m	confs: [compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool, echo-trace-compile, echo-trace-test, echo-weave, echo-sigar, jacoco][0m
 [0m[[0mdebug[0m] [0m	validate = true[0m
@@ -7,7 +7,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies for apachecmda_backend#apachecmda_backend_2.11;1.0-SNAPSHOT [compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_backend#apachecmda_backend_2.11;1.0-SNAPSHOT->org.scala-lang#scala-library;2.11.4 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving org.scala-lang#scala-library;2.11.4 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5fb3ef86[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@34d88a0e[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang#scala-library;2.11.4[0m
 [0m[[0mdebug[0m] [0m	local: revision in cache: org.scala-lang#scala-library;2.11.4[0m
 [0m[[0mdebug[0m] [0m	found org.scala-lang#scala-library;2.11.4 in sbt-chain[0m
@@ -543,7 +543,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_backend#apachecmda_backend_2.11;1.0-SNAPSHOT->com.typesafe.play#play_2.11;2.3.7 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_backend#apachecmda_backend_2.11;1.0-SNAPSHOT->com.typesafe.play#play-java_2.11;2.3.7 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving com.typesafe.play#play-java_2.11;2.3.7 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@285be482[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@60b821ab[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.typesafe.play#play-java_2.11;2.3.7[0m
 [0m[[0mdebug[0m] [0m	local: revision in cache: com.typesafe.play#play-java_2.11;2.3.7[0m
 [0m[[0mdebug[0m] [0m	found com.typesafe.play#play-java_2.11;2.3.7 in sbt-chain[0m
@@ -1025,14 +1025,14 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.springframework#spring-context;4.1.4.RELEASE->org.springframework#spring-expression;4.1.4.RELEASE [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.springframework#spring-expression;4.1.4.RELEASE->org.springframework#spring-core;4.1.4.RELEASE [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.springframework#spring-expression;4.1.4.RELEASE->org.springframework#spring-core;4.1.4.RELEASE [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.springframework#spring-context;4.1.4.RELEASE->org.springframework#spring-expression;4.1.4.RELEASE [compile->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.springframework#spring-context;4.1.4.RELEASE->org.springframework#spring-expression;4.1.4.RELEASE [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.springframework#spring-context;4.1.4.RELEASE->org.springframework#spring-expression;4.1.4.RELEASE [compile->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.springframework#spring-context;4.1.4.RELEASE->org.springframework#spring-expression;4.1.4.RELEASE [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.springframework#spring-expression;4.1.4.RELEASE->org.springframework#spring-core;4.1.4.RELEASE [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.springframework#spring-expression;4.1.4.RELEASE->org.springframework#spring-core;4.1.4.RELEASE [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.springframework#spring-context;4.1.4.RELEASE->org.springframework#spring-expression;4.1.4.RELEASE [compile->master][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.springframework#spring-context;4.1.4.RELEASE->org.springframework#spring-expression;4.1.4.RELEASE [compile->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.springframework#spring-context;4.1.4.RELEASE->org.springframework#spring-expression;4.1.4.RELEASE [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.springframework#spring-context;4.1.4.RELEASE->org.springframework#spring-expression;4.1.4.RELEASE [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.springframework#spring-context;4.1.4.RELEASE->org.springframework#spring-expression;4.1.4.RELEASE [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.springframework#spring-context;4.1.4.RELEASE->org.springframework#spring-expression;4.1.4.RELEASE [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.springframework#spring-context;4.1.4.RELEASE->org.springframework#spring-aop;4.1.4.RELEASE [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.springframework#spring-context;4.1.4.RELEASE->org.springframework#spring-aop;4.1.4.RELEASE [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.springframework#spring-context;4.1.4.RELEASE->org.springframework#spring-beans;4.1.4.RELEASE [runtime->runtime(*)][0m
@@ -1043,9 +1043,9 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.springframework#spring-context;4.1.4.RELEASE->org.springframework#spring-expression;4.1.4.RELEASE [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_backend#apachecmda_backend_2.11;1.0-SNAPSHOT->org.springframework#spring-context;4.1.4.RELEASE [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_backend#apachecmda_backend_2.11;1.0-SNAPSHOT->org.springframework#spring-context;4.1.4.RELEASE [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_backend#apachecmda_backend_2.11;1.0-SNAPSHOT->org.springframework#spring-context;4.1.4.RELEASE [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_backend#apachecmda_backend_2.11;1.0-SNAPSHOT->org.springframework#spring-context;4.1.4.RELEASE [compile->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_backend#apachecmda_backend_2.11;1.0-SNAPSHOT->org.springframework#spring-context;4.1.4.RELEASE [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_backend#apachecmda_backend_2.11;1.0-SNAPSHOT->org.springframework#spring-context;4.1.4.RELEASE [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_backend#apachecmda_backend_2.11;1.0-SNAPSHOT->javax.inject#javax.inject;1 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving javax.inject#javax.inject;1 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: javax.inject#javax.inject;1 {compile=[default(compile)]}[0m
@@ -1105,13 +1105,13 @@
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.slf4j#jcl-over-slf4j;1.7.7[0m
 [0m[[0mdebug[0m] [0m	local: revision in cache: org.slf4j#jcl-over-slf4j;1.7.7[0m
 [0m[[0mdebug[0m] [0m	found org.slf4j#jcl-over-slf4j;1.7.7 in sbt-chain[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.springframework.data#spring-data-commons;1.9.1.RELEASE->org.slf4j#jcl-over-slf4j;1.7.7 [runtime->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.slf4j#jcl-over-slf4j;1.7.7->org.slf4j#slf4j-api;1.7.7 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.slf4j#jcl-over-slf4j;1.7.7->org.slf4j#slf4j-api;1.7.7 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.springframework.data#spring-data-commons;1.9.1.RELEASE->org.slf4j#jcl-over-slf4j;1.7.7 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.springframework.data#spring-data-commons;1.9.1.RELEASE->org.slf4j#jcl-over-slf4j;1.7.7 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.slf4j#jcl-over-slf4j;1.7.7->org.slf4j#slf4j-api;1.7.7 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.slf4j#jcl-over-slf4j;1.7.7->org.slf4j#slf4j-api;1.7.7 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.slf4j#jcl-over-slf4j;1.7.7->org.slf4j#slf4j-api;1.7.7 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.slf4j#jcl-over-slf4j;1.7.7->org.slf4j#slf4j-api;1.7.7 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.springframework.data#spring-data-commons;1.9.1.RELEASE->org.slf4j#jcl-over-slf4j;1.7.7 [runtime->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.springframework.data#spring-data-jpa;1.7.1.RELEASE->org.springframework#spring-orm;4.0.7.RELEASE [compile->master(*)][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.springframework#spring-context;4.1.4.RELEASE {compile=[default(compile)]} => dependency: org.springframework#spring-context;4.0.7.RELEASE {compile=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.springframework#spring-expression;4.1.4.RELEASE {compile=[default(compile)]} => dependency: org.springframework#spring-expression;4.0.7.RELEASE {compile=[default(compile)]}[0m
@@ -1247,9 +1247,9 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.springframework.data#spring-data-jpa;1.7.1.RELEASE->org.slf4j#slf4j-api;1.7.7 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.springframework.data#spring-data-jpa;1.7.1.RELEASE->org.slf4j#slf4j-api;1.7.7 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.springframework.data#spring-data-jpa;1.7.1.RELEASE->org.slf4j#jcl-over-slf4j;1.7.7 [runtime->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.springframework.data#spring-data-jpa;1.7.1.RELEASE->org.slf4j#jcl-over-slf4j;1.7.7 [runtime->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.springframework.data#spring-data-jpa;1.7.1.RELEASE->org.slf4j#jcl-over-slf4j;1.7.7 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.springframework.data#spring-data-jpa;1.7.1.RELEASE->org.slf4j#jcl-over-slf4j;1.7.7 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.springframework.data#spring-data-jpa;1.7.1.RELEASE->org.slf4j#jcl-over-slf4j;1.7.7 [runtime->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_backend#apachecmda_backend_2.11;1.0-SNAPSHOT->org.springframework.data#spring-data-jpa;1.7.1.RELEASE [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_backend#apachecmda_backend_2.11;1.0-SNAPSHOT->org.springframework#spring-expression;4.1.4.RELEASE [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_backend#apachecmda_backend_2.11;1.0-SNAPSHOT->org.springframework#spring-expression;4.1.4.RELEASE [compile->runtime][0m
@@ -2191,13 +2191,13 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.springframework.data#spring-data-commons;1.9.1.RELEASE->org.slf4j#slf4j-api;1.7.7 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.springframework.data#spring-data-commons;1.9.1.RELEASE->org.slf4j#slf4j-api;1.7.7 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.springframework.data#spring-data-commons;1.9.1.RELEASE->org.slf4j#jcl-over-slf4j;1.7.7 [runtime->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.springframework.data#spring-data-commons;1.9.1.RELEASE->org.slf4j#jcl-over-slf4j;1.7.7 [runtime->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.slf4j#jcl-over-slf4j;1.7.7->org.slf4j#slf4j-api;1.7.7 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.slf4j#jcl-over-slf4j;1.7.7->org.slf4j#slf4j-api;1.7.7 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.springframework.data#spring-data-commons;1.9.1.RELEASE->org.slf4j#jcl-over-slf4j;1.7.7 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.springframework.data#spring-data-commons;1.9.1.RELEASE->org.slf4j#jcl-over-slf4j;1.7.7 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.slf4j#jcl-over-slf4j;1.7.7->org.slf4j#slf4j-api;1.7.7 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.slf4j#jcl-over-slf4j;1.7.7->org.slf4j#slf4j-api;1.7.7 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.slf4j#jcl-over-slf4j;1.7.7->org.slf4j#slf4j-api;1.7.7 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.slf4j#jcl-over-slf4j;1.7.7->org.slf4j#slf4j-api;1.7.7 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.springframework.data#spring-data-commons;1.9.1.RELEASE->org.slf4j#jcl-over-slf4j;1.7.7 [runtime->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.springframework.data#spring-data-jpa;1.7.1.RELEASE->org.springframework#spring-orm;4.0.7.RELEASE [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.springframework.data#spring-data-jpa;1.7.1.RELEASE->org.springframework#spring-orm;4.0.7.RELEASE [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.springframework#spring-orm;4.0.7.RELEASE->org.springframework#spring-beans;4.0.7.RELEASE [runtime->runtime(*)][0m
@@ -2243,9 +2243,9 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.springframework.data#spring-data-jpa;1.7.1.RELEASE->org.slf4j#slf4j-api;1.7.7 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.springframework.data#spring-data-jpa;1.7.1.RELEASE->org.slf4j#slf4j-api;1.7.7 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.springframework.data#spring-data-jpa;1.7.1.RELEASE->org.slf4j#jcl-over-slf4j;1.7.7 [runtime->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.springframework.data#spring-data-jpa;1.7.1.RELEASE->org.slf4j#jcl-over-slf4j;1.7.7 [runtime->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.springframework.data#spring-data-jpa;1.7.1.RELEASE->org.slf4j#jcl-over-slf4j;1.7.7 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.springframework.data#spring-data-jpa;1.7.1.RELEASE->org.slf4j#jcl-over-slf4j;1.7.7 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.springframework.data#spring-data-jpa;1.7.1.RELEASE->org.slf4j#jcl-over-slf4j;1.7.7 [runtime->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_backend#apachecmda_backend_2.11;1.0-SNAPSHOT->org.springframework.data#spring-data-jpa;1.7.1.RELEASE [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_backend#apachecmda_backend_2.11;1.0-SNAPSHOT->org.springframework#spring-expression;4.1.4.RELEASE [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_backend#apachecmda_backend_2.11;1.0-SNAPSHOT->org.springframework#spring-expression;4.1.4.RELEASE [compile->runtime][0m
@@ -3121,13 +3121,13 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.springframework.data#spring-data-commons;1.9.1.RELEASE->org.slf4j#slf4j-api;1.7.7 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.springframework.data#spring-data-commons;1.9.1.RELEASE->org.slf4j#slf4j-api;1.7.7 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.springframework.data#spring-data-commons;1.9.1.RELEASE->org.slf4j#jcl-over-slf4j;1.7.7 [runtime->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.springframework.data#spring-data-commons;1.9.1.RELEASE->org.slf4j#jcl-over-slf4j;1.7.7 [runtime->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.slf4j#jcl-over-slf4j;1.7.7->org.slf4j#slf4j-api;1.7.7 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.slf4j#jcl-over-slf4j;1.7.7->org.slf4j#slf4j-api;1.7.7 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.springframework.data#spring-data-commons;1.9.1.RELEASE->org.slf4j#jcl-over-slf4j;1.7.7 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.springframework.data#spring-data-commons;1.9.1.RELEASE->org.slf4j#jcl-over-slf4j;1.7.7 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.slf4j#jcl-over-slf4j;1.7.7->org.slf4j#slf4j-api;1.7.7 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.slf4j#jcl-over-slf4j;1.7.7->org.slf4j#slf4j-api;1.7.7 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.slf4j#jcl-over-slf4j;1.7.7->org.slf4j#slf4j-api;1.7.7 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.slf4j#jcl-over-slf4j;1.7.7->org.slf4j#slf4j-api;1.7.7 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.springframework.data#spring-data-commons;1.9.1.RELEASE->org.slf4j#jcl-over-slf4j;1.7.7 [runtime->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.springframework.data#spring-data-jpa;1.7.1.RELEASE->org.springframework#spring-orm;4.0.7.RELEASE [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.springframework.data#spring-data-jpa;1.7.1.RELEASE->org.springframework#spring-orm;4.0.7.RELEASE [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.springframework#spring-orm;4.0.7.RELEASE->org.springframework#spring-beans;4.0.7.RELEASE [runtime->runtime(*)][0m
@@ -3173,9 +3173,9 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.springframework.data#spring-data-jpa;1.7.1.RELEASE->org.slf4j#slf4j-api;1.7.7 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.springframework.data#spring-data-jpa;1.7.1.RELEASE->org.slf4j#slf4j-api;1.7.7 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.springframework.data#spring-data-jpa;1.7.1.RELEASE->org.slf4j#jcl-over-slf4j;1.7.7 [runtime->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.springframework.data#spring-data-jpa;1.7.1.RELEASE->org.slf4j#jcl-over-slf4j;1.7.7 [runtime->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.springframework.data#spring-data-jpa;1.7.1.RELEASE->org.slf4j#jcl-over-slf4j;1.7.7 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.springframework.data#spring-data-jpa;1.7.1.RELEASE->org.slf4j#jcl-over-slf4j;1.7.7 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.springframework.data#spring-data-jpa;1.7.1.RELEASE->org.slf4j#jcl-over-slf4j;1.7.7 [runtime->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_backend#apachecmda_backend_2.11;1.0-SNAPSHOT->org.springframework.data#spring-data-jpa;1.7.1.RELEASE [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_backend#apachecmda_backend_2.11;1.0-SNAPSHOT->org.springframework#spring-expression;4.1.4.RELEASE [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_backend#apachecmda_backend_2.11;1.0-SNAPSHOT->org.springframework#spring-expression;4.1.4.RELEASE [compile->runtime][0m
@@ -4747,25 +4747,25 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_backend#apachecmda_backend_2.11;1.0-SNAPSHOT->org.mockito#mockito-core;1.10.19 [test->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.mockito#mockito-core;1.10.19->org.hamcrest#hamcrest-core;1.1 [runtime->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.mockito#mockito-core;1.10.19->org.hamcrest#hamcrest-core;1.3 [runtime->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.mockito#mockito-core;1.10.19->org.hamcrest#hamcrest-core;1.1 [runtime->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.mockito#mockito-core;1.10.19->org.hamcrest#hamcrest-core;1.3 [runtime->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.mockito#mockito-core;1.10.19->org.hamcrest#hamcrest-core;1.1 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.mockito#mockito-core;1.10.19->org.hamcrest#hamcrest-core;1.3 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.mockito#mockito-core;1.10.19->org.hamcrest#hamcrest-core;1.3 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.mockito#mockito-core;1.10.19->org.hamcrest#hamcrest-core;1.1 [runtime->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.mockito#mockito-core;1.10.19->org.hamcrest#hamcrest-core;1.3 [runtime->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.mockito#mockito-core;1.10.19->org.objenesis#objenesis;2.1 [runtime->master(*)][0m
 [0m[[0minfo[0m] [0mResolving org.objenesis#objenesis;2.1 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.objenesis#objenesis;2.1 {runtime=[compile(*), runtime(*), master(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.objenesis#objenesis;2.1[0m
 [0m[[0mdebug[0m] [0m	local: revision in cache: org.objenesis#objenesis;2.1[0m
 [0m[[0mdebug[0m] [0m	found org.objenesis#objenesis;2.1 in sbt-chain[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.mockito#mockito-core;1.10.19->org.objenesis#objenesis;2.1 [runtime->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.mockito#mockito-core;1.10.19->org.objenesis#objenesis;2.1 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.mockito#mockito-core;1.10.19->org.objenesis#objenesis;2.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.mockito#mockito-core;1.10.19->org.objenesis#objenesis;2.1 [runtime->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_backend#apachecmda_backend_2.11;1.0-SNAPSHOT->org.mockito#mockito-core;1.10.19 [test->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_backend#apachecmda_backend_2.11;1.0-SNAPSHOT->org.mockito#mockito-core;1.10.19 [test->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_backend#apachecmda_backend_2.11;1.0-SNAPSHOT->org.mockito#mockito-core;1.10.19 [test->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_backend#apachecmda_backend_2.11;1.0-SNAPSHOT->org.mockito#mockito-core;1.10.19 [test->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_backend#apachecmda_backend_2.11;1.0-SNAPSHOT->org.mockito#mockito-core;1.10.19 [test->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_backend#apachecmda_backend_2.11;1.0-SNAPSHOT->org.mockito#mockito-core;1.10.19 [test->compile(*)][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'provided'[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for apachecmda_backend#apachecmda_backend_2.11;1.0-SNAPSHOT [provided][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'optional'[0m
@@ -5519,13 +5519,13 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.springframework.data#spring-data-commons;1.9.1.RELEASE->org.slf4j#slf4j-api;1.7.7 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.springframework.data#spring-data-commons;1.9.1.RELEASE->org.slf4j#slf4j-api;1.7.7 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.springframework.data#spring-data-commons;1.9.1.RELEASE->org.slf4j#jcl-over-slf4j;1.7.7 [runtime->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.springframework.data#spring-data-commons;1.9.1.RELEASE->org.slf4j#jcl-over-slf4j;1.7.7 [runtime->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.slf4j#jcl-over-slf4j;1.7.7->org.slf4j#slf4j-api;1.7.7 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.slf4j#jcl-over-slf4j;1.7.7->org.slf4j#slf4j-api;1.7.7 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.springframework.data#spring-data-commons;1.9.1.RELEASE->org.slf4j#jcl-over-slf4j;1.7.7 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.springframework.data#spring-data-commons;1.9.1.RELEASE->org.slf4j#jcl-over-slf4j;1.7.7 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.slf4j#jcl-over-slf4j;1.7.7->org.slf4j#slf4j-api;1.7.7 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.slf4j#jcl-over-slf4j;1.7.7->org.slf4j#slf4j-api;1.7.7 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.slf4j#jcl-over-slf4j;1.7.7->org.slf4j#slf4j-api;1.7.7 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.slf4j#jcl-over-slf4j;1.7.7->org.slf4j#slf4j-api;1.7.7 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.springframework.data#spring-data-commons;1.9.1.RELEASE->org.slf4j#jcl-over-slf4j;1.7.7 [runtime->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.springframework.data#spring-data-jpa;1.7.1.RELEASE->org.springframework#spring-orm;4.0.7.RELEASE [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.springframework.data#spring-data-jpa;1.7.1.RELEASE->org.springframework#spring-orm;4.0.7.RELEASE [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.springframework#spring-orm;4.0.7.RELEASE->org.springframework#spring-beans;4.0.7.RELEASE [runtime->runtime(*)][0m
@@ -5571,9 +5571,9 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.springframework.data#spring-data-jpa;1.7.1.RELEASE->org.slf4j#slf4j-api;1.7.7 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.springframework.data#spring-data-jpa;1.7.1.RELEASE->org.slf4j#slf4j-api;1.7.7 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.springframework.data#spring-data-jpa;1.7.1.RELEASE->org.slf4j#jcl-over-slf4j;1.7.7 [runtime->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.springframework.data#spring-data-jpa;1.7.1.RELEASE->org.slf4j#jcl-over-slf4j;1.7.7 [runtime->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.springframework.data#spring-data-jpa;1.7.1.RELEASE->org.slf4j#jcl-over-slf4j;1.7.7 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.springframework.data#spring-data-jpa;1.7.1.RELEASE->org.slf4j#jcl-over-slf4j;1.7.7 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.springframework.data#spring-data-jpa;1.7.1.RELEASE->org.slf4j#jcl-over-slf4j;1.7.7 [runtime->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_backend#apachecmda_backend_2.11;1.0-SNAPSHOT->org.springframework.data#spring-data-jpa;1.7.1.RELEASE [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_backend#apachecmda_backend_2.11;1.0-SNAPSHOT->org.springframework#spring-expression;4.1.4.RELEASE [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_backend#apachecmda_backend_2.11;1.0-SNAPSHOT->org.springframework#spring-expression;4.1.4.RELEASE [compile->runtime][0m
@@ -6461,13 +6461,13 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.springframework.data#spring-data-commons;1.9.1.RELEASE->org.slf4j#slf4j-api;1.7.7 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.springframework.data#spring-data-commons;1.9.1.RELEASE->org.slf4j#slf4j-api;1.7.7 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.springframework.data#spring-data-commons;1.9.1.RELEASE->org.slf4j#jcl-over-slf4j;1.7.7 [runtime->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.springframework.data#spring-data-commons;1.9.1.RELEASE->org.slf4j#jcl-over-slf4j;1.7.7 [runtime->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.slf4j#jcl-over-slf4j;1.7.7->org.slf4j#slf4j-api;1.7.7 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.slf4j#jcl-over-slf4j;1.7.7->org.slf4j#slf4j-api;1.7.7 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.springframework.data#spring-data-commons;1.9.1.RELEASE->org.slf4j#jcl-over-slf4j;1.7.7 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.springframework.data#spring-data-commons;1.9.1.RELEASE->org.slf4j#jcl-over-slf4j;1.7.7 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.slf4j#jcl-over-slf4j;1.7.7->org.slf4j#slf4j-api;1.7.7 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.slf4j#jcl-over-slf4j;1.7.7->org.slf4j#slf4j-api;1.7.7 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.slf4j#jcl-over-slf4j;1.7.7->org.slf4j#slf4j-api;1.7.7 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.slf4j#jcl-over-slf4j;1.7.7->org.slf4j#slf4j-api;1.7.7 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.springframework.data#spring-data-commons;1.9.1.RELEASE->org.slf4j#jcl-over-slf4j;1.7.7 [runtime->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.springframework.data#spring-data-jpa;1.7.1.RELEASE->org.springframework#spring-orm;4.0.7.RELEASE [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.springframework.data#spring-data-jpa;1.7.1.RELEASE->org.springframework#spring-orm;4.0.7.RELEASE [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.springframework#spring-orm;4.0.7.RELEASE->org.springframework#spring-beans;4.0.7.RELEASE [runtime->runtime(*)][0m
@@ -6513,9 +6513,9 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.springframework.data#spring-data-jpa;1.7.1.RELEASE->org.slf4j#slf4j-api;1.7.7 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.springframework.data#spring-data-jpa;1.7.1.RELEASE->org.slf4j#slf4j-api;1.7.7 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.springframework.data#spring-data-jpa;1.7.1.RELEASE->org.slf4j#jcl-over-slf4j;1.7.7 [runtime->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.springframework.data#spring-data-jpa;1.7.1.RELEASE->org.slf4j#jcl-over-slf4j;1.7.7 [runtime->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.springframework.data#spring-data-jpa;1.7.1.RELEASE->org.slf4j#jcl-over-slf4j;1.7.7 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.springframework.data#spring-data-jpa;1.7.1.RELEASE->org.slf4j#jcl-over-slf4j;1.7.7 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.springframework.data#spring-data-jpa;1.7.1.RELEASE->org.slf4j#jcl-over-slf4j;1.7.7 [runtime->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_backend#apachecmda_backend_2.11;1.0-SNAPSHOT->org.springframework.data#spring-data-jpa;1.7.1.RELEASE [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_backend#apachecmda_backend_2.11;1.0-SNAPSHOT->org.springframework#spring-expression;4.1.4.RELEASE [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_backend#apachecmda_backend_2.11;1.0-SNAPSHOT->org.springframework#spring-expression;4.1.4.RELEASE [compile->runtime][0m
@@ -7423,13 +7423,13 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.springframework.data#spring-data-commons;1.9.1.RELEASE->org.slf4j#slf4j-api;1.7.7 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.springframework.data#spring-data-commons;1.9.1.RELEASE->org.slf4j#slf4j-api;1.7.7 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.springframework.data#spring-data-commons;1.9.1.RELEASE->org.slf4j#jcl-over-slf4j;1.7.7 [runtime->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.springframework.data#spring-data-commons;1.9.1.RELEASE->org.slf4j#jcl-over-slf4j;1.7.7 [runtime->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.slf4j#jcl-over-slf4j;1.7.7->org.slf4j#slf4j-api;1.7.7 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.slf4j#jcl-over-slf4j;1.7.7->org.slf4j#slf4j-api;1.7.7 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.springframework.data#spring-data-commons;1.9.1.RELEASE->org.slf4j#jcl-over-slf4j;1.7.7 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.springframework.data#spring-data-commons;1.9.1.RELEASE->org.slf4j#jcl-over-slf4j;1.7.7 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.slf4j#jcl-over-slf4j;1.7.7->org.slf4j#slf4j-api;1.7.7 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.slf4j#jcl-over-slf4j;1.7.7->org.slf4j#slf4j-api;1.7.7 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.slf4j#jcl-over-slf4j;1.7.7->org.slf4j#slf4j-api;1.7.7 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.slf4j#jcl-over-slf4j;1.7.7->org.slf4j#slf4j-api;1.7.7 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.springframework.data#spring-data-commons;1.9.1.RELEASE->org.slf4j#jcl-over-slf4j;1.7.7 [runtime->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.springframework.data#spring-data-jpa;1.7.1.RELEASE->org.springframework#spring-orm;4.0.7.RELEASE [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.springframework.data#spring-data-jpa;1.7.1.RELEASE->org.springframework#spring-orm;4.0.7.RELEASE [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.springframework#spring-orm;4.0.7.RELEASE->org.springframework#spring-beans;4.0.7.RELEASE [runtime->runtime(*)][0m
@@ -7475,9 +7475,9 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.springframework.data#spring-data-jpa;1.7.1.RELEASE->org.slf4j#slf4j-api;1.7.7 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.springframework.data#spring-data-jpa;1.7.1.RELEASE->org.slf4j#slf4j-api;1.7.7 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.springframework.data#spring-data-jpa;1.7.1.RELEASE->org.slf4j#jcl-over-slf4j;1.7.7 [runtime->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.springframework.data#spring-data-jpa;1.7.1.RELEASE->org.slf4j#jcl-over-slf4j;1.7.7 [runtime->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.springframework.data#spring-data-jpa;1.7.1.RELEASE->org.slf4j#jcl-over-slf4j;1.7.7 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.springframework.data#spring-data-jpa;1.7.1.RELEASE->org.slf4j#jcl-over-slf4j;1.7.7 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.springframework.data#spring-data-jpa;1.7.1.RELEASE->org.slf4j#jcl-over-slf4j;1.7.7 [runtime->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_backend#apachecmda_backend_2.11;1.0-SNAPSHOT->org.springframework.data#spring-data-jpa;1.7.1.RELEASE [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_backend#apachecmda_backend_2.11;1.0-SNAPSHOT->org.springframework#spring-expression;4.1.4.RELEASE [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_backend#apachecmda_backend_2.11;1.0-SNAPSHOT->org.springframework#spring-expression;4.1.4.RELEASE [compile->runtime][0m
@@ -8669,15 +8669,15 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.specs2#specs2-mock_2.11;2.3.12->org.mockito#mockito-core;1.10.19 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.mockito#mockito-core;1.10.19->org.hamcrest#hamcrest-core;1.1 [runtime->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.mockito#mockito-core;1.10.19->org.hamcrest#hamcrest-core;1.3 [runtime->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.mockito#mockito-core;1.10.19->org.hamcrest#hamcrest-core;1.1 [runtime->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.mockito#mockito-core;1.10.19->org.hamcrest#hamcrest-core;1.3 [runtime->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.mockito#mockito-core;1.10.19->org.hamcrest#hamcrest-core;1.1 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.mockito#mockito-core;1.10.19->org.hamcrest#hamcrest-core;1.3 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.mockito#mockito-core;1.10.19->org.hamcrest#hamcrest-core;1.3 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.mockito#mockito-core;1.10.19->org.hamcrest#hamcrest-core;1.1 [runtime->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.mockito#mockito-core;1.10.19->org.hamcrest#hamcrest-core;1.3 [runtime->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.mockito#mockito-core;1.10.19->org.objenesis#objenesis;2.1 [runtime->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.mockito#mockito-core;1.10.19->org.objenesis#objenesis;2.1 [runtime->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.mockito#mockito-core;1.10.19->org.objenesis#objenesis;2.1 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.mockito#mockito-core;1.10.19->org.objenesis#objenesis;2.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.mockito#mockito-core;1.10.19->org.objenesis#objenesis;2.1 [runtime->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-test_2.11;2.3.7->org.specs2#specs2-matcher-extra_2.11;2.3.12 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-test_2.11;2.3.7->org.specs2#specs2-matcher-extra_2.11;2.3.12 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.specs2#specs2-matcher-extra_2.11;2.3.12->org.scala-lang#scala-library;2.11.0 [runtime->runtime(*)][0m
@@ -9324,10 +9324,10 @@
 [0m[[0mdebug[0m] [0m	local: revision in cache: org.scala-lang.modules#scala-xml_2.11;1.0.2[0m
 [0m[[0mdebug[0m] [0m	found org.scala-lang.modules#scala-xml_2.11;1.0.2 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.11.4->org.scala-lang.modules#scala-xml_2.11;1.0.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.2->org.scala-lang#scala-library;2.11.1 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.2->org.scala-lang#scala-library;2.11.4 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.2->org.scala-lang#scala-library;2.11.1 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.2->org.scala-lang#scala-library;2.11.4 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.2->org.scala-lang#scala-library;2.11.1 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.2->org.scala-lang#scala-library;2.11.4 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.11.4->org.scala-lang.modules#scala-xml_2.11;1.0.2 [compile->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.11.4->org.scala-lang.modules#scala-xml_2.11;1.0.2 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.2->org.scala-lang#scala-library;2.11.1 [runtime->runtime(*)][0m
@@ -10138,13 +10138,13 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.springframework.data#spring-data-commons;1.9.1.RELEASE->org.slf4j#slf4j-api;1.7.7 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.springframework.data#spring-data-commons;1.9.1.RELEASE->org.slf4j#slf4j-api;1.7.7 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.springframework.data#spring-data-commons;1.9.1.RELEASE->org.slf4j#jcl-over-slf4j;1.7.7 [runtime->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.springframework.data#spring-data-commons;1.9.1.RELEASE->org.slf4j#jcl-over-slf4j;1.7.7 [runtime->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.slf4j#jcl-over-slf4j;1.7.7->org.slf4j#slf4j-api;1.7.7 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.slf4j#jcl-over-slf4j;1.7.7->org.slf4j#slf4j-api;1.7.7 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.springframework.data#spring-data-commons;1.9.1.RELEASE->org.slf4j#jcl-over-slf4j;1.7.7 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.springframework.data#spring-data-commons;1.9.1.RELEASE->org.slf4j#jcl-over-slf4j;1.7.7 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.slf4j#jcl-over-slf4j;1.7.7->org.slf4j#slf4j-api;1.7.7 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.slf4j#jcl-over-slf4j;1.7.7->org.slf4j#slf4j-api;1.7.7 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.slf4j#jcl-over-slf4j;1.7.7->org.slf4j#slf4j-api;1.7.7 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.slf4j#jcl-over-slf4j;1.7.7->org.slf4j#slf4j-api;1.7.7 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.springframework.data#spring-data-commons;1.9.1.RELEASE->org.slf4j#jcl-over-slf4j;1.7.7 [runtime->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.springframework.data#spring-data-jpa;1.7.1.RELEASE->org.springframework#spring-orm;4.0.7.RELEASE [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.springframework.data#spring-data-jpa;1.7.1.RELEASE->org.springframework#spring-orm;4.0.7.RELEASE [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.springframework#spring-orm;4.0.7.RELEASE->org.springframework#spring-beans;4.0.7.RELEASE [runtime->runtime(*)][0m
@@ -10190,9 +10190,9 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.springframework.data#spring-data-jpa;1.7.1.RELEASE->org.slf4j#slf4j-api;1.7.7 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.springframework.data#spring-data-jpa;1.7.1.RELEASE->org.slf4j#slf4j-api;1.7.7 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.springframework.data#spring-data-jpa;1.7.1.RELEASE->org.slf4j#jcl-over-slf4j;1.7.7 [runtime->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.springframework.data#spring-data-jpa;1.7.1.RELEASE->org.slf4j#jcl-over-slf4j;1.7.7 [runtime->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.springframework.data#spring-data-jpa;1.7.1.RELEASE->org.slf4j#jcl-over-slf4j;1.7.7 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.springframework.data#spring-data-jpa;1.7.1.RELEASE->org.slf4j#jcl-over-slf4j;1.7.7 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.springframework.data#spring-data-jpa;1.7.1.RELEASE->org.slf4j#jcl-over-slf4j;1.7.7 [runtime->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_backend#apachecmda_backend_2.11;1.0-SNAPSHOT->org.springframework.data#spring-data-jpa;1.7.1.RELEASE [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_backend#apachecmda_backend_2.11;1.0-SNAPSHOT->org.springframework#spring-expression;4.1.4.RELEASE [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_backend#apachecmda_backend_2.11;1.0-SNAPSHOT->org.springframework#spring-expression;4.1.4.RELEASE [compile->runtime][0m
@@ -11137,13 +11137,13 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.springframework.data#spring-data-commons;1.9.1.RELEASE->org.slf4j#slf4j-api;1.7.7 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.springframework.data#spring-data-commons;1.9.1.RELEASE->org.slf4j#slf4j-api;1.7.7 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.springframework.data#spring-data-commons;1.9.1.RELEASE->org.slf4j#jcl-over-slf4j;1.7.7 [runtime->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.springframework.data#spring-data-commons;1.9.1.RELEASE->org.slf4j#jcl-over-slf4j;1.7.7 [runtime->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.slf4j#jcl-over-slf4j;1.7.7->org.slf4j#slf4j-api;1.7.7 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.slf4j#jcl-over-slf4j;1.7.7->org.slf4j#slf4j-api;1.7.7 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.springframework.data#spring-data-commons;1.9.1.RELEASE->org.slf4j#jcl-over-slf4j;1.7.7 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.springframework.data#spring-data-commons;1.9.1.RELEASE->org.slf4j#jcl-over-slf4j;1.7.7 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.slf4j#jcl-over-slf4j;1.7.7->org.slf4j#slf4j-api;1.7.7 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.slf4j#jcl-over-slf4j;1.7.7->org.slf4j#slf4j-api;1.7.7 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.slf4j#jcl-over-slf4j;1.7.7->org.slf4j#slf4j-api;1.7.7 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.slf4j#jcl-over-slf4j;1.7.7->org.slf4j#slf4j-api;1.7.7 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.springframework.data#spring-data-commons;1.9.1.RELEASE->org.slf4j#jcl-over-slf4j;1.7.7 [runtime->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.springframework.data#spring-data-jpa;1.7.1.RELEASE->org.springframework#spring-orm;4.0.7.RELEASE [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.springframework.data#spring-data-jpa;1.7.1.RELEASE->org.springframework#spring-orm;4.0.7.RELEASE [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.springframework#spring-orm;4.0.7.RELEASE->org.springframework#spring-beans;4.0.7.RELEASE [runtime->runtime(*)][0m
@@ -11189,9 +11189,9 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.springframework.data#spring-data-jpa;1.7.1.RELEASE->org.slf4j#slf4j-api;1.7.7 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.springframework.data#spring-data-jpa;1.7.1.RELEASE->org.slf4j#slf4j-api;1.7.7 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.springframework.data#spring-data-jpa;1.7.1.RELEASE->org.slf4j#jcl-over-slf4j;1.7.7 [runtime->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.springframework.data#spring-data-jpa;1.7.1.RELEASE->org.slf4j#jcl-over-slf4j;1.7.7 [runtime->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.springframework.data#spring-data-jpa;1.7.1.RELEASE->org.slf4j#jcl-over-slf4j;1.7.7 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.springframework.data#spring-data-jpa;1.7.1.RELEASE->org.slf4j#jcl-over-slf4j;1.7.7 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.springframework.data#spring-data-jpa;1.7.1.RELEASE->org.slf4j#jcl-over-slf4j;1.7.7 [runtime->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_backend#apachecmda_backend_2.11;1.0-SNAPSHOT->org.springframework.data#spring-data-jpa;1.7.1.RELEASE [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_backend#apachecmda_backend_2.11;1.0-SNAPSHOT->org.springframework#spring-expression;4.1.4.RELEASE [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_backend#apachecmda_backend_2.11;1.0-SNAPSHOT->org.springframework#spring-expression;4.1.4.RELEASE [compile->runtime][0m
@@ -12495,15 +12495,15 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.specs2#specs2-mock_2.11;2.3.12->org.mockito#mockito-core;1.10.19 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.mockito#mockito-core;1.10.19->org.hamcrest#hamcrest-core;1.1 [runtime->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.mockito#mockito-core;1.10.19->org.hamcrest#hamcrest-core;1.3 [runtime->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.mockito#mockito-core;1.10.19->org.hamcrest#hamcrest-core;1.1 [runtime->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.mockito#mockito-core;1.10.19->org.hamcrest#hamcrest-core;1.3 [runtime->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.mockito#mockito-core;1.10.19->org.hamcrest#hamcrest-core;1.1 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.mockito#mockito-core;1.10.19->org.hamcrest#hamcrest-core;1.3 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.mockito#mockito-core;1.10.19->org.hamcrest#hamcrest-core;1.3 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.mockito#mockito-core;1.10.19->org.hamcrest#hamcrest-core;1.1 [runtime->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.mockito#mockito-core;1.10.19->org.hamcrest#hamcrest-core;1.3 [runtime->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.mockito#mockito-core;1.10.19->org.objenesis#objenesis;2.1 [runtime->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.mockito#mockito-core;1.10.19->org.objenesis#objenesis;2.1 [runtime->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.mockito#mockito-core;1.10.19->org.objenesis#objenesis;2.1 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.mockito#mockito-core;1.10.19->org.objenesis#objenesis;2.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.mockito#mockito-core;1.10.19->org.objenesis#objenesis;2.1 [runtime->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-test_2.11;2.3.7->org.specs2#specs2-matcher-extra_2.11;2.3.12 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-test_2.11;2.3.7->org.specs2#specs2-matcher-extra_2.11;2.3.12 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.specs2#specs2-matcher-extra_2.11;2.3.12->org.scala-lang#scala-library;2.11.0 [runtime->runtime(*)][0m
@@ -13482,13 +13482,13 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.springframework.data#spring-data-commons;1.9.1.RELEASE->org.slf4j#slf4j-api;1.7.7 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.springframework.data#spring-data-commons;1.9.1.RELEASE->org.slf4j#slf4j-api;1.7.7 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.springframework.data#spring-data-commons;1.9.1.RELEASE->org.slf4j#jcl-over-slf4j;1.7.7 [runtime->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.springframework.data#spring-data-commons;1.9.1.RELEASE->org.slf4j#jcl-over-slf4j;1.7.7 [runtime->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.slf4j#jcl-over-slf4j;1.7.7->org.slf4j#slf4j-api;1.7.7 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.slf4j#jcl-over-slf4j;1.7.7->org.slf4j#slf4j-api;1.7.7 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.springframework.data#spring-data-commons;1.9.1.RELEASE->org.slf4j#jcl-over-slf4j;1.7.7 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.springframework.data#spring-data-commons;1.9.1.RELEASE->org.slf4j#jcl-over-slf4j;1.7.7 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.slf4j#jcl-over-slf4j;1.7.7->org.slf4j#slf4j-api;1.7.7 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.slf4j#jcl-over-slf4j;1.7.7->org.slf4j#slf4j-api;1.7.7 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.slf4j#jcl-over-slf4j;1.7.7->org.slf4j#slf4j-api;1.7.7 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.slf4j#jcl-over-slf4j;1.7.7->org.slf4j#slf4j-api;1.7.7 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.springframework.data#spring-data-commons;1.9.1.RELEASE->org.slf4j#jcl-over-slf4j;1.7.7 [runtime->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.springframework.data#spring-data-jpa;1.7.1.RELEASE->org.springframework#spring-orm;4.0.7.RELEASE [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.springframework.data#spring-data-jpa;1.7.1.RELEASE->org.springframework#spring-orm;4.0.7.RELEASE [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.springframework#spring-orm;4.0.7.RELEASE->org.springframework#spring-beans;4.0.7.RELEASE [runtime->runtime(*)][0m
@@ -13534,9 +13534,9 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.springframework.data#spring-data-jpa;1.7.1.RELEASE->org.slf4j#slf4j-api;1.7.7 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.springframework.data#spring-data-jpa;1.7.1.RELEASE->org.slf4j#slf4j-api;1.7.7 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.springframework.data#spring-data-jpa;1.7.1.RELEASE->org.slf4j#jcl-over-slf4j;1.7.7 [runtime->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.springframework.data#spring-data-jpa;1.7.1.RELEASE->org.slf4j#jcl-over-slf4j;1.7.7 [runtime->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.springframework.data#spring-data-jpa;1.7.1.RELEASE->org.slf4j#jcl-over-slf4j;1.7.7 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.springframework.data#spring-data-jpa;1.7.1.RELEASE->org.slf4j#jcl-over-slf4j;1.7.7 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.springframework.data#spring-data-jpa;1.7.1.RELEASE->org.slf4j#jcl-over-slf4j;1.7.7 [runtime->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_backend#apachecmda_backend_2.11;1.0-SNAPSHOT->org.springframework.data#spring-data-jpa;1.7.1.RELEASE [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_backend#apachecmda_backend_2.11;1.0-SNAPSHOT->org.springframework#spring-expression;4.1.4.RELEASE [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_backend#apachecmda_backend_2.11;1.0-SNAPSHOT->org.springframework#spring-expression;4.1.4.RELEASE [compile->runtime][0m
@@ -14660,15 +14660,15 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.specs2#specs2-mock_2.11;2.3.12->org.mockito#mockito-core;1.10.19 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.mockito#mockito-core;1.10.19->org.hamcrest#hamcrest-core;1.1 [runtime->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.mockito#mockito-core;1.10.19->org.hamcrest#hamcrest-core;1.3 [runtime->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.mockito#mockito-core;1.10.19->org.hamcrest#hamcrest-core;1.1 [runtime->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.mockito#mockito-core;1.10.19->org.hamcrest#hamcrest-core;1.3 [runtime->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.mockito#mockito-core;1.10.19->org.hamcrest#hamcrest-core;1.1 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.mockito#mockito-core;1.10.19->org.hamcrest#hamcrest-core;1.3 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.mockito#mockito-core;1.10.19->org.hamcrest#hamcrest-core;1.3 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.mockito#mockito-core;1.10.19->org.hamcrest#hamcrest-core;1.1 [runtime->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.mockito#mockito-core;1.10.19->org.hamcrest#hamcrest-core;1.3 [runtime->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.mockito#mockito-core;1.10.19->org.objenesis#objenesis;2.1 [runtime->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.mockito#mockito-core;1.10.19->org.objenesis#objenesis;2.1 [runtime->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.mockito#mockito-core;1.10.19->org.objenesis#objenesis;2.1 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.mockito#mockito-core;1.10.19->org.objenesis#objenesis;2.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.mockito#mockito-core;1.10.19->org.objenesis#objenesis;2.1 [runtime->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-test_2.11;2.3.7->org.specs2#specs2-matcher-extra_2.11;2.3.12 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.play#play-test_2.11;2.3.7->org.specs2#specs2-matcher-extra_2.11;2.3.12 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.specs2#specs2-matcher-extra_2.11;2.3.12->org.scala-lang#scala-library;2.11.0 [runtime->runtime(*)][0m
@@ -14940,7 +14940,6 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.play#play-ws_2.11;2.3.7!play-ws_2.11.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.ning#async-http-client;1.8.14!async-http-client.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] oauth.signpost#signpost-core;1.2.1.2!signpost-core.jar[0m
-[0m[[0mdebug[0m] [0m	[NOT REQUIRED] oauth.signpost#signpost-core;1.2.1.2!signpost-core.jar(test-jar)[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] oauth.signpost#signpost-commonshttp4;1.2.1.2!signpost-commonshttp4.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.apache.httpcomponents#httpcore;4.0.1!httpcore.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.apache.httpcomponents#httpclient;4.0.1!httpclient.jar[0m
@@ -15039,24 +15038,24 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.aspectj#aspectjweaver;1.7.3!aspectjweaver.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.trace#trace-sigar-libs;0.1.7!trace-sigar-libs.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.jacoco#org.jacoco.agent;0.7.1.201405082137!org.jacoco.agent.jar[0m
-[0m[[0mdebug[0m] [0m:: resolution report :: resolve 6127ms :: artifacts dl 216ms[0m
-[0m[[0mdebug[0m] [0m	report for apachecmda_backend#apachecmda_backend_2.11;1.0-SNAPSHOT compile produced in /Users/Victoria/Documents/18655/team12/SOC-Fall-2015/ApacheCMDA-Backend/target/resolution-cache/reports/apachecmda_backend-apachecmda_backend_2.11-compile.xml[0m
-[0m[[0mdebug[0m] [0m	report for apachecmda_backend#apachecmda_backend_2.11;1.0-SNAPSHOT runtime produced in /Users/Victoria/Documents/18655/team12/SOC-Fall-2015/ApacheCMDA-Backend/target/resolution-cache/reports/apachecmda_backend-apachecmda_backend_2.11-runtime.xml[0m
-[0m[[0mdebug[0m] [0m	report for apachecmda_backend#apachecmda_backend_2.11;1.0-SNAPSHOT test produced in /Users/Victoria/Documents/18655/team12/SOC-Fall-2015/ApacheCMDA-Backend/target/resolution-cache/reports/apachecmda_backend-apachecmda_backend_2.11-test.xml[0m
-[0m[[0mdebug[0m] [0m	report for apachecmda_backend#apachecmda_backend_2.11;1.0-SNAPSHOT provided produced in /Users/Victoria/Documents/18655/team12/SOC-Fall-2015/ApacheCMDA-Backend/target/resolution-cache/reports/apachecmda_backend-apachecmda_backend_2.11-provided.xml[0m
-[0m[[0mdebug[0m] [0m	report for apachecmda_backend#apachecmda_backend_2.11;1.0-SNAPSHOT optional produced in /Users/Victoria/Documents/18655/team12/SOC-Fall-2015/ApacheCMDA-Backend/target/resolution-cache/reports/apachecmda_backend-apachecmda_backend_2.11-optional.xml[0m
-[0m[[0mdebug[0m] [0m	report for apachecmda_backend#apachecmda_backend_2.11;1.0-SNAPSHOT compile-internal produced in /Users/Victoria/Documents/18655/team12/SOC-Fall-2015/ApacheCMDA-Backend/target/resolution-cache/reports/apachecmda_backend-apachecmda_backend_2.11-compile-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for apachecmda_backend#apachecmda_backend_2.11;1.0-SNAPSHOT runtime-internal produced in /Users/Victoria/Documents/18655/team12/SOC-Fall-2015/ApacheCMDA-Backend/target/resolution-cache/reports/apachecmda_backend-apachecmda_backend_2.11-runtime-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for apachecmda_backend#apachecmda_backend_2.11;1.0-SNAPSHOT test-internal produced in /Users/Victoria/Documents/18655/team12/SOC-Fall-2015/ApacheCMDA-Backend/target/resolution-cache/reports/apachecmda_backend-apachecmda_backend_2.11-test-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for apachecmda_backend#apachecmda_backend_2.11;1.0-SNAPSHOT plugin produced in /Users/Victoria/Documents/18655/team12/SOC-Fall-2015/ApacheCMDA-Backend/target/resolution-cache/reports/apachecmda_backend-apachecmda_backend_2.11-plugin.xml[0m
-[0m[[0mdebug[0m] [0m	report for apachecmda_backend#apachecmda_backend_2.11;1.0-SNAPSHOT sources produced in /Users/Victoria/Documents/18655/team12/SOC-Fall-2015/ApacheCMDA-Backend/target/resolution-cache/reports/apachecmda_backend-apachecmda_backend_2.11-sources.xml[0m
-[0m[[0mdebug[0m] [0m	report for apachecmda_backend#apachecmda_backend_2.11;1.0-SNAPSHOT docs produced in /Users/Victoria/Documents/18655/team12/SOC-Fall-2015/ApacheCMDA-Backend/target/resolution-cache/reports/apachecmda_backend-apachecmda_backend_2.11-docs.xml[0m
-[0m[[0mdebug[0m] [0m	report for apachecmda_backend#apachecmda_backend_2.11;1.0-SNAPSHOT pom produced in /Users/Victoria/Documents/18655/team12/SOC-Fall-2015/ApacheCMDA-Backend/target/resolution-cache/reports/apachecmda_backend-apachecmda_backend_2.11-pom.xml[0m
-[0m[[0mdebug[0m] [0m	report for apachecmda_backend#apachecmda_backend_2.11;1.0-SNAPSHOT scala-tool produced in /Users/Victoria/Documents/18655/team12/SOC-Fall-2015/ApacheCMDA-Backend/target/resolution-cache/reports/apachecmda_backend-apachecmda_backend_2.11-scala-tool.xml[0m
-[0m[[0mdebug[0m] [0m	report for apachecmda_backend#apachecmda_backend_2.11;1.0-SNAPSHOT echo-trace-compile produced in /Users/Victoria/Documents/18655/team12/SOC-Fall-2015/ApacheCMDA-Backend/target/resolution-cache/reports/apachecmda_backend-apachecmda_backend_2.11-echo-trace-compile.xml[0m
-[0m[[0mdebug[0m] [0m	report for apachecmda_backend#apachecmda_backend_2.11;1.0-SNAPSHOT echo-trace-test produced in /Users/Victoria/Documents/18655/team12/SOC-Fall-2015/ApacheCMDA-Backend/target/resolution-cache/reports/apachecmda_backend-apachecmda_backend_2.11-echo-trace-test.xml[0m
-[0m[[0mdebug[0m] [0m	report for apachecmda_backend#apachecmda_backend_2.11;1.0-SNAPSHOT echo-weave produced in /Users/Victoria/Documents/18655/team12/SOC-Fall-2015/ApacheCMDA-Backend/target/resolution-cache/reports/apachecmda_backend-apachecmda_backend_2.11-echo-weave.xml[0m
-[0m[[0mdebug[0m] [0m	report for apachecmda_backend#apachecmda_backend_2.11;1.0-SNAPSHOT echo-sigar produced in /Users/Victoria/Documents/18655/team12/SOC-Fall-2015/ApacheCMDA-Backend/target/resolution-cache/reports/apachecmda_backend-apachecmda_backend_2.11-echo-sigar.xml[0m
-[0m[[0mdebug[0m] [0m	report for apachecmda_backend#apachecmda_backend_2.11;1.0-SNAPSHOT jacoco produced in /Users/Victoria/Documents/18655/team12/SOC-Fall-2015/ApacheCMDA-Backend/target/resolution-cache/reports/apachecmda_backend-apachecmda_backend_2.11-jacoco.xml[0m
-[0m[[0mdebug[0m] [0m	resolve done (6127ms resolve - 216ms download)[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 2673ms :: artifacts dl 57ms[0m
+[0m[[0mdebug[0m] [0m	report for apachecmda_backend#apachecmda_backend_2.11;1.0-SNAPSHOT compile produced in /Users/feifei/SOC-Fall-2015-Team12/ApacheCMDA-Backend/target/resolution-cache/reports/apachecmda_backend-apachecmda_backend_2.11-compile.xml[0m
+[0m[[0mdebug[0m] [0m	report for apachecmda_backend#apachecmda_backend_2.11;1.0-SNAPSHOT runtime produced in /Users/feifei/SOC-Fall-2015-Team12/ApacheCMDA-Backend/target/resolution-cache/reports/apachecmda_backend-apachecmda_backend_2.11-runtime.xml[0m
+[0m[[0mdebug[0m] [0m	report for apachecmda_backend#apachecmda_backend_2.11;1.0-SNAPSHOT test produced in /Users/feifei/SOC-Fall-2015-Team12/ApacheCMDA-Backend/target/resolution-cache/reports/apachecmda_backend-apachecmda_backend_2.11-test.xml[0m
+[0m[[0mdebug[0m] [0m	report for apachecmda_backend#apachecmda_backend_2.11;1.0-SNAPSHOT provided produced in /Users/feifei/SOC-Fall-2015-Team12/ApacheCMDA-Backend/target/resolution-cache/reports/apachecmda_backend-apachecmda_backend_2.11-provided.xml[0m
+[0m[[0mdebug[0m] [0m	report for apachecmda_backend#apachecmda_backend_2.11;1.0-SNAPSHOT optional produced in /Users/feifei/SOC-Fall-2015-Team12/ApacheCMDA-Backend/target/resolution-cache/reports/apachecmda_backend-apachecmda_backend_2.11-optional.xml[0m
+[0m[[0mdebug[0m] [0m	report for apachecmda_backend#apachecmda_backend_2.11;1.0-SNAPSHOT compile-internal produced in /Users/feifei/SOC-Fall-2015-Team12/ApacheCMDA-Backend/target/resolution-cache/reports/apachecmda_backend-apachecmda_backend_2.11-compile-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for apachecmda_backend#apachecmda_backend_2.11;1.0-SNAPSHOT runtime-internal produced in /Users/feifei/SOC-Fall-2015-Team12/ApacheCMDA-Backend/target/resolution-cache/reports/apachecmda_backend-apachecmda_backend_2.11-runtime-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for apachecmda_backend#apachecmda_backend_2.11;1.0-SNAPSHOT test-internal produced in /Users/feifei/SOC-Fall-2015-Team12/ApacheCMDA-Backend/target/resolution-cache/reports/apachecmda_backend-apachecmda_backend_2.11-test-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for apachecmda_backend#apachecmda_backend_2.11;1.0-SNAPSHOT plugin produced in /Users/feifei/SOC-Fall-2015-Team12/ApacheCMDA-Backend/target/resolution-cache/reports/apachecmda_backend-apachecmda_backend_2.11-plugin.xml[0m
+[0m[[0mdebug[0m] [0m	report for apachecmda_backend#apachecmda_backend_2.11;1.0-SNAPSHOT sources produced in /Users/feifei/SOC-Fall-2015-Team12/ApacheCMDA-Backend/target/resolution-cache/reports/apachecmda_backend-apachecmda_backend_2.11-sources.xml[0m
+[0m[[0mdebug[0m] [0m	report for apachecmda_backend#apachecmda_backend_2.11;1.0-SNAPSHOT docs produced in /Users/feifei/SOC-Fall-2015-Team12/ApacheCMDA-Backend/target/resolution-cache/reports/apachecmda_backend-apachecmda_backend_2.11-docs.xml[0m
+[0m[[0mdebug[0m] [0m	report for apachecmda_backend#apachecmda_backend_2.11;1.0-SNAPSHOT pom produced in /Users/feifei/SOC-Fall-2015-Team12/ApacheCMDA-Backend/target/resolution-cache/reports/apachecmda_backend-apachecmda_backend_2.11-pom.xml[0m
+[0m[[0mdebug[0m] [0m	report for apachecmda_backend#apachecmda_backend_2.11;1.0-SNAPSHOT scala-tool produced in /Users/feifei/SOC-Fall-2015-Team12/ApacheCMDA-Backend/target/resolution-cache/reports/apachecmda_backend-apachecmda_backend_2.11-scala-tool.xml[0m
+[0m[[0mdebug[0m] [0m	report for apachecmda_backend#apachecmda_backend_2.11;1.0-SNAPSHOT echo-trace-compile produced in /Users/feifei/SOC-Fall-2015-Team12/ApacheCMDA-Backend/target/resolution-cache/reports/apachecmda_backend-apachecmda_backend_2.11-echo-trace-compile.xml[0m
+[0m[[0mdebug[0m] [0m	report for apachecmda_backend#apachecmda_backend_2.11;1.0-SNAPSHOT echo-trace-test produced in /Users/feifei/SOC-Fall-2015-Team12/ApacheCMDA-Backend/target/resolution-cache/reports/apachecmda_backend-apachecmda_backend_2.11-echo-trace-test.xml[0m
+[0m[[0mdebug[0m] [0m	report for apachecmda_backend#apachecmda_backend_2.11;1.0-SNAPSHOT echo-weave produced in /Users/feifei/SOC-Fall-2015-Team12/ApacheCMDA-Backend/target/resolution-cache/reports/apachecmda_backend-apachecmda_backend_2.11-echo-weave.xml[0m
+[0m[[0mdebug[0m] [0m	report for apachecmda_backend#apachecmda_backend_2.11;1.0-SNAPSHOT echo-sigar produced in /Users/feifei/SOC-Fall-2015-Team12/ApacheCMDA-Backend/target/resolution-cache/reports/apachecmda_backend-apachecmda_backend_2.11-echo-sigar.xml[0m
+[0m[[0mdebug[0m] [0m	report for apachecmda_backend#apachecmda_backend_2.11;1.0-SNAPSHOT jacoco produced in /Users/feifei/SOC-Fall-2015-Team12/ApacheCMDA-Backend/target/resolution-cache/reports/apachecmda_backend-apachecmda_backend_2.11-jacoco.xml[0m
+[0m[[0mdebug[0m] [0m	resolve done (2673ms resolve - 57ms download)[0m
 [0m[[0minfo[0m] [0mDone updating.[0m

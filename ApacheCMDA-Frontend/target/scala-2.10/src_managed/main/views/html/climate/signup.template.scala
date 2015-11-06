@@ -53,35 +53,36 @@ object signup extends BaseScalaTemplate[play.api.templates.HtmlFormat.Appendable
  * See the License for the specific language governing permissions and         *
  * limitations under the License.											   *
  *******************************************************************************/
-    def apply/*18.2*/(message: String):play.api.templates.HtmlFormat.Appendable = {
+    def apply/*18.2*/(userName: String):play.api.templates.HtmlFormat.Appendable = {
         _display_ {
 
-Seq[Any](format.raw/*18.19*/("""
+Seq[Any](format.raw/*18.20*/("""
 
 """),_display_(Seq[Any](/*20.2*/main("About Us")/*20.18*/ {_display_(Seq[Any](format.raw/*20.20*/("""
 
    <h1>Login</h1>
    	<div class="jumbotron">
-   <p>This is a sign up page!</p>
+   <p>Hello """),_display_(Seq[Any](/*24.14*/userName)),format.raw/*24.22*/("""</p>
    <br>
 </div>
-""")))})))}
+""")))})),format.raw/*27.2*/("""
+"""))}
     }
     
-    def render(message:String): play.api.templates.HtmlFormat.Appendable = apply(message)
+    def render(userName:String): play.api.templates.HtmlFormat.Appendable = apply(userName)
     
-    def f:((String) => play.api.templates.HtmlFormat.Appendable) = (message) => apply(message)
+    def f:((String) => play.api.templates.HtmlFormat.Appendable) = (userName) => apply(userName)
     
     def ref: this.type = this
 
 }
                 /*
                     -- GENERATED --
-                    DATE: Thu Nov 05 18:32:17 PST 2015
-                    SOURCE: /Users/Qiyao/SOC-Fall-2015/ApacheCMDA-Frontend/app/views/climate/signup.scala.html
-                    HASH: 7ffa743987af1b61c63cc47b92ccefcc4537471f
-                    MATRIX: 3178->1205|3290->1222|3328->1225|3353->1241|3393->1243
-                    LINES: 56->18|59->18|61->20|61->20|61->20
+                    DATE: Fri Nov 06 13:49:04 PST 2015
+                    SOURCE: /Users/feifei/SOC-Fall-2015-Team12/ApacheCMDA-Frontend/app/views/climate/signup.scala.html
+                    HASH: 762f6e544345bac46b84156ff9482d5fc73c3563
+                    MATRIX: 3178->1204|3291->1222|3329->1225|3354->1241|3394->1243|3491->1304|3521->1312|3573->1333
+                    LINES: 56->18|59->18|61->20|61->20|61->20|65->24|65->24|68->27
                     -- GENERATED --
                 */
             

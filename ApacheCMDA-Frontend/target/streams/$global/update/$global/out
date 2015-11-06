@@ -1,4 +1,4 @@
-[0m[[0minfo[0m] [0mUpdating {file:/Users/Qiyao/SOC-Fall-2015/ApacheCMDA-Frontend/}apachecmda-frontend...[0m
+[0m[[0minfo[0m] [0mUpdating {file:/Users/feifei/SOC-Fall-2015-Team12/ApacheCMDA-Frontend/}apachecmda-frontend...[0m
 [0m[[0mdebug[0m] [0m:: resolving dependencies :: apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT[0m
 [0m[[0mdebug[0m] [0m	confs: [compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool, echo-trace-compile, echo-trace-test, echo-weave, echo-sigar][0m
 [0m[[0mdebug[0m] [0m	validate = true[0m
@@ -7,7 +7,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies for apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT [compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT->org.scala-lang#scala-library;2.10.3 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving org.scala-lang#scala-library;2.10.3 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4fd32db5[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@68d77fff[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang#scala-library;2.10.3[0m
 [0m[[0mdebug[0m] [0m	local: revision in cache: org.scala-lang#scala-library;2.10.3[0m
 [0m[[0mdebug[0m] [0m	found org.scala-lang#scala-library;2.10.3 in sbt-chain[0m
@@ -1028,10 +1028,10 @@
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: joda-time#joda-time;[2.2,) {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mdefault-cache: cached resolved revision expired for joda-time#joda-time;[2.2,)[0m
 [0m[[0mdebug[0m] [0mdefault-cache: cached resolved revision expired for joda-time#joda-time;[2.2,)[0m
-[0m[[0mdebug[0m] [0m		tried /Users/Qiyao/.ivy2/local/joda-time/joda-time/[revision]/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m		tried /Users/feifei/.ivy2/local/joda-time/joda-time/[revision]/ivys/ivy.xml[0m
 [0m[[0mdebug[0m] [0m	local: no ivy file found for joda-time#joda-time;[2.2,)[0m
 [0m[[0mdebug[0m] [0mdefault-cache: cached resolved revision expired for joda-time#joda-time;[2.2,)[0m
-[0m[[0mdebug[0m] [0m		tried file:/Users/Qiyao/SOC-Fall-2015/ApacheCMDA-Frontend/repository/joda-time/joda-time/[revision]/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m		tried file:/Users/feifei/SOC-Fall-2015-Team12/ApacheCMDA-Frontend/repository/joda-time/joda-time/[revision]/ivys/ivy.xml[0m
 [0m[[0mdebug[0m] [0m	activator-local: no ivy file found for joda-time#joda-time;[2.2,)[0m
 [0m[[0mdebug[0m] [0mdefault-cache: cached resolved revision expired for joda-time#joda-time;[2.2,)[0m
 [0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/joda-time/joda-time/[revision]/joda-time-[revision].pom[0m
@@ -7307,7 +7307,6 @@
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang#scala-library;2.10.4[0m
 [0m[[0mdebug[0m] [0m	local: revision in cache: org.scala-lang#scala-library;2.10.4[0m
 [0m[[0mdebug[0m] [0m	found org.scala-lang#scala-library;2.10.4 in sbt-chain[0m
-[0m[[0mdebug[0m] [0m	[2.10.4] org.scala-lang#scala-library;2.10.4[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.trace#trace-play-2.2.3;0.1.5->org.scala-lang#scala-library;2.10.4 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.trace#trace-play-2.2.3;0.1.5->org.scala-lang#scala-library;2.10.4 [compile->default][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.trace#trace-play-2.2.3;0.1.5->org.scala-lang#scala-library;2.10.4 [compile->runtime][0m
@@ -9202,7 +9201,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT->com.typesafe.trace#trace-sigar-libs;0.1.5 [echo-sigar->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT->com.typesafe.trace#trace-sigar-libs;0.1.5 [echo-sigar->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT->com.typesafe.trace#trace-sigar-libs;0.1.5 [echo-sigar->master][0m
-[0m[[0mdebug[0m] [0m	resolved ivy file produced in /Users/Qiyao/SOC-Fall-2015/ApacheCMDA-Frontend/target/resolution-cache/apachecmda_frontend/apachecmda_frontend_2.10/1.0-SNAPSHOT/resolved.xml.xml[0m
+[0m[[0mdebug[0m] [0m	resolved ivy file produced in /Users/feifei/SOC-Fall-2015-Team12/ApacheCMDA-Frontend/target/resolution-cache/apachecmda_frontend/apachecmda_frontend_2.10/1.0-SNAPSHOT/resolved.xml.xml[0m
 [0m[[0mdebug[0m] [0m:: downloading artifacts ::[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-library;2.10.3!scala-library.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.play#play-java-jdbc_2.10;2.2.3!play-java-jdbc_2.10.jar[0m
@@ -9357,23 +9356,23 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] log4j#log4j;1.2.15!log4j.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.aspectj#aspectjweaver;1.7.3!aspectjweaver.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.trace#trace-sigar-libs;0.1.5!trace-sigar-libs.jar[0m
-[0m[[0mdebug[0m] [0m:: resolution report :: resolve 4236ms :: artifacts dl 111ms[0m
-[0m[[0mdebug[0m] [0m	report for apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT compile produced in /Users/Qiyao/SOC-Fall-2015/ApacheCMDA-Frontend/target/resolution-cache/reports/apachecmda_frontend-apachecmda_frontend_2.10-compile.xml[0m
-[0m[[0mdebug[0m] [0m	report for apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT runtime produced in /Users/Qiyao/SOC-Fall-2015/ApacheCMDA-Frontend/target/resolution-cache/reports/apachecmda_frontend-apachecmda_frontend_2.10-runtime.xml[0m
-[0m[[0mdebug[0m] [0m	report for apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT test produced in /Users/Qiyao/SOC-Fall-2015/ApacheCMDA-Frontend/target/resolution-cache/reports/apachecmda_frontend-apachecmda_frontend_2.10-test.xml[0m
-[0m[[0mdebug[0m] [0m	report for apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT provided produced in /Users/Qiyao/SOC-Fall-2015/ApacheCMDA-Frontend/target/resolution-cache/reports/apachecmda_frontend-apachecmda_frontend_2.10-provided.xml[0m
-[0m[[0mdebug[0m] [0m	report for apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT optional produced in /Users/Qiyao/SOC-Fall-2015/ApacheCMDA-Frontend/target/resolution-cache/reports/apachecmda_frontend-apachecmda_frontend_2.10-optional.xml[0m
-[0m[[0mdebug[0m] [0m	report for apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT compile-internal produced in /Users/Qiyao/SOC-Fall-2015/ApacheCMDA-Frontend/target/resolution-cache/reports/apachecmda_frontend-apachecmda_frontend_2.10-compile-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT runtime-internal produced in /Users/Qiyao/SOC-Fall-2015/ApacheCMDA-Frontend/target/resolution-cache/reports/apachecmda_frontend-apachecmda_frontend_2.10-runtime-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT test-internal produced in /Users/Qiyao/SOC-Fall-2015/ApacheCMDA-Frontend/target/resolution-cache/reports/apachecmda_frontend-apachecmda_frontend_2.10-test-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT plugin produced in /Users/Qiyao/SOC-Fall-2015/ApacheCMDA-Frontend/target/resolution-cache/reports/apachecmda_frontend-apachecmda_frontend_2.10-plugin.xml[0m
-[0m[[0mdebug[0m] [0m	report for apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT sources produced in /Users/Qiyao/SOC-Fall-2015/ApacheCMDA-Frontend/target/resolution-cache/reports/apachecmda_frontend-apachecmda_frontend_2.10-sources.xml[0m
-[0m[[0mdebug[0m] [0m	report for apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT docs produced in /Users/Qiyao/SOC-Fall-2015/ApacheCMDA-Frontend/target/resolution-cache/reports/apachecmda_frontend-apachecmda_frontend_2.10-docs.xml[0m
-[0m[[0mdebug[0m] [0m	report for apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT pom produced in /Users/Qiyao/SOC-Fall-2015/ApacheCMDA-Frontend/target/resolution-cache/reports/apachecmda_frontend-apachecmda_frontend_2.10-pom.xml[0m
-[0m[[0mdebug[0m] [0m	report for apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT scala-tool produced in /Users/Qiyao/SOC-Fall-2015/ApacheCMDA-Frontend/target/resolution-cache/reports/apachecmda_frontend-apachecmda_frontend_2.10-scala-tool.xml[0m
-[0m[[0mdebug[0m] [0m	report for apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT echo-trace-compile produced in /Users/Qiyao/SOC-Fall-2015/ApacheCMDA-Frontend/target/resolution-cache/reports/apachecmda_frontend-apachecmda_frontend_2.10-echo-trace-compile.xml[0m
-[0m[[0mdebug[0m] [0m	report for apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT echo-trace-test produced in /Users/Qiyao/SOC-Fall-2015/ApacheCMDA-Frontend/target/resolution-cache/reports/apachecmda_frontend-apachecmda_frontend_2.10-echo-trace-test.xml[0m
-[0m[[0mdebug[0m] [0m	report for apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT echo-weave produced in /Users/Qiyao/SOC-Fall-2015/ApacheCMDA-Frontend/target/resolution-cache/reports/apachecmda_frontend-apachecmda_frontend_2.10-echo-weave.xml[0m
-[0m[[0mdebug[0m] [0m	report for apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT echo-sigar produced in /Users/Qiyao/SOC-Fall-2015/ApacheCMDA-Frontend/target/resolution-cache/reports/apachecmda_frontend-apachecmda_frontend_2.10-echo-sigar.xml[0m
-[0m[[0mdebug[0m] [0m	resolve done (4236ms resolve - 111ms download)[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 2931ms :: artifacts dl 66ms[0m
+[0m[[0mdebug[0m] [0m	report for apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT compile produced in /Users/feifei/SOC-Fall-2015-Team12/ApacheCMDA-Frontend/target/resolution-cache/reports/apachecmda_frontend-apachecmda_frontend_2.10-compile.xml[0m
+[0m[[0mdebug[0m] [0m	report for apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT runtime produced in /Users/feifei/SOC-Fall-2015-Team12/ApacheCMDA-Frontend/target/resolution-cache/reports/apachecmda_frontend-apachecmda_frontend_2.10-runtime.xml[0m
+[0m[[0mdebug[0m] [0m	report for apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT test produced in /Users/feifei/SOC-Fall-2015-Team12/ApacheCMDA-Frontend/target/resolution-cache/reports/apachecmda_frontend-apachecmda_frontend_2.10-test.xml[0m
+[0m[[0mdebug[0m] [0m	report for apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT provided produced in /Users/feifei/SOC-Fall-2015-Team12/ApacheCMDA-Frontend/target/resolution-cache/reports/apachecmda_frontend-apachecmda_frontend_2.10-provided.xml[0m
+[0m[[0mdebug[0m] [0m	report for apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT optional produced in /Users/feifei/SOC-Fall-2015-Team12/ApacheCMDA-Frontend/target/resolution-cache/reports/apachecmda_frontend-apachecmda_frontend_2.10-optional.xml[0m
+[0m[[0mdebug[0m] [0m	report for apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT compile-internal produced in /Users/feifei/SOC-Fall-2015-Team12/ApacheCMDA-Frontend/target/resolution-cache/reports/apachecmda_frontend-apachecmda_frontend_2.10-compile-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT runtime-internal produced in /Users/feifei/SOC-Fall-2015-Team12/ApacheCMDA-Frontend/target/resolution-cache/reports/apachecmda_frontend-apachecmda_frontend_2.10-runtime-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT test-internal produced in /Users/feifei/SOC-Fall-2015-Team12/ApacheCMDA-Frontend/target/resolution-cache/reports/apachecmda_frontend-apachecmda_frontend_2.10-test-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT plugin produced in /Users/feifei/SOC-Fall-2015-Team12/ApacheCMDA-Frontend/target/resolution-cache/reports/apachecmda_frontend-apachecmda_frontend_2.10-plugin.xml[0m
+[0m[[0mdebug[0m] [0m	report for apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT sources produced in /Users/feifei/SOC-Fall-2015-Team12/ApacheCMDA-Frontend/target/resolution-cache/reports/apachecmda_frontend-apachecmda_frontend_2.10-sources.xml[0m
+[0m[[0mdebug[0m] [0m	report for apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT docs produced in /Users/feifei/SOC-Fall-2015-Team12/ApacheCMDA-Frontend/target/resolution-cache/reports/apachecmda_frontend-apachecmda_frontend_2.10-docs.xml[0m
+[0m[[0mdebug[0m] [0m	report for apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT pom produced in /Users/feifei/SOC-Fall-2015-Team12/ApacheCMDA-Frontend/target/resolution-cache/reports/apachecmda_frontend-apachecmda_frontend_2.10-pom.xml[0m
+[0m[[0mdebug[0m] [0m	report for apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT scala-tool produced in /Users/feifei/SOC-Fall-2015-Team12/ApacheCMDA-Frontend/target/resolution-cache/reports/apachecmda_frontend-apachecmda_frontend_2.10-scala-tool.xml[0m
+[0m[[0mdebug[0m] [0m	report for apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT echo-trace-compile produced in /Users/feifei/SOC-Fall-2015-Team12/ApacheCMDA-Frontend/target/resolution-cache/reports/apachecmda_frontend-apachecmda_frontend_2.10-echo-trace-compile.xml[0m
+[0m[[0mdebug[0m] [0m	report for apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT echo-trace-test produced in /Users/feifei/SOC-Fall-2015-Team12/ApacheCMDA-Frontend/target/resolution-cache/reports/apachecmda_frontend-apachecmda_frontend_2.10-echo-trace-test.xml[0m
+[0m[[0mdebug[0m] [0m	report for apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT echo-weave produced in /Users/feifei/SOC-Fall-2015-Team12/ApacheCMDA-Frontend/target/resolution-cache/reports/apachecmda_frontend-apachecmda_frontend_2.10-echo-weave.xml[0m
+[0m[[0mdebug[0m] [0m	report for apachecmda_frontend#apachecmda_frontend_2.10;1.0-SNAPSHOT echo-sigar produced in /Users/feifei/SOC-Fall-2015-Team12/ApacheCMDA-Frontend/target/resolution-cache/reports/apachecmda_frontend-apachecmda_frontend_2.10-echo-sigar.xml[0m
+[0m[[0mdebug[0m] [0m	resolve done (2931ms resolve - 66ms download)[0m
 [0m[[0minfo[0m] [0mDone updating.[0m

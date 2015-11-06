@@ -42,10 +42,10 @@
 @helper.form(routes.User.getLoginResult()) {
 <div class="ui-widget col-sm-offset-3 col-sm-7">
    <div class = "form-group">
-      @inputText(userSetForm("User Name"), 'class -> "form-control", 'id -> "username", '_label -> Messages("User Name"), 'placeholder -> "Mike Wang", 'size->40)
+      @inputText(userSetForm("userName"), 'class -> "form-control", 'id -> "username", '_label -> Messages("User Name"), 'placeholder -> "Mike Wang", 'size->40)
    </div>
    <div class = "form-group">
-      @inputText(userSetForm("Password"), 'class -> "form-control", 'id -> "password", '_label -> Messages("Password"), 'placeholder -> "******", 'size->40)
+      @inputText(userSetForm("password"), 'class -> "form-control", 'id -> "password", '_label -> Messages("Password"), 'placeholder -> "******", 'size->40)
    </div>
 
    <div align="center">

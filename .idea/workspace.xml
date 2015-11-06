@@ -1,0 +1,1291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="da9d4cbd-8bc9-4ccc-94f4-efbc870a14f2" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes/controllers/ref/ReverseUserController$$anonfun$deleteUser$1$$anonfun$apply$19.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes/controllers/ref/ReverseUserController$$anonfun$deleteUser$1$$anonfun$apply$20.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes/controllers/ref/ReverseUserController$$anonfun$getAllUsers$1$$anonfun$apply$17.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes/controllers/ref/ReverseUserController$$anonfun$getAllUsers$1$$anonfun$apply$18.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes/controllers/ref/ReverseUserController$$anonfun$updateUser$1$$anonfun$apply$15.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes/controllers/ref/ReverseUserController$$anonfun$updateUser$1$$anonfun$apply$16.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes_managed/Routes$$anonfun$Routes$$controllers_UserController_login39_invoker$1$$anonfun$apply$79.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes_managed/Routes$$anonfun$Routes$$controllers_UserController_login39_invoker$1$$anonfun$apply$80.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes_managed/Routes$$anonfun$Routes$$controllers_UserController_login39_invoker$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes_managed/Routes$$anonfun$Routes$$controllers_UserController_loginWithUserNameAndPassword38_invoker$1$$anonfun$apply$77.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes_managed/Routes$$anonfun$Routes$$controllers_UserController_loginWithUserNameAndPassword38_invoker$1$$anonfun$apply$78.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes_managed/Routes$$anonfun$Routes$$controllers_UserController_loginWithUserNameAndPassword38_invoker$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes_managed/controllers/ref/ReverseUserController$$anonfun$deleteUser$1$$anonfun$apply$19.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes_managed/controllers/ref/ReverseUserController$$anonfun$deleteUser$1$$anonfun$apply$20.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes_managed/controllers/ref/ReverseUserController$$anonfun$getAllUsers$1$$anonfun$apply$17.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes_managed/controllers/ref/ReverseUserController$$anonfun$getAllUsers$1$$anonfun$apply$18.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes_managed/controllers/ref/ReverseUserController$$anonfun$loginWithUserNameAndPassword$1$$anonfun$apply$21.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes_managed/controllers/ref/ReverseUserController$$anonfun$loginWithUserNameAndPassword$1$$anonfun$apply$22.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes_managed/controllers/ref/ReverseUserController$$anonfun$loginWithUserNameAndPassword$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes_managed/controllers/ref/ReverseUserController$$anonfun$updateUser$1$$anonfun$apply$15.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes_managed/controllers/ref/ReverseUserController$$anonfun$updateUser$1$$anonfun$apply$16.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes/models/ClimateService.class" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes/models/ClimateService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes/controllers/ClimateServiceController.class" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes/controllers/ClimateServiceController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes/models/ClimateServiceRepository.class" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes/models/ClimateServiceRepository.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes/util/Common.class" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes/util/Common.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes/util/Constants.class" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes/util/Constants.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes/models/Dataset.class" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes/models/Dataset.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes/controllers/DatasetController.class" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes/controllers/DatasetController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes/models/DatasetEntry.class" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes/models/DatasetEntry.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes/models/DatasetEntryRepository.class" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes/models/DatasetEntryRepository.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes/models/DatasetLog.class" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes/models/DatasetLog.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes/controllers/DatasetLogController.class" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes/controllers/DatasetLogController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes/models/DatasetLogRepository.class" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes/models/DatasetLogRepository.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes/models/DatasetRepository.class" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes/models/DatasetRepository.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes/Global$SpringDataJpaConfiguration.class" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes/Global$SpringDataJpaConfiguration.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes/Global.class" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes/Global.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes/models/Instrument.class" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes/models/Instrument.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes/controllers/InstrumentController.class" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes/controllers/InstrumentController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes/models/InstrumentRepository.class" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes/models/InstrumentRepository.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes/models/Parameter.class" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes/models/Parameter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes/controllers/ParameterController.class" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes/controllers/ParameterController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes/models/ParameterRepository.class" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes/models/ParameterRepository.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes/controllers/ref/ReverseClimateServiceController$$anonfun$getAllClimateServices$1.class" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes/controllers/ref/ReverseClimateServiceController$$anonfun$getAllClimateServices$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes_managed/controllers/ref/ReverseClimateServiceController$$anonfun$getAllClimateServices$1.class" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes_managed/controllers/ref/ReverseClimateServiceController$$anonfun$getAllClimateServices$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes/controllers/ref/ReverseClimateServiceController$$anonfun$getAllClimateServicesOrderByCount$1.class" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes/controllers/ref/ReverseClimateServiceController$$anonfun$getAllClimateServicesOrderByCount$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes_managed/controllers/ref/ReverseClimateServiceController$$anonfun$getAllClimateServicesOrderByCount$1.class" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes_managed/controllers/ref/ReverseClimateServiceController$$anonfun$getAllClimateServicesOrderByCount$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes/controllers/ref/ReverseClimateServiceController$$anonfun$getAllClimateServicesOrderByCreateTime$1.class" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes/controllers/ref/ReverseClimateServiceController$$anonfun$getAllClimateServicesOrderByCreateTime$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes_managed/controllers/ref/ReverseClimateServiceController$$anonfun$getAllClimateServicesOrderByCreateTime$1.class" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes_managed/controllers/ref/ReverseClimateServiceController$$anonfun$getAllClimateServicesOrderByCreateTime$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes/controllers/ref/ReverseClimateServiceController$$anonfun$getAllClimateServicesOrderByLatestAccessTime$1.class" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes/controllers/ref/ReverseClimateServiceController$$anonfun$getAllClimateServicesOrderByLatestAccessTime$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes_managed/controllers/ref/ReverseClimateServiceController$$anonfun$getAllClimateServicesOrderByLatestAccessTime$1.class" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes_managed/controllers/ref/ReverseClimateServiceController$$anonfun$getAllClimateServicesOrderByLatestAccessTime$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes/controllers/ref/ReverseClimateServiceController$$anonfun$getAllServiceEntries$1.class" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes/controllers/ref/ReverseClimateServiceController$$anonfun$getAllServiceEntries$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes_managed/controllers/ref/ReverseClimateServiceController$$anonfun$getAllServiceEntries$1.class" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes_managed/controllers/ref/ReverseClimateServiceController$$anonfun$getAllServiceEntries$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes/controllers/ref/ReverseClimateServiceController$$anonfun$getClimateService$1.class" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes/controllers/ref/ReverseClimateServiceController$$anonfun$getClimateService$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes_managed/controllers/ref/ReverseClimateServiceController$$anonfun$getClimateService$1.class" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes_managed/controllers/ref/ReverseClimateServiceController$$anonfun$getClimateService$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes/controllers/ref/ReverseDatasetController$$anonfun$getAllDatasets$1.class" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes/controllers/ref/ReverseDatasetController$$anonfun$getAllDatasets$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes_managed/controllers/ref/ReverseDatasetController$$anonfun$getAllDatasets$1.class" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes_managed/controllers/ref/ReverseDatasetController$$anonfun$getAllDatasets$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes/controllers/ref/ReverseDatasetController$$anonfun$getDataset$1.class" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes/controllers/ref/ReverseDatasetController$$anonfun$getDataset$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes_managed/controllers/ref/ReverseDatasetController$$anonfun$getDataset$1.class" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes_managed/controllers/ref/ReverseDatasetController$$anonfun$getDataset$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes/controllers/ref/ReverseParameterController$$anonfun$getAllParameters$1.class" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes/controllers/ref/ReverseParameterController$$anonfun$getAllParameters$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes_managed/controllers/ref/ReverseParameterController$$anonfun$getAllParameters$1.class" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes_managed/controllers/ref/ReverseParameterController$$anonfun$getAllParameters$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes/controllers/ref/ReverseParameterController$$anonfun$getParameterById$1.class" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes/controllers/ref/ReverseParameterController$$anonfun$getParameterById$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes_managed/controllers/ref/ReverseParameterController$$anonfun$getParameterById$1.class" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes_managed/controllers/ref/ReverseParameterController$$anonfun$getParameterById$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes/controllers/ref/ReverseParameterController$$anonfun$getParameterByName$1.class" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes/controllers/ref/ReverseParameterController$$anonfun$getParameterByName$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes_managed/controllers/ref/ReverseParameterController$$anonfun$getParameterByName$1.class" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes_managed/controllers/ref/ReverseParameterController$$anonfun$getParameterByName$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes/controllers/ref/ReverseUserController$$anonfun$deleteUser$1.class" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes/controllers/ref/ReverseUserController$$anonfun$deleteUser$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes_managed/controllers/ref/ReverseUserController$$anonfun$deleteUser$1.class" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes_managed/controllers/ref/ReverseUserController$$anonfun$deleteUser$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes/controllers/ref/ReverseUserController$$anonfun$deleteUserByUserNameandPassword$1.class" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes/controllers/ref/ReverseUserController$$anonfun$deleteUserByUserNameandPassword$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes_managed/controllers/ref/ReverseUserController$$anonfun$deleteUserByUserNameandPassword$1.class" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes_managed/controllers/ref/ReverseUserController$$anonfun$deleteUserByUserNameandPassword$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes/controllers/ref/ReverseUserController$$anonfun$getAllUsers$1.class" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes/controllers/ref/ReverseUserController$$anonfun$getAllUsers$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes_managed/controllers/ref/ReverseUserController$$anonfun$getAllUsers$1.class" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes_managed/controllers/ref/ReverseUserController$$anonfun$getAllUsers$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes/controllers/ref/ReverseUserController$$anonfun$updateUser$1.class" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes/controllers/ref/ReverseUserController$$anonfun$updateUser$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes_managed/controllers/ref/ReverseUserController$$anonfun$updateUser$1.class" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes_managed/controllers/ref/ReverseUserController$$anonfun$updateUser$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes/controllers/ReverseUserController.class" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes/controllers/ReverseUserController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes/controllers/javascript/ReverseUserController.class" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes/controllers/javascript/ReverseUserController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes/controllers/ref/ReverseUserController.class" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes/controllers/ref/ReverseUserController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes_managed/controllers/ReverseUserController.class" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes_managed/controllers/ReverseUserController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes_managed/controllers/javascript/ReverseUserController.class" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes_managed/controllers/javascript/ReverseUserController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes_managed/controllers/ref/ReverseUserController.class" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes_managed/controllers/ref/ReverseUserController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes/Routes$$anonfun$routes$1$$anonfun$applyOrElse$39$$anonfun$apply$195.class" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes/Routes$$anonfun$routes$1$$anonfun$applyOrElse$39$$anonfun$apply$195.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes_managed/Routes$$anonfun$routes$1$$anonfun$applyOrElse$39$$anonfun$apply$195.class" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes_managed/Routes$$anonfun$routes$1$$anonfun$applyOrElse$39$$anonfun$apply$195.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes/Routes$$anonfun$routes$1$$anonfun$applyOrElse$39.class" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes/Routes$$anonfun$routes$1$$anonfun$applyOrElse$39.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes_managed/Routes$$anonfun$routes$1$$anonfun$applyOrElse$39.class" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes_managed/Routes$$anonfun$routes$1$$anonfun$applyOrElse$39.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes/Routes$$anonfun$routes$1$$anonfun$applyOrElse$40$$anonfun$apply$198.class" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes/Routes$$anonfun$routes$1$$anonfun$applyOrElse$40$$anonfun$apply$198.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes_managed/Routes$$anonfun$routes$1$$anonfun$applyOrElse$40$$anonfun$apply$198.class" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes_managed/Routes$$anonfun$routes$1$$anonfun$applyOrElse$40$$anonfun$apply$198.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes/Routes$$anonfun$routes$1$$anonfun$applyOrElse$40.class" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes/Routes$$anonfun$routes$1$$anonfun$applyOrElse$40.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes_managed/Routes$$anonfun$routes$1$$anonfun$applyOrElse$40.class" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes_managed/Routes$$anonfun$routes$1$$anonfun$applyOrElse$40.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes/Routes$$anonfun$routes$1.class" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes/Routes$$anonfun$routes$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes_managed/Routes$$anonfun$routes$1.class" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes_managed/Routes$$anonfun$routes$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes/Routes$.class" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes/Routes$.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes_managed/Routes$.class" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes_managed/Routes$.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes/Routes.class" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes/Routes.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes_managed/Routes.class" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes_managed/Routes.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes/models/ServiceEntry.class" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes/models/ServiceEntry.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes/models/ServiceEntryRepository.class" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes/models/ServiceEntryRepository.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes/models/User.class" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes/models/User.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/classes/controllers/User.class" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/classes/controllers/User.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes/controllers/UserController.class" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes/controllers/UserController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes/models/UserRepository.class" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes/models/UserRepository.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/classes/models/UserSet.class" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/classes/models/UserSet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes/models/Workflow.class" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes/models/Workflow.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes/models/WorkflowRepository.class" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes/models/WorkflowRepository.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/classes/views/html/climate/aboutProject$$anonfun$f$1.class" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/classes/views/html/climate/aboutProject$$anonfun$f$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/classes_managed/views/html/climate/aboutProject$$anonfun$f$1.class" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/classes_managed/views/html/climate/aboutProject$$anonfun$f$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/classes/views/html/climate/aboutProject$.class" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/classes/views/html/climate/aboutProject$.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/classes_managed/views/html/climate/aboutProject$.class" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/classes_managed/views/html/climate/aboutProject$.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/classes/views/html/climate/aboutProject.class" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/classes/views/html/climate/aboutProject.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/classes_managed/views/html/climate/aboutProject.class" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/classes_managed/views/html/climate/aboutProject.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/classes/views/html/climate/aboutus$$anonfun$f$1.class" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/classes/views/html/climate/aboutus$$anonfun$f$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/classes_managed/views/html/climate/aboutus$$anonfun$f$1.class" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/classes_managed/views/html/climate/aboutus$$anonfun$f$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/classes/views/html/climate/aboutus$.class" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/classes/views/html/climate/aboutus$.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/classes_managed/views/html/climate/aboutus$.class" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/classes_managed/views/html/climate/aboutus$.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/classes/views/html/climate/aboutus.class" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/classes/views/html/climate/aboutus.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/classes_managed/views/html/climate/aboutus.class" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/classes_managed/views/html/climate/aboutus.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/cache/apachecmda-frontend/global/copy-assets" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/cache/apachecmda-frontend/global/copy-assets" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/streams/compile/copyResources/$global/streams/copy-resources" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/target/streams/compile/copyResources/$global/streams/copy-resources" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/streams/compile/copyResources/$global/copy-resources" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/streams/compile/copyResources/$global/copy-resources" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/data/db.h2.db" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/data/db.h2.db" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/streams/runtime/unmanagedClasspath/$global/export" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/streams/runtime/unmanagedClasspath/$global/export" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/streams/runtime/unmanagedJars/$global/export" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/streams/runtime/unmanagedJars/$global/export" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/classes/views/html/flash_message$$anonfun$f$1.class" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/classes/views/html/flash_message$$anonfun$f$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/classes_managed/views/html/flash_message$$anonfun$f$1.class" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/classes_managed/views/html/flash_message$$anonfun$f$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/classes/views/html/flash_message$.class" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/classes/views/html/flash_message$.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/classes_managed/views/html/flash_message$.class" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/classes_managed/views/html/flash_message$.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/classes/views/html/flash_message.class" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/classes/views/html/flash_message.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/classes_managed/views/html/flash_message.class" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/classes_managed/views/html/flash_message.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/streams/compile/incCompileSetup/$global/inc_compile" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/streams/compile/incCompileSetup/$global/inc_compile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/classes/views/html/index$$anonfun$f$1.class" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/classes/views/html/index$$anonfun$f$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/classes_managed/views/html/index$$anonfun$f$1.class" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/classes_managed/views/html/index$$anonfun$f$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/classes/views/html/index$.class" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/classes/views/html/index$.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/classes_managed/views/html/index$.class" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/classes_managed/views/html/index$.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/classes/views/html/index.class" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/classes/views/html/index.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/classes_managed/views/html/index.class" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/classes_managed/views/html/index.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/project/target/streams/$global/update/$global/streams/inputs" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/project/target/streams/$global/update/$global/streams/inputs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/streams/$global/update/$global/streams/inputs" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/target/streams/$global/update/$global/streams/inputs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/project/target/streams/$global/update/$global/inputs" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/project/target/streams/$global/update/$global/inputs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/streams/$global/update/$global/inputs" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/streams/$global/update/$global/inputs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/classes/views/html/climate/login$$anonfun$apply$1.class" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/classes/views/html/climate/login$$anonfun$apply$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/classes_managed/views/html/climate/login$$anonfun$apply$1.class" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/classes_managed/views/html/climate/login$$anonfun$apply$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/classes/views/html/climate/login$$anonfun$f$1.class" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/classes/views/html/climate/login$$anonfun$f$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/classes_managed/views/html/climate/login$$anonfun$f$1.class" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/classes_managed/views/html/climate/login$$anonfun$f$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/classes/views/html/climate/login$.class" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/classes/views/html/climate/login$.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/classes_managed/views/html/climate/login$.class" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/classes_managed/views/html/climate/login$.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/classes/views/html/climate/oneService$$anonfun$f$1.class" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/classes/views/html/climate/oneService$$anonfun$f$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/classes_managed/views/html/climate/oneService$$anonfun$f$1.class" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/classes_managed/views/html/climate/oneService$$anonfun$f$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/classes/views/html/climate/oneService$.class" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/classes/views/html/climate/oneService$.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/classes_managed/views/html/climate/oneService$.class" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/classes_managed/views/html/climate/oneService$.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/classes/views/html/climate/oneService.class" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/classes/views/html/climate/oneService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/classes_managed/views/html/climate/oneService.class" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/classes_managed/views/html/climate/oneService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/streams/$global/coffeescript/$global/streams/copy-resource/op-cache" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/target/streams/$global/coffeescript/$global/streams/copy-resource/op-cache" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/streams/$global/jshint/$global/streams/copy-resource/op-cache" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/target/streams/$global/jshint/$global/streams/copy-resource/op-cache" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/streams/$global/less/$global/streams/copy-resource/op-cache" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/target/streams/$global/less/$global/streams/copy-resource/op-cache" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes/controllers/routes$javascript.class" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes/controllers/routes$javascript.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes/controllers/routes$ref.class" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes/controllers/routes$ref.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes/controllers/routes.class" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes/controllers/routes.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/classes/views/html/climate/signup$$anonfun$f$1.class" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/classes/views/html/climate/signup$$anonfun$f$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/classes_managed/views/html/climate/signup$$anonfun$f$1.class" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/classes_managed/views/html/climate/signup$$anonfun$f$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/classes/views/html/climate/signup$.class" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/classes/views/html/climate/signup$.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/classes_managed/views/html/climate/signup$.class" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/classes_managed/views/html/climate/signup$.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/classes/views/html/climate/signup.class" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/classes/views/html/climate/signup.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/classes_managed/views/html/climate/signup.class" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/classes_managed/views/html/climate/signup.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/streams/$global/assets/$global/streams/sync-mappings" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/target/streams/$global/assets/$global/streams/sync-mappings" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/classes/views/html/climate/tutorial$$anonfun$f$1.class" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/classes/views/html/climate/tutorial$$anonfun$f$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/classes_managed/views/html/climate/tutorial$$anonfun$f$1.class" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/classes_managed/views/html/climate/tutorial$$anonfun$f$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/classes/views/html/climate/tutorial$.class" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/classes/views/html/climate/tutorial$.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/classes_managed/views/html/climate/tutorial$.class" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/classes_managed/views/html/climate/tutorial$.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/classes/views/html/climate/tutorial.class" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/classes/views/html/climate/tutorial.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/classes_managed/views/html/climate/tutorial.class" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/classes_managed/views/html/climate/tutorial.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/app/controllers/User.java" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/app/controllers/User.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/app/controllers/UserController.java" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/app/controllers/UserController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/app/models/UserSet.java" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/app/models/UserSet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/src_managed/main/views/html/climate/aboutProject.template.scala" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/src_managed/main/views/html/climate/aboutProject.template.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/src_managed/main/views/html/climate/aboutus.template.scala" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/src_managed/main/views/html/climate/aboutus.template.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/src_managed/main/views/html/climate/addClimateServices.template.scala" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/src_managed/main/views/html/climate/addClimateServices.template.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/resolution-cache/reports/apachecmda_backend-apachecmda_backend_2.11-compile-internal.xml" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/target/resolution-cache/reports/apachecmda_backend-apachecmda_backend_2.11-compile-internal.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/resolution-cache/reports/apachecmda_backend-apachecmda_backend_2.11-compile.xml" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/target/resolution-cache/reports/apachecmda_backend-apachecmda_backend_2.11-compile.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/resolution-cache/reports/apachecmda_backend-apachecmda_backend_2.11-docs.xml" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/target/resolution-cache/reports/apachecmda_backend-apachecmda_backend_2.11-docs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/resolution-cache/reports/apachecmda_backend-apachecmda_backend_2.11-echo-sigar.xml" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/target/resolution-cache/reports/apachecmda_backend-apachecmda_backend_2.11-echo-sigar.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/resolution-cache/reports/apachecmda_backend-apachecmda_backend_2.11-echo-trace-compile.xml" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/target/resolution-cache/reports/apachecmda_backend-apachecmda_backend_2.11-echo-trace-compile.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/resolution-cache/reports/apachecmda_backend-apachecmda_backend_2.11-echo-trace-test.xml" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/target/resolution-cache/reports/apachecmda_backend-apachecmda_backend_2.11-echo-trace-test.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/resolution-cache/reports/apachecmda_backend-apachecmda_backend_2.11-echo-weave.xml" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/target/resolution-cache/reports/apachecmda_backend-apachecmda_backend_2.11-echo-weave.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/resolution-cache/reports/apachecmda_backend-apachecmda_backend_2.11-jacoco.xml" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/target/resolution-cache/reports/apachecmda_backend-apachecmda_backend_2.11-jacoco.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/resolution-cache/reports/apachecmda_backend-apachecmda_backend_2.11-optional.xml" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/target/resolution-cache/reports/apachecmda_backend-apachecmda_backend_2.11-optional.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/resolution-cache/reports/apachecmda_backend-apachecmda_backend_2.11-plugin.xml" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/target/resolution-cache/reports/apachecmda_backend-apachecmda_backend_2.11-plugin.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/resolution-cache/reports/apachecmda_backend-apachecmda_backend_2.11-pom.xml" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/target/resolution-cache/reports/apachecmda_backend-apachecmda_backend_2.11-pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/resolution-cache/reports/apachecmda_backend-apachecmda_backend_2.11-provided.xml" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/target/resolution-cache/reports/apachecmda_backend-apachecmda_backend_2.11-provided.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/resolution-cache/reports/apachecmda_backend-apachecmda_backend_2.11-runtime-internal.xml" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/target/resolution-cache/reports/apachecmda_backend-apachecmda_backend_2.11-runtime-internal.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/resolution-cache/reports/apachecmda_backend-apachecmda_backend_2.11-runtime.xml" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/target/resolution-cache/reports/apachecmda_backend-apachecmda_backend_2.11-runtime.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/resolution-cache/reports/apachecmda_backend-apachecmda_backend_2.11-scala-tool.xml" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/target/resolution-cache/reports/apachecmda_backend-apachecmda_backend_2.11-scala-tool.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/resolution-cache/reports/apachecmda_backend-apachecmda_backend_2.11-sources.xml" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/target/resolution-cache/reports/apachecmda_backend-apachecmda_backend_2.11-sources.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/resolution-cache/reports/apachecmda_backend-apachecmda_backend_2.11-test-internal.xml" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/target/resolution-cache/reports/apachecmda_backend-apachecmda_backend_2.11-test-internal.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/resolution-cache/reports/apachecmda_backend-apachecmda_backend_2.11-test.xml" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/target/resolution-cache/reports/apachecmda_backend-apachecmda_backend_2.11-test.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/resolution-cache/reports/apachecmda_frontend-apachecmda_frontend_2.10-compile-internal.xml" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/resolution-cache/reports/apachecmda_frontend-apachecmda_frontend_2.10-compile-internal.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/resolution-cache/reports/apachecmda_frontend-apachecmda_frontend_2.10-compile.xml" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/resolution-cache/reports/apachecmda_frontend-apachecmda_frontend_2.10-compile.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/resolution-cache/reports/apachecmda_frontend-apachecmda_frontend_2.10-docs.xml" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/resolution-cache/reports/apachecmda_frontend-apachecmda_frontend_2.10-docs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/resolution-cache/reports/apachecmda_frontend-apachecmda_frontend_2.10-echo-sigar.xml" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/resolution-cache/reports/apachecmda_frontend-apachecmda_frontend_2.10-echo-sigar.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/resolution-cache/reports/apachecmda_frontend-apachecmda_frontend_2.10-echo-trace-compile.xml" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/resolution-cache/reports/apachecmda_frontend-apachecmda_frontend_2.10-echo-trace-compile.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/resolution-cache/reports/apachecmda_frontend-apachecmda_frontend_2.10-echo-trace-test.xml" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/resolution-cache/reports/apachecmda_frontend-apachecmda_frontend_2.10-echo-trace-test.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/resolution-cache/reports/apachecmda_frontend-apachecmda_frontend_2.10-echo-weave.xml" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/resolution-cache/reports/apachecmda_frontend-apachecmda_frontend_2.10-echo-weave.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/resolution-cache/reports/apachecmda_frontend-apachecmda_frontend_2.10-optional.xml" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/resolution-cache/reports/apachecmda_frontend-apachecmda_frontend_2.10-optional.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/resolution-cache/reports/apachecmda_frontend-apachecmda_frontend_2.10-plugin.xml" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/resolution-cache/reports/apachecmda_frontend-apachecmda_frontend_2.10-plugin.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/resolution-cache/reports/apachecmda_frontend-apachecmda_frontend_2.10-pom.xml" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/resolution-cache/reports/apachecmda_frontend-apachecmda_frontend_2.10-pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/resolution-cache/reports/apachecmda_frontend-apachecmda_frontend_2.10-provided.xml" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/resolution-cache/reports/apachecmda_frontend-apachecmda_frontend_2.10-provided.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/resolution-cache/reports/apachecmda_frontend-apachecmda_frontend_2.10-runtime-internal.xml" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/resolution-cache/reports/apachecmda_frontend-apachecmda_frontend_2.10-runtime-internal.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/resolution-cache/reports/apachecmda_frontend-apachecmda_frontend_2.10-runtime.xml" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/resolution-cache/reports/apachecmda_frontend-apachecmda_frontend_2.10-runtime.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/resolution-cache/reports/apachecmda_frontend-apachecmda_frontend_2.10-scala-tool.xml" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/resolution-cache/reports/apachecmda_frontend-apachecmda_frontend_2.10-scala-tool.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/resolution-cache/reports/apachecmda_frontend-apachecmda_frontend_2.10-sources.xml" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/resolution-cache/reports/apachecmda_frontend-apachecmda_frontend_2.10-sources.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/resolution-cache/reports/apachecmda_frontend-apachecmda_frontend_2.10-test-internal.xml" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/resolution-cache/reports/apachecmda_frontend-apachecmda_frontend_2.10-test-internal.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/resolution-cache/reports/apachecmda_frontend-apachecmda_frontend_2.10-test.xml" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/resolution-cache/reports/apachecmda_frontend-apachecmda_frontend_2.10-test.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/logs/application.log" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/logs/application.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/logs/application.log" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/logs/application.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/src_managed/main/views/html/climate/bugReporting.template.scala" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/src_managed/main/views/html/climate/bugReporting.template.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/src_managed/main/views/html/climate/bugs.template.scala" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/src_managed/main/views/html/climate/bugs.template.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/src_managed/main/views/html/climate/climateServices.template.scala" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/src_managed/main/views/html/climate/climateServices.template.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/src_managed/main/views/html/climate/dataRecommend.template.scala" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/src_managed/main/views/html/climate/dataRecommend.template.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/src_managed/main/views/html/climate/dataSetList.template.scala" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/src_managed/main/views/html/climate/dataSetList.template.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/src_managed/main/views/html/climate/datasetTime.template.scala" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/src_managed/main/views/html/climate/datasetTime.template.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/data/db.lock.db" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/data/db.lock.db" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/project/target/resolution-cache/reports/default-apachecmda-backend-build-compile-internal.xml" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/project/target/resolution-cache/reports/default-apachecmda-backend-build-compile-internal.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/project/target/resolution-cache/reports/default-apachecmda-backend-build-compile.xml" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/project/target/resolution-cache/reports/default-apachecmda-backend-build-compile.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/project/target/resolution-cache/reports/default-apachecmda-backend-build-docs.xml" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/project/target/resolution-cache/reports/default-apachecmda-backend-build-docs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/project/target/resolution-cache/reports/default-apachecmda-backend-build-optional.xml" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/project/target/resolution-cache/reports/default-apachecmda-backend-build-optional.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/project/target/resolution-cache/reports/default-apachecmda-backend-build-plugin.xml" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/project/target/resolution-cache/reports/default-apachecmda-backend-build-plugin.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/project/target/resolution-cache/reports/default-apachecmda-backend-build-pom.xml" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/project/target/resolution-cache/reports/default-apachecmda-backend-build-pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/project/target/resolution-cache/reports/default-apachecmda-backend-build-provided.xml" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/project/target/resolution-cache/reports/default-apachecmda-backend-build-provided.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/project/target/resolution-cache/reports/default-apachecmda-backend-build-runtime-internal.xml" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/project/target/resolution-cache/reports/default-apachecmda-backend-build-runtime-internal.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/project/target/resolution-cache/reports/default-apachecmda-backend-build-runtime.xml" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/project/target/resolution-cache/reports/default-apachecmda-backend-build-runtime.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/project/target/resolution-cache/reports/default-apachecmda-backend-build-scala-tool.xml" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/project/target/resolution-cache/reports/default-apachecmda-backend-build-scala-tool.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/project/target/resolution-cache/reports/default-apachecmda-backend-build-sources.xml" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/project/target/resolution-cache/reports/default-apachecmda-backend-build-sources.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/project/target/resolution-cache/reports/default-apachecmda-backend-build-test-internal.xml" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/project/target/resolution-cache/reports/default-apachecmda-backend-build-test-internal.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/project/target/resolution-cache/reports/default-apachecmda-backend-build-test.xml" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/project/target/resolution-cache/reports/default-apachecmda-backend-build-test.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/project/target/resolution-cache/reports/default-apachecmda-frontend-build-compile-internal.xml" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/project/target/resolution-cache/reports/default-apachecmda-frontend-build-compile-internal.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/project/target/resolution-cache/reports/default-apachecmda-frontend-build-compile.xml" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/project/target/resolution-cache/reports/default-apachecmda-frontend-build-compile.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/project/target/resolution-cache/reports/default-apachecmda-frontend-build-docs.xml" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/project/target/resolution-cache/reports/default-apachecmda-frontend-build-docs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/project/target/resolution-cache/reports/default-apachecmda-frontend-build-optional.xml" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/project/target/resolution-cache/reports/default-apachecmda-frontend-build-optional.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/project/target/resolution-cache/reports/default-apachecmda-frontend-build-plugin.xml" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/project/target/resolution-cache/reports/default-apachecmda-frontend-build-plugin.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/project/target/resolution-cache/reports/default-apachecmda-frontend-build-pom.xml" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/project/target/resolution-cache/reports/default-apachecmda-frontend-build-pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/project/target/resolution-cache/reports/default-apachecmda-frontend-build-provided.xml" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/project/target/resolution-cache/reports/default-apachecmda-frontend-build-provided.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/project/target/resolution-cache/reports/default-apachecmda-frontend-build-runtime-internal.xml" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/project/target/resolution-cache/reports/default-apachecmda-frontend-build-runtime-internal.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/project/target/resolution-cache/reports/default-apachecmda-frontend-build-runtime.xml" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/project/target/resolution-cache/reports/default-apachecmda-frontend-build-runtime.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/project/target/resolution-cache/reports/default-apachecmda-frontend-build-scala-tool.xml" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/project/target/resolution-cache/reports/default-apachecmda-frontend-build-scala-tool.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/project/target/resolution-cache/reports/default-apachecmda-frontend-build-sources.xml" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/project/target/resolution-cache/reports/default-apachecmda-frontend-build-sources.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/project/target/resolution-cache/reports/default-apachecmda-frontend-build-test-internal.xml" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/project/target/resolution-cache/reports/default-apachecmda-frontend-build-test-internal.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/project/target/resolution-cache/reports/default-apachecmda-frontend-build-test.xml" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/project/target/resolution-cache/reports/default-apachecmda-frontend-build-test.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/project/target/streams/compile/dependencyClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/project/target/streams/compile/dependencyClasspath/$global/streams/export" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/project/target/streams/compile/exportedProducts/$global/streams/export" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/project/target/streams/compile/exportedProducts/$global/streams/export" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/project/target/streams/compile/externalDependencyClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/project/target/streams/compile/externalDependencyClasspath/$global/streams/export" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/project/target/streams/compile/managedClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/project/target/streams/compile/managedClasspath/$global/streams/export" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/project/target/streams/runtime/dependencyClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/project/target/streams/runtime/dependencyClasspath/$global/streams/export" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/project/target/streams/runtime/exportedProducts/$global/streams/export" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/project/target/streams/runtime/exportedProducts/$global/streams/export" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/project/target/streams/runtime/externalDependencyClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/project/target/streams/runtime/externalDependencyClasspath/$global/streams/export" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/project/target/streams/runtime/fullClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/project/target/streams/runtime/fullClasspath/$global/streams/export" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/project/target/streams/runtime/internalDependencyClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/project/target/streams/runtime/internalDependencyClasspath/$global/streams/export" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/project/target/streams/runtime/managedClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/project/target/streams/runtime/managedClasspath/$global/streams/export" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/streams/compile/compile/$global/streams/export" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/target/streams/compile/compile/$global/streams/export" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/streams/compile/dependencyClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/target/streams/compile/dependencyClasspath/$global/streams/export" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/streams/compile/exportedProducts/$global/streams/export" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/target/streams/compile/exportedProducts/$global/streams/export" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/streams/compile/externalDependencyClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/target/streams/compile/externalDependencyClasspath/$global/streams/export" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/streams/compile/managedClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/target/streams/compile/managedClasspath/$global/streams/export" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/streams/runtime/exportedProducts/$global/streams/export" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/target/streams/runtime/exportedProducts/$global/streams/export" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/streams/runtime/externalDependencyClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/target/streams/runtime/externalDependencyClasspath/$global/streams/export" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/streams/runtime/internalDependencyClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/target/streams/runtime/internalDependencyClasspath/$global/streams/export" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/streams/runtime/managedClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/target/streams/runtime/managedClasspath/$global/streams/export" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/project/target/streams/compile/dependencyClasspath/$global/export" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/project/target/streams/compile/dependencyClasspath/$global/export" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/project/target/streams/compile/exportedProducts/$global/export" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/project/target/streams/compile/exportedProducts/$global/export" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/project/target/streams/compile/externalDependencyClasspath/$global/export" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/project/target/streams/compile/externalDependencyClasspath/$global/export" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/project/target/streams/compile/managedClasspath/$global/export" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/project/target/streams/compile/managedClasspath/$global/export" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/project/target/streams/runtime/dependencyClasspath/$global/export" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/project/target/streams/runtime/dependencyClasspath/$global/export" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/project/target/streams/runtime/exportedProducts/$global/export" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/project/target/streams/runtime/exportedProducts/$global/export" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/project/target/streams/runtime/externalDependencyClasspath/$global/export" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/project/target/streams/runtime/externalDependencyClasspath/$global/export" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/project/target/streams/runtime/fullClasspath/$global/export" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/project/target/streams/runtime/fullClasspath/$global/export" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/project/target/streams/runtime/internalDependencyClasspath/$global/export" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/project/target/streams/runtime/internalDependencyClasspath/$global/export" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/project/target/streams/runtime/managedClasspath/$global/export" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/project/target/streams/runtime/managedClasspath/$global/export" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/streams/compile/compile/$global/export" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/streams/compile/compile/$global/export" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/streams/compile/dependencyClasspath/$global/export" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/streams/compile/dependencyClasspath/$global/export" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/streams/compile/exportedProducts/$global/export" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/streams/compile/exportedProducts/$global/export" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/streams/compile/externalDependencyClasspath/$global/export" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/streams/compile/externalDependencyClasspath/$global/export" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/streams/compile/managedClasspath/$global/export" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/streams/compile/managedClasspath/$global/export" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/streams/compile/unmanagedClasspath/$global/export" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/streams/compile/unmanagedClasspath/$global/export" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/streams/compile/unmanagedJars/$global/export" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/streams/compile/unmanagedJars/$global/export" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/streams/runtime/exportedProducts/$global/export" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/streams/runtime/exportedProducts/$global/export" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/streams/runtime/internalDependencyClasspath/$global/export" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/streams/runtime/internalDependencyClasspath/$global/export" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/src_managed/main/views/html/flash_message.template.scala" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/src_managed/main/views/html/flash_message.template.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/src_managed/main/views/html/climate/header.template.scala" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/src_managed/main/views/html/climate/header.template.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/src_managed/main/views/html/climate/home.template.scala" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/src_managed/main/views/html/climate/home.template.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/streams/compile/incCompileSetup/$global/streams/inc_compile_2.11" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/target/streams/compile/incCompileSetup/$global/streams/inc_compile_2.11" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/twirl/main/views/html/index.template.scala" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/twirl/main/views/html/index.template.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/src_managed/main/views/html/index.template.scala" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/src_managed/main/views/html/index.template.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/app/views/climate/login.scala.html" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/app/views/climate/login.scala.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/src_managed/main/views/html/climate/login.template.scala" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/src_managed/main/views/html/climate/login.template.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/twirl/main/views/html/main.template.scala" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/twirl/main/views/html/main.template.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/src_managed/main/views/html/main.template.scala" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/src_managed/main/views/html/main.template.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/src_managed/main/views/html/climate/main.template.scala" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/src_managed/main/views/html/climate/main.template.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/src_managed/main/views/html/climate/mostPopularServices.template.scala" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/src_managed/main/views/html/climate/mostPopularServices.template.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/src_managed/main/views/html/climate/mostRecentlyAddedServices.template.scala" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/src_managed/main/views/html/climate/mostRecentlyAddedServices.template.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/src_managed/main/views/html/climate/mostRecentlyUsedServices.template.scala" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/src_managed/main/views/html/climate/mostRecentlyUsedServices.template.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/src_managed/main/views/html/climate/oneService.template.scala" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/src_managed/main/views/html/climate/oneService.template.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/project/target/streams/$global/ivyConfiguration/$global/streams/out" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/project/target/streams/$global/ivyConfiguration/$global/streams/out" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/project/target/streams/$global/update/$global/streams/out" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/project/target/streams/$global/update/$global/streams/out" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/streams/$global/$global/$global/streams/out" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/target/streams/$global/$global/$global/streams/out" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/streams/$global/ivyConfiguration/$global/streams/out" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/target/streams/$global/ivyConfiguration/$global/streams/out" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/streams/$global/update/$global/streams/out" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/target/streams/$global/update/$global/streams/out" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/streams/compile/compile/$global/streams/out" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/target/streams/compile/compile/$global/streams/out" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/streams/compile/copyResources/$global/streams/out" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/target/streams/compile/copyResources/$global/streams/out" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/project/target/streams/$global/ivyConfiguration/$global/out" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/project/target/streams/$global/ivyConfiguration/$global/out" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/project/target/streams/$global/update/$global/out" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/project/target/streams/$global/update/$global/out" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/streams/$global/ivyConfiguration/$global/out" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/streams/$global/ivyConfiguration/$global/out" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/streams/$global/playCopyAssets/$global/out" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/streams/$global/playCopyAssets/$global/out" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/streams/$global/update/$global/out" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/streams/$global/update/$global/out" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/streams/compile/copyResources/$global/out" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/streams/compile/copyResources/$global/out" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/project/target/streams/$global/update/$global/streams/output" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/project/target/streams/$global/update/$global/streams/output" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/streams/$global/update/$global/streams/output" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/target/streams/$global/update/$global/streams/output" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/project/target/streams/$global/update/$global/output" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/project/target/streams/$global/update/$global/output" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/streams/$global/update/$global/output" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/streams/$global/update/$global/output" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/conf/META-INF/persistence.xml" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/conf/META-INF/persistence.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes/META-INF/persistence.xml" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes/META-INF/persistence.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/cache/root/compile/play_instrumentation" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/cache/root/compile/play_instrumentation" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/cache/apachecmda-frontend/compile/play_instrumentation" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/cache/apachecmda-frontend/compile/play_instrumentation" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/src_managed/main/views/html/climate/recommend.template.scala" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/src_managed/main/views/html/climate/recommend.template.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/project/target/resolution-cache/default/apachecmda-backend-build/scala_2.10/sbt_0.13/0.1-SNAPSHOT/resolved.xml.properties" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/project/target/resolution-cache/default/apachecmda-backend-build/scala_2.10/sbt_0.13/0.1-SNAPSHOT/resolved.xml.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/resolution-cache/apachecmda_backend/apachecmda_backend_2.11/1.0-SNAPSHOT/resolved.xml.properties" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/target/resolution-cache/apachecmda_backend/apachecmda_backend_2.11/1.0-SNAPSHOT/resolved.xml.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/project/target/resolution-cache/default/apachecmda-frontend-build/scala_2.10/sbt_0.13/0.1-SNAPSHOT/resolved.xml.properties" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/project/target/resolution-cache/default/apachecmda-frontend-build/scala_2.10/sbt_0.13/0.1-SNAPSHOT/resolved.xml.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/resolution-cache/apachecmda_frontend/apachecmda_frontend_2.10/1.0-SNAPSHOT/resolved.xml.properties" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/resolution-cache/apachecmda_frontend/apachecmda_frontend_2.10/1.0-SNAPSHOT/resolved.xml.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/project/target/resolution-cache/default/apachecmda-backend-build/scala_2.10/sbt_0.13/0.1-SNAPSHOT/resolved.xml.xml" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/project/target/resolution-cache/default/apachecmda-backend-build/scala_2.10/sbt_0.13/0.1-SNAPSHOT/resolved.xml.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/resolution-cache/apachecmda_backend/apachecmda_backend_2.11/1.0-SNAPSHOT/resolved.xml.xml" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/target/resolution-cache/apachecmda_backend/apachecmda_backend_2.11/1.0-SNAPSHOT/resolved.xml.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/project/target/resolution-cache/default/apachecmda-frontend-build/scala_2.10/sbt_0.13/0.1-SNAPSHOT/resolved.xml.xml" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/project/target/resolution-cache/default/apachecmda-frontend-build/scala_2.10/sbt_0.13/0.1-SNAPSHOT/resolved.xml.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/resolution-cache/apachecmda_frontend/apachecmda_frontend_2.10/1.0-SNAPSHOT/resolved.xml.xml" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/resolution-cache/apachecmda_frontend/apachecmda_frontend_2.10/1.0-SNAPSHOT/resolved.xml.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/src_managed/main/controllers/routes.java" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/src_managed/main/controllers/routes.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/src_managed/main/controllers/routes.java" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/src_managed/main/controllers/routes.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/conf/routes" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/conf/routes" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes/routes" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/classes/routes" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/src_managed/main/routes_reverseRouting.scala" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/src_managed/main/routes_reverseRouting.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/src_managed/main/routes_reverseRouting.scala" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/src_managed/main/routes_reverseRouting.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/src_managed/main/routes_routing.scala" afterPath="$PROJECT_DIR$/ApacheCMDA-Backend/target/scala-2.11/src_managed/main/routes_routing.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/src_managed/main/routes_routing.scala" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/src_managed/main/routes_routing.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/src_managed/main/views/html/climate/searchDataSet.template.scala" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/src_managed/main/views/html/climate/searchDataSet.template.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/app/views/climate/signup.scala.html" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/app/views/climate/signup.scala.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/src_managed/main/views/html/climate/signup.template.scala" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/src_managed/main/views/html/climate/signup.template.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/src_managed/main/views/html/climate/tutorial.template.scala" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/src_managed/main/views/html/climate/tutorial.template.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/src_managed/main/views/html/climate/userSetList.template.scala" afterPath="$PROJECT_DIR$/ApacheCMDA-Frontend/target/scala-2.10/src_managed/main/views/html/climate/userSetList.template.scala" />
+    </list>
+    <ignored path="SOC-Fall-2015-Team12.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="SOC-Fall-2015-Team12" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="ClimateService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ApacheCMDA-Frontend/app/models/metadata/ClimateService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="54.846153">
+              <caret line="70" column="0" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#11240#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="User.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ApacheCMDA-Frontend/app/controllers/User.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.5928571">
+              <caret line="56" column="44" selection-start-line="56" selection-start-column="44" selection-end-line="56" selection-end-column="44" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ApacheCMDA-Backend/app/controllers/UserController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-8.8">
+              <caret line="230" column="0" selection-start-line="230" selection-start-column="0" selection-end-line="230" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#9021#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="signup.scala.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ApacheCMDA-Frontend/app/views/climate/signup.scala.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-5.2040815">
+              <caret line="17" column="2" selection-start-line="17" selection-start-column="2" selection-end-line="17" selection-end-column="2" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mostRecentlyUsedServices.scala.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ApacheCMDA-Frontend/app/views/climate/mostRecentlyUsedServices.scala.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-5.2105265">
+              <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="routes" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ApacheCMDA-Backend/conf/routes">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-22.0">
+              <caret line="56" column="58" selection-start-line="56" selection-start-column="58" selection-end-line="56" selection-end-column="58" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/ApacheCMDA-Frontend/conf/routes" />
+        <option value="$PROJECT_DIR$/ApacheCMDA-Frontend/app/views/climate/login.scala.html" />
+        <option value="$PROJECT_DIR$/ApacheCMDA-Frontend/app/models/UserSet.java" />
+        <option value="$PROJECT_DIR$/ApacheCMDA-Backend/conf/routes" />
+        <option value="$PROJECT_DIR$/ApacheCMDA-Backend/app/controllers/UserController.java" />
+        <option value="$PROJECT_DIR$/ApacheCMDA-Backend/conf/META-INF/persistence.xml" />
+        <option value="$PROJECT_DIR$/ApacheCMDA-Frontend/app/views/climate/signup.scala.html" />
+        <option value="$PROJECT_DIR$/ApacheCMDA-Frontend/app/controllers/User.java" />
+      </list>
+    </option>
+  </component>
+  <component name="NamedScopeManager">
+    <order />
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="width" value="1280" />
+    <option name="height" value="800" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SOC-Fall-2015-Team12" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SOC-Fall-2015-Team12" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SOC-Fall-2015-Team12" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SOC-Fall-2015-Team12" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SOC-Fall-2015-Team12" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ApacheCMDA-Frontend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SOC-Fall-2015-Team12" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SOC-Fall-2015-Team12" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ApacheCMDA-Frontend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="conf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SOC-Fall-2015-Team12" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SOC-Fall-2015-Team12" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ApacheCMDA-Frontend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SOC-Fall-2015-Team12" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SOC-Fall-2015-Team12" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ApacheCMDA-Frontend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="climate" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SOC-Fall-2015-Team12" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SOC-Fall-2015-Team12" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ApacheCMDA-Frontend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SOC-Fall-2015-Team12" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SOC-Fall-2015-Team12" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ApacheCMDA-Frontend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SOC-Fall-2015-Team12" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SOC-Fall-2015-Team12" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ApacheCMDA-Frontend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="metadata" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SOC-Fall-2015-Team12" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SOC-Fall-2015-Team12" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ApacheCMDA-Frontend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SOC-Fall-2015-Team12" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SOC-Fall-2015-Team12" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ApacheCMDA-Backend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SOC-Fall-2015-Team12" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SOC-Fall-2015-Team12" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ApacheCMDA-Backend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="conf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SOC-Fall-2015-Team12" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SOC-Fall-2015-Team12" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ApacheCMDA-Backend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="conf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="META-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SOC-Fall-2015-Team12" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SOC-Fall-2015-Team12" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ApacheCMDA-Backend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SOC-Fall-2015-Team12" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SOC-Fall-2015-Team12" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ApacheCMDA-Backend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="util" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SOC-Fall-2015-Team12" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SOC-Fall-2015-Team12" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ApacheCMDA-Backend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SOC-Fall-2015-Team12" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SOC-Fall-2015-Team12" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ApacheCMDA-Backend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.excludes" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="FullScreen" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
+      <module name="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="DEPLOY" value="true" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="USE_COMMAND_LINE" value="true" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
+      <module name="" />
+      <option name="TESTING_TYPE" value="0" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="USE_COMMAND_LINE" value="true" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
+      <method />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list />
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <method />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="JarApplication" factoryName="JAR Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="ScalaTestRunConfiguration" factoryName="ScalaTest">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <extension name="scalaCoverage" />
+      <module name="" />
+      <setting name="path" value="" />
+      <setting name="package" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="testName" value="" />
+      <setting name="testKind" value="Class" />
+      <setting name="showProgressMessages" value="true" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="Specs2RunConfiguration" factoryName="Specs2">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <extension name="scalaCoverage" />
+      <module name="" />
+      <setting name="path" value="" />
+      <setting name="package" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="testName" value="" />
+      <setting name="testKind" value="Class" />
+      <setting name="showProgressMessages" value="true" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="uTestRunConfiguration" factoryName="utest">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <extension name="scalaCoverage" />
+      <module name="" />
+      <setting name="path" value="" />
+      <setting name="package" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="testName" value="" />
+      <setting name="testKind" value="Class" />
+      <setting name="showProgressMessages" value="true" />
+      <envs />
+      <method />
+    </configuration>
+  </component>
+  <component name="SbtLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="da9d4cbd-8bc9-4ccc-94f4-efbc870a14f2" name="Default" comment="" />
+      <created>1446831160181</created>
+      <option name="number" value="Default" />
+      <updated>1446831160181</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="1280" height="800" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="2" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/ApacheCMDA-Frontend/conf/routes">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.47142857">
+          <caret line="22" column="90" selection-start-line="22" selection-start-column="90" selection-end-line="22" selection-end-column="90" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ApacheCMDA-Backend/app/util/Constants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.1111112">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#8375#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ApacheCMDA-Backend/conf/routes">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-22.0">
+          <caret line="56" column="58" selection-start-line="56" selection-start-column="58" selection-end-line="56" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ApacheCMDA-Backend/conf/META-INF/persistence.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.53571427">
+          <caret line="25" column="63" selection-start-line="25" selection-start-column="63" selection-end-line="25" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ApacheCMDA-Frontend/app/views/climate/login.scala.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.9112426">
+          <caret line="47" column="35" selection-start-line="47" selection-start-column="35" selection-end-line="47" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ApacheCMDA-Frontend/app/views/climate/aboutProject.scala.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ApacheCMDA-Frontend/app/views/climate/climateServices.scala.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ApacheCMDA-Frontend/app/views/climate/bugs.scala.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ApacheCMDA-Frontend/app/views/climate/dataSetList.scala.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ApacheCMDA-Frontend/app/views/climate/datasetTime.scala.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ApacheCMDA-Frontend/app/views/climate/main.scala.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ApacheCMDA-Frontend/app/views/climate/mostPopularServices.scala.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.37721893">
+          <caret line="17" column="32" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ApacheCMDA-Frontend/app/views/climate/tutorial.scala.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ApacheCMDA-Frontend/app/views/climate/recommend.scala.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ApacheCMDA-Frontend/app/views/climate/oneService.scala.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ApacheCMDA-Frontend/app/controllers/ClimateServiceController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.64285713">
+          <caret line="67" column="2" selection-start-line="67" selection-start-column="2" selection-end-line="67" selection-end-column="2" />
+          <folding>
+            <element signature="e#0#6629#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ApacheCMDA-Frontend/app/views/climate/userSetList.scala.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.37721893">
+          <caret line="17" column="63" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ApacheCMDA-Backend/app/models/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.7785715">
+          <caret line="131" column="25" selection-start-line="131" selection-start-column="14" selection-end-line="131" selection-end-column="25" />
+          <folding>
+            <element signature="e#3202#3203#0" expanded="true" />
+            <element signature="e#3233#3234#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ApacheCMDA-Frontend/app/models/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.1428572">
+          <caret line="54" column="13" selection-start-line="54" selection-start-column="9" selection-end-line="54" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ApacheCMDA-Frontend/app/models/UserSet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.2642857">
+          <caret line="46" column="25" selection-start-line="46" selection-start-column="14" selection-end-line="46" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#3214#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ApacheCMDA-Backend/app/controllers/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.8">
+          <caret line="230" column="0" selection-start-line="230" selection-start-column="0" selection-end-line="230" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#9021#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ApacheCMDA-Frontend/app/views/climate/signup.scala.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.2040815">
+          <caret line="17" column="2" selection-start-line="17" selection-start-column="2" selection-end-line="17" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ApacheCMDA-Frontend/app/views/climate/mostRecentlyUsedServices.scala.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.2105265">
+          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ApacheCMDA-Frontend/app/models/metadata/ClimateService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="54.846153">
+          <caret line="70" column="0" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#11240#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ApacheCMDA-Frontend/app/controllers/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5928571">
+          <caret line="56" column="44" selection-start-line="56" selection-start-column="44" selection-end-line="56" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

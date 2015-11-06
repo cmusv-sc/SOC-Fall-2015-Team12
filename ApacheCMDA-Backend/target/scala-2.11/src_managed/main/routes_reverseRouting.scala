@@ -1,6 +1,6 @@
-// @SOURCE:/Users/Victoria/Documents/18655/team12/SOC-Fall-2015/ApacheCMDA-Backend/conf/routes
-// @HASH:f8e1fd29e6c2bba0754f40a9a6e3a59344067dec
-// @DATE:Fri Nov 06 08:48:54 PST 2015
+// @SOURCE:/Users/feifei/SOC-Fall-2015-Team12/ApacheCMDA-Backend/conf/routes
+// @HASH:fd7611af7c9ad01d7e1fc7b551497585ea542ea6
+// @DATE:Fri Nov 06 12:31:31 PST 2015
 
 import Routes.{prefix => _prefix, defaultPrefix => _defaultPrefix}
 import play.core._
@@ -144,6 +144,13 @@ def getUser(id:Long): Call = {
 }
                         
 
+// @LINE:57
+def loginTest(): Call = {
+   implicit val _rrc = new ReverseRouteContext(Map(("format", "json")))
+   Call("GET", _prefix + { _defaultPrefix } + "userService/loginTest/json")
+}
+                        
+
 // @LINE:51
 def updateUser(id:Long): Call = {
    import ReverseRouteContext.empty
@@ -165,13 +172,6 @@ def deleteUser(id:Long): Call = {
 }
                         
 
-// @LINE:56
-def loginWithUserNameAndPassword(userName:String, password:String): Call = {
-   import ReverseRouteContext.empty
-   Call("GET", _prefix + { _defaultPrefix } + "userService/login/userName/" + implicitly[PathBindable[String]].unbind("userName", dynamicString(userName)) + "/password/" + implicitly[PathBindable[String]].unbind("password", dynamicString(password)) + "/json")
-}
-                        
-
 // @LINE:55
 def deleteUserByUserNameandPassword(userName:String, password:String): Call = {
    import ReverseRouteContext.empty
@@ -186,7 +186,7 @@ def isUserValid(): Call = {
 }
                         
 
-// @LINE:57
+// @LINE:56
 def login(): Call = {
    import ReverseRouteContext.empty
    Call("POST", _prefix + { _defaultPrefix } + "userService/login")
@@ -587,6 +587,17 @@ def getUser : JavascriptReverseRoute = JavascriptReverseRoute(
 )
                         
 
+// @LINE:57
+def loginTest : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.UserController.loginTest",
+   """
+      function() {
+      return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "userService/loginTest/json"})
+      }
+   """
+)
+                        
+
 // @LINE:51
 def updateUser : JavascriptReverseRoute = JavascriptReverseRoute(
    "controllers.UserController.updateUser",
@@ -620,17 +631,6 @@ def deleteUser : JavascriptReverseRoute = JavascriptReverseRoute(
 )
                         
 
-// @LINE:56
-def loginWithUserNameAndPassword : JavascriptReverseRoute = JavascriptReverseRoute(
-   "controllers.UserController.loginWithUserNameAndPassword",
-   """
-      function(userName,password) {
-      return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "userService/login/userName/" + (""" + implicitly[PathBindable[String]].javascriptUnbind + """)("userName", encodeURIComponent(userName)) + "/password/" + (""" + implicitly[PathBindable[String]].javascriptUnbind + """)("password", encodeURIComponent(password)) + "/json"})
-      }
-   """
-)
-                        
-
 // @LINE:55
 def deleteUserByUserNameandPassword : JavascriptReverseRoute = JavascriptReverseRoute(
    "controllers.UserController.deleteUserByUserNameandPassword",
@@ -653,7 +653,7 @@ def isUserValid : JavascriptReverseRoute = JavascriptReverseRoute(
 )
                         
 
-// @LINE:57
+// @LINE:56
 def login : JavascriptReverseRoute = JavascriptReverseRoute(
    "controllers.UserController.login",
    """
@@ -1122,6 +1122,12 @@ def getUser(id:Long, format:String): play.api.mvc.HandlerRef[_] = new play.api.m
 )
                       
 
+// @LINE:57
+def loginTest(format:String): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   play.api.Play.maybeApplication.map(_.global).getOrElse(play.api.DefaultGlobal).getControllerInstance(classOf[controllers.UserController]).loginTest(format), HandlerDef(this.getClass.getClassLoader, "", "controllers.UserController", "loginTest", Seq(classOf[String]), "GET", """""", _prefix + """userService/loginTest/json""")
+)
+                      
+
 // @LINE:51
 def updateUser(id:Long): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    play.api.Play.maybeApplication.map(_.global).getOrElse(play.api.DefaultGlobal).getControllerInstance(classOf[controllers.UserController]).updateUser(id), HandlerDef(this.getClass.getClassLoader, "", "controllers.UserController", "updateUser", Seq(classOf[Long]), "PUT", """""", _prefix + """users/update/$id<[^/]+>""")
@@ -1140,12 +1146,6 @@ def deleteUser(id:Long): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRe
 )
                       
 
-// @LINE:56
-def loginWithUserNameAndPassword(userName:String, password:String): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
-   play.api.Play.maybeApplication.map(_.global).getOrElse(play.api.DefaultGlobal).getControllerInstance(classOf[controllers.UserController]).loginWithUserNameAndPassword(userName, password), HandlerDef(this.getClass.getClassLoader, "", "controllers.UserController", "loginWithUserNameAndPassword", Seq(classOf[String], classOf[String]), "GET", """""", _prefix + """userService/login/userName/$userName<[^/]+>/password/$password<[^/]+>/json""")
-)
-                      
-
 // @LINE:55
 def deleteUserByUserNameandPassword(userName:String, password:String): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    play.api.Play.maybeApplication.map(_.global).getOrElse(play.api.DefaultGlobal).getControllerInstance(classOf[controllers.UserController]).deleteUserByUserNameandPassword(userName, password), HandlerDef(this.getClass.getClassLoader, "", "controllers.UserController", "deleteUserByUserNameandPassword", Seq(classOf[String], classOf[String]), "DELETE", """""", _prefix + """users/delete/userName/$userName<[^/]+>/password/$password<[^/]+>""")
@@ -1158,7 +1158,7 @@ def isUserValid(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
 )
                       
 
-// @LINE:57
+// @LINE:56
 def login(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    play.api.Play.maybeApplication.map(_.global).getOrElse(play.api.DefaultGlobal).getControllerInstance(classOf[controllers.UserController]).login(), HandlerDef(this.getClass.getClassLoader, "", "controllers.UserController", "login", Seq(), "POST", """""", _prefix + """userService/login""")
 )

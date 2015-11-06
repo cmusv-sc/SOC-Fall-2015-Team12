@@ -69,7 +69,7 @@ public class UserSet {
 		for (int i = 0; i < userSetNode.size(); i++) {
 			JsonNode json = userSetNode.path(i);
 			UserSet userset = new UserSet();
-			userset.setUsername(json.get("username").asText());
+			userset.setUsername(json.get("userName").asText());
 			userset.setPassword(json.get("password").asText());
 
 			userSets.add(userset);
@@ -82,8 +82,8 @@ public class UserSet {
 		List<UserSet> userSets = new ArrayList<UserSet>();
 		ObjectMapper mapper = new ObjectMapper();
 		ObjectNode queryJson = mapper.createObjectNode();
-		queryJson.put("Username", username);
-		queryJson.put("Password", password);
+		queryJson.put("userName", username);
+		queryJson.put("password", password);
 
 		JsonNode userSetNode = APICall.postAPI(USERSET_QUERY, queryJson);
 		
@@ -102,7 +102,7 @@ public class UserSet {
 
 	private static UserSet deserializeJsonToUserSet(JsonNode json) {
 		UserSet newUserSet = new UserSet();
-		newUserSet.setUsername(json.get("username").asText());
+		newUserSet.setUsername(json.get("userName").asText());
 		newUserSet.setPassword(json.get("password").asText());
 
 		return newUserSet;

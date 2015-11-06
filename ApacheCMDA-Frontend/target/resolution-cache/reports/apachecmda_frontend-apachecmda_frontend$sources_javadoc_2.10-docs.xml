@@ -1,0 +1,843 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ivy-report.xsl"?>
+<ivy-report version="1.0">
+	<info
+		organisation="apachecmda_frontend"
+		module="apachecmda_frontend$sources_javadoc_2.10"
+		revision="1.0-SNAPSHOT"
+		conf="docs"
+		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool, echo-trace-compile, echo-trace-test, echo-weave, echo-sigar"
+		date="20151030005127"/>
+	<dependencies>
+		<module organisation="com.typesafe.play" name="play-docs_2.10">
+			<revision name="2.2.3" status="release" pubdate="20151030002026" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="37">
+				<metadata-artifact status="no" details="" size="2548" time="0" location="/Users/Qiyao/.ivy2/cache/com.typesafe.play/play-docs_2.10/ivy-2.2.3.xml" searched="false" origin-is-local="false" origin-location="http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-docs_2.10/2.2.3/play-docs_2.10-2.2.3.pom"/>
+				<caller organisation="apachecmda_frontend" name="apachecmda_frontend$sources_javadoc_2.10" conf="docs" rev="2.2.3" rev-constraint-default="2.2.3" rev-constraint-dynamic="2.2.3" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="play-docs_2.10" type="doc" ext="jar" extra-classifier="javadoc" status="failed" details="" size="0" time="0"/>
+					<artifact name="play-docs_2.10" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="3785" time="1378" location="/Users/Qiyao/.ivy2/cache/com.typesafe.play/play-docs_2.10/srcs/play-docs_2.10-2.2.3-sources.jar">
+						<origin-location is-local="false" location="http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-docs_2.10/2.2.3/play-docs_2.10-2.2.3-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.play" name="play-doc_2.10">
+			<revision name="1.0.3" status="release" pubdate="20150421084516" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="42">
+				<metadata-artifact status="no" details="" size="2778" time="0" location="/Users/Qiyao/.ivy2/cache/com.typesafe.play/play-doc_2.10/ivy-1.0.3.xml" searched="false" origin-is-local="false" origin-location="http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-doc_2.10/1.0.3/play-doc_2.10-1.0.3.pom"/>
+				<caller organisation="apachecmda_frontend" name="apachecmda_frontend$sources_javadoc_2.10" conf="docs" rev="1.0.3" rev-constraint-default="1.0.3" rev-constraint-dynamic="1.0.3" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="play-doc_2.10" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="393668" time="2231" location="/Users/Qiyao/.ivy2/cache/com.typesafe.play/play-doc_2.10/docs/play-doc_2.10-1.0.3-javadoc.jar">
+						<origin-location is-local="false" location="http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-doc_2.10/1.0.3/play-doc_2.10-1.0.3-javadoc.jar"/>
+					</artifact>
+					<artifact name="play-doc_2.10" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="7238" time="1319" location="/Users/Qiyao/.ivy2/cache/com.typesafe.play/play-doc_2.10/srcs/play-doc_2.10-1.0.3-sources.jar">
+						<origin-location is-local="false" location="http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-doc_2.10/1.0.3/play-doc_2.10-1.0.3-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="commons-io" name="commons-io">
+			<revision name="2.4" status="release" pubdate="20120612152206" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/io/" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="50">
+				<metadata-artifact status="no" details="" size="8457" time="0" location="/Users/Qiyao/.ivy2/cache/commons-io/commons-io/ivy-2.4.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/commons-io/commons-io/2.4/commons-io-2.4.pom"/>
+				<caller organisation="apachecmda_frontend" name="apachecmda_frontend$sources_javadoc_2.10" conf="docs" rev="2.4" rev-constraint-default="2.4" rev-constraint-dynamic="2.4" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="commons-io" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="246635" time="122" location="/Users/Qiyao/.ivy2/cache/commons-io/commons-io/srcs/commons-io-2.4-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/commons-io/commons-io/2.4/commons-io-2.4-sources.jar"/>
+					</artifact>
+					<artifact name="commons-io" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="724124" time="236" location="/Users/Qiyao/.ivy2/cache/commons-io/commons-io/docs/commons-io-2.4-javadoc.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/commons-io/commons-io/2.4/commons-io-2.4-javadoc.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.pegdown" name="pegdown">
+			<revision name="1.4.0" status="release" pubdate="20130624115140" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://pegdown.org" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="43">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="2771" time="0" location="/Users/Qiyao/.ivy2/cache/org.pegdown/pegdown/ivy-1.4.0.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/pegdown/pegdown/1.4.0/pegdown-1.4.0.pom"/>
+				<caller organisation="apachecmda_frontend" name="apachecmda_frontend$sources_javadoc_2.10" conf="docs" rev="1.4.0" rev-constraint-default="1.4.0" rev-constraint-dynamic="1.4.0" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="pegdown" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="202567" time="117" location="/Users/Qiyao/.ivy2/cache/org.pegdown/pegdown/docs/pegdown-1.4.0-javadoc.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/pegdown/pegdown/1.4.0/pegdown-1.4.0-javadoc.jar"/>
+					</artifact>
+					<artifact name="pegdown" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="55243" time="110" location="/Users/Qiyao/.ivy2/cache/org.pegdown/pegdown/srcs/pegdown-1.4.0-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/pegdown/pegdown/1.4.0/pegdown-1.4.0-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.parboiled" name="parboiled-java">
+			<revision name="1.1.5" status="release" pubdate="20130502073054" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://parboiled.org" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="44">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3312" time="0" location="/Users/Qiyao/.ivy2/cache/org.parboiled/parboiled-java/ivy-1.1.5.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/parboiled/parboiled-java/1.1.5/parboiled-java-1.1.5.pom"/>
+				<caller organisation="apachecmda_frontend" name="apachecmda_frontend$sources_javadoc_2.10" conf="docs" rev="1.1.5" rev-constraint-default="1.1.5" rev-constraint-dynamic="1.1.5" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="parboiled-java" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="72598" time="133" location="/Users/Qiyao/.ivy2/cache/org.parboiled/parboiled-java/srcs/parboiled-java-1.1.5-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/parboiled/parboiled-java/1.1.5/parboiled-java-1.1.5-sources.jar"/>
+					</artifact>
+					<artifact name="parboiled-java" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="112174" time="219" location="/Users/Qiyao/.ivy2/cache/org.parboiled/parboiled-java/docs/parboiled-java-1.1.5-javadoc.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/parboiled/parboiled-java/1.1.5/parboiled-java-1.1.5-javadoc.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.ow2.asm" name="asm-util">
+			<revision name="4.1" status="release" pubdate="20121014083900" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="49">
+				<metadata-artifact status="no" details="" size="4374" time="0" location="/Users/Qiyao/.ivy2/cache/org.ow2.asm/asm-util/ivy-4.1.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/ow2/asm/asm-util/4.1/asm-util-4.1.pom"/>
+				<caller organisation="apachecmda_frontend" name="apachecmda_frontend$sources_javadoc_2.10" conf="docs" rev="4.1" rev-constraint-default="4.1" rev-constraint-dynamic="4.1" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="asm-util" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="983980" time="281" location="/Users/Qiyao/.ivy2/cache/org.ow2.asm/asm-util/srcs/asm-util-4.1-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/ow2/asm/asm-util/4.1/asm-util-4.1-sources.jar"/>
+					</artifact>
+					<artifact name="asm-util" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="1518830" time="403" location="/Users/Qiyao/.ivy2/cache/org.ow2.asm/asm-util/docs/asm-util-4.1-javadoc.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/ow2/asm/asm-util/4.1/asm-util-4.1-javadoc.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.ow2.asm" name="asm-analysis">
+			<revision name="4.1" status="release" pubdate="20121014083804" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="48">
+				<metadata-artifact status="no" details="" size="4382" time="0" location="/Users/Qiyao/.ivy2/cache/org.ow2.asm/asm-analysis/ivy-4.1.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/ow2/asm/asm-analysis/4.1/asm-analysis-4.1.pom"/>
+				<caller organisation="apachecmda_frontend" name="apachecmda_frontend$sources_javadoc_2.10" conf="docs" rev="4.1" rev-constraint-default="4.1" rev-constraint-dynamic="4.1" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="asm-analysis" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="983980" time="356" location="/Users/Qiyao/.ivy2/cache/org.ow2.asm/asm-analysis/srcs/asm-analysis-4.1-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/ow2/asm/asm-analysis/4.1/asm-analysis-4.1-sources.jar"/>
+					</artifact>
+					<artifact name="asm-analysis" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="1518830" time="354" location="/Users/Qiyao/.ivy2/cache/org.ow2.asm/asm-analysis/docs/asm-analysis-4.1-javadoc.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/ow2/asm/asm-analysis/4.1/asm-analysis-4.1-javadoc.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.ow2.asm" name="asm-tree">
+			<revision name="4.1" status="release" pubdate="20121014083839" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="47">
+				<metadata-artifact status="no" details="" size="4369" time="0" location="/Users/Qiyao/.ivy2/cache/org.ow2.asm/asm-tree/ivy-4.1.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/ow2/asm/asm-tree/4.1/asm-tree-4.1.pom"/>
+				<caller organisation="apachecmda_frontend" name="apachecmda_frontend$sources_javadoc_2.10" conf="docs" rev="4.1" rev-constraint-default="4.1" rev-constraint-dynamic="4.1" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="asm-tree" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="983980" time="299" location="/Users/Qiyao/.ivy2/cache/org.ow2.asm/asm-tree/srcs/asm-tree-4.1-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/ow2/asm/asm-tree/4.1/asm-tree-4.1-sources.jar"/>
+					</artifact>
+					<artifact name="asm-tree" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="1518830" time="388" location="/Users/Qiyao/.ivy2/cache/org.ow2.asm/asm-tree/docs/asm-tree-4.1-javadoc.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/ow2/asm/asm-tree/4.1/asm-tree-4.1-javadoc.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.ow2.asm" name="asm">
+			<revision name="4.1" status="release" pubdate="20121014083745" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="46">
+				<metadata-artifact status="no" details="" size="3744" time="0" location="/Users/Qiyao/.ivy2/cache/org.ow2.asm/asm/ivy-4.1.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/ow2/asm/asm/4.1/asm-4.1.pom"/>
+				<caller organisation="apachecmda_frontend" name="apachecmda_frontend$sources_javadoc_2.10" conf="docs" rev="4.1" rev-constraint-default="4.1" rev-constraint-dynamic="4.1" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="asm" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="983980" time="245" location="/Users/Qiyao/.ivy2/cache/org.ow2.asm/asm/srcs/asm-4.1-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/ow2/asm/asm/4.1/asm-4.1-sources.jar"/>
+					</artifact>
+					<artifact name="asm" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="1518830" time="441" location="/Users/Qiyao/.ivy2/cache/org.ow2.asm/asm/docs/asm-4.1-javadoc.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/ow2/asm/asm/4.1/asm-4.1-javadoc.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.parboiled" name="parboiled-core">
+			<revision name="1.1.5" status="release" pubdate="20130502073037" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://parboiled.org" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="45">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="2653" time="0" location="/Users/Qiyao/.ivy2/cache/org.parboiled/parboiled-core/ivy-1.1.5.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/parboiled/parboiled-core/1.1.5/parboiled-core-1.1.5.pom"/>
+				<caller organisation="apachecmda_frontend" name="apachecmda_frontend$sources_javadoc_2.10" conf="docs" rev="1.1.5" rev-constraint-default="1.1.5" rev-constraint-dynamic="1.1.5" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="parboiled-core" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="457768" time="183" location="/Users/Qiyao/.ivy2/cache/org.parboiled/parboiled-core/docs/parboiled-core-1.1.5-javadoc.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/parboiled/parboiled-core/1.1.5/parboiled-core-1.1.5-javadoc.jar"/>
+					</artifact>
+					<artifact name="parboiled-core" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="166426" time="125" location="/Users/Qiyao/.ivy2/cache/org.parboiled/parboiled-core/srcs/parboiled-core-1.1.5-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/parboiled/parboiled-core/1.1.5/parboiled-core-1.1.5-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.play" name="play_2.10">
+			<revision name="2.2.3" status="release" pubdate="20150421085600" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="1">
+				<metadata-artifact status="no" details="" size="7248" time="0" location="/Users/Qiyao/.ivy2/cache/com.typesafe.play/play_2.10/ivy-2.2.3.xml" searched="false" origin-is-local="false" origin-location="http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play_2.10/2.2.3/play_2.10-2.2.3.pom"/>
+				<caller organisation="apachecmda_frontend" name="apachecmda_frontend$sources_javadoc_2.10" conf="docs" rev="2.2.3" rev-constraint-default="2.2.3" rev-constraint-dynamic="2.2.3" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="play_2.10" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="364994" time="1711" location="/Users/Qiyao/.ivy2/cache/com.typesafe.play/play_2.10/srcs/play_2.10-2.2.3-sources.jar">
+						<origin-location is-local="false" location="http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play_2.10/2.2.3/play_2.10-2.2.3-sources.jar"/>
+					</artifact>
+					<artifact name="play_2.10" type="jar" ext="jar" status="no" details="" size="3800490" time="0" location="/Users/Qiyao/.ivy2/cache/com.typesafe.play/play_2.10/jars/play_2.10-2.2.3.jar">
+						<origin-location is-local="false" location="http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play_2.10/2.2.3/play_2.10-2.2.3.jar"/>
+					</artifact>
+					<artifact name="play_2.10" type="doc" ext="jar" extra-classifier="javadoc" status="failed" details="" size="0" time="0"/>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="xerces" name="xercesImpl">
+			<revision name="2.11.0" status="release" pubdate="20130220122006" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://xerces.apache.org/xerces2-j/" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="34">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="4260" time="0" location="/Users/Qiyao/.ivy2/cache/xerces/xercesImpl/ivy-2.11.0.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/xerces/xercesImpl/2.11.0/xercesImpl-2.11.0.pom"/>
+				<caller organisation="apachecmda_frontend" name="apachecmda_frontend$sources_javadoc_2.10" conf="docs" rev="2.11.0" rev-constraint-default="2.11.0" rev-constraint-dynamic="2.11.0" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="xercesImpl" type="jar" ext="jar" status="no" details="" size="1367760" time="0" location="/Users/Qiyao/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.11.0.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/xerces/xercesImpl/2.11.0/xercesImpl-2.11.0.jar"/>
+					</artifact>
+					<artifact name="xercesImpl" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="2136909" time="380" location="/Users/Qiyao/.ivy2/cache/xerces/xercesImpl/docs/xercesImpl-2.11.0-javadoc.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/xerces/xercesImpl/2.11.0/xercesImpl-2.11.0-javadoc.jar"/>
+					</artifact>
+					<artifact name="xercesImpl" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="2081596" time="320" location="/Users/Qiyao/.ivy2/cache/xerces/xercesImpl/srcs/xercesImpl-2.11.0-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/xerces/xercesImpl/2.11.0/xercesImpl-2.11.0-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="xml-apis" name="xml-apis">
+			<revision name="1.4.01" status="release" pubdate="20110819171111" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://xml.apache.org/commons/components/external/" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="35">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<license name="The SAX License" url="http://www.saxproject.org/copying.html"/>
+				<license name="The W3C License" url="http://www.w3.org/TR/2004/REC-DOM-Level-3-Core-20040407/java-binding.zip"/>
+				<metadata-artifact status="no" details="" size="3132" time="0" location="/Users/Qiyao/.ivy2/cache/xml-apis/xml-apis/ivy-1.4.01.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/xml-apis/xml-apis/1.4.01/xml-apis-1.4.01.pom"/>
+				<caller organisation="apachecmda_frontend" name="apachecmda_frontend$sources_javadoc_2.10" conf="docs" rev="1.4.01" rev-constraint-default="1.4.01" rev-constraint-dynamic="1.4.01" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="xml-apis" type="jar" ext="jar" status="no" details="" size="220536" time="0" location="/Users/Qiyao/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.4.01.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/xml-apis/xml-apis/1.4.01/xml-apis-1.4.01.jar"/>
+					</artifact>
+					<artifact name="xml-apis" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="656529" time="136" location="/Users/Qiyao/.ivy2/cache/xml-apis/xml-apis/srcs/xml-apis-1.4.01-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/xml-apis/xml-apis/1.4.01/xml-apis-1.4.01-sources.jar"/>
+					</artifact>
+					<artifact name="xml-apis" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="1480162" time="270" location="/Users/Qiyao/.ivy2/cache/xml-apis/xml-apis/docs/xml-apis-1.4.01-javadoc.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/xml-apis/xml-apis/1.4.01/xml-apis-1.4.01-javadoc.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="oauth.signpost" name="signpost-commonshttp4">
+			<revision name="1.2.1.2" status="release" pubdate="20120226001621" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="32">
+				<metadata-artifact status="no" details="" size="3714" time="0" location="/Users/Qiyao/.ivy2/cache/oauth.signpost/signpost-commonshttp4/ivy-1.2.1.2.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/oauth/signpost/signpost-commonshttp4/1.2.1.2/signpost-commonshttp4-1.2.1.2.pom"/>
+				<caller organisation="apachecmda_frontend" name="apachecmda_frontend$sources_javadoc_2.10" conf="docs" rev="1.2.1.2" rev-constraint-default="1.2.1.2" rev-constraint-dynamic="1.2.1.2" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="signpost-commonshttp4" type="jar" ext="jar" status="no" details="" size="6512" time="0" location="/Users/Qiyao/.ivy2/cache/oauth.signpost/signpost-commonshttp4/jars/signpost-commonshttp4-1.2.1.2.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/oauth/signpost/signpost-commonshttp4/1.2.1.2/signpost-commonshttp4-1.2.1.2.jar"/>
+					</artifact>
+					<artifact name="signpost-commonshttp4" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="42825" time="82" location="/Users/Qiyao/.ivy2/cache/oauth.signpost/signpost-commonshttp4/docs/signpost-commonshttp4-1.2.1.2-javadoc.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/oauth/signpost/signpost-commonshttp4/1.2.1.2/signpost-commonshttp4-1.2.1.2-javadoc.jar"/>
+					</artifact>
+					<artifact name="signpost-commonshttp4" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="4178" time="68" location="/Users/Qiyao/.ivy2/cache/oauth.signpost/signpost-commonshttp4/srcs/signpost-commonshttp4-1.2.1.2-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/oauth/signpost/signpost-commonshttp4/1.2.1.2/signpost-commonshttp4-1.2.1.2-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.httpcomponents" name="httpclient">
+			<revision name="4.0.1" status="release" pubdate="20091209112018" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://hc.apache.org/httpcomponents-client" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="41">
+				<license name="Apache License" url="../LICENSE.txt"/>
+				<metadata-artifact status="no" details="" size="5028" time="0" location="/Users/Qiyao/.ivy2/cache/org.apache.httpcomponents/httpclient/ivy-4.0.1.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/apache/httpcomponents/httpclient/4.0.1/httpclient-4.0.1.pom"/>
+				<caller organisation="apachecmda_frontend" name="apachecmda_frontend$sources_javadoc_2.10" conf="docs" rev="4.0.1" rev-constraint-default="4.0.1" rev-constraint-dynamic="4.0.1" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="httpclient" type="doc" ext="jar" extra-classifier="javadoc" status="failed" details="" size="0" time="0"/>
+					<artifact name="httpclient" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="389445" time="160" location="/Users/Qiyao/.ivy2/cache/org.apache.httpcomponents/httpclient/srcs/httpclient-4.0.1-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/apache/httpcomponents/httpclient/4.0.1/httpclient-4.0.1-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.httpcomponents" name="httpcore">
+			<revision name="4.0.1" status="release" pubdate="20090621040836" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://hc.apache.org/httpcomponents-core/" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="40">
+				<license name="Apache License" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="no" details="" size="4328" time="0" location="/Users/Qiyao/.ivy2/cache/org.apache.httpcomponents/httpcore/ivy-4.0.1.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/apache/httpcomponents/httpcore/4.0.1/httpcore-4.0.1.pom"/>
+				<caller organisation="apachecmda_frontend" name="apachecmda_frontend$sources_javadoc_2.10" conf="docs" rev="4.0.1" rev-constraint-default="4.0.1" rev-constraint-dynamic="4.0.1" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="httpcore" type="doc" ext="jar" extra-classifier="javadoc" status="failed" details="" size="0" time="0"/>
+					<artifact name="httpcore" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="291844" time="119" location="/Users/Qiyao/.ivy2/cache/org.apache.httpcomponents/httpcore/srcs/httpcore-4.0.1-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/apache/httpcomponents/httpcore/4.0.1/httpcore-4.0.1-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="oauth.signpost" name="signpost-core">
+			<revision name="1.2.1.2" status="release" pubdate="20120226001606" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="31">
+				<metadata-artifact status="no" details="" size="3140" time="0" location="/Users/Qiyao/.ivy2/cache/oauth.signpost/signpost-core/ivy-1.2.1.2.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/oauth/signpost/signpost-core/1.2.1.2/signpost-core-1.2.1.2.pom"/>
+				<caller organisation="apachecmda_frontend" name="apachecmda_frontend$sources_javadoc_2.10" conf="docs" rev="1.2.1.2" rev-constraint-default="1.2.1.2" rev-constraint-dynamic="1.2.1.2" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="signpost-core" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="255054" time="88" location="/Users/Qiyao/.ivy2/cache/oauth.signpost/signpost-core/docs/signpost-core-1.2.1.2-javadoc.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/oauth/signpost/signpost-core/1.2.1.2/signpost-core-1.2.1.2-javadoc.jar"/>
+					</artifact>
+					<artifact name="signpost-core" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="50062" time="74" location="/Users/Qiyao/.ivy2/cache/oauth.signpost/signpost-core/srcs/signpost-core-1.2.1.2-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/oauth/signpost/signpost-core/1.2.1.2/signpost-core-1.2.1.2-sources.jar"/>
+					</artifact>
+					<artifact name="signpost-core" type="jar" ext="jar" status="no" details="" size="45277" time="0" location="/Users/Qiyao/.ivy2/cache/oauth.signpost/signpost-core/jars/signpost-core-1.2.1.2.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/oauth/signpost/signpost-core/1.2.1.2/signpost-core-1.2.1.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="commons-codec" name="commons-codec">
+			<revision name="1.3" status="release" pubdate="20051108142951" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://jakarta.apache.org/commons/codec/" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="39">
+				<license name="The Apache Software License, Version 2.0" url="/LICENSE.txt"/>
+				<metadata-artifact status="no" details="" size="2791" time="0" location="/Users/Qiyao/.ivy2/cache/commons-codec/commons-codec/ivy-1.3.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/commons-codec/commons-codec/1.3/commons-codec-1.3.pom"/>
+				<caller organisation="apachecmda_frontend" name="apachecmda_frontend$sources_javadoc_2.10" conf="docs" rev="1.3" rev-constraint-default="1.3" rev-constraint-dynamic="1.3" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="commons-codec" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="198607" time="107" location="/Users/Qiyao/.ivy2/cache/commons-codec/commons-codec/docs/commons-codec-1.3-javadoc.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/commons-codec/commons-codec/1.3/commons-codec-1.3-javadoc.jar"/>
+					</artifact>
+					<artifact name="commons-codec" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="55191" time="90" location="/Users/Qiyao/.ivy2/cache/commons-codec/commons-codec/srcs/commons-codec-1.3-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/commons-codec/commons-codec/1.3/commons-codec-1.3-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.ning" name="async-http-client">
+			<revision name="1.7.18" status="release" pubdate="20130703061130" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://github.com/AsyncHttpClient/async-http-client" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="30">
+				<license name="Apache License 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="no" details="" size="6797" time="0" location="/Users/Qiyao/.ivy2/cache/com.ning/async-http-client/ivy-1.7.18.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/ning/async-http-client/1.7.18/async-http-client-1.7.18.pom"/>
+				<caller organisation="apachecmda_frontend" name="apachecmda_frontend$sources_javadoc_2.10" conf="docs" rev="1.7.18" rev-constraint-default="1.7.18" rev-constraint-dynamic="1.7.18" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="async-http-client" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="297023" time="122" location="/Users/Qiyao/.ivy2/cache/com.ning/async-http-client/srcs/async-http-client-1.7.18-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/ning/async-http-client/1.7.18/async-http-client-1.7.18-sources.jar"/>
+					</artifact>
+					<artifact name="async-http-client" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="1171668" time="353" location="/Users/Qiyao/.ivy2/cache/com.ning/async-http-client/docs/async-http-client-1.7.18-javadoc.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/ning/async-http-client/1.7.18/async-http-client-1.7.18-javadoc.jar"/>
+					</artifact>
+					<artifact name="async-http-client" type="jar" ext="jar" status="no" details="" size="500511" time="0" location="/Users/Qiyao/.ivy2/cache/com.ning/async-http-client/jars/async-http-client-1.7.18.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/ning/async-http-client/1.7.18/async-http-client-1.7.18.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.commons" name="commons-lang3">
+			<revision name="3.1" status="release" pubdate="20111114232705" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/lang/" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="29">
+				<metadata-artifact status="no" details="" size="7774" time="0" location="/Users/Qiyao/.ivy2/cache/org.apache.commons/commons-lang3/ivy-3.1.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/apache/commons/commons-lang3/3.1/commons-lang3-3.1.pom"/>
+				<caller organisation="apachecmda_frontend" name="apachecmda_frontend$sources_javadoc_2.10" conf="docs" rev="3.1" rev-constraint-default="3.1" rev-constraint-dynamic="3.1" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="commons-lang3" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="1765707" time="322" location="/Users/Qiyao/.ivy2/cache/org.apache.commons/commons-lang3/docs/commons-lang3-3.1-javadoc.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/apache/commons/commons-lang3/3.1/commons-lang3-3.1-javadoc.jar"/>
+					</artifact>
+					<artifact name="commons-lang3" type="jar" ext="jar" status="no" details="" size="315805" time="0" location="/Users/Qiyao/.ivy2/cache/org.apache.commons/commons-lang3/jars/commons-lang3-3.1.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/apache/commons/commons-lang3/3.1/commons-lang3-3.1.jar"/>
+					</artifact>
+					<artifact name="commons-lang3" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="393048" time="122" location="/Users/Qiyao/.ivy2/cache/org.apache.commons/commons-lang3/srcs/commons-lang3-3.1-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/apache/commons/commons-lang3/3.1/commons-lang3-3.1-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.akka" name="akka-slf4j_2.10">
+			<revision name="2.2.0" status="release" pubdate="20130709025628" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://akka.io" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="28">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3029" time="0" location="/Users/Qiyao/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.10/ivy-2.2.0.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/typesafe/akka/akka-slf4j_2.10/2.2.0/akka-slf4j_2.10-2.2.0.pom"/>
+				<caller organisation="apachecmda_frontend" name="apachecmda_frontend$sources_javadoc_2.10" conf="docs" rev="2.2.0" rev-constraint-default="2.2.0" rev-constraint-dynamic="2.2.0" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="akka-slf4j_2.10" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="2333" time="119" location="/Users/Qiyao/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.10/srcs/akka-slf4j_2.10-2.2.0-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/typesafe/akka/akka-slf4j_2.10/2.2.0/akka-slf4j_2.10-2.2.0-sources.jar"/>
+					</artifact>
+					<artifact name="akka-slf4j_2.10" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="29640" time="90" location="/Users/Qiyao/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.10/docs/akka-slf4j_2.10-2.2.0-javadoc.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/typesafe/akka/akka-slf4j_2.10/2.2.0/akka-slf4j_2.10-2.2.0-javadoc.jar"/>
+					</artifact>
+					<artifact name="akka-slf4j_2.10" type="jar" ext="jar" status="successful" details="" size="14477" time="75" location="/Users/Qiyao/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.10/jars/akka-slf4j_2.10-2.2.0.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/typesafe/akka/akka-slf4j_2.10/2.2.0/akka-slf4j_2.10-2.2.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.akka" name="akka-actor_2.10">
+			<revision name="2.2.0" status="release" pubdate="20130709025426" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://akka.io" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="27">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="2638" time="0" location="/Users/Qiyao/.ivy2/cache/com.typesafe.akka/akka-actor_2.10/ivy-2.2.0.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/typesafe/akka/akka-actor_2.10/2.2.0/akka-actor_2.10-2.2.0.pom"/>
+				<caller organisation="apachecmda_frontend" name="apachecmda_frontend$sources_javadoc_2.10" conf="docs" rev="2.2.0" rev-constraint-default="2.2.0" rev-constraint-dynamic="2.2.0" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="akka-actor_2.10" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="2210580" time="379" location="/Users/Qiyao/.ivy2/cache/com.typesafe.akka/akka-actor_2.10/docs/akka-actor_2.10-2.2.0-javadoc.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/typesafe/akka/akka-actor_2.10/2.2.0/akka-actor_2.10-2.2.0-javadoc.jar"/>
+					</artifact>
+					<artifact name="akka-actor_2.10" type="jar" ext="jar" status="no" details="" size="2643414" time="0" location="/Users/Qiyao/.ivy2/cache/com.typesafe.akka/akka-actor_2.10/jars/akka-actor_2.10-2.2.0.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/typesafe/akka/akka-actor_2.10/2.2.0/akka-actor_2.10-2.2.0.jar"/>
+					</artifact>
+					<artifact name="akka-actor_2.10" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="318498" time="103" location="/Users/Qiyao/.ivy2/cache/com.typesafe.akka/akka-actor_2.10/srcs/akka-actor_2.10-2.2.0-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/typesafe/akka/akka-actor_2.10/2.2.0/akka-actor_2.10-2.2.0-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="ch.qos.logback" name="logback-classic">
+			<revision name="1.0.13" status="release" pubdate="20130510053446" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://logback.qos.ch" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="26">
+				<license name="Eclipse Public License - v 1.0" url="http://www.eclipse.org/legal/epl-v10.html"/>
+				<license name="GNU Lesser General Public License" url="http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html"/>
+				<metadata-artifact status="no" details="" size="10259" time="0" location="/Users/Qiyao/.ivy2/cache/ch.qos.logback/logback-classic/ivy-1.0.13.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/ch/qos/logback/logback-classic/1.0.13/logback-classic-1.0.13.pom"/>
+				<caller organisation="apachecmda_frontend" name="apachecmda_frontend$sources_javadoc_2.10" conf="docs" rev="1.0.13" rev-constraint-default="1.0.13" rev-constraint-dynamic="1.0.13" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="logback-classic" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="1025971" time="187" location="/Users/Qiyao/.ivy2/cache/ch.qos.logback/logback-classic/docs/logback-classic-1.0.13-javadoc.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/ch/qos/logback/logback-classic/1.0.13/logback-classic-1.0.13-javadoc.jar"/>
+					</artifact>
+					<artifact name="logback-classic" type="jar" ext="jar" status="no" details="" size="264600" time="0" location="/Users/Qiyao/.ivy2/cache/ch.qos.logback/logback-classic/jars/logback-classic-1.0.13.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/ch/qos/logback/logback-classic/1.0.13/logback-classic-1.0.13.jar"/>
+					</artifact>
+					<artifact name="logback-classic" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="218648" time="102" location="/Users/Qiyao/.ivy2/cache/ch.qos.logback/logback-classic/srcs/logback-classic-1.0.13-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/ch/qos/logback/logback-classic/1.0.13/logback-classic-1.0.13-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="ch.qos.logback" name="logback-core">
+			<revision name="1.0.13" status="release" pubdate="20130510053314" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://logback.qos.ch" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="25">
+				<license name="Eclipse Public License - v 1.0" url="http://www.eclipse.org/legal/epl-v10.html"/>
+				<license name="GNU Lesser General Public License" url="http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html"/>
+				<metadata-artifact status="no" details="" size="9523" time="0" location="/Users/Qiyao/.ivy2/cache/ch.qos.logback/logback-core/ivy-1.0.13.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/ch/qos/logback/logback-core/1.0.13/logback-core-1.0.13.pom"/>
+				<caller organisation="apachecmda_frontend" name="apachecmda_frontend$sources_javadoc_2.10" conf="docs" rev="1.0.13" rev-constraint-default="1.0.13" rev-constraint-dynamic="1.0.13" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="logback-core" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="363737" time="217" location="/Users/Qiyao/.ivy2/cache/ch.qos.logback/logback-core/srcs/logback-core-1.0.13-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/ch/qos/logback/logback-core/1.0.13/logback-core-1.0.13-sources.jar"/>
+					</artifact>
+					<artifact name="logback-core" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="1874335" time="440" location="/Users/Qiyao/.ivy2/cache/ch.qos.logback/logback-core/docs/logback-core-1.0.13-javadoc.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/ch/qos/logback/logback-core/1.0.13/logback-core-1.0.13-javadoc.jar"/>
+					</artifact>
+					<artifact name="logback-core" type="jar" ext="jar" status="no" details="" size="418870" time="0" location="/Users/Qiyao/.ivy2/cache/ch.qos.logback/logback-core/jars/logback-core-1.0.13.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/ch/qos/logback/logback-core/1.0.13/logback-core-1.0.13.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.slf4j" name="jcl-over-slf4j">
+			<revision name="1.7.5" status="release" pubdate="20130325135320" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.slf4j.org" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="24">
+				<metadata-artifact status="no" details="" size="4633" time="0" location="/Users/Qiyao/.ivy2/cache/org.slf4j/jcl-over-slf4j/ivy-1.7.5.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/slf4j/jcl-over-slf4j/1.7.5/jcl-over-slf4j-1.7.5.pom"/>
+				<caller organisation="apachecmda_frontend" name="apachecmda_frontend$sources_javadoc_2.10" conf="docs" rev="1.7.5" rev-constraint-default="1.7.5" rev-constraint-dynamic="1.7.5" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="jcl-over-slf4j" type="jar" ext="jar" status="no" details="" size="16517" time="0" location="/Users/Qiyao/.ivy2/cache/org.slf4j/jcl-over-slf4j/jars/jcl-over-slf4j-1.7.5.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/slf4j/jcl-over-slf4j/1.7.5/jcl-over-slf4j-1.7.5.jar"/>
+					</artifact>
+					<artifact name="jcl-over-slf4j" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="23046" time="94" location="/Users/Qiyao/.ivy2/cache/org.slf4j/jcl-over-slf4j/srcs/jcl-over-slf4j-1.7.5-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/slf4j/jcl-over-slf4j/1.7.5/jcl-over-slf4j-1.7.5-sources.jar"/>
+					</artifact>
+					<artifact name="jcl-over-slf4j" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="92874" time="72" location="/Users/Qiyao/.ivy2/cache/org.slf4j/jcl-over-slf4j/docs/jcl-over-slf4j-1.7.5-javadoc.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/slf4j/jcl-over-slf4j/1.7.5/jcl-over-slf4j-1.7.5-javadoc.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.slf4j" name="jul-to-slf4j">
+			<revision name="1.7.5" status="release" pubdate="20130325135340" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.slf4j.org" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="23">
+				<metadata-artifact status="no" details="" size="4672" time="0" location="/Users/Qiyao/.ivy2/cache/org.slf4j/jul-to-slf4j/ivy-1.7.5.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/slf4j/jul-to-slf4j/1.7.5/jul-to-slf4j-1.7.5.pom"/>
+				<caller organisation="apachecmda_frontend" name="apachecmda_frontend$sources_javadoc_2.10" conf="docs" rev="1.7.5" rev-constraint-default="1.7.5" rev-constraint-dynamic="1.7.5" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="jul-to-slf4j" type="jar" ext="jar" status="no" details="" size="4960" time="0" location="/Users/Qiyao/.ivy2/cache/org.slf4j/jul-to-slf4j/jars/jul-to-slf4j-1.7.5.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/slf4j/jul-to-slf4j/1.7.5/jul-to-slf4j-1.7.5.jar"/>
+					</artifact>
+					<artifact name="jul-to-slf4j" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="24878" time="78" location="/Users/Qiyao/.ivy2/cache/org.slf4j/jul-to-slf4j/docs/jul-to-slf4j-1.7.5-javadoc.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/slf4j/jul-to-slf4j/1.7.5/jul-to-slf4j-1.7.5-javadoc.jar"/>
+					</artifact>
+					<artifact name="jul-to-slf4j" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="4806" time="70" location="/Users/Qiyao/.ivy2/cache/org.slf4j/jul-to-slf4j/srcs/jul-to-slf4j-1.7.5-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/slf4j/jul-to-slf4j/1.7.5/jul-to-slf4j-1.7.5-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.slf4j" name="slf4j-api">
+			<revision name="1.7.5" status="release" pubdate="20130325135215" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.slf4j.org" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="22">
+				<metadata-artifact status="no" details="" size="4469" time="0" location="/Users/Qiyao/.ivy2/cache/org.slf4j/slf4j-api/ivy-1.7.5.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.5/slf4j-api-1.7.5.pom"/>
+				<caller organisation="apachecmda_frontend" name="apachecmda_frontend$sources_javadoc_2.10" conf="docs" rev="1.7.5" rev-constraint-default="1.7.5" rev-constraint-dynamic="1.7.5" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="slf4j-api" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="183075" time="425" location="/Users/Qiyao/.ivy2/cache/org.slf4j/slf4j-api/docs/slf4j-api-1.7.5-javadoc.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.5/slf4j-api-1.7.5-javadoc.jar"/>
+					</artifact>
+					<artifact name="slf4j-api" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="47186" time="75" location="/Users/Qiyao/.ivy2/cache/org.slf4j/slf4j-api/srcs/slf4j-api-1.7.5-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.5/slf4j-api-1.7.5-sources.jar"/>
+					</artifact>
+					<artifact name="slf4j-api" type="jar" ext="jar" status="no" details="" size="26084" time="0" location="/Users/Qiyao/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.5.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.5/slf4j-api-1.7.5.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.netty" name="netty-http-pipelining">
+			<revision name="1.1.2" status="release" pubdate="20151030001916" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/typesafehub/netty-http-pipelining" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="21">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="2733" time="0" location="/Users/Qiyao/.ivy2/cache/com.typesafe.netty/netty-http-pipelining/ivy-1.1.2.xml" searched="false" origin-is-local="false" origin-location="http://repo.typesafe.com/typesafe/releases/com/typesafe/netty/netty-http-pipelining/1.1.2/netty-http-pipelining-1.1.2.pom"/>
+				<caller organisation="apachecmda_frontend" name="apachecmda_frontend$sources_javadoc_2.10" conf="docs" rev="1.1.2" rev-constraint-default="1.1.2" rev-constraint-dynamic="1.1.2" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="netty-http-pipelining" type="jar" ext="jar" status="no" details="" size="7012" time="0" location="/Users/Qiyao/.ivy2/cache/com.typesafe.netty/netty-http-pipelining/jars/netty-http-pipelining-1.1.2.jar">
+						<origin-location is-local="false" location="http://repo.typesafe.com/typesafe/releases/com/typesafe/netty/netty-http-pipelining/1.1.2/netty-http-pipelining-1.1.2.jar"/>
+					</artifact>
+					<artifact name="netty-http-pipelining" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="3774" time="1412" location="/Users/Qiyao/.ivy2/cache/com.typesafe.netty/netty-http-pipelining/srcs/netty-http-pipelining-1.1.2-sources.jar">
+						<origin-location is-local="false" location="http://repo.typesafe.com/typesafe/releases/com/typesafe/netty/netty-http-pipelining/1.1.2/netty-http-pipelining-1.1.2-sources.jar"/>
+					</artifact>
+					<artifact name="netty-http-pipelining" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="34756" time="1585" location="/Users/Qiyao/.ivy2/cache/com.typesafe.netty/netty-http-pipelining/docs/netty-http-pipelining-1.1.2-javadoc.jar">
+						<origin-location is-local="false" location="http://repo.typesafe.com/typesafe/releases/com/typesafe/netty/netty-http-pipelining/1.1.2/netty-http-pipelining-1.1.2-javadoc.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.netty" name="netty">
+			<revision name="3.7.1.Final" status="release" pubdate="20140430061843" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://netty.io/" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="20">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="6425" time="0" location="/Users/Qiyao/.ivy2/cache/io.netty/netty/ivy-3.7.1.Final.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/io/netty/netty/3.7.1.Final/netty-3.7.1.Final.pom"/>
+				<caller organisation="apachecmda_frontend" name="apachecmda_frontend$sources_javadoc_2.10" conf="docs" rev="3.7.1.Final" rev-constraint-default="3.7.1.Final" rev-constraint-dynamic="3.7.1.Final" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="netty" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="1066899" time="407" location="/Users/Qiyao/.ivy2/cache/io.netty/netty/srcs/netty-3.7.1.Final-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/io/netty/netty/3.7.1.Final/netty-3.7.1.Final-sources.jar"/>
+					</artifact>
+					<artifact name="netty" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="10918231" time="1799" location="/Users/Qiyao/.ivy2/cache/io.netty/netty/docs/netty-3.7.1.Final-javadoc.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/io/netty/netty/3.7.1.Final/netty-3.7.1.Final-javadoc.jar"/>
+					</artifact>
+					<artifact name="netty" type="jar" ext="jar" status="successful" details="" size="1209704" time="274" location="/Users/Qiyao/.ivy2/cache/io.netty/netty/jars/netty-3.7.1.Final.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/io/netty/netty/3.7.1.Final/netty-3.7.1.Final.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="commons-logging" name="commons-logging">
+			<revision name="1.1.1" status="release" pubdate="20071126122410" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/logging" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="33">
+				<metadata-artifact status="no" details="" size="3941" time="0" location="/Users/Qiyao/.ivy2/cache/commons-logging/commons-logging/ivy-1.1.1.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.pom"/>
+				<caller organisation="apachecmda_frontend" name="apachecmda_frontend$sources_javadoc_2.10" conf="docs" rev="1.1.1" rev-constraint-default="1.1.1" rev-constraint-dynamic="1.1.1" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="commons-logging" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="141399" time="98" location="/Users/Qiyao/.ivy2/cache/commons-logging/commons-logging/docs/commons-logging-1.1.1-javadoc.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1-javadoc.jar"/>
+					</artifact>
+					<artifact name="commons-logging" type="jar" ext="jar" status="no" details="" size="60686" time="0" location="/Users/Qiyao/.ivy2/cache/commons-logging/commons-logging/jars/commons-logging-1.1.1.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar"/>
+					</artifact>
+					<artifact name="commons-logging" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="74976" time="79" location="/Users/Qiyao/.ivy2/cache/commons-logging/commons-logging/srcs/commons-logging-1.1.1-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.play" name="play-json_2.10">
+			<revision name="2.2.3" status="release" pubdate="20150421081126" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="12">
+				<metadata-artifact status="no" details="" size="3694" time="0" location="/Users/Qiyao/.ivy2/cache/com.typesafe.play/play-json_2.10/ivy-2.2.3.xml" searched="false" origin-is-local="false" origin-location="http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-json_2.10/2.2.3/play-json_2.10-2.2.3.pom"/>
+				<caller organisation="apachecmda_frontend" name="apachecmda_frontend$sources_javadoc_2.10" conf="docs" rev="2.2.3" rev-constraint-default="2.2.3" rev-constraint-dynamic="2.2.3" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="play-json_2.10" type="jar" ext="jar" status="no" details="" size="623498" time="0" location="/Users/Qiyao/.ivy2/cache/com.typesafe.play/play-json_2.10/jars/play-json_2.10-2.2.3.jar">
+						<origin-location is-local="false" location="http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-json_2.10/2.2.3/play-json_2.10-2.2.3.jar"/>
+					</artifact>
+					<artifact name="play-json_2.10" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="27579" time="1471" location="/Users/Qiyao/.ivy2/cache/com.typesafe.play/play-json_2.10/srcs/play-json_2.10-2.2.3-sources.jar">
+						<origin-location is-local="false" location="http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-json_2.10/2.2.3/play-json_2.10-2.2.3-sources.jar"/>
+					</artifact>
+					<artifact name="play-json_2.10" type="doc" ext="jar" extra-classifier="javadoc" status="failed" details="" size="0" time="0"/>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scala-reflect">
+			<revision name="2.10.3" status="release" pubdate="20130927024529" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.10.3/" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="19">
+				<license name="BSD-like" url="http://www.scala-lang.org/downloads/license.html    "/>
+				<metadata-artifact status="no" details="" size="2745" time="0" location="/Users/Qiyao/.ivy2/cache/org.scala-lang/scala-reflect/ivy-2.10.3.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.10.3/scala-reflect-2.10.3.pom"/>
+				<caller organisation="apachecmda_frontend" name="apachecmda_frontend$sources_javadoc_2.10" conf="docs" rev="2.10.3" rev-constraint-default="2.10.3" rev-constraint-dynamic="2.10.3" callerrev="1.0-SNAPSHOT" extra-info.apiURL="http://www.scala-lang.org/api/2.10.3/"/>
+				<artifacts>
+					<artifact name="scala-reflect" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="33911475" time="5137" location="/Users/Qiyao/.ivy2/cache/org.scala-lang/scala-reflect/docs/scala-reflect-2.10.3-javadoc.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.10.3/scala-reflect-2.10.3-javadoc.jar"/>
+					</artifact>
+					<artifact name="scala-reflect" type="jar" ext="jar" status="no" details="" size="3206936" time="0" location="/Users/Qiyao/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.10.3.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.10.3/scala-reflect-2.10.3.jar"/>
+					</artifact>
+					<artifact name="scala-reflect" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="434915" time="127" location="/Users/Qiyao/.ivy2/cache/org.scala-lang/scala-reflect/srcs/scala-reflect-2.10.3-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.10.3/scala-reflect-2.10.3-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.fasterxml.jackson.core" name="jackson-databind">
+			<revision name="2.2.2" status="release" pubdate="20130526222630" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://wiki.fasterxml.com/JacksonHome" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="18">
+				<metadata-artifact status="no" details="" size="6918" time="0" location="/Users/Qiyao/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/ivy-2.2.2.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.2.2/jackson-databind-2.2.2.pom"/>
+				<caller organisation="apachecmda_frontend" name="apachecmda_frontend$sources_javadoc_2.10" conf="docs" rev="2.2.2" rev-constraint-default="2.2.2" rev-constraint-dynamic="2.2.2" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="jackson-databind" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="3868527" time="888" location="/Users/Qiyao/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/docs/jackson-databind-2.2.2-javadoc.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.2.2/jackson-databind-2.2.2-javadoc.jar"/>
+					</artifact>
+					<artifact name="jackson-databind" type="jar" ext="jar" status="no" details="" size="866104" time="0" location="/Users/Qiyao/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/jars/jackson-databind-2.2.2.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.2.2/jackson-databind-2.2.2.jar"/>
+					</artifact>
+					<artifact name="jackson-databind" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="708208" time="235" location="/Users/Qiyao/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/srcs/jackson-databind-2.2.2-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.2.2/jackson-databind-2.2.2-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.fasterxml.jackson.core" name="jackson-core">
+			<revision name="2.2.2" status="release" pubdate="20130526222000" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://wiki.fasterxml.com/JacksonHome" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="17">
+				<metadata-artifact status="no" details="" size="5227" time="0" location="/Users/Qiyao/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/ivy-2.2.2.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.2.2/jackson-core-2.2.2.pom"/>
+				<caller organisation="apachecmda_frontend" name="apachecmda_frontend$sources_javadoc_2.10" conf="docs" rev="2.2.2" rev-constraint-default="2.2.2" rev-constraint-dynamic="2.2.2" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="jackson-core" type="jar" ext="jar" status="no" details="" size="191738" time="0" location="/Users/Qiyao/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/jars/jackson-core-2.2.2.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.2.2/jackson-core-2.2.2.jar"/>
+					</artifact>
+					<artifact name="jackson-core" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="218096" time="188" location="/Users/Qiyao/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/srcs/jackson-core-2.2.2-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.2.2/jackson-core-2.2.2-sources.jar"/>
+					</artifact>
+					<artifact name="jackson-core" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="776182" time="330" location="/Users/Qiyao/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/docs/jackson-core-2.2.2-javadoc.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.2.2/jackson-core-2.2.2-javadoc.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.fasterxml.jackson.core" name="jackson-annotations">
+			<revision name="2.2.2" status="release" pubdate="20130526212903" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://wiki.fasterxml.com/JacksonHome" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="16">
+				<metadata-artifact status="no" details="" size="4639" time="0" location="/Users/Qiyao/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/ivy-2.2.2.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.2.2/jackson-annotations-2.2.2.pom"/>
+				<caller organisation="apachecmda_frontend" name="apachecmda_frontend$sources_javadoc_2.10" conf="docs" rev="2.2.2" rev-constraint-default="2.2.2" rev-constraint-dynamic="2.2.2" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="jackson-annotations" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="251273" time="180" location="/Users/Qiyao/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/docs/jackson-annotations-2.2.2-javadoc.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.2.2/jackson-annotations-2.2.2-javadoc.jar"/>
+					</artifact>
+					<artifact name="jackson-annotations" type="jar" ext="jar" status="no" details="" size="33491" time="0" location="/Users/Qiyao/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/jars/jackson-annotations-2.2.2.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.2.2/jackson-annotations-2.2.2.jar"/>
+					</artifact>
+					<artifact name="jackson-annotations" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="38691" time="294" location="/Users/Qiyao/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/srcs/jackson-annotations-2.2.2-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.2.2/jackson-annotations-2.2.2-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.joda" name="joda-convert">
+			<revision name="1.3.1" status="release" pubdate="20130308024551" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://joda-convert.sourceforge.net" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="15">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3213" time="0" location="/Users/Qiyao/.ivy2/cache/org.joda/joda-convert/ivy-1.3.1.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/joda/joda-convert/1.3.1/joda-convert-1.3.1.pom"/>
+				<caller organisation="apachecmda_frontend" name="apachecmda_frontend$sources_javadoc_2.10" conf="docs" rev="1.3.1" rev-constraint-default="1.3.1" rev-constraint-dynamic="1.3.1" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="joda-convert" type="jar" ext="jar" status="no" details="" size="40544" time="0" location="/Users/Qiyao/.ivy2/cache/org.joda/joda-convert/jars/joda-convert-1.3.1.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/joda/joda-convert/1.3.1/joda-convert-1.3.1.jar"/>
+					</artifact>
+					<artifact name="joda-convert" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="19611" time="145" location="/Users/Qiyao/.ivy2/cache/org.joda/joda-convert/srcs/joda-convert-1.3.1-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/joda/joda-convert/1.3.1/joda-convert-1.3.1-sources.jar"/>
+					</artifact>
+					<artifact name="joda-convert" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="60163" time="257" location="/Users/Qiyao/.ivy2/cache/org.joda/joda-convert/docs/joda-convert-1.3.1-javadoc.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/joda/joda-convert/1.3.1/joda-convert-1.3.1-javadoc.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="joda-time" name="joda-time">
+			<revision name="2.2" status="release" pubdate="20130308062346" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://joda-time.sourceforge.net" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="38">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3409" time="0" location="/Users/Qiyao/.ivy2/cache/joda-time/joda-time/ivy-2.2.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/joda-time/joda-time/2.2/joda-time-2.2.pom"/>
+				<caller organisation="apachecmda_frontend" name="apachecmda_frontend$sources_javadoc_2.10" conf="docs" rev="2.2" rev-constraint-default="2.2" rev-constraint-dynamic="2.2" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="joda-time" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="2551939" time="562" location="/Users/Qiyao/.ivy2/cache/joda-time/joda-time/docs/joda-time-2.2-javadoc.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/joda-time/joda-time/2.2/joda-time-2.2-javadoc.jar"/>
+					</artifact>
+					<artifact name="joda-time" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="711916" time="197" location="/Users/Qiyao/.ivy2/cache/joda-time/joda-time/srcs/joda-time-2.2-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/joda-time/joda-time/2.2/joda-time-2.2-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.play" name="play-datacommons_2.10">
+			<revision name="2.2.3" status="release" pubdate="20150421085034" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="14">
+				<metadata-artifact status="no" details="" size="2428" time="0" location="/Users/Qiyao/.ivy2/cache/com.typesafe.play/play-datacommons_2.10/ivy-2.2.3.xml" searched="false" origin-is-local="false" origin-location="http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-datacommons_2.10/2.2.3/play-datacommons_2.10-2.2.3.pom"/>
+				<caller organisation="apachecmda_frontend" name="apachecmda_frontend$sources_javadoc_2.10" conf="docs" rev="2.2.3" rev-constraint-default="2.2.3" rev-constraint-dynamic="2.2.3" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="play-datacommons_2.10" type="jar" ext="jar" status="no" details="" size="5198" time="0" location="/Users/Qiyao/.ivy2/cache/com.typesafe.play/play-datacommons_2.10/jars/play-datacommons_2.10-2.2.3.jar">
+						<origin-location is-local="false" location="http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-datacommons_2.10/2.2.3/play-datacommons_2.10-2.2.3.jar"/>
+					</artifact>
+					<artifact name="play-datacommons_2.10" type="doc" ext="jar" extra-classifier="javadoc" status="failed" details="" size="0" time="0"/>
+					<artifact name="play-datacommons_2.10" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="1355" time="1428" location="/Users/Qiyao/.ivy2/cache/com.typesafe.play/play-datacommons_2.10/srcs/play-datacommons_2.10-2.2.3-sources.jar">
+						<origin-location is-local="false" location="http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-datacommons_2.10/2.2.3/play-datacommons_2.10-2.2.3-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.play" name="play-functional_2.10">
+			<revision name="2.2.3" status="release" pubdate="20150421092735" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="13">
+				<metadata-artifact status="no" details="" size="2425" time="0" location="/Users/Qiyao/.ivy2/cache/com.typesafe.play/play-functional_2.10/ivy-2.2.3.xml" searched="false" origin-is-local="false" origin-location="http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-functional_2.10/2.2.3/play-functional_2.10-2.2.3.pom"/>
+				<caller organisation="apachecmda_frontend" name="apachecmda_frontend$sources_javadoc_2.10" conf="docs" rev="2.2.3" rev-constraint-default="2.2.3" rev-constraint-dynamic="2.2.3" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="play-functional_2.10" type="jar" ext="jar" status="no" details="" size="366840" time="0" location="/Users/Qiyao/.ivy2/cache/com.typesafe.play/play-functional_2.10/jars/play-functional_2.10-2.2.3.jar">
+						<origin-location is-local="false" location="http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-functional_2.10/2.2.3/play-functional_2.10-2.2.3.jar"/>
+					</artifact>
+					<artifact name="play-functional_2.10" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="9027" time="1493" location="/Users/Qiyao/.ivy2/cache/com.typesafe.play/play-functional_2.10/srcs/play-functional_2.10-2.2.3-sources.jar">
+						<origin-location is-local="false" location="http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-functional_2.10/2.2.3/play-functional_2.10-2.2.3-sources.jar"/>
+					</artifact>
+					<artifact name="play-functional_2.10" type="doc" ext="jar" extra-classifier="javadoc" status="failed" details="" size="0" time="0"/>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.play" name="play-iteratees_2.10">
+			<revision name="2.2.3" status="release" pubdate="20151030001906" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="9">
+				<metadata-artifact status="no" details="" size="2661" time="0" location="/Users/Qiyao/.ivy2/cache/com.typesafe.play/play-iteratees_2.10/ivy-2.2.3.xml" searched="false" origin-is-local="false" origin-location="http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-iteratees_2.10/2.2.3/play-iteratees_2.10-2.2.3.pom"/>
+				<caller organisation="apachecmda_frontend" name="apachecmda_frontend$sources_javadoc_2.10" conf="docs" rev="2.2.3" rev-constraint-default="2.2.3" rev-constraint-dynamic="2.2.3" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="play-iteratees_2.10" type="doc" ext="jar" extra-classifier="javadoc" status="failed" details="" size="0" time="0"/>
+					<artifact name="play-iteratees_2.10" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="29563" time="1499" location="/Users/Qiyao/.ivy2/cache/com.typesafe.play/play-iteratees_2.10/srcs/play-iteratees_2.10-2.2.3-sources.jar">
+						<origin-location is-local="false" location="http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-iteratees_2.10/2.2.3/play-iteratees_2.10-2.2.3-sources.jar"/>
+					</artifact>
+					<artifact name="play-iteratees_2.10" type="jar" ext="jar" status="no" details="" size="716673" time="0" location="/Users/Qiyao/.ivy2/cache/com.typesafe.play/play-iteratees_2.10/jars/play-iteratees_2.10-2.2.3.jar">
+						<origin-location is-local="false" location="http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-iteratees_2.10/2.2.3/play-iteratees_2.10-2.2.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe" name="config">
+			<revision name="1.0.2" status="release" pubdate="20130703060814" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/typesafehub/config" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="11">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="2723" time="0" location="/Users/Qiyao/.ivy2/cache/com.typesafe/config/ivy-1.0.2.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/typesafe/config/1.0.2/config-1.0.2.pom"/>
+				<caller organisation="apachecmda_frontend" name="apachecmda_frontend$sources_javadoc_2.10" conf="docs" rev="1.0.2" rev-constraint-default="1.0.2" rev-constraint-dynamic="1.0.2" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="config" type="jar" ext="jar" status="successful" details="" size="187497" time="97" location="/Users/Qiyao/.ivy2/cache/com.typesafe/config/jars/config-1.0.2.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/typesafe/config/1.0.2/config-1.0.2.jar"/>
+					</artifact>
+					<artifact name="config" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="126063" time="82" location="/Users/Qiyao/.ivy2/cache/com.typesafe/config/srcs/config-1.0.2-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/typesafe/config/1.0.2/config-1.0.2-sources.jar"/>
+					</artifact>
+					<artifact name="config" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="160436" time="83" location="/Users/Qiyao/.ivy2/cache/com.typesafe/config/docs/config-1.0.2-javadoc.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/typesafe/config/1.0.2/config-1.0.2-javadoc.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-stm" name="scala-stm_2.10">
+			<revision name="0.7" status="release" pubdate="20121221193826" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://nbronson.github.com/scala-stm/" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="10">
+				<license name="BSD" url="https://github.com/nbronson/scala-stm/blob/master/LICENSE.txt"/>
+				<metadata-artifact status="no" details="" size="2531" time="0" location="/Users/Qiyao/.ivy2/cache/org.scala-stm/scala-stm_2.10/ivy-0.7.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/scala-stm/scala-stm_2.10/0.7/scala-stm_2.10-0.7.pom"/>
+				<caller organisation="apachecmda_frontend" name="apachecmda_frontend$sources_javadoc_2.10" conf="docs" rev="0.7" rev-constraint-default="0.7" rev-constraint-dynamic="0.7" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="scala-stm_2.10" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="937426" time="302" location="/Users/Qiyao/.ivy2/cache/org.scala-stm/scala-stm_2.10/docs/scala-stm_2.10-0.7-javadoc.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/scala-stm/scala-stm_2.10/0.7/scala-stm_2.10-0.7-javadoc.jar"/>
+					</artifact>
+					<artifact name="scala-stm_2.10" type="jar" ext="jar" status="no" details="" size="650514" time="0" location="/Users/Qiyao/.ivy2/cache/org.scala-stm/scala-stm_2.10/jars/scala-stm_2.10-0.7.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/scala-stm/scala-stm_2.10/0.7/scala-stm_2.10-0.7.jar"/>
+					</artifact>
+					<artifact name="scala-stm_2.10" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="116136" time="99" location="/Users/Qiyao/.ivy2/cache/org.scala-stm/scala-stm_2.10/srcs/scala-stm_2.10-0.7-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/scala-stm/scala-stm_2.10/0.7/scala-stm_2.10-0.7-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.play" name="templates_2.10">
+			<revision name="2.2.3" status="release" pubdate="20151030001904" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="5">
+				<metadata-artifact status="no" details="" size="2537" time="0" location="/Users/Qiyao/.ivy2/cache/com.typesafe.play/templates_2.10/ivy-2.2.3.xml" searched="false" origin-is-local="false" origin-location="http://repo.typesafe.com/typesafe/releases/com/typesafe/play/templates_2.10/2.2.3/templates_2.10-2.2.3.pom"/>
+				<caller organisation="apachecmda_frontend" name="apachecmda_frontend$sources_javadoc_2.10" conf="docs" rev="2.2.3" rev-constraint-default="2.2.3" rev-constraint-dynamic="2.2.3" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="templates_2.10" type="jar" ext="jar" status="no" details="" size="39142" time="0" location="/Users/Qiyao/.ivy2/cache/com.typesafe.play/templates_2.10/jars/templates_2.10-2.2.3.jar">
+						<origin-location is-local="false" location="http://repo.typesafe.com/typesafe/releases/com/typesafe/play/templates_2.10/2.2.3/templates_2.10-2.2.3.jar"/>
+					</artifact>
+					<artifact name="templates_2.10" type="doc" ext="jar" extra-classifier="javadoc" status="failed" details="" size="0" time="0"/>
+					<artifact name="templates_2.10" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="2232" time="1380" location="/Users/Qiyao/.ivy2/cache/com.typesafe.play/templates_2.10/srcs/templates_2.10-2.2.3-sources.jar">
+						<origin-location is-local="false" location="http://repo.typesafe.com/typesafe/releases/com/typesafe/play/templates_2.10/2.2.3/templates_2.10-2.2.3-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.github.scala-incubator.io" name="scala-io-file_2.10">
+			<revision name="0.4.2" status="release" pubdate="20130122232132" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://jesseeichar.github.com/scala-io-doc/index.html" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="6">
+				<license name="Scala License" url="http://www.scala-lang.org/node/146"/>
+				<metadata-artifact status="no" details="" size="2953" time="0" location="/Users/Qiyao/.ivy2/cache/com.github.scala-incubator.io/scala-io-file_2.10/ivy-0.4.2.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/github/scala-incubator/io/scala-io-file_2.10/0.4.2/scala-io-file_2.10-0.4.2.pom"/>
+				<caller organisation="apachecmda_frontend" name="apachecmda_frontend$sources_javadoc_2.10" conf="docs" rev="0.4.2" rev-constraint-default="0.4.2" rev-constraint-dynamic="0.4.2" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="scala-io-file_2.10" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="45609" time="79" location="/Users/Qiyao/.ivy2/cache/com.github.scala-incubator.io/scala-io-file_2.10/srcs/scala-io-file_2.10-0.4.2-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/github/scala-incubator/io/scala-io-file_2.10/0.4.2/scala-io-file_2.10-0.4.2-sources.jar"/>
+					</artifact>
+					<artifact name="scala-io-file_2.10" type="jar" ext="jar" status="no" details="" size="437576" time="0" location="/Users/Qiyao/.ivy2/cache/com.github.scala-incubator.io/scala-io-file_2.10/jars/scala-io-file_2.10-0.4.2.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/github/scala-incubator/io/scala-io-file_2.10/0.4.2/scala-io-file_2.10-0.4.2.jar"/>
+					</artifact>
+					<artifact name="scala-io-file_2.10" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="678533" time="302" location="/Users/Qiyao/.ivy2/cache/com.github.scala-incubator.io/scala-io-file_2.10/docs/scala-io-file_2.10-0.4.2-javadoc.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/github/scala-incubator/io/scala-io-file_2.10/0.4.2/scala-io-file_2.10-0.4.2-javadoc.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.github.scala-incubator.io" name="scala-io-core_2.10">
+			<revision name="0.4.2" status="release" pubdate="20130122232148" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://jesseeichar.github.com/scala-io-doc/index.html" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="7">
+				<license name="Scala License" url="http://www.scala-lang.org/node/146"/>
+				<metadata-artifact status="no" details="" size="2930" time="0" location="/Users/Qiyao/.ivy2/cache/com.github.scala-incubator.io/scala-io-core_2.10/ivy-0.4.2.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/github/scala-incubator/io/scala-io-core_2.10/0.4.2/scala-io-core_2.10-0.4.2.pom"/>
+				<caller organisation="apachecmda_frontend" name="apachecmda_frontend$sources_javadoc_2.10" conf="docs" rev="0.4.2" rev-constraint-default="0.4.2" rev-constraint-dynamic="0.4.2" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="scala-io-core_2.10" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="1302674" time="431" location="/Users/Qiyao/.ivy2/cache/com.github.scala-incubator.io/scala-io-core_2.10/docs/scala-io-core_2.10-0.4.2-javadoc.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/github/scala-incubator/io/scala-io-core_2.10/0.4.2/scala-io-core_2.10-0.4.2-javadoc.jar"/>
+					</artifact>
+					<artifact name="scala-io-core_2.10" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="101357" time="81" location="/Users/Qiyao/.ivy2/cache/com.github.scala-incubator.io/scala-io-core_2.10/srcs/scala-io-core_2.10-0.4.2-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/github/scala-incubator/io/scala-io-core_2.10/0.4.2/scala-io-core_2.10-0.4.2-sources.jar"/>
+					</artifact>
+					<artifact name="scala-io-core_2.10" type="jar" ext="jar" status="no" details="" size="1295513" time="0" location="/Users/Qiyao/.ivy2/cache/com.github.scala-incubator.io/scala-io-core_2.10/jars/scala-io-core_2.10-0.4.2.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/github/scala-incubator/io/scala-io-core_2.10/0.4.2/scala-io-core_2.10-0.4.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.jsuereth" name="scala-arm_2.10">
+			<revision name="1.3" status="release" pubdate="20130121090254" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://jsuereth.com/scala-arm" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="8">
+				<license name="BSD-style" url="http://www.opensource.org/licenses/bsd-license.php"/>
+				<metadata-artifact status="no" details="" size="2981" time="0" location="/Users/Qiyao/.ivy2/cache/com.jsuereth/scala-arm_2.10/ivy-1.3.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/jsuereth/scala-arm_2.10/1.3/scala-arm_2.10-1.3.pom"/>
+				<caller organisation="apachecmda_frontend" name="apachecmda_frontend$sources_javadoc_2.10" conf="docs" rev="1.3" rev-constraint-default="1.3" rev-constraint-dynamic="1.3" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="scala-arm_2.10" type="jar" ext="jar" status="no" details="" size="75459" time="0" location="/Users/Qiyao/.ivy2/cache/com.jsuereth/scala-arm_2.10/jars/scala-arm_2.10-1.3.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/jsuereth/scala-arm_2.10/1.3/scala-arm_2.10-1.3.jar"/>
+					</artifact>
+					<artifact name="scala-arm_2.10" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="11249" time="77" location="/Users/Qiyao/.ivy2/cache/com.jsuereth/scala-arm_2.10/srcs/scala-arm_2.10-1.3-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/jsuereth/scala-arm_2.10/1.3/scala-arm_2.10-1.3-sources.jar"/>
+					</artifact>
+					<artifact name="scala-arm_2.10" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="405628" time="254" location="/Users/Qiyao/.ivy2/cache/com.jsuereth/scala-arm_2.10/docs/scala-arm_2.10-1.3-javadoc.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/jsuereth/scala-arm_2.10/1.3/scala-arm_2.10-1.3-javadoc.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="javax.transaction" name="jta">
+			<revision name="1.1" status="release" pubdate="20081027182721" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://java.sun.com/products/jta" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="36">
+				<metadata-artifact status="no" details="" size="2353" time="0" location="/Users/Qiyao/.ivy2/cache/javax.transaction/jta/ivy-1.1.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/javax/transaction/jta/1.1/jta-1.1.pom"/>
+				<caller organisation="apachecmda_frontend" name="apachecmda_frontend$sources_javadoc_2.10" conf="docs" rev="1.1" rev-constraint-default="1.1" rev-constraint-dynamic="1.1" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="jta" type="jar" ext="jar" status="no" details="" size="15071" time="0" location="/Users/Qiyao/.ivy2/cache/javax.transaction/jta/jars/jta-1.1.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/javax/transaction/jta/1.1/jta-1.1.jar"/>
+					</artifact>
+					<artifact name="jta" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="25014" time="73" location="/Users/Qiyao/.ivy2/cache/javax.transaction/jta/srcs/jta-1.1-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/javax/transaction/jta/1.1/jta-1.1-sources.jar"/>
+					</artifact>
+					<artifact name="jta" type="doc" ext="jar" extra-classifier="javadoc" status="failed" details="" size="0" time="0"/>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.play" name="play-exceptions">
+			<revision name="2.2.3" status="release" pubdate="20151030001646" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="4">
+				<metadata-artifact status="no" details="" size="2241" time="0" location="/Users/Qiyao/.ivy2/cache/com.typesafe.play/play-exceptions/ivy-2.2.3.xml" searched="false" origin-is-local="false" origin-location="http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-exceptions/2.2.3/play-exceptions-2.2.3.pom"/>
+				<caller organisation="apachecmda_frontend" name="apachecmda_frontend$sources_javadoc_2.10" conf="docs" rev="2.2.3" rev-constraint-default="2.2.3" rev-constraint-dynamic="2.2.3" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="play-exceptions" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="2148" time="1352" location="/Users/Qiyao/.ivy2/cache/com.typesafe.play/play-exceptions/srcs/play-exceptions-2.2.3-sources.jar">
+						<origin-location is-local="false" location="http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-exceptions/2.2.3/play-exceptions-2.2.3-sources.jar"/>
+					</artifact>
+					<artifact name="play-exceptions" type="jar" ext="jar" status="no" details="" size="4571" time="0" location="/Users/Qiyao/.ivy2/cache/com.typesafe.play/play-exceptions/jars/play-exceptions-2.2.3.jar">
+						<origin-location is-local="false" location="http://repo.typesafe.com/typesafe/releases/com/typesafe/play/play-exceptions/2.2.3/play-exceptions-2.2.3.jar"/>
+					</artifact>
+					<artifact name="play-exceptions" type="doc" ext="jar" extra-classifier="javadoc" status="failed" details="" size="0" time="0"/>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.play" name="sbt-link">
+			<revision name="2.2.3" status="release" pubdate="20151030001641" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="2">
+				<metadata-artifact status="no" details="" size="2392" time="0" location="/Users/Qiyao/.ivy2/cache/com.typesafe.play/sbt-link/ivy-2.2.3.xml" searched="false" origin-is-local="false" origin-location="http://repo.typesafe.com/typesafe/releases/com/typesafe/play/sbt-link/2.2.3/sbt-link-2.2.3.pom"/>
+				<caller organisation="apachecmda_frontend" name="apachecmda_frontend$sources_javadoc_2.10" conf="docs" rev="2.2.3" rev-constraint-default="2.2.3" rev-constraint-dynamic="2.2.3" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="sbt-link" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="4674" time="1330" location="/Users/Qiyao/.ivy2/cache/com.typesafe.play/sbt-link/srcs/sbt-link-2.2.3-sources.jar">
+						<origin-location is-local="false" location="http://repo.typesafe.com/typesafe/releases/com/typesafe/play/sbt-link/2.2.3/sbt-link-2.2.3-sources.jar"/>
+					</artifact>
+					<artifact name="sbt-link" type="doc" ext="jar" extra-classifier="javadoc" status="failed" details="" size="0" time="0"/>
+					<artifact name="sbt-link" type="jar" ext="jar" status="no" details="" size="8774" time="0" location="/Users/Qiyao/.ivy2/cache/com.typesafe.play/sbt-link/jars/sbt-link-2.2.3.jar">
+						<origin-location is-local="false" location="http://repo.typesafe.com/typesafe/releases/com/typesafe/play/sbt-link/2.2.3/sbt-link-2.2.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.javassist" name="javassist">
+			<revision name="3.18.0-GA" status="release" pubdate="20130617070649" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.javassist.org/" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="3">
+				<license name="MPL 1.1" url="http://www.mozilla.org/MPL/MPL-1.1.html"/>
+				<license name="LGPL 2.1" url="http://www.gnu.org/licenses/lgpl-2.1.html"/>
+				<license name="Apache License 2.0" url="http://www.apache.org/licenses/"/>
+				<metadata-artifact status="no" details="" size="3067" time="0" location="/Users/Qiyao/.ivy2/cache/org.javassist/javassist/ivy-3.18.0-GA.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/javassist/javassist/3.18.0-GA/javassist-3.18.0-GA.pom"/>
+				<caller organisation="apachecmda_frontend" name="apachecmda_frontend$sources_javadoc_2.10" conf="docs" rev="3.18.0-GA" rev-constraint-default="3.18.0-GA" rev-constraint-dynamic="3.18.0-GA" callerrev="1.0-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="javassist" type="jar" ext="jar" status="successful" details="" size="713930" time="215" location="/Users/Qiyao/.ivy2/cache/org.javassist/javassist/jars/javassist-3.18.0-GA.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/javassist/javassist/3.18.0-GA/javassist-3.18.0-GA.jar"/>
+					</artifact>
+					<artifact name="javassist" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="513054" time="457" location="/Users/Qiyao/.ivy2/cache/org.javassist/javassist/srcs/javassist-3.18.0-GA-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/javassist/javassist/3.18.0-GA/javassist-3.18.0-GA-sources.jar"/>
+					</artifact>
+					<artifact name="javassist" type="doc" ext="jar" extra-classifier="javadoc" status="failed" details="" size="0" time="0"/>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scala-library">
+			<revision name="2.10.3" status="release" pubdate="20130927024454" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.10.3/" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="0">
+				<license name="BSD-like" url="http://www.scala-lang.org/downloads/license.html          "/>
+				<metadata-artifact status="no" details="" size="2585" time="0" location="/Users/Qiyao/.ivy2/cache/org.scala-lang/scala-library/ivy-2.10.3.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/scala-lang/scala-library/2.10.3/scala-library-2.10.3.pom"/>
+				<caller organisation="apachecmda_frontend" name="apachecmda_frontend$sources_javadoc_2.10" conf="docs" rev="2.10.3" rev-constraint-default="2.10.3" rev-constraint-dynamic="2.10.3" callerrev="1.0-SNAPSHOT" extra-info.apiURL="http://www.scala-lang.org/api/2.10.3/"/>
+				<artifacts>
+					<artifact name="scala-library" type="jar" ext="jar" status="no" details="" size="7126003" time="0" location="/Users/Qiyao/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.10.3.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/scala-lang/scala-library/2.10.3/scala-library-2.10.3.jar"/>
+					</artifact>
+					<artifact name="scala-library" type="doc" ext="jar" extra-classifier="javadoc" status="successful" details="" size="33911475" time="5109" location="/Users/Qiyao/.ivy2/cache/org.scala-lang/scala-library/docs/scala-library-2.10.3-javadoc.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/scala-lang/scala-library/2.10.3/scala-library-2.10.3-javadoc.jar"/>
+					</artifact>
+					<artifact name="scala-library" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="1062304" time="305" location="/Users/Qiyao/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.10.3-sources.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/scala-lang/scala-library/2.10.3/scala-library-2.10.3-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+	</dependencies>
+</ivy-report>

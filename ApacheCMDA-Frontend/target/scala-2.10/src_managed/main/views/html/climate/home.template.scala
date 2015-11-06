@@ -63,11 +63,28 @@ Seq[Any](format.raw/*18.49*/("""
 """),_display_(Seq[Any](/*22.2*/main("Home")/*22.14*/ {_display_(Seq[Any](format.raw/*22.16*/("""
 
 <div class="jumbotron">
-	<p>Team 12
-	</p>
+	<div class="row">
+
+		<div class="col-lg-5">
+			</br></br>
+			<img src="/assets/images/main.jpg" height="480" width="330" />
+		</div>
+		<div class="col-lg-6">
+			<h2>Welcome to Service-Oriented Scientific Collaboration Social Network</h2>
+			<br>
+			
+			<!-- """),_display_(Seq[Any](/*35.10*/if(!session.get("username"))/*35.38*/{_display_(Seq[Any](format.raw/*35.39*/(""" -->
+			
+			<p>
+				"""),_display_(Seq[Any](/*38.6*/if(false)/*38.15*/{_display_(Seq[Any](format.raw/*38.16*/(""" <a class="btn btn-primary" href="climate/register"
+					role="button">Register &raquo;</a> """)))})),format.raw/*39.42*/("""
+			</p>
+			<!-- """)))})),format.raw/*41.10*/(""" -->
+		</div>
+	</div>
 </div>
 
-""")))})),format.raw/*29.2*/("""
+""")))})),format.raw/*46.2*/("""
 """))}
     }
     
@@ -80,11 +97,11 @@ Seq[Any](format.raw/*18.49*/("""
 }
                 /*
                     -- GENERATED --
-                    DATE: Fri Oct 30 00:36:37 PDT 2015
-                    SOURCE: /Users/feifei/soc_TeamProject/SOC-Fall-2015/ApacheCMDA-Frontend/app/views/climate/home.scala.html
-                    HASH: 4e5cda0817488d35a2ed235b45485104ccfec71b
-                    MATRIX: 3190->1205|3349->1252|3378->1272|3415->1274|3436->1286|3476->1288|3560->1341
-                    LINES: 56->18|60->18|62->21|63->22|63->22|63->22|70->29
+                    DATE: Thu Nov 05 13:21:19 PST 2015
+                    SOURCE: /Users/Qiyao/SOC-Fall-2015/ApacheCMDA-Frontend/app/views/climate/home.scala.html
+                    HASH: 0432b7597e74817080402fa4826e0d5121563189
+                    MATRIX: 3190->1205|3349->1252|3378->1272|3415->1274|3436->1286|3476->1288|3798->1574|3835->1602|3874->1603|3930->1624|3948->1633|3987->1634|4112->1727|4162->1745|4224->1776
+                    LINES: 56->18|60->18|62->21|63->22|63->22|63->22|76->35|76->35|76->35|79->38|79->38|79->38|80->39|82->41|87->46
                     -- GENERATED --
                 */
             

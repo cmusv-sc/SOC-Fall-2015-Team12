@@ -22,8 +22,25 @@
 @main("Home") {
 
 <div class="jumbotron">
-	<p>Team 12
-	</p>
+	<div class="row">
+
+		<div class="col-lg-5">
+			</br></br>
+			<img src="/assets/images/main.jpg" height="480" width="330" />
+		</div>
+		<div class="col-lg-6">
+			<h2>Welcome to Service-Oriented Scientific Collaboration Social Network</h2>
+			<br>
+			
+			<!-- @if(!session.get("username")){ -->
+			
+			<p>
+				@if(false){ <a class="btn btn-primary" href="climate/register"
+					role="button">Register &raquo;</a> }
+			</p>
+			<!-- } -->
+		</div>
+	</div>
 </div>
 
 }

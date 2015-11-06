@@ -221,4 +221,32 @@ public class UserController extends Controller {
 		
 	}
 
+	public Result login(){
+		JsonNode json = request().body().asJson();
+		if (json == null) {
+			System.out.println("User not log in, expecting Json data");
+			return badRequest("User not log in, expecting Json data");
+		}
+
+		// Parse JSON file
+		String userName = json.path("userName").asText();
+		String password = json.path("password").asText();
+
+		List<User> users = userRepository.findByUserName(userName);
+		if (users.size() == 0 || users == null){
+			return badRequest("User name is not exist");
+		}
+
+		String result = new String();
+		for (User u : users){
+			if (u.getPassword().equals(password)){
+
+				result = new Gson().toJson(u);
+				return ok(result);
+			}
+		}
+		return badRequest("Wrong password");
+	}
+
+
 }

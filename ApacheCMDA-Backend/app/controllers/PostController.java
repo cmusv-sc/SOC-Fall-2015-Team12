@@ -47,4 +47,14 @@ public class PostController extends Controller {
 		this.postRepository = postRepository;
 	}
 
+		public Result addPost() {}
+
+		public Result getPublicPost() {}
+
+		public Result getPersonalPost() {}
+
+		public Result updatePost(){}
+
+		public Result deletePost(){}
+
 }

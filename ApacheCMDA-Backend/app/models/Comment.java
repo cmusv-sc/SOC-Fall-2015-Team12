@@ -32,24 +32,22 @@ import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 
 
-@Entity public class Post {
+@Entity public class Comment {
 
     @Id @GeneratedValue(strategy = GenerationType.AUTO) private long id;
     private String postId;
     private String userId;
-    private int privacy;
     private String text;
     private String time;
 
-    public Post() {
+    public Comment() {
     }
 
-    public Post(String postId, String userId, int privacy, String text, String time) {
+    public Comment(String postId, String userId, String text, String time) {
         super();
         this.id = id;
         this.postId = postId;
         this.userId = userId;
-        this.privacy = privacy;
         this.text = text;
         this.time = time;
     }
@@ -78,10 +76,6 @@ import javax.persistence.ManyToMany;
         return text;
     }
 
-    public int getPrivacy() {
-        return privacy;
-    }
-
     public String getTime() {
         return time;
     }
@@ -90,17 +84,13 @@ import javax.persistence.ManyToMany;
         this.time = time;
     }
 
-    public void setPrivacy(int privacy) {
-        this.privacy = privacy;
-    }
-
     public void setText(String text) {
         this.text = text;
     }
 
     @Override public String toString() {
-        return "Posts [id=" + id + ", postId=" + postId + ", userId=" + userId + ",  privacy="
-            + privacy + ", text=" + text + ", time=" + time + "]";
+        return "Posts [id=" + id + ", postId=" + postId + ", userId=" + userId + ",  text=" + text
+            + ", time=" + time + "]";
     }
 
 

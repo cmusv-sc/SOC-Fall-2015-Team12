@@ -34,27 +34,65 @@ import com.google.gson.Gson;
 /**
  * The main set of posts.
  */
-@Named
-@Singleton
-public class PostController extends Controller {
+@Named @Singleton public class PostController extends Controller {
 
-	private final PostRepository postRepository;
+    private final PostRepository postRepository;
 
-	// We are using constructor injection to receive a repository to support our
-	// desire for immutability.
-	@Inject
-	public UserController(final PostRepository postRepository) {
-		this.postRepository = postRepository;
-	}
+    // We are using constructor injection to receive a repository to support our
+    // desire for immutability.
+    @Inject public PostController(final PostRepository postRepository) {
+        this.postRepository = postRepository;
+    }
 
-		public Result addPost() {}
+    public Result addPost() {
+        JsonNode json = request().body().asJson();
+        if (json == null) {
+            System.out.println("Posy not created, expecting Json data");
+            return badRequest("Post not created, expecting Json data");
+        }
+        // Parse JSON file
+        String postId = json.path("postId").asText();
+        String userId = json.path("userId").asText();
+        int comment = Integer.parseInt(json.path("comment").asText());
+        int like = Integer.parseInt(json.path("like").asText());
+        int privacy = Integer.parseInt(json.path("privacy").asText());
+        String text = json.path("text").asText();
+        String time = json.path("time").asText();
 
-		public Result getPublicPost() {}
+        try {
+            Post post = new Post(postId, userId, comment, like, privacy, text, time);
+            postRepository.save(post);
+            System.out.println("Post saved: " + post.getId());
+            return created(new Gson().toJson(post.getId()));
+        } catch (PersistenceException pe) {
+            pe.printStackTrace();
+            System.out.println("post not saved: " + postId + " " + userId);
+            return badRequest("post not saved: " + postId + " " + userId);
+        }
+    }
 
-		public Result getPersonalPost() {}
+    public Result getPublicPost() {
+    }
 
-		public Result updatePost(){}
+    public Result getPersonalPost() {
+    }
 
-		public Result deletePost(){}
+    public Result updatePost() {
+    }
+
+    public Result deletePost() {
+        Post deletePost = postRepository.findOne(id);
+        if (deleteUser == null) {
+            System.out.println("Post not found with id: " + id);
+            return notFound("Post not found with id: " + id);
+        }
+
+        List<Post> deletePosts=postRepository.findPostsById(deletePost.getId());
+        for(Post deletePost:deletePosts) {
+            userRepository.delete(deletePost);
+            System.out.println("Post is deleted: " + deletePost.getId());
+        }
+        return ok("Post is deleted: " + id);
+    }
 
 }

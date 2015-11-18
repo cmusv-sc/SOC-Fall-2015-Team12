@@ -18,11 +18,6 @@ POST        /solve/report                                        controllers.Bug
 GET         /aboutus                                             controllers.AboutusController.aboutUs()
 GET         /aboutProject                                        controllers.AboutusController.aboutProject()
 
-# Login
-GET         /login                                               controllers.User.login()
-GET         /signup                                              controllers.User.signup()
-GET 		/login/getLoginResult				 			     controllers.User.getLoginResult()
-
 # Climate Model
 GET			/climate											controllers.ClimateServiceController.home(email ?= null, vfile ?= null, dataset ?= null)
 GET			/climate/tutorial									controllers.ClimateServiceController.tutorial()

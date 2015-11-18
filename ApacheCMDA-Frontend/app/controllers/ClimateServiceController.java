@@ -28,6 +28,7 @@ import play.mvc.Result;
 import scala.Console;
 import util.APICall;
 import util.APICall.ResponseType;
+import util.Constants;
 import views.html.climate.*;
 import play.data.DynamicForm;
 import java.io.File;
@@ -192,5 +193,6 @@ public class ClimateServiceController extends Controller {
 	public static Result oneService(String url) {
 		return ok(oneService.render("/assets/html/" + url));
 	}
+
 
 }

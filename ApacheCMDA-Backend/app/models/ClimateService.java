@@ -42,7 +42,6 @@ public class ClimateService {
 	private String purpose;
 	private String url;
 	private String scenario;
-
 	@Temporal(TemporalType.TIMESTAMP)
 	private Date createTime;
 
@@ -135,7 +134,6 @@ public class ClimateService {
 	public void setVersionNo(String versionNo) {
 		this.versionNo = versionNo;
 	}
-
 
 	@Override
 	public String toString() {

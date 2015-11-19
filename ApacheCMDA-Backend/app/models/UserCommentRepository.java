@@ -17,12 +17,19 @@
 package models;
 
 import org.springframework.data.repository.CrudRepository;
+import org.springframework.data.jpa.repository.Query;
 
 import javax.inject.Named;
 import javax.inject.Singleton;
+import java.lang.Long;
+import java.util.List;
 
 @Named
 @Singleton
-public interface CommentRepository extends CrudRepository<Comment, Long> {
+public interface UserCommentRepository extends CrudRepository<UserComment, Long> {
+    @Query(value = "select c.* from UserComment c where c.postId=?1", nativeQuery = true)
+    List<UserComment> findAllByPostId(Long id);
 
+    @Query(value = "select c.* from UserComment c where c.postId = ?1", nativeQuery = true)
+    List<UserComment> findCommentWithPostId(Long postId);
 }

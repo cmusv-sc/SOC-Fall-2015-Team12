@@ -15,33 +15,24 @@
  * limitations under the License.
  */
 package controllers;
-
-import java.util.ArrayList;
-import java.util.List;
-
-import models.User;
-import models.UserRepository;
+import models.UserCommentRepository;
 import play.mvc.*;
-
 import javax.inject.Inject;
 import javax.inject.Named;
 import javax.inject.Singleton;
-import javax.persistence.PersistenceException;
 
-import com.fasterxml.jackson.databind.JsonNode;
-import com.google.gson.Gson;
 
 /**
  * The main set of posts.
  */
 @Named @Singleton public class CommentController extends Controller {
 
-    private final CommentRepository commentRepository;
+    private final UserCommentRepository userCommentRepository;
 
     // We are using constructor injection to receive a repository to support our
     // desire for immutability.
-    @Inject public CommentController(final CommentRepository commentRepository) {
-        this.commentRepository = commentRepository;
+    @Inject public CommentController(final UserCommentRepository userCommentRepository) {
+        this.userCommentRepository = userCommentRepository;
     }
 
 

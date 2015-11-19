@@ -30,31 +30,34 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
 
 
-@Entity public class Like {
+@Entity public class UserLike {
 
     @Id @GeneratedValue(strategy = GenerationType.AUTO) private long id;
-    private String postId;
+    private long postId;
     private String userId;
-    private String time;
+    @Temporal(TemporalType.TIMESTAMP) private Date time;
 
-    public Like() {
+
+    public UserLike() {
     }
 
-    public Like(String postId, String userId, String time) {
+    public UserLike(long postId, String userId, Date time) {
+
         super();
-        this.id = id;
         this.postId = postId;
         this.userId = userId;
         this.time = time;
     }
 
-    public String getPostId() {
+    public long getPostId() {
         return postId;
     }
 
-    public void setPostId(String postId) {
+    public void setPostId(long postId) {
         this.postId = postId;
     }
 
@@ -62,7 +65,7 @@ import javax.persistence.ManyToMany;
         return id;
     }
 
-    public void setUserId(String postId) {
+    public void setUserId(String userId) {
         this.userId = userId;
     }
 
@@ -71,16 +74,16 @@ import javax.persistence.ManyToMany;
     }
 
 
-    public String getTime() {
+    public Date getTime() {
         return time;
     }
 
-    public void setTime(String time) {
+    public void setTime(Date time) {
         this.time = time;
     }
 
     @Override public String toString() {
-        return "Posts [id=" + id + ", postId=" + postId + ", userId=" + userId + ",  time=" + time
+        return "Like [id=" + id + ", postId=" + postId + ", userId=" + userId + ",  time=" + time
             + "]";
     }
 

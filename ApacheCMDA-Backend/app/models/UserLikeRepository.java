@@ -17,12 +17,20 @@
 package models;
 
 import org.springframework.data.repository.CrudRepository;
+import org.springframework.data.jpa.repository.Query;
 
 import javax.inject.Named;
 import javax.inject.Singleton;
+import java.lang.Long;
+import java.util.List;
+import java.util.Set;
 
 @Named
 @Singleton
-public interface LikeRepository extends CrudRepository<Like, Long> {
+public interface UserLikeRepository extends CrudRepository<UserLike, Long> {
+    @Query(value = "select l.* from UserLike l where l.postId=?1", nativeQuery = true)
+    Set<UserLike> findAllByPostId(Long id);
 
+    @Query(value = "select c.* from UserLike c where c.postId = ?1", nativeQuery = true)
+    List<UserLike> findLikeWithPostId(Long postId);
 }

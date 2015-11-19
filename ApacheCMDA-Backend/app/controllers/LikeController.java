@@ -15,33 +15,23 @@
  * limitations under the License.
  */
 package controllers;
-
-import java.util.ArrayList;
-import java.util.List;
-
-import models.User;
-import models.UserRepository;
+import models.UserLikeRepository;
 import play.mvc.*;
-
 import javax.inject.Inject;
 import javax.inject.Named;
 import javax.inject.Singleton;
-import javax.persistence.PersistenceException;
-
-import com.fasterxml.jackson.databind.JsonNode;
-import com.google.gson.Gson;
 
 /**
  * The main set of posts.
  */
 @Named @Singleton public class LikeController extends Controller {
 
-    private final LikeRepository likeRepository;
+    private final UserLikeRepository userLikeRepository;
 
     // We are using constructor injection to receive a repository to support our
     // desire for immutability.
-    @Inject public LikeController(final LikeRepository likeRepository) {
-        this.LikeRepository = LikeRepository;
+    @Inject public LikeController(final UserLikeRepository userLikeRepository) {
+        this.userLikeRepository = userLikeRepository;
     }
 
 

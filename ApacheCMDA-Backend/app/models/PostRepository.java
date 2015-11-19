@@ -16,6 +16,9 @@
  */
 package models;
 
+import java.util.List;
+
+import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
 
 import javax.inject.Named;
@@ -25,4 +28,8 @@ import javax.inject.Singleton;
 @Singleton
 public interface PostRepository extends CrudRepository<Post, Long> {
 
+    @Query(value = "select c.* from Post c where c.userId = ?1", nativeQuery = true)
+    List<Post> findPostWithUserId(String userId);
+
+    public Post findById(Long id);
 }

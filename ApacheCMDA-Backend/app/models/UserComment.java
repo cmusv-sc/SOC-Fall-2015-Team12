@@ -15,48 +15,45 @@
  * limitations under the License.
  */
 package models;
-
-import java.lang.Long;
-import java.lang.String;
 import java.util.Date;
-import java.util.List;
-
-import javax.persistence.CascadeType;
+import java.lang.String;
 import javax.persistence.Entity;
-import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.JoinTable;
-import javax.persistence.ManyToMany;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
 
 
-@Entity public class Comment {
+
+@Entity public class UserComment {
 
     @Id @GeneratedValue(strategy = GenerationType.AUTO) private long id;
-    private String postId;
+    private long postId;
     private String userId;
     private String text;
-    private String time;
 
-    public Comment() {
+    @Temporal(TemporalType.TIMESTAMP)
+    private Date time;
+
+
+    public UserComment() {
     }
 
-    public Comment(String postId, String userId, String text, String time) {
+    public UserComment(long postId, String userId, String text, Date time) {
+
         super();
-        this.id = id;
         this.postId = postId;
         this.userId = userId;
         this.text = text;
         this.time = time;
     }
 
-    public String getPostId() {
+    public long getPostId() {
         return postId;
     }
 
-    public void setPostId(String postId) {
+    public void setPostId(long postId) {
         this.postId = postId;
     }
 
@@ -64,7 +61,7 @@ import javax.persistence.ManyToMany;
         return id;
     }
 
-    public void setUserId(String postId) {
+    public void setUserId(String userId) {
         this.userId = userId;
     }
 
@@ -76,11 +73,11 @@ import javax.persistence.ManyToMany;
         return text;
     }
 
-    public String getTime() {
+    public Date getTime() {
         return time;
     }
 
-    public void setTime(String time) {
+    public void setTime(Date time) {
         this.time = time;
     }
 
@@ -89,7 +86,7 @@ import javax.persistence.ManyToMany;
     }
 
     @Override public String toString() {
-        return "Posts [id=" + id + ", postId=" + postId + ", userId=" + userId + ",  text=" + text
+        return "UserComment [id=" + id + ", postId=" + postId + ", userId=" + userId + ",  text=" + text
             + ", time=" + time + "]";
     }
 

@@ -20,7 +20,29 @@ import play.mvc.*;
 import javax.inject.Inject;
 import javax.inject.Named;
 import javax.inject.Singleton;
+import util.Common;
+import util.Constants;
 
+
+import java.util.Date;
+import java.util.List;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import models.Post;
+import models.PostRepository;
+import models.UserComment;
+import models.UserCommentRepository;
+import models.UserLike;
+import models.UserLikeRepository;
+import play.mvc.*;
+import javax.inject.Inject;
+import javax.inject.Named;
+import javax.inject.Singleton;
+import javax.persistence.PersistenceException;
+import com.fasterxml.jackson.databind.JsonNode;
+import com.google.gson.Gson;
+import com.google.gson.JsonObject;
+import com.google.gson.JsonArray;
 
 /**
  * The main set of posts.
@@ -35,5 +57,32 @@ import javax.inject.Singleton;
         this.userCommentRepository = userCommentRepository;
     }
 
-
+    public Result addComment() {
+        JsonNode json = request().body().asJson();
+        if (json == null) {
+            System.out.println("Comment not created, expecting Json data");
+            return badRequest("Comment not created, expecting Json data");
+        }
+        // Parse JSON file
+        Long postId = Long.parseLong(json.findPath("postId").asText());
+        String userId = json.findPath("userId").asText();
+        String text = json.findPath("text").asText();
+        Date time = new Date();
+        SimpleDateFormat format = new SimpleDateFormat(Common.DATE_PATTERN);
+        try {
+            time = format.parse(json.findPath("time").asText());
+        } catch (ParseException e) {
+            System.out.println("No creation date specified, set to current time");
+        }
+        try {
+            UserComment comment = new UserComment(postId, userId, text, time);
+            userCommentRepository.save(comment);
+            System.out.println("Comment saved: " + comment.getId());
+            return created(new Gson().toJson(comment.getId()));
+        } catch (PersistenceException pe) {
+            pe.printStackTrace();
+            System.out.println("Comment not saved: " + userId);
+            return badRequest("Comment not saved: " + userId);
+        }
+    }
 }

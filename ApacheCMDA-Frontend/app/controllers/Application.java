@@ -94,7 +94,8 @@ public class Application extends Controller {
 		Iterator<Entry<String, JsonNode>> it = jsonNode.fields();
 		while (it.hasNext()) {
 			Entry<String, JsonNode> field = it.next();
-			flash(field.getKey(),field.getValue().asText());	
+			flash(field.getKey(),field.getValue().asText());
+			System.out.print(field.getValue().asText());
 		}
     }
     

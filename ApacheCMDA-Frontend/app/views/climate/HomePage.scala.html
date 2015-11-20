@@ -1,0 +1,56 @@
+@*******************************************************************************
+* Licensed to the Apache Software Foundation (ASF) under one or more		   *
+* contributor license agreements.  See the NOTICE file distributed with	   *
+* this work for additional information regarding copyright ownership.         *
+* The ASF licenses this file to You under the Apache License, Version 2.0     *
+* (the "License"); you may not use this file except in compliance with        *
+* the License.  You may obtain a copy of the License at                       *
+*                                                                             *
+*    http://www.apache.org/licenses/LICENSE-2.0                               *
+*																			   *
+* Unless required by applicable law or agreed to in writing, software         *
+* distributed under the License is distributed on an "AS IS" BASIS,           *
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.    *
+* See the License for the specific language governing permissions and         *
+* limitations under the License.											   *
+*******************************************************************************@
+
+@(postSets: List[PostSet])
+
+@import helper._
+
+@scripts = {
+<script src='@routes.Assets.at("javascripts/edit_button.js")'></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		//alert($("#url").text());
+	});
+</script>
+}
+
+@main("Postset List", scripts) {
+
+@flash_message()
+
+<h1>Personal Posts</h1>
+	@for(postSet <- postSets){
+
+		<h3><font size="=1">Post</font> </h3>
+		<td><span class="@postSet.getPostId() editable" data-name='text'>
+				@postSet.getPostText() </span></td><br>
+		<td><font size="2">Post Status: @postSet.getPostStatus()</font></td>
+		<br>
+		<td><font size="2">Post Time: @postSet.getPostTime()</font></td>
+		<br>
+
+	<td class="operation">
+		<input type="button" class="edit-btn btn btn-primary" value="Edit"
+		   data-pk='@postSet.getPostId()'
+			   data-url='@routes.MainPageController.editPost()'
+			>
+	</td>
+
+	}
+
+</div>
+}

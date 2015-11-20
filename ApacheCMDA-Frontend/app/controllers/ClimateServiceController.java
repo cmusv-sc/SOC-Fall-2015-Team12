@@ -28,7 +28,6 @@ import play.mvc.Result;
 import scala.Console;
 import util.APICall;
 import util.APICall.ResponseType;
-import util.Constants;
 import views.html.climate.*;
 import play.data.DynamicForm;
 import java.io.File;

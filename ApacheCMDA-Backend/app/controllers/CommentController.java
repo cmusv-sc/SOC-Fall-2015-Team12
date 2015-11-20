@@ -21,19 +21,13 @@ import javax.inject.Inject;
 import javax.inject.Named;
 import javax.inject.Singleton;
 import util.Common;
-import util.Constants;
 
 
 import java.util.Date;
-import java.util.List;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import models.Post;
-import models.PostRepository;
+
 import models.UserComment;
-import models.UserCommentRepository;
-import models.UserLike;
-import models.UserLikeRepository;
 import play.mvc.*;
 import javax.inject.Inject;
 import javax.inject.Named;
@@ -41,8 +35,6 @@ import javax.inject.Singleton;
 import javax.persistence.PersistenceException;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.google.gson.Gson;
-import com.google.gson.JsonObject;
-import com.google.gson.JsonArray;
 
 /**
  * The main set of posts.

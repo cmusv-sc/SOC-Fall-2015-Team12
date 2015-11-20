@@ -32,9 +32,11 @@ public class APICall {
 	}
 
 	public static JsonNode callAPI(String apiString) {
+
 		Logger.info(apiString);
 		Promise<WS.Response> responsePromise = WS
 				.url(apiString).get();
+
 		final Promise<JsonNode> bodyPromise = responsePromise
 				.map(new Function<WS.Response, JsonNode>() {
 					@Override
@@ -52,7 +54,9 @@ public class APICall {
 
 		try {
 			return bodyPromise.get(10000L);
+
 		} catch (Exception e) {
+
 			return createResponse(ResponseType.TIMEOUT);
 		}
 
@@ -112,13 +116,15 @@ public class APICall {
 		}
 	}
 
-	public static JsonNode putAPI(String apiString, JsonNode jsonData) {
+	public static JsonNode putAPI(final String apiString, JsonNode jsonData) {
 		Promise<WS.Response> responsePromise = WS.url(apiString).put(jsonData);
+		System.out.println(jsonData.get("text").asText());
 		final Promise<JsonNode> bodyPromise = responsePromise
 				.map(new Function<WS.Response, JsonNode>() {
 					@Override
 					public JsonNode apply(WS.Response response)
 							throws Throwable {
+						System.out.println(response.getStatus());
 						if ((response.getStatus() == 201 || response
 								.getStatus() == 200)
 								&& !response.getBody().contains("not")) {
@@ -129,6 +135,7 @@ public class APICall {
 					}
 				});
 		try {
+			System.out.print("www");
 			return bodyPromise.get(10000L);
 		} catch (Exception e) {
 			return createResponse(ResponseType.TIMEOUT);

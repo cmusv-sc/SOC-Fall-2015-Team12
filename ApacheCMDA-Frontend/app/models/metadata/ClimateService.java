@@ -62,16 +62,15 @@ public class ClimateService {
 	private static final String GET_CLIMATE_SERVICES_CALL = Constants.NEW_BACKEND+"climateService/getAllClimateServices/json";
 
 	private static final String GET_MOST_RECENTLY_ADDED_CLIMATE_SERVICES_CALL = Constants.NEW_BACKEND+"climateService/getAllMostRecentClimateServicesByCreateTime/json";
-	
+
 	private static final String GET_MOST_RECENTLY_USED_CLIMATE_SERVICES_CALL = Constants.NEW_BACKEND+"climateService/getAllMostRecentClimateServicesByLatestAccessTime/json";
-	
+
 	private static final String GET_MOST_POPULAR_CLIMATE_SERVICES_CALL = Constants.NEW_BACKEND+"climateService/getAllMostUsedClimateServices/json";
-	
+
 	private static final String ADD_CLIMATE_SERVICE_CALL = Constants.NEW_BACKEND+"climateService/addClimateService";
 
 	private static final String DELETE_CLIMATE_SERVICE_CALL = Constants.NEW_BACKEND + util.Constants.NEW_DELETE_CLIMATE_SERVICE;
-	private static final String EDIT_CLIMATE_SERVICE_CALL = Constants.NEW_BACKEND+ "climateService/"
-			+ util.Constants.NEW_EDIT_CLIMATE_SERVICE + "/name/";
+	private static final String EDIT_CLIMATE_SERVICE_CALL = Constants.NEW_BACKEND+ "posts/update/";
 
 	public ClimateService() {
 		// TODO Auto-generated constructor stub
@@ -266,8 +265,9 @@ public class ClimateService {
 	 * @return
 	 * @throws UnsupportedEncodingException
 	 */
-	public static JsonNode edit(String climateServiceName, JsonNode jsonData) throws UnsupportedEncodingException {
-		return APICall.putAPI(EDIT_CLIMATE_SERVICE_CALL + URLEncoder.encode(climateServiceName, "UTF-8"), jsonData);
+	public static JsonNode edit(String postId, JsonNode jsonData) throws UnsupportedEncodingException {
+
+		return APICall.putAPI(EDIT_CLIMATE_SERVICE_CALL + URLEncoder.encode(postId, "UTF-8"), jsonData);
 	}
 
 	/**

@@ -95,7 +95,7 @@ import com.google.gson.JsonArray;
 			return badRequest("Post not exist!");
 		}
 
-        JsonObject result = new JsonObject();
+//        JsonObject result = new JsonObject();
         JsonArray postArray = new JsonArray();
         JsonObject postDetails = new JsonObject();
         String userIdP = "";
@@ -169,8 +169,9 @@ import com.google.gson.JsonArray;
             postDetails = new JsonObject();
         }
 
-        result.add("posts", postArray);
-		return ok(result.toString());
+//        result.add("posts", postArray);
+//		return ok(result.toString());
+        return ok(postArray.toString());
 	}
 
     //personal: privacy = 0/1
@@ -186,7 +187,7 @@ import com.google.gson.JsonArray;
             return badRequest("Post not exist!");
         }
 
-        JsonObject result = new JsonObject();
+//        JsonObject result = new JsonObject();
         JsonArray postArray = new JsonArray();
         JsonObject postDetails = new JsonObject();
         String userIdP = "";
@@ -254,8 +255,9 @@ import com.google.gson.JsonArray;
             postDetails = new JsonObject();
         }
 
-        result.add("posts", postArray);
-        return ok(result.toString());
+//        result.add("posts", postArray);
+//        return ok(result.toString());
+        return ok(postArray.toString());
 	}
 
     public Result getPostById(long id, String format) {

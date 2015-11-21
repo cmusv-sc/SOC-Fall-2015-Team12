@@ -69,7 +69,10 @@ public class ClimateService {
 
 	private static final String ADD_CLIMATE_SERVICE_CALL = Constants.NEW_BACKEND+"climateService/addClimateService";
 
-	private static final String DELETE_CLIMATE_SERVICE_CALL = Constants.NEW_BACKEND + util.Constants.NEW_DELETE_CLIMATE_SERVICE;
+//	private static final String DELETE_CLIMATE_SERVICE_CALL = Constants.NEW_BACKEND + util.Constants.NEW_DELETE_CLIMATE_SERVICE;
+
+	private static final String DELETE_CLIMATE_SERVICE_CALL = Constants.NEW_BACKEND + "posts/delete/";
+
 	private static final String EDIT_CLIMATE_SERVICE_CALL = Constants.NEW_BACKEND+ "posts/update/";
 
 	public ClimateService() {
@@ -277,9 +280,9 @@ public class ClimateService {
 	 * @return
 	 * @throws UnsupportedEncodingException
 	 */
-	public static JsonNode delete(String climateServiceId) throws UnsupportedEncodingException {
-		return APICall.deleteAPI(DELETE_CLIMATE_SERVICE_CALL
-				+ URLEncoder.encode(climateServiceId, "UTF-8"));
+	public static JsonNode delete(String postId) throws UnsupportedEncodingException {
+		return APICall.callAPI(DELETE_CLIMATE_SERVICE_CALL
+				+ URLEncoder.encode(postId, "UTF-8"));
 	}
 
 	/**

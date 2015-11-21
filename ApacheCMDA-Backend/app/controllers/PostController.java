@@ -279,6 +279,7 @@ import com.google.gson.JsonArray;
 
     public Result updatePostById(long id) {
         JsonNode json = request().body().asJson();
+        System.out.println("update receive="+json);
         if (json == null) {
             System.out.println("post not saved, expecting Json data");
             return badRequest("post not saved, expecting Json data");
@@ -287,6 +288,9 @@ import com.google.gson.JsonArray;
         String userId = json.findPath("userId").asText();
         int privacy = Integer.parseInt(json.findPath("privacy").asText());
         String text = json.findPath("text").asText();
+
+        System.out.println("text="+text);
+
         Date time = new Date();
         SimpleDateFormat format = new SimpleDateFormat(Common.DATE_PATTERN);
         try {
@@ -319,7 +323,8 @@ import com.google.gson.JsonArray;
         Post deletePost = postRepository.findOne(id);
         if (deletePost == null) {
             System.out.println("Post not found with id: " + id);
-            return notFound("Post not found with id: " + id);
+            return badRequest("Post not found with id: " + id);
+            //return notFound("Post not found with id: " + id);
         }
 
         //delete coments
@@ -342,8 +347,13 @@ import com.google.gson.JsonArray;
         //delete post
         postRepository.delete(deletePost);
         System.out.println("Post is deleted: " + id);
-
-        return ok("Post is deleted: " + id);
+        JsonArray result = new JsonArray();
+        JsonObject a = new JsonObject();
+        a.addProperty("response","Post is deleted: " + id);
+        result.add(a);
+//        return created(new Gson().toJson("Post is deleted: " + id));
+        return created(result.toString());
+        //return ok("Post is deleted: " + id);
     }
 
 }

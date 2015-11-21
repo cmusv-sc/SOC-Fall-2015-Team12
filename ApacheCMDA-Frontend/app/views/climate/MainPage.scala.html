@@ -15,7 +15,7 @@
 * limitations under the License.											   *
 *******************************************************************************@
 
-@(postSets: List[PostSet])
+@(postSets: List[PostSet], postSetForm: play.data.Form[PostSet])
 
 @import helper._
 
@@ -32,6 +32,44 @@
 
 @flash_message()
 
+@helper.form(action = routes.MainPageController.createNewPost) {
+<div class="container"
+	 style="background-image: url('@routes.Assets.at("images/login-background.jpg")'); height: 30vh; background-size: 100%; ">
+<div
+		class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
+	<form class="form-signin">
+		<h1 class="form-signin-heading" align="left">Create Posts</h1>
+
+		<div class="form-group">
+			<input type="postText" name="postText" id="postText" class="form-control"
+				   placeholder="Please type in a new post" required=""
+				   value='@postSetForm("postText").value'>
+		</div>
+
+		<div class="form-group" id="msg1" style="color: red;"></div>
+
+		<div class="row">
+			<div class="col-xs-12 col-sm-6 col-md-6">
+				<div class="form-group">
+					<input type="postStatus" name="postStatus" id="postStatus"
+						   class="form-control" placeholder="0 for Public / 1 for Private" required=""
+						   value='@postSetForm("postStatus").value'>
+				</div>
+			</div>
+		</div>
+
+		<div class="actions row">
+			<div class="col-xs-12 col-sm-6 col-md-6">
+				<input type="submit" class="btn btn-primary btn-block"
+					   value="Add" id="add">
+			</div>
+		</div>
+	</form>
+</div>
+</div>
+
+
+<div>
 <h1>Personal Posts</h1>
 	@for(postSet <- postSets){
 
@@ -50,7 +88,17 @@
 			>
 	</td>
 
+	@form(routes.MainPageController.deletePost){
+	<input
+			name="idHolder" class="hidden" type="hidden"
+			value="@postSet.getPostId()">
+	<input
+			type="submit" class="btn btn-danger delete-btn span2" value="Delete"
+			onclick="return confirm('Are you sure you want to delete this post?')">
 	}
 
+	}
 </div>
+}
+
 }

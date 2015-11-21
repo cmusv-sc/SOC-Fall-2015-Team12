@@ -48,6 +48,8 @@ GET     	/assets/*file               						controllers.Assets.at(path="/public",
 # profile
 #Mainpage
 GET         /mainpage                                           controllers.MainPageController.mainpage()
+GET		    /createNewPost				            controllers.MainPageController.createNewPost()
 POST		/edit/mainpage					        controllers.MainPageController.editPost()
+POST         /deletePost                             controllers.MainPageController.deletePost()
 #Homepage
 GET         /homepage                                           controllers.HomePageController.homepage()

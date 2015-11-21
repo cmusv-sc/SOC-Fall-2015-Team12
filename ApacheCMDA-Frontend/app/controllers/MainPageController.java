@@ -31,11 +31,18 @@ import play.mvc.Result;
 import util.APICall;
 import util.APICall.ResponseType;
 
+import util.Constants;
 import views.html.climate.*;
 
+import java.util.List;
+
 public class MainPageController extends Controller {
+
+	final static Form<PostSet> postsetForm = Form
+			.form(PostSet.class);
+
 	public static Result mainpage() throws Exception {
-		return ok(MainPage.render(PostSet.self("3")));
+		return ok(MainPage.render(PostSet.self("123456"),postsetForm));
 	}
 
 	public static Result editPost() {
@@ -46,7 +53,7 @@ public class MainPageController extends Controller {
 			String postId = df.field("pk").value();
 
 			if (postId != null && !postId.isEmpty()) {
-				jsonData.put("postId", postId);
+				jsonData.put("id", postId);
 			}
 			PostSet originalPost = PostSet.findPostById(postId);
 
@@ -57,8 +64,13 @@ public class MainPageController extends Controller {
 
 			jsonData.put("id", Integer.parseInt(originalPost.getPostId()));
 			jsonData.put("userId", originalPost.getUserId());
-			jsonData.put("text", originalPost.getPostText());
-			jsonData.put("privacy", originalPost.getPostStatus());
+			String status = "";
+			if (originalPost.getPostStatus().contains("Private")) {
+				status = "1";
+			} else {
+				status = "0";
+			}
+			jsonData.put("privacy", status);
 			jsonData.put("time", String.valueOf(originalPost.getPostTime()));
 
 			String editField = df.field("name").value();
@@ -73,7 +85,6 @@ public class MainPageController extends Controller {
 			}
 
 			// Call the edit() method
-			System.out.println(postId);
 			JsonNode response = ClimateService.edit(postId, jsonData);
 
 			// flash the response message
@@ -88,6 +99,108 @@ public class MainPageController extends Controller {
 			Application.flashMsg(APICall.createResponse(ResponseType.UNKNOWN));
 		}
 		return ok("updated");
+	}
+
+	public static Result deletePost() throws Exception{
+		DynamicForm df = DynamicForm.form().bindFromRequest();
+		String postId = df.field("idHolder").value();
+//		Integer tempId = Integer.parseInt(postId);
+		System.out.println("Will delete: " + postId);
+		Logger.debug(postId);
+
+
+
+		// return a text message
+
+		// Call the delete() method
+		JsonNode response = ClimateService.delete(postId);
+
+		// flash the response message
+		Application.flashMsg(response);
+
+		return redirect("/mainpage");
+	}
+
+	public static Result createNewPost() throws Exception{
+
+		Form<PostSet> nu = postsetForm.bindFromRequest();
+//		ObjectNode jsonData = Json.newObject();
+//		String userName = null;
+//
+		System.out.println(nu.get().getPostText());
+
+		String userId = "123456";
+		String postId = nu.get().getPostId();
+
+
+
+
+
+
+
+		String postText = nu.get().getPostText();
+		String postStatus = nu.get().getPostStatus2();
+//		String postTime = nu.get().getPostTime().toString();
+//
+//		List<PostSet> res = PostSet.addPost(userId, postId, postText, postStatus);
+
+//		return ok(MainPage.render(res, postsetForm));
+
+		ObjectNode jsonData = Json.newObject();
+		try {
+			DynamicForm df = DynamicForm.form().bindFromRequest();
+			jsonData.put("userId", userId);
+			jsonData.put("text", postText);
+			jsonData.put("privacy", postStatus);
+//			jsonData.put("PostTime", String.valueOf(originalPost.getPostTime()));
+
+			JsonNode response =   APICall.postAPI(Constants.NEW_BACKEND + "posts/add", jsonData);
+			//Application.flashMsg(response);
+		} catch (IllegalStateException e) {
+			e.printStackTrace();
+			Application.flashMsg(APICall
+					.createResponse(ResponseType.CONVERSIONERROR));
+		} catch (Exception e) {
+			e.printStackTrace();
+			Application.flashMsg(APICall.createResponse(ResponseType.UNKNOWN));
+		}
+
+		return redirect("/mainpage");
+
+
+//		return ok("ID: "+ nu.get().getPostId()
+//				+ "\nText: " + nu.get().getPostText()
+//				+"\nStatus: "+nu.get().getPostStatus()+
+//				"\nPost time: "+nu.get().getPostTime());
+
+
+/*		try{
+			jsonData.put("postID", "123456");
+			jsonData.put("postText", nu.get().getPostText());
+			jsonData.put("postStatus", nu.get().getPostStatus());
+			jsonData.put("userID", "12345678");
+
+
+//			JsonNode response = APICall.postAPI(Constants.URL_HOST + Constants.CMU_BACKEND_PORT
+//					+ Constants.ADD_USER, jsonData);
+
+			// flash the response message
+			Application.flashMsg(response);
+			return redirect(routes.Application.createSuccess());
+
+		}catch (IllegalStateException e) {
+			e.printStackTrace();
+			Application.flashMsg(APICall
+					.createResponse(ResponseType.CONVERSIONERROR));
+		} catch (Exception e) {
+			e.printStackTrace();
+			Application.flashMsg(APICall
+					.createResponse(ResponseType.UNKNOWN));
+		}*/
+//		return ok(signup.render(nu));
+
+
+//		return ok(MainPage.render(PostSet.example(), postsetForm));
 
 	}
 

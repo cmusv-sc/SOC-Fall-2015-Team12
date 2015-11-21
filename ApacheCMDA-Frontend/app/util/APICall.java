@@ -25,6 +25,7 @@ import play.libs.F.Promise;
 import scala.Console;
 import com.fasterxml.jackson.databind.*;
 import com.fasterxml.jackson.databind.node.ObjectNode;
+import util.*;
 
 public class APICall {
 	public static enum ResponseType {
@@ -42,6 +43,7 @@ public class APICall {
 					@Override
 					public JsonNode apply(WS.Response response)
 							throws Throwable {
+						System.out.println(response.getStatus());
 						if (response.getStatus() == 200
 								|| response.getStatus() == 201) {
 							return response.asJson();
@@ -143,12 +145,15 @@ public class APICall {
 	}
 	
 	public static JsonNode deleteAPI(String apiString) {
-		Promise<WS.Response> responsePromise = WS.url(apiString.replace("+", "%20")).setContentType("text/html").delete();
+		System.out.println(apiString);
+		Promise<WS.Response> responsePromise = WS.url(apiString).delete();
 		final Promise<JsonNode> bodyPromise = responsePromise
 				.map(new Function<WS.Response, JsonNode>() {
+
 					@Override
 					public JsonNode apply(WS.Response response)
 							throws Throwable {
+						System.out.println(response.getStatus());
 						if ((response.getStatus() == 200 || response
 								.getStatus() == 201)
 								&& !response.getBody().contains("not")) {

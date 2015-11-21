@@ -53,6 +53,9 @@ public class PostSet {
 
 		return postStatus.substring(1, postStatus.length() - 1);
 	}
+	public String getPostStatus2(){
+		return postStatus;
+	}
 	public String getUserId() {
 		return userId;
 	}
@@ -84,10 +87,14 @@ public class PostSet {
 	public static List<PostSet> all() throws JSONException {
 		List<PostSet> postSets = new ArrayList<PostSet>();
 
-		JsonNode postSet = APICall.callAPI(GET_ALL_USERPOST + "3");
+		JsonNode postSet = APICall.callAPI(GET_ALL_USERPOST + "123456");
 		String postString = postSet.toString();
 
 		JsonParser parser = new JsonParser();
+
+		if(postString.contains("error"))
+			return postSets;
+
 		JsonArray postSetNode = parser.parse(postString).getAsJsonArray();
 
 		if (postSetNode == null || !postSetNode.isJsonArray()) {
@@ -97,12 +104,12 @@ public class PostSet {
 		for (int i = 0; i < postSetNode.size(); i++) {
 			PostSet postset = new PostSet();
 			postset.setPostId(postSetNode.get(i).getAsJsonObject().get("id").toString());
-			postset.setPostStatus(postSetNode.get(i).getAsJsonObject().get("privacy").toString());
+
+			postset.setPostStatus("\"Public\"");
 			postset.setPostText(postSetNode.get(i).getAsJsonObject().get("text").toString());
 			postset.setUserId(postSetNode.get(i).getAsJsonObject().get("userId").toString());
 
 			String postTime = postSetNode.get(i).getAsJsonObject().get("time").toString();
-
 			postset.setPostTime(postTime);
 
 			postSets.add(postset);
@@ -114,8 +121,13 @@ public class PostSet {
 
 		List<PostSet> postSets = new ArrayList<PostSet>();
 
-		JsonNode postSet = APICall.callAPI(GET_USERPOST + "3");
+		JsonNode postSet = APICall.callAPI(GET_USERPOST + "123456");
 		String postString = postSet.toString();
+
+		System.out.println("debug: " + postString);
+
+		if(postString.contains("error"))
+			return postSets;
 
 		JsonParser parser = new JsonParser();
 		JsonArray postSetNode = parser.parse(postString).getAsJsonArray();
@@ -127,7 +139,14 @@ public class PostSet {
 		for (int i = 0; i < postSetNode.size(); i++) {
 			PostSet postset = new PostSet();
 			postset.setPostId(postSetNode.get(i).getAsJsonObject().get("id").toString());
-			postset.setPostStatus(postSetNode.get(i).getAsJsonObject().get("privacy").toString());
+			String privacy = postSetNode.get(i).getAsJsonObject().get("privacy").toString();
+			if (privacy.contains("0"))
+				privacy = "'Public'";
+			else if (privacy.contains("1"))
+				privacy = "'Private'";
+			else
+				privacy = "'unset'";
+			postset.setPostStatus(privacy);
 			postset.setPostText(postSetNode.get(i).getAsJsonObject().get("text").toString());
 			postset.setUserId(postSetNode.get(i).getAsJsonObject().get("userId").toString());
 
@@ -190,6 +209,23 @@ public class PostSet {
 		}
 		return res;
 	}
+
+
+	public static List<PostSet> addPost(String userId, String postId, String postText, String postStatus) throws Exception {
+
+		List<PostSet> res = new ArrayList<>();
+		PostSet set = new PostSet();
+		set.setUserId(userId);
+		set.setPostId(postId);
+		set.setPostText(postText);
+		set.setPostStatus(postStatus);
+//		set.setPostTime(postTime);
+
+//		String postTime = json.findPath("postTime").asText();
+		res.add(set);
+		return res;
+	}
+
 
 	public static PostSet findPostById(String postId) throws Exception {
 		List<PostSet> list = self("3");

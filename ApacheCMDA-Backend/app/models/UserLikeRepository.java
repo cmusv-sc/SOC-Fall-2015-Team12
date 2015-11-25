@@ -28,8 +28,6 @@ import java.util.Set;
 @Named
 @Singleton
 public interface UserLikeRepository extends CrudRepository<UserLike, Long> {
-    @Query(value = "select l.* from UserLike l where l.postId=?1", nativeQuery = true)
-    Set<UserLike> findAllByPostId(Long id);
 
     @Query(value = "select c.* from UserLike c where c.postId = ?1", nativeQuery = true)
     List<UserLike> findLikeWithPostId(Long postId);

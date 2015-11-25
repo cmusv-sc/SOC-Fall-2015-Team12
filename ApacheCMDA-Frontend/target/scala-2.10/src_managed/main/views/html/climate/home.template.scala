@@ -71,13 +71,7 @@ Seq[Any](format.raw/*18.49*/("""
 		</div>
 		<div class="col-lg-6">
 			<h2>Climate Model Diagnostic Analyzer</h2>
-			<br>
-			<p> A repository of web services for multi-aspect physics-based and 
-				phenomenon-oriented phenomenon-oriented climate model performance
-				evaluation and diagnosis through the comprehensive and synergistic 
-				use of multiple observational data, reanalysis data, and model outputs.
-			</p>
-			<br>
+
 			<p> This repository is specially customized to support the 2015 JPL Center
 				for Climate Sciences Summer School. The theme of the summer school is 
 				<b>Using Satellite Observations to Advance Climate Models</b>. This repository 
@@ -85,18 +79,18 @@ Seq[Any](format.raw/*18.49*/("""
 				group research projects.
 			</p>
 			
-			<!-- """),_display_(Seq[Any](/*47.10*/if(!session.get("username"))/*47.38*/{_display_(Seq[Any](format.raw/*47.39*/(""" -->
+			<!-- """),_display_(Seq[Any](/*41.10*/if(!session.get("username"))/*41.38*/{_display_(Seq[Any](format.raw/*41.39*/(""" -->
 			
 			<p>
-				"""),_display_(Seq[Any](/*50.6*/if(false)/*50.15*/{_display_(Seq[Any](format.raw/*50.16*/(""" <a class="btn btn-primary" href="climate/register"
-					role="button">Register &raquo;</a> """)))})),format.raw/*51.42*/("""
+				"""),_display_(Seq[Any](/*44.6*/if(false)/*44.15*/{_display_(Seq[Any](format.raw/*44.16*/(""" <a class="btn btn-primary" href="climate/register"
+					role="button">Register &raquo;</a> """)))})),format.raw/*45.42*/("""
 			</p>
-			<!-- """)))})),format.raw/*53.10*/(""" -->
+			<!-- """)))})),format.raw/*47.10*/(""" -->
 		</div>
 	</div>
 </div>
 
-""")))})),format.raw/*58.2*/("""
+""")))})),format.raw/*52.2*/("""
 """))}
     }
     
@@ -109,11 +103,11 @@ Seq[Any](format.raw/*18.49*/("""
 }
                 /*
                     -- GENERATED --
-                    DATE: Fri Sep 18 18:40:50 PDT 2015
-                    SOURCE: /home/xingwei/SOC-Fall-2015/ApacheCMDA-Frontend/app/views/climate/home.scala.html
-                    HASH: fb5c5c9a762e71e7b93424b00a3fe3ff8e71fe74
-                    MATRIX: 3190->1205|3349->1252|3378->1272|3415->1274|3436->1286|3476->1288|4420->2196|4457->2224|4496->2225|4552->2246|4570->2255|4609->2256|4734->2349|4784->2367|4846->2398
-                    LINES: 56->18|60->18|62->21|63->22|63->22|63->22|88->47|88->47|88->47|91->50|91->50|91->50|92->51|94->53|99->58
+                    DATE: Fri Nov 20 11:55:18 PST 2015
+                    SOURCE: /Users/K/SOC-Fall-2015-Team12/ApacheCMDA-Frontend/app/views/climate/home.scala.html
+                    HASH: c42dbe74b06629e210b001693cbde8292ae3e1a2
+                    MATRIX: 3190->1205|3349->1252|3378->1272|3415->1274|3436->1286|3476->1288|4107->1883|4144->1911|4183->1912|4239->1933|4257->1942|4296->1943|4421->2036|4471->2054|4533->2085
+                    LINES: 56->18|60->18|62->21|63->22|63->22|63->22|82->41|82->41|82->41|85->44|85->44|85->44|86->45|88->47|93->52
                     -- GENERATED --
                 */
             

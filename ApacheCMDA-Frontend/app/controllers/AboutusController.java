@@ -17,13 +17,17 @@
 
 package controllers;
 
+import models.PostSet;
+import play.data.Form;
 import play.mvc.*;
 import views.html.climate.*;
 
 public class AboutusController extends Controller {
-		
-    public static Result aboutUs() {
-    	return ok(aboutus.render("test"));
+    final static Form<PostSet> postsetForm = Form
+            .form(PostSet.class);
+
+    public static Result aboutUs() throws Exception {
+    	return ok(aboutus.render("test", PostSet.self("123456"),postsetForm ));
     }
     
     public static Result aboutProject(){

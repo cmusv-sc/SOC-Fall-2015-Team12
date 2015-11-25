@@ -15,6 +15,7 @@
  * limitations under the License.
  */
 package controllers;
+import java.lang.String;
 import java.util.Date;
 import java.util.List;
 import java.text.ParseException;
@@ -335,25 +336,107 @@ import com.google.gson.JsonArray;
             }
         }
 
-        /*
+
         //delete likes
-        List<UserLike> deleteLikes = likeRepository.findAllByPostId(deletePost.getId());
+        List<UserLike> deleteLikes = userLikeRepository.findLikeWithPostId(deletePost.getId());
         if(deleteLikes!=null) {
             for (UserLike deleteLike : deleteLikes) {
-                likeRepository.delete(deleteLike);
+                userLikeRepository.delete(deleteLike);
             }
-        }*/
+        }
 
         //delete post
         postRepository.delete(deletePost);
         System.out.println("Post is deleted: " + id);
         JsonArray result = new JsonArray();
         JsonObject a = new JsonObject();
-        a.addProperty("response","Post is deleted: " + id);
+        a.addProperty("response", "Post is deleted: " + id);
         result.add(a);
 //        return created(new Gson().toJson("Post is deleted: " + id));
         return created(result.toString());
         //return ok("Post is deleted: " + id);
     }
 
+    public Result searchPost(String userId, String keyword, String format) {
+
+        if(userId == null || userId.length() == 0){
+            System.out.println("User id is null or empty!");
+            return badRequest("User id is null or empty!");
+        }
+
+        List<Post> posts = postRepository.searchPost(userId, keyword);
+        if (posts == null || posts.size() ==0) {
+            System.out.println("Post not exist!");
+            return badRequest("Post not exist!");
+        }
+
+        //        JsonObject result = new JsonObject();
+        JsonArray postArray = new JsonArray();
+        JsonObject postDetails = new JsonObject();
+        String userIdP = "";
+        int privacyP = 0;
+        String textP = "";
+        Date timeP = null;
+        Long postId = 0l;
+
+        for(Post p : posts){
+            postId = p.getId();
+            userIdP = p.getUserId();
+            privacyP = p.getPrivacy();
+            textP = p.getText();
+            timeP = p.getTime();
+
+            postDetails.addProperty("id", postId);
+            postDetails.addProperty("userId", userIdP);
+            postDetails.addProperty("privacy", privacyP + "");
+            postDetails.addProperty("text", textP);
+            postDetails.addProperty("time", timeP + "");
+
+            JsonArray commentArray = new JsonArray();
+            List<UserComment> userComments = userCommentRepository.findCommentWithPostId(postId);
+            JsonObject comDetails = new JsonObject();
+            Long postIdC = 0l;
+            String userIdC = "";
+            String textC = "";
+            Date timeC = null;
+            for(UserComment c : userComments) {
+                postIdC = c.getPostId();
+                userIdC = c.getUserId();
+                textC = c.getText();
+                timeC = c.getTime();
+                comDetails.addProperty("postId", postIdC);
+                comDetails.addProperty("userId", userIdC);
+                comDetails.addProperty("text", textC);
+                comDetails.addProperty("time", timeC.toString());
+
+                commentArray.add(comDetails);
+                comDetails = new JsonObject();
+            }
+
+            postDetails.add("userComments", commentArray);
+
+            JsonArray likeArray = new JsonArray();
+            List<UserLike> likes = userLikeRepository.findLikeWithPostId(postId);
+            JsonObject likeDetails = new JsonObject();
+            Long postIdL = 0l;
+            String userIdL = "";
+            Date timeL = null;
+            for(UserLike l : likes) {
+                postIdL = l.getPostId();
+                userIdL = l.getUserId();
+                timeL = l.getTime();
+                likeDetails.addProperty("postId", postIdL);
+                likeDetails.addProperty("userId", userIdL);
+                likeDetails.addProperty("time", timeL.toString());
+
+                likeArray.add(likeDetails);
+                likeDetails = new JsonObject();
+            }
+
+            postDetails.add("userLikes", likeArray);
+            postArray.add(postDetails);
+            postDetails = new JsonObject();
+        }
+        return ok(postArray.toString());
+    }
 }

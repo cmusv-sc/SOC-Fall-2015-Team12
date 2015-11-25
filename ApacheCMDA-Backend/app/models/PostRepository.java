@@ -31,5 +31,8 @@ public interface PostRepository extends CrudRepository<Post, Long> {
     @Query(value = "select c.* from Post c where c.userId = ?1 order by c.time desc", nativeQuery = true)
     List<Post> findPostWithUserId(String userId);
 
+    @Query(value = "select c.* from Post c where c.userId = ?1 and c.text like %?2% order by c.time desc", nativeQuery = true)
+    List<Post> searchPost(String userId, String keyword);
+
     public Post findById(Long id);
 }

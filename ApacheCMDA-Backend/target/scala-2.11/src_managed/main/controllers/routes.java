@@ -1,6 +1,6 @@
 // @SOURCE:/Users/feifei/SOC-Fall-2015-Team12/ApacheCMDA-Backend/conf/routes
-// @HASH:530254542e29785f33c5115a76476dbc770bb74d
-// @DATE:Tue Nov 24 18:21:00 PST 2015
+// @HASH:a239e5ef6f00e6f43acb987ad83eb91dd8b5ae4a
+// @DATE:Tue Nov 24 19:17:59 PST 2015
 
 package controllers;
 

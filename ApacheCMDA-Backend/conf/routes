@@ -60,8 +60,9 @@ GET           /posts/:id                                                        
 POST          /posts/add                                                                                @controllers.PostController.addPost
 GET           /posts/delete/:id                                                                         @controllers.PostController.deletePostById(id: Long)
 PUT           /posts/update/:id                                                                         @controllers.PostController.updatePostById(id: Long)
-GET           /posts/getPublicPost/:userId                                                               @controllers.PostController.getPublicPost(userId: String)
-GET           /posts/getPersonalPost/:userId                                                             @controllers.PostController.getPersonalPost(userId: String)
+GET           /posts/getPublicPost/:userId                                                              @controllers.PostController.getPublicPost(userId: String)
+GET           /posts/getPersonalPost/:userId                                                            @controllers.PostController.getPersonalPost(userId: String)
+GET           /posts/search/userId/:userId/keyword/:keyword                                                            @controllers.PostController.searchPost(userId: String, keyword:String, format: String="json")
 
 # Comments and Likes
 POST          /comments/add                                                                             @controllers.CommentController.addComment

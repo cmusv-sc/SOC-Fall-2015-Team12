@@ -52,7 +52,24 @@ PUT           /users/update/:id                                                 
 DELETE        /users/delete/:id                                                                         @controllers.UserController.deleteUser(id: Long)
 GET			  /users/getAllUsers/json																	@controllers.UserController.getAllUsers(format: String="json")
 POST		  /users/isUserValid																		@controllers.UserController.isUserValid
+POST		  /users/isEmailExisted																		@controllers.UserController.isEmailExisted
 DELETE		  /users/delete/userName/:userName/password/:password										@controllers.UserController.deleteUserByUserNameandPassword(userName: String, password: String)
+
+# Posts
+GET           /posts/:id                                                                                @controllers.PostController.getPostById(id: Long, format: String="json")
+POST          /posts/add                                                                                @controllers.PostController.addPost
+GET           /posts/delete/:id                                                                         @controllers.PostController.deletePostById(id: Long)
+PUT           /posts/update/:id                                                                         @controllers.PostController.updatePostById(id: Long)
+GET           /posts/getPublicPost/:userId                                                               @controllers.PostController.getPublicPost(userId: String)
+GET           /posts/getPersonalPost/:userId                                                             @controllers.PostController.getPersonalPost(userId: String)
+
+# Comments and Likes
+POST          /comments/add                                                                             @controllers.CommentController.addComment
+POST          /likes/add                                                                                @controllers.LikeController.addLike
+
+# Follow
+POST          /follow/add                                                                                @controllers.FollowController.addFollow
+
 
 # Map static resources from the /public folder to the /assets URL path
 GET           /assets/*file                                                                             controllers.Assets.at(path="/public", file)

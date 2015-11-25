@@ -54,14 +54,18 @@ GET			  /users/getAllUsers/json																	@controllers.UserController.getA
 POST		  /users/isUserValid																		@controllers.UserController.isUserValid
 POST		  /users/isEmailExisted																		@controllers.UserController.isEmailExisted
 DELETE		  /users/delete/userName/:userName/password/:password										@controllers.UserController.deleteUserByUserNameandPassword(userName: String, password: String)
+POST          /users/login                                                                              @controllers.UserController.login
+POST          /users/signUp                                                                             @controllers.UserController.signUp
+
 
 # Posts
 GET           /posts/:id                                                                                @controllers.PostController.getPostById(id: Long, format: String="json")
 POST          /posts/add                                                                                @controllers.PostController.addPost
 GET           /posts/delete/:id                                                                         @controllers.PostController.deletePostById(id: Long)
 PUT           /posts/update/:id                                                                         @controllers.PostController.updatePostById(id: Long)
-GET           /posts/getPublicPost/:userId                                                               @controllers.PostController.getPublicPost(userId: String)
-GET           /posts/getPersonalPost/:userId                                                             @controllers.PostController.getPersonalPost(userId: String)
+GET           /posts/getPublicPost/:userId                                                              @controllers.PostController.getPublicPost(userId: String)
+GET           /posts/getPersonalPost/:userId                                                            @controllers.PostController.getPersonalPost(userId: String)
+GET           /posts/getTop10Posts/:userId                                                              @controllers.PostController.getTop10Posts(userId: Long)
 
 # Comments and Likes
 POST          /comments/add                                                                             @controllers.CommentController.addComment

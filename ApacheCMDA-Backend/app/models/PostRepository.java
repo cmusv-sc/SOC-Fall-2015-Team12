@@ -28,8 +28,10 @@ import javax.inject.Singleton;
 @Singleton
 public interface PostRepository extends CrudRepository<Post, Long> {
 
-    @Query(value = "select c.* from Post c where c.userId = ?1", nativeQuery = true)
+    @Query(value = "select c.* from Post c where c.userId = ?1 order by c.time desc", nativeQuery = true)
     List<Post> findPostWithUserId(String userId);
+    @Query(value = "select c.* from Post c where c.userId = ?1 order by c.time desc", nativeQuery = true)
+    List<Post> findPostWithLongUserId(Long userId);
 
     public Post findById(Long id);
 }

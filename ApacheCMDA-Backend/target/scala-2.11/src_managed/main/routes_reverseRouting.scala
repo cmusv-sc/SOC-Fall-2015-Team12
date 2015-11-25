@@ -1,6 +1,6 @@
 // @SOURCE:/Users/feifei/SOC-Fall-2015-Team12/ApacheCMDA-Backend/conf/routes
-// @HASH:a239e5ef6f00e6f43acb987ad83eb91dd8b5ae4a
-// @DATE:Tue Nov 24 19:17:59 PST 2015
+// @HASH:486db00cf7aa24d2d66ca39a1582915a2fcdde1d
+// @DATE:Tue Nov 24 20:31:14 PST 2015
 
 import Routes.{prefix => _prefix, defaultPrefix => _defaultPrefix}
 import play.core._
@@ -16,6 +16,7 @@ import Router.queryString
 
 
 // @LINE:76
+// @LINE:73
 // @LINE:72
 // @LINE:69
 // @LINE:68
@@ -127,9 +128,17 @@ def deleteInstrument(id:Long): Call = {
 }
                           
 
+// @LINE:73
 // @LINE:72
 class ReverseFollowController {
 
+
+// @LINE:73
+def deleteFollowById(id:Long): Call = {
+   import ReverseRouteContext.empty
+   Call("GET", _prefix + { _defaultPrefix } + "follow/delete/" + implicitly[PathBindable[Long]].unbind("id", id))
+}
+                        
 
 // @LINE:72
 def addFollow(): Call = {
@@ -531,6 +540,7 @@ def deleteClimateServiceByName(name:String): Call = {
 
 
 // @LINE:76
+// @LINE:73
 // @LINE:72
 // @LINE:69
 // @LINE:68
@@ -667,9 +677,21 @@ def deleteInstrument : JavascriptReverseRoute = JavascriptReverseRoute(
 }
               
 
+// @LINE:73
 // @LINE:72
 class ReverseFollowController {
 
+
+// @LINE:73
+def deleteFollowById : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.FollowController.deleteFollowById",
+   """
+      function(id) {
+      return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "follow/delete/" + (""" + implicitly[PathBindable[Long]].javascriptUnbind + """)("id", id)})
+      }
+   """
+)
+                        
 
 // @LINE:72
 def addFollow : JavascriptReverseRoute = JavascriptReverseRoute(
@@ -1247,6 +1269,7 @@ def deleteClimateServiceByName : JavascriptReverseRoute = JavascriptReverseRoute
 
 
 // @LINE:76
+// @LINE:73
 // @LINE:72
 // @LINE:69
 // @LINE:68
@@ -1353,9 +1376,16 @@ def deleteInstrument(id:Long): play.api.mvc.HandlerRef[_] = new play.api.mvc.Han
 }
                           
 
+// @LINE:73
 // @LINE:72
 class ReverseFollowController {
 
+
+// @LINE:73
+def deleteFollowById(id:Long): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   play.api.Play.maybeApplication.map(_.global).getOrElse(play.api.DefaultGlobal).getControllerInstance(classOf[controllers.FollowController]).deleteFollowById(id), HandlerDef(this.getClass.getClassLoader, "", "controllers.FollowController", "deleteFollowById", Seq(classOf[Long]), "GET", """""", _prefix + """follow/delete/$id<[^/]+>""")
+)
+                      
 
 // @LINE:72
 def addFollow(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(

@@ -36,6 +36,8 @@ import javax.inject.Singleton;
 import javax.persistence.PersistenceException;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.google.gson.Gson;
+import com.google.gson.JsonObject;
+import com.google.gson.JsonArray;
 
 /**
  * The main set of posts.
@@ -80,5 +82,19 @@ import com.google.gson.Gson;
         }
     }
 
+    public Result deleteFollowById(long id){
+        Follow deleteFollow = followRepository.findOne(id);
+        if (deleteFollow == null) {
+            System.out.println("Follow not found with id: " + id);
+            return badRequest("Follow not found with id: " + id);
+        }
+
+        followRepository.delete(id);
+        JsonArray result = new JsonArray();
+        JsonObject a = new JsonObject();
+        a.addProperty("response", "Follow is deleted: " + id);
+        result.add(a);
+        return created(result.toString());
+    }
 
 }

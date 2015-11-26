@@ -63,6 +63,7 @@ PUT           /posts/update/:id                                                 
 GET           /posts/getPublicPost/:userId                                                              @controllers.PostController.getPublicPost(userId: String)
 GET           /posts/getPersonalPost/:userId                                                            @controllers.PostController.getPersonalPost(userId: String)
 GET           /posts/search/userId/:userId/keyword/:keyword                                                            @controllers.PostController.searchPost(userId: String, keyword:String, format: String="json")
+POST          /posts/share                                                                                @controllers.PostController.sharePost
 
 # Comments and Likes
 POST          /comments/add                                                                             @controllers.CommentController.addComment

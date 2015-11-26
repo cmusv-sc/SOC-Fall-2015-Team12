@@ -15,6 +15,8 @@
  * limitations under the License.
  */
 package controllers;
+import java.lang.Integer;
+import java.lang.Long;
 import java.lang.String;
 import java.util.Date;
 import java.util.List;
@@ -438,5 +440,37 @@ import com.google.gson.JsonArray;
             postDetails = new JsonObject();
         }
         return ok(postArray.toString());
+    }
+
+    public Result sharePost() {
+        JsonNode json = request().body().asJson();
+        if (json == null) {
+            System.out.println("Post not created, expecting Json data");
+            return badRequest("Post not created, expecting Json data");
+        }
+        // Parse JSON file
+
+        String userId = json.findPath("userId").asText();
+        String postId = json.findPath("postId").asText();
+
+        Post sharePost = postRepository.findOne(Long.parseLong(postId));
+
+        Date time = new Date();
+        SimpleDateFormat format = new SimpleDateFormat(Common.DATE_PATTERN);
+        try {
+            time = format.parse(json.findPath("time").asText());
+        } catch (ParseException e) {
+            System.out.println("No creation date specified, set to current time");
+        }
+        try {
+            Post post = new Post(userId, 0, sharePost.getText(), time);
+            postRepository.save(post);
+            System.out.println("Share post saved: " + post.getId());
+            return created(new Gson().toJson(post.getId()));
+        } catch (PersistenceException pe) {
+            pe.printStackTrace();
+            System.out.println("Share post not saved: " + userId);
+            return badRequest("Share post not saved: " + userId);
+        }
     }
 }

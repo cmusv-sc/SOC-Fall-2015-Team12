@@ -27,9 +27,9 @@ import java.util.List;
 @Named
 @Singleton
 public interface UserCommentRepository extends CrudRepository<UserComment, Long> {
-    @Query(value = "select c.* from UserComment c where c.postId=?1", nativeQuery = true)
+    @Query(value = "select c.* from UserComment c where c.postId=?1 order by c.time desc", nativeQuery = true)
     List<UserComment> findAllByPostId(Long id);
 
-    @Query(value = "select c.* from UserComment c where c.postId = ?1", nativeQuery = true)
+    @Query(value = "select c.* from UserComment c where c.postId = ?1 order by c.time desc", nativeQuery = true)
     List<UserComment> findCommentWithPostId(Long postId);
 }

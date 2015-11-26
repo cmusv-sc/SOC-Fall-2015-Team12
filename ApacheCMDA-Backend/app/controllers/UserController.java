@@ -214,4 +214,64 @@ public class UserController extends Controller {
 		return ok("Email is valid");
 	}
 
+
+	public Result login(){
+		JsonNode json = request().body().asJson();
+		if (json == null) {
+			System.out.println("User info is wrong, expecting Json data");
+			return badRequest("User info is wrong, expecting Json data");
+		}
+
+		// Parse JSON file
+		String email = json.path("email").asText();
+		String password = json.path("password").asText();
+
+		if (userRepository.findByEmail(email) == null) {
+			System.out.println("User not exist: " + email);
+			return badRequest("User not exist");
+		}
+		else {
+			User userLogin = userRepository.findByEmail(email);
+			if (userLogin.getPassword().equals(password)) {
+				return created(new Gson().toJson(userLogin.getId()));
+			} else {
+				System.out.println("Wrong password");
+				return badRequest("Wrong password");
+			}
+		}
+	}
+
+	public Result signUp(){
+		JsonNode json = request().body().asJson();
+		if (json == null) {
+			System.out.println("User info is wrong, expecting Json data");
+			return badRequest("User info is wrong, expecting Json data");
+		}
+
+		// Parse JSON file
+		// The following attributes should be valid
+		String email = json.path("email").asText(); //email must be unique
+		if (userRepository.findByEmail(email) != null) {
+			System.out.println("Email has been used: " + email);
+			return badRequest("Email already existed");
+		}
+		else {
+			String password = json.path("password").asText();
+			String firstName = json.path("firstName").asText();
+			String lastName = json.path("lastName").asText();
+			// userName can be generated automatically which is the same as the email prefix
+			String userName = email.split("@")[0];
+
+			try {
+				User user = new User(userName, password, firstName, lastName, email);
+				userRepository.save(user);
+				System.out.println("User saved: " + user.getId());
+				return created(new Gson().toJson(user.getId()));
+			}catch(PersistenceException pe){
+				pe.printStackTrace();
+				System.out.println("User not saved: " + firstName + " " + lastName);
+				return badRequest("User not saved: " + firstName + " " + lastName);
+			}
+		}
+	}
 }

@@ -1,6 +1,6 @@
 # ApacheCMDA
 
-Service Oriented Scientific Collaboration Social Network
+Service Oriented Scientific Collaboration Social Network
 Team 12 
 
 Members : 
@@ -14,13 +14,9 @@ Run project
 
   Run local MySQL database.
 
-  Enter ApacheCMDA-Backend, in terminal, input
+  Enter ApacheCMDA-Backend, in terminal, input ./activator "run 9034"
 
-  ./activator "run 9034"
-
-  Enter ApacheCMDA-Frontend, in terminal, input
-
-  ./activator run
+  Enter ApacheCMDA-Frontend, in terminal, input ./activator run
 
   Run web application
 

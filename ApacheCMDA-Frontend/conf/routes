@@ -4,7 +4,7 @@
 
 # Home page
 GET         /home                                                controllers.ClimateServiceController.home(email ?= null, vfile ?= null, dataset ?= null)
-GET 		/													 controllers.ClimateServiceController.home(email ?= null, vfile ?= null, dataset ?= null)
+GET 		/													 controllers.Application.login()
 GET		/login						controllers.Application.login()
 GET		/logout						controllers.Application.logout()
 GET		/authenticate				controllers.Application.authenticate()
@@ -48,8 +48,27 @@ GET     	/assets/*file               						controllers.Assets.at(path="/public",
 # profile
 #Mainpage
 GET         /mainpage                                           controllers.MainPageController.mainpage()
+GET         /previousMainPage                                           controllers.MainPageController.previousPage()
+GET         /nextMainPage                                          controllers.MainPageController.nextPage()
 GET		    /createNewPost				            controllers.MainPageController.createNewPost()
-POST		/edit/mainpage					        controllers.MainPageController.editPost()
+POST		/editPost					        controllers.MainPageController.editPost()
 POST         /deletePost                             controllers.MainPageController.deletePost()
 #Homepage
 GET         /homepage                                           controllers.HomePageController.homepage()
+GET         /previousHomePage                                           controllers.HomePageController.previousPage()
+GET         /nextHomePage                                          controllers.HomePageController.nextPage()
+POST         /likePost                             controllers.HomePageController.likePost()
+POST        /commentPost                            controllers.HomePageController.commentPost()
+POST        /sharePost                               controllers.HomePageController.sharePost()
+
+#top10Posts
+GET        /topPosts                            controllers.HomePageController.topPosts()
+
+#searchPosts
+GET        /searchPosts                         controllers.MainPageController.searchPosts()
+GET		    /searchPostsClick				            controllers.MainPageController.searchPostsClick()
+
+#searchUsers
+GET        /searchUsers                         controllers.SearchController.searchUser()
+GET		    /searchUsersClick				            controllers.SearchController.searchUserClick()
+POST         /addfollow                             controllers.SearchController.addfollow()

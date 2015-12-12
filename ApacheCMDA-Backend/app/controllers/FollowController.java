@@ -16,6 +16,8 @@
  */
 package controllers;
 import models.FollowRepository;
+import models.User;
+import models.UserRepository;
 import play.mvc.*;
 import javax.inject.Inject;
 import javax.inject.Named;
@@ -27,6 +29,8 @@ import util.Common;
 import java.util.Date;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.List;
+import java.util.Objects;
 
 import models.Follow;
 import play.mvc.*;
@@ -45,11 +49,13 @@ import com.google.gson.JsonArray;
 @Named @Singleton public class FollowController extends Controller {
 
     private final FollowRepository followRepository;
+    private final UserRepository userRepository;
 
     // We are using constructor injection to receive a repository to support our
     // desire for immutability.
-    @Inject public FollowController(final FollowRepository followRepository) {
+    @Inject public FollowController(final FollowRepository followRepository, final UserRepository userRepository) {
         this.followRepository = followRepository;
+        this.userRepository=userRepository;
     }
 
     public Result addFollow() {
@@ -77,8 +83,8 @@ import com.google.gson.JsonArray;
         } catch (PersistenceException pe) {
             pe.printStackTrace();
             System.out.println(followee + "\n" + follower);
-            System.out.println("Like not saved:a " + follower);
-            return badRequest("Like not saved:s " + follower);
+            System.out.println("follow not saved:a " + follower);
+            return badRequest("follow not saved:s " + follower);
         }
     }
 
@@ -95,6 +101,55 @@ import com.google.gson.JsonArray;
         a.addProperty("response", "Follow is deleted: " + id);
         result.add(a);
         return created(result.toString());
+    }
+
+    public Long isExisted(Long follower, Long followee){
+
+        System.out.println(follower + " " + followee);
+
+        List<Follow> existedFollow = followRepository.check(follower,followee);
+
+        if (existedFollow != null && !existedFollow.isEmpty()) {
+            System.out.println("Follow is existed");
+            System.out.println(existedFollow.get(0).getId());
+            return existedFollow.get(0).getId();
+        }else{
+            return 0l;
+        }
+    }
+
+    public Result getTopFollowee(){
+        JsonArray result = new JsonArray();
+        List<Object> existedFollow = followRepository.getTopFollwee(3l);
+        for(Object id: existedFollow){
+            JsonObject a = new JsonObject();
+            User user=userRepository.findById(Long.parseLong(id.toString()));
+            a.addProperty("id", user.getId());
+            a.addProperty("count", getCount(id.toString()));
+            a.addProperty("name", user.getUserName());
+            result.add(a);
+        }
+        return created(result.toString());
+    }
+
+    public Result getFollowerById(long userId){
+        JsonArray result = new JsonArray();
+        List<Follow> existedFollow = followRepository.getFollowerById(userId);
+        for(Follow follower: existedFollow){
+            JsonObject a = new JsonObject();
+            User user=userRepository.findById(follower.getFollower());
+            System.out.println(user.getUserName());
+            if(user==null)
+                continue;
+            a.addProperty("userId", follower.getId());
+            a.addProperty("name", user.getUserName());
+            result.add(a);
+        }
+        return created(result.toString());
+    }
+
+    public Long getCount(String id){
+        return followRepository.countFollwer(id.toString());
     }
 
 }

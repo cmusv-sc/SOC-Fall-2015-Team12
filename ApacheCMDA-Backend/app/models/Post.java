@@ -41,18 +41,21 @@ public class Post {
     private String userId;
     private int privacy;
     private String text;
+    private String address;
+
     @Temporal(TemporalType.TIMESTAMP) private Date time;
 
 
     public Post() {
     }
 
-    public Post(String userId, int privacy, String text, Date time) {
+    public Post(String userId, int privacy, String text, Date time, String address) {
         super();
         this.userId = userId;
         this.privacy = privacy;
         this.text = text;
         this.time = time;
+        this.address = address;
     }
 
     public long getId() {
@@ -92,6 +95,14 @@ public class Post {
         this.text = text;
     }
 
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
 //    @Override public String toString() {
 //        return "Posts [id=" + id + ", postId=" + postId + ", userId=" + userId + ",  privacy="
 //            + privacy + ", text=" + text + ", time=" + time + "]";
@@ -99,7 +110,7 @@ public class Post {
 
     @Override public String toString() {
         return "Post [id=" + id + ", userId=" + userId + ",  privacy=" + privacy + ", text=" + text
-            + ", time=" + time + "]";
+                + ", time=" + time + ", address=" + address + "]";
     }
 
 

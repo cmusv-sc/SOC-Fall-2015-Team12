@@ -27,7 +27,8 @@ public class AboutusController extends Controller {
             .form(PostSet.class);
 
     public static Result aboutUs() throws Exception {
-    	return ok(aboutus.render("test", PostSet.self("123456"),postsetForm ));
+//    	return ok(aboutus.render("test", PostSet.self("123456", 1),postsetForm ));
+        return ok(aboutus.render("About us"));
     }
     
     public static Result aboutProject(){

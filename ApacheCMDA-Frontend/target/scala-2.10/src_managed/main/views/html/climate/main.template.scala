@@ -59,80 +59,55 @@ object main extends BaseScalaTemplate[play.api.templates.HtmlFormat.Appendable,F
 Seq[Any](format.raw/*18.62*/(""" 
 
 <!DOCTYPE html>
+<html class="st-layout ls-top-navbar ls-bottom-footer show-sidebar sidebar-l2" lang="en">
+	<head>
+		<title>"""),_display_(Seq[Any](/*23.11*/title)),format.raw/*23.16*/("""</title>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="">
+		<meta name="author" content="">
 
-<html>
-<head>
+		<script src='"""),_display_(Seq[Any](/*30.17*/routes/*30.23*/.Assets.at("javascripts/jquery-1.9.0.min.js"))),format.raw/*30.68*/("""'
+		type="text/javascript"></script>
+		<script src='"""),_display_(Seq[Any](/*32.17*/routes/*32.23*/.Assets.at("javascripts/bootstrap.min.js"))),format.raw/*32.65*/("""'
+		type="text/javascript"></script>
+		<script type='text/javascript' src='"""),_display_(Seq[Any](/*34.40*/routes/*34.46*/.Assets.at("javascripts/lastLoader.js"))),format.raw/*34.85*/("""'></script>
+		<script type='text/javascript' src='"""),_display_(Seq[Any](/*35.40*/routes/*35.46*/.Assets.at("javascripts/jquery.metadata.js"))),format.raw/*35.90*/("""'></script>
+		<script type='text/javascript' src='"""),_display_(Seq[Any](/*36.40*/routes/*36.46*/.Assets.at("javascripts/jquery.tablesorter.js"))),format.raw/*36.93*/("""'></script>
 
-<title>"""),_display_(Seq[Any](/*25.9*/title)),format.raw/*25.14*/("""</title>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script type='text/javascript' src='"""),_display_(Seq[Any](/*38.40*/routes/*38.46*/.Assets.at("javascripts/jstree.js"))),format.raw/*38.81*/("""'></script>
+		<script type='text/javascript' src='"""),_display_(Seq[Any](/*39.40*/routes/*39.46*/.Assets.at("javascripts/keyword_tree.js"))),format.raw/*39.87*/("""'></script>
 
-<link rel="stylesheet"
-	href='"""),_display_(Seq[Any](/*31.9*/routes/*31.15*/.Assets.at("stylesheets/bootstrap.css"))),format.raw/*31.54*/("""'>
-<link rel="stylesheet"
-	href='"""),_display_(Seq[Any](/*33.9*/routes/*33.15*/.Assets.at("stylesheets/navbar-fixed-top.css"))),format.raw/*33.61*/("""'>
-<link rel="stylesheet"
-	href='"""),_display_(Seq[Any](/*35.9*/routes/*35.15*/.Assets.at("stylesheets/custom.css"))),format.raw/*35.51*/("""'>
-<link rel="stylesheet" media="screen"
-	href='"""),_display_(Seq[Any](/*37.9*/routes/*37.15*/.Assets.at("stylesheets/main.css"))),format.raw/*37.49*/("""'>
-<link rel="shortcut icon" type="image/png"
-	href='"""),_display_(Seq[Any](/*39.9*/routes/*39.15*/.Assets.at("images/favicon.png"))),format.raw/*39.47*/("""'>
-<link href='"""),_display_(Seq[Any](/*40.14*/routes/*40.20*/.Assets.at("stylesheets/bootstrap-editable.css"))),format.raw/*40.68*/("""'
-	rel="stylesheet" />
-<link href='"""),_display_(Seq[Any](/*42.14*/routes/*42.20*/.Assets.at("stylesheets/jquery.tablesorter.pager.css"))),format.raw/*42.74*/("""'
-	rel="stylesheet" />
-<link href='"""),_display_(Seq[Any](/*44.14*/routes/*44.20*/.Assets.at("stylesheets/style.css"))),format.raw/*44.55*/("""'
-	rel="stylesheet" />
+		<script src='"""),_display_(Seq[Any](/*41.17*/routes/*41.23*/.Assets.at("javascripts/bootstrap-editable.min.js"))),format.raw/*41.74*/("""'></script>
 
-<script src='"""),_display_(Seq[Any](/*47.15*/routes/*47.21*/.Assets.at("javascripts/jquery-1.9.0.min.js"))),format.raw/*47.66*/("""'
-	type="text/javascript"></script>	
-<script src='"""),_display_(Seq[Any](/*49.15*/routes/*49.21*/.Assets.at("javascripts/bootstrap.min.js"))),format.raw/*49.63*/("""'
-	type="text/javascript"></script>
-<script type='text/javascript' src='"""),_display_(Seq[Any](/*51.38*/routes/*51.44*/.Assets.at("javascripts/lastLoader.js"))),format.raw/*51.83*/("""'></script>
-<script type='text/javascript' src='"""),_display_(Seq[Any](/*52.38*/routes/*52.44*/.Assets.at("javascripts/jquery.metadata.js"))),format.raw/*52.88*/("""'></script>	
-<script type='text/javascript' src='"""),_display_(Seq[Any](/*53.38*/routes/*53.44*/.Assets.at("javascripts/jquery.tablesorter.js"))),format.raw/*53.91*/("""'></script>
+		<link href='"""),_display_(Seq[Any](/*43.16*/routes/*43.22*/.Assets.at("css/vendor/all.css"))),format.raw/*43.54*/("""' rel="stylesheet">
 
+		<link href='"""),_display_(Seq[Any](/*45.16*/routes/*45.22*/.Assets.at("css/app/app.css"))),format.raw/*45.51*/("""' rel="stylesheet">
 
-<script type='text/javascript' src='"""),_display_(Seq[Any](/*56.38*/routes/*56.44*/.Assets.at("javascripts/jstree.js"))),format.raw/*56.79*/("""'></script>
-<script type='text/javascript' src='"""),_display_(Seq[Any](/*57.38*/routes/*57.44*/.Assets.at("javascripts/keyword_tree.js"))),format.raw/*57.85*/("""'></script>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 
-<script src='"""),_display_(Seq[Any](/*59.15*/routes/*59.21*/.Assets.at("javascripts/bootstrap-editable.min.js"))),format.raw/*59.72*/("""'></script>
+		"""),_display_(Seq[Any](/*50.4*/moreScripts)),format.raw/*50.15*/("""
+	</head>
 
+	<body>
+		<div class="st-container">
+			"""),_display_(Seq[Any](/*55.5*/header())),format.raw/*55.13*/("""
+			"""),_display_(Seq[Any](/*56.5*/content)),format.raw/*56.12*/("""
+		</div>
 
-
-
-
-
-
-
-"""),_display_(Seq[Any](/*68.2*/moreScripts)),format.raw/*68.13*/("""
-</head>
-
-<body>
-	"""),_display_(Seq[Any](/*72.3*/header())),format.raw/*72.11*/("""
-	
-
-
-	<div class="container">
-
-		"""),_display_(Seq[Any](/*78.4*/content)),format.raw/*78.11*/("""
-
-	</div>
-	
-	<!-- Footer -->
+			<!-- Footer -->
 		<div class="footer" >
 			<div class="row">
 				<div class="col-lg-6 col-lg-offset-3">
-					<p class="text-muted" style="text-align: center; font-size: 14px;">&copy;
-						Carnegie Mellon University - Silicon Valley ; NASA Jet Propulsion Laboratory 2015</p>
+					<p class="text-muted" style="text-align: center; font-size: 14px;">Carnegie Mellon University - Silicon Valley ; SOC Team 12</p>
 				</div>
 			</div>
 		</div>
 
-</body>
-</html>
-"""))}
+	</body>
+</html>"""))}
     }
     
     def render(title:String,moreScripts:Html,content:Html): play.api.templates.HtmlFormat.Appendable = apply(title,moreScripts)(content)
@@ -144,11 +119,11 @@ Seq[Any](format.raw/*18.62*/("""
 }
                 /*
                     -- GENERATED --
-                    DATE: Fri Nov 20 11:55:18 PST 2015
-                    SOURCE: /Users/K/SOC-Fall-2015-Team12/ApacheCMDA-Frontend/app/views/climate/main.scala.html
-                    HASH: 9739b18775757b5f6c2483054a0bc6cbf532c069
-                    MATRIX: 3186->1205|3341->1265|3419->1308|3446->1313|3670->1502|3685->1508|3746->1547|3815->1581|3830->1587|3898->1633|3967->1667|3982->1673|4040->1709|4124->1758|4139->1764|4195->1798|4284->1852|4299->1858|4353->1890|4405->1906|4420->1912|4490->1960|4562->1996|4577->2002|4653->2056|4725->2092|4740->2098|4797->2133|4871->2171|4886->2177|4953->2222|5040->2273|5055->2279|5119->2321|5228->2394|5243->2400|5304->2439|5389->2488|5404->2494|5470->2538|5556->2588|5571->2594|5640->2641|5727->2692|5742->2698|5799->2733|5884->2782|5899->2788|5962->2829|6025->2856|6040->2862|6113->2913|6169->2934|6202->2945|6256->2964|6286->2972|6355->3006|6384->3013
-                    LINES: 56->18|59->18|66->25|66->25|72->31|72->31|72->31|74->33|74->33|74->33|76->35|76->35|76->35|78->37|78->37|78->37|80->39|80->39|80->39|81->40|81->40|81->40|83->42|83->42|83->42|85->44|85->44|85->44|88->47|88->47|88->47|90->49|90->49|90->49|92->51|92->51|92->51|93->52|93->52|93->52|94->53|94->53|94->53|97->56|97->56|97->56|98->57|98->57|98->57|100->59|100->59|100->59|109->68|109->68|113->72|113->72|119->78|119->78
+                    DATE: Fri Dec 11 14:49:59 PST 2015
+                    SOURCE: /Users/K/SOC-Team12-Final-Version/SOC-ApacheCMDA-Frontend/app/views/climate/main.scala.html
+                    HASH: 5745b3946cee02ae4e992018e4f736b371f5edff
+                    MATRIX: 3186->1205|3341->1265|3504->1392|3531->1397|3818->1648|3833->1654|3900->1699|3989->1752|4004->1758|4068->1800|4180->1876|4195->1882|4256->1921|4343->1972|4358->1978|4424->2022|4511->2073|4526->2079|4595->2126|4683->2178|4698->2184|4755->2219|4842->2270|4857->2276|4920->2317|4985->2346|5000->2352|5073->2403|5137->2431|5152->2437|5206->2469|5278->2505|5293->2511|5344->2540|5564->2725|5597->2736|5684->2788|5714->2796|5754->2801|5783->2808
+                    LINES: 56->18|59->18|64->23|64->23|71->30|71->30|71->30|73->32|73->32|73->32|75->34|75->34|75->34|76->35|76->35|76->35|77->36|77->36|77->36|79->38|79->38|79->38|80->39|80->39|80->39|82->41|82->41|82->41|84->43|84->43|84->43|86->45|86->45|86->45|91->50|91->50|96->55|96->55|97->56|97->56
                     -- GENERATED --
                 */
             

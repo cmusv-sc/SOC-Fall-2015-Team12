@@ -15,8 +15,6 @@
  * limitations under the License.
  */
 package controllers;
-import java.lang.Integer;
-import java.lang.Long;
 import java.util.*;
 import java.lang.String;
 import java.util.Date;
@@ -46,16 +44,18 @@ import com.google.gson.JsonArray;
     private final UserCommentRepository userCommentRepository;
     private final UserLikeRepository userLikeRepository;
     private final UserRepository userRepository;
+    private final FollowRepository followRepository;
 
     // We are using constructor injection to receive a repository to support our
     // desire for immutability.
     @Inject
     public PostController(final PostRepository postRepository,
-                          UserCommentRepository userCommentRepository, UserLikeRepository userLikeRepository, UserRepository userRepository) {
+                          UserCommentRepository userCommentRepository, UserLikeRepository userLikeRepository, UserRepository userRepository, FollowRepository followRepository) {
         this.postRepository = postRepository;
         this.userCommentRepository = userCommentRepository;
         this.userLikeRepository = userLikeRepository;
         this.userRepository = userRepository;
+        this.followRepository = followRepository;
     }
 
     public Result addPost() {
@@ -71,13 +71,14 @@ import com.google.gson.JsonArray;
         String text = json.findPath("text").asText();
         Date time = new Date();
         SimpleDateFormat format = new SimpleDateFormat(Common.DATE_PATTERN);
+        String address = json.findPath("address").asText();
         try {
             time = format.parse(json.findPath("time").asText());
         } catch (ParseException e) {
             System.out.println("No creation date specified, set to current time");
         }
         try {
-            Post post = new Post(userId, privacy, text, time);
+            Post post = new Post(userId, privacy, text, time, address);
             postRepository.save(post);
             System.out.println("Post saved: " + post.getId());
             return created(new Gson().toJson(post.getId()));
@@ -89,11 +90,17 @@ import com.google.gson.JsonArray;
     }
 
     //public: privacy = 0
-    public Result getPublicPost(String userId) {
+    public Result getPublicPost(String userId, String page) {
 
         if (userId == null || userId.length() == 0) {
             System.out.println("User id is null or empty!");
             return badRequest("User id is null or empty!");
+        }
+
+        User user = userRepository.findOne(Long.parseLong(userId));
+        if (user == null) {
+            System.out.println("User not found with id: " + userId);
+            return notFound("User not found");
         }
 
         List<Post> posts = postRepository.findPostWithUserId(userId);
@@ -109,6 +116,9 @@ import com.google.gson.JsonArray;
         String textP = "";
         Date timeP = null;
         Long postId = 0l;
+        String addressP = "";
+        String userNameP = "";
+
 
         for (Post p : posts) {
             postId = p.getId();
@@ -116,6 +126,9 @@ import com.google.gson.JsonArray;
             privacyP = p.getPrivacy();
             textP = p.getText();
             timeP = p.getTime();
+            addressP = p.getAddress();
+            userNameP = userRepository.findOne(Long.parseLong(userIdP)).getUserName();
+
 
             if (privacyP == 1) continue;
             postDetails.addProperty("id", postId);
@@ -123,63 +136,139 @@ import com.google.gson.JsonArray;
             postDetails.addProperty("privacy", privacyP + "");
             postDetails.addProperty("text", textP);
             postDetails.addProperty("time", timeP + "");
+            postDetails.addProperty("address", addressP);
+            postDetails.addProperty("userName", userNameP);
 
             JsonArray commentArray = new JsonArray();
-            System.out.println(postId);
             List<UserComment> userComments = userCommentRepository.findCommentWithPostId(postId);
             JsonObject comDetails = new JsonObject();
-            Long postIdC = 0l;
             String userIdC = "";
             String textC = "";
             Date timeC = null;
-            if (userComments != null) {
-                System.out.println(userComments.size());
-                for (int i = 0; i < userComments.size(); i++) {
-                    System.out.println("haha " + userComments.get(i));
-                    UserComment c = userComments.get(i);
-                    postIdC = c.getPostId();
-                    userIdC = c.getUserId();
-                    textC = c.getText();
-                    timeC = c.getTime();
-                    comDetails.addProperty("postId", postIdC);
-                    comDetails.addProperty("userId", userIdC);
-                    comDetails.addProperty("text", textC);
-                    comDetails.addProperty("time", timeC.toString());
+            String userNameC = "";
 
-                    commentArray.add(comDetails);
-                    comDetails = new JsonObject();
-                }
+            for (UserComment c : userComments) {
+                userIdC = c.getUserId();
+                textC = c.getText();
+                timeC = c.getTime();
+                userNameC = userRepository.findOne(Long.parseLong(userIdC)).getUserName();
+
+                comDetails.addProperty("postId", postId);
+                comDetails.addProperty("userId", userIdC);
+                comDetails.addProperty("text", textC);
+                comDetails.addProperty("time", timeC.toString());
+                comDetails.addProperty("userName", userNameC);
+
+                commentArray.add(comDetails);
+                comDetails = new JsonObject();
             }
+
             postDetails.add("userComments", commentArray);
 
-            JsonArray likeArray = new JsonArray();
             List<UserLike> likes = userLikeRepository.findLikeWithPostId(postId);
-            JsonObject likeDetails = new JsonObject();
-            Long postIdL = 0l;
-            String userIdL = "";
-            Date timeL = null;
-            for (UserLike l : likes) {
-                postIdL = l.getPostId();
-                userIdL = l.getUserId();
-                timeL = l.getTime();
-                likeDetails.addProperty("postId", postIdL);
-                likeDetails.addProperty("userId", userIdL);
-                likeDetails.addProperty("time", timeL.toString());
+            int numOfLikes = likes.size();
 
-                likeArray.add(likeDetails);
-                likeDetails = new JsonObject();
-            }
-
-            postDetails.add("userLikes", likeArray);
+            postDetails.addProperty("userLikes", numOfLikes);
             postArray.add(postDetails);
             postDetails = new JsonObject();
         }
 
-        return ok(postArray.toString());
+        Set<Follow> followees = followRepository.findAllByFollower(Long.parseLong(userId));
+        if (followees == null){
+
+        }
+        else{
+            for (Follow f : followees){
+                List<Post> postsOfFollowee = postRepository.findPostWithUserId(f.getFollowee()+"");
+                if (postsOfFollowee == null || posts.size() == 0) {
+
+                }
+                else {
+                    for (Post p1 : postsOfFollowee){
+                        postId = p1.getId();
+                        userIdP = p1.getUserId();
+                        privacyP = p1.getPrivacy();
+                        textP = p1.getText();
+                        timeP = p1.getTime();
+                        addressP = p1.getAddress();
+                        userNameP = userRepository.findOne(Long.parseLong(userIdP)).getUserName();
+
+                        if (privacyP == 1) continue;
+                        postDetails.addProperty("id", postId);
+                        postDetails.addProperty("userId", userIdP);
+                        postDetails.addProperty("privacy", privacyP + "");
+                        postDetails.addProperty("text", textP);
+                        postDetails.addProperty("time", timeP + "");
+                        postDetails.addProperty("address", addressP + "");
+                        postDetails.addProperty("userName", userNameP);
+
+                        JsonArray commentArray = new JsonArray();
+                        List<UserComment> userComments = userCommentRepository.findCommentWithPostId(postId);
+                        JsonObject comDetails = new JsonObject();
+                        String userIdC = "";
+                        String textC = "";
+                        Date timeC = null;
+                        String userNameC = "";
+
+                        for (UserComment c : userComments) {
+                            userIdC = c.getUserId();
+                            textC = c.getText();
+                            timeC = c.getTime();
+                            userNameC = userRepository.findOne(Long.parseLong(userIdC)).getUserName();
+
+                            comDetails.addProperty("postId", postId);
+                            comDetails.addProperty("userId", userIdC);
+                            comDetails.addProperty("text", textC);
+                            comDetails.addProperty("time", timeC.toString());
+                            comDetails.addProperty("userName", userNameC);
+
+
+                            commentArray.add(comDetails);
+                            comDetails = new JsonObject();
+                        }
+
+                        postDetails.add("userComments", commentArray);
+                        List<UserLike> likes = userLikeRepository.findLikeWithPostId(postId);
+                        int numOfLikes = likes.size();
+
+                        postDetails.addProperty("userLikes", numOfLikes);
+                        postArray.add(postDetails);
+                        postDetails = new JsonObject();
+                    }
+                }
+            }
+        }
+
+        PriorityQueue<JsonObject> q = new PriorityQueue<JsonObject>(100, new timeComparator());
+        for(int m = 0; m < postArray.size(); m++){
+            q.add(postArray.get(m).getAsJsonObject());
+        }
+
+        int showPage = Integer.parseInt(page);
+        int availablePage = (q.size()%5 == 0)?(q.size()/5):(q.size()/5 + 1);
+        JsonArray returnArray = new JsonArray();
+        JsonObject a;
+        if(showPage <= availablePage){
+            showPage = showPage - 1;
+            int count = 1;
+            int innerCount = 0;
+            while((a = q.poll()) != null){
+                if(count > showPage * 5) {
+                    innerCount++;
+                    returnArray.add(a);
+                    if(innerCount == 5) break;
+                }
+                count++;
+            }
+            return ok(returnArray.toString());
+        }
+        else {
+            return ok(returnArray.toString());
+        }
     }
 
     //personal: privacy = 0/1
-    public Result getPersonalPost(String userId) {
+    public Result getPersonalPost(String userId, String page) {
         if (userId == null || userId.length() == 0) {
             System.out.println("User id is null or empty!");
             return badRequest("User id is null or empty!");
@@ -198,6 +287,8 @@ import com.google.gson.JsonArray;
         String textP = "";
         Date timeP = null;
         Long postId = 0l;
+        String addressP = "";
+        String userNameP = "";
 
         for (Post p : posts) {
             postId = p.getId();
@@ -205,12 +296,16 @@ import com.google.gson.JsonArray;
             privacyP = p.getPrivacy();
             textP = p.getText();
             timeP = p.getTime();
+            addressP = p.getAddress();
+            userNameP = userRepository.findOne(Long.parseLong(userId)).getUserName();
 
             postDetails.addProperty("id", postId);
             postDetails.addProperty("userId", userIdP);
             postDetails.addProperty("privacy", privacyP + "");
             postDetails.addProperty("text", textP);
             postDetails.addProperty("time", timeP + "");
+            postDetails.addProperty("address", addressP + "");
+            postDetails.addProperty("userName", userNameP);
 
             JsonArray commentArray = new JsonArray();
             List<UserComment> userComments = userCommentRepository.findCommentWithPostId(postId);
@@ -219,15 +314,20 @@ import com.google.gson.JsonArray;
             String userIdC = "";
             String textC = "";
             Date timeC = null;
+            String userNameC = "";
+
             for (UserComment c : userComments) {
                 postIdC = c.getPostId();
                 userIdC = c.getUserId();
                 textC = c.getText();
                 timeC = c.getTime();
+                userNameC = userRepository.findOne(Long.parseLong(userId)).getUserName();
+
                 comDetails.addProperty("postId", postIdC);
                 comDetails.addProperty("userId", userIdC);
                 comDetails.addProperty("text", textC);
                 comDetails.addProperty("time", timeC.toString());
+                comDetails.addProperty("userName", userNameC);
 
                 commentArray.add(comDetails);
                 comDetails = new JsonObject();
@@ -235,31 +335,120 @@ import com.google.gson.JsonArray;
 
             postDetails.add("userComments", commentArray);
 
-            JsonArray likeArray = new JsonArray();
             List<UserLike> likes = userLikeRepository.findLikeWithPostId(postId);
-            JsonObject likeDetails = new JsonObject();
-            Long postIdL = 0l;
-            String userIdL = "";
-            Date timeL = null;
-            for (UserLike l : likes) {
-                postIdL = l.getPostId();
-                userIdL = l.getUserId();
-                timeL = l.getTime();
-                likeDetails.addProperty("postId", postIdL);
-                likeDetails.addProperty("userId", userIdL);
-                likeDetails.addProperty("time", timeL.toString());
+            int numOfLikes = likes.size();
 
-                likeArray.add(likeDetails);
-                likeDetails = new JsonObject();
+            postDetails.addProperty("userLikes", numOfLikes);
+            postArray.add(postDetails);
+            postDetails = new JsonObject();
+        }
+
+        PriorityQueue<JsonObject> q = new PriorityQueue<JsonObject>(100, new timeComparator());
+        for(int m = 0; m < postArray.size(); m++){
+            q.add(postArray.get(m).getAsJsonObject());
+        }
+
+        int showPage = Integer.parseInt(page);
+        int availablePage = (q.size()%5 == 0)?(q.size()/5):(q.size()/5 + 1);
+        JsonArray returnArray = new JsonArray();
+        JsonObject a;
+        if(showPage <= availablePage){
+            showPage = showPage - 1;
+            int count = 1;
+            int innerCount = 0;
+            while((a = q.poll()) != null){
+                if(count > showPage * 5) {
+                    innerCount++;
+                    returnArray.add(a);
+                    if(innerCount == 5) break;
+                }
+                count++;
+            }
+            return ok(returnArray.toString());
+        }
+        else {
+            return ok(returnArray.toString());
+        }
+    }
+
+    public Result getPersonalPostWithoutPage(String userId) {
+        if (userId == null || userId.length() == 0) {
+            System.out.println("User id is null or empty!");
+            return badRequest("User id is null or empty!");
+        }
+
+        List<Post> posts = postRepository.findPostWithUserId(userId);
+        if (posts == null || posts.size() == 0) {
+            System.out.println("Post not exist!");
+            return badRequest("Post not exist!");
+        }
+
+        JsonArray postArray = new JsonArray();
+        JsonObject postDetails = new JsonObject();
+        String userIdP = "";
+        int privacyP = 0;
+        String textP = "";
+        Date timeP = null;
+        Long postId = 0l;
+        String addressP = "";
+        String userNameP = "";
+
+        for (Post p : posts) {
+            postId = p.getId();
+            userIdP = p.getUserId();
+            privacyP = p.getPrivacy();
+            textP = p.getText();
+            timeP = p.getTime();
+            addressP = p.getAddress();
+            userNameP = userRepository.findOne(Long.parseLong(userId)).getUserName();
+
+            postDetails.addProperty("id", postId);
+            postDetails.addProperty("userId", userIdP);
+            postDetails.addProperty("privacy", privacyP + "");
+            postDetails.addProperty("text", textP);
+            postDetails.addProperty("time", timeP + "");
+            postDetails.addProperty("address", addressP + "");
+            postDetails.addProperty("userName", userNameP);
+
+            JsonArray commentArray = new JsonArray();
+            List<UserComment> userComments = userCommentRepository.findCommentWithPostId(postId);
+            JsonObject comDetails = new JsonObject();
+            Long postIdC = 0l;
+            String userIdC = "";
+            String textC = "";
+            Date timeC = null;
+            String userNameC = "";
+
+            for (UserComment c : userComments) {
+                postIdC = c.getPostId();
+                userIdC = c.getUserId();
+                textC = c.getText();
+                timeC = c.getTime();
+                userNameC = userRepository.findOne(Long.parseLong(userId)).getUserName();
+
+                comDetails.addProperty("postId", postIdC);
+                comDetails.addProperty("userId", userIdC);
+                comDetails.addProperty("text", textC);
+                comDetails.addProperty("time", timeC.toString());
+                comDetails.addProperty("userName", userNameC);
+
+                commentArray.add(comDetails);
+                comDetails = new JsonObject();
             }
 
-            postDetails.add("userLikes", likeArray);
+            postDetails.add("userComments", commentArray);
+
+            List<UserLike> likes = userLikeRepository.findLikeWithPostId(postId);
+            int numOfLikes = likes.size();
+
+            postDetails.addProperty("userLikes", numOfLikes);
             postArray.add(postDetails);
             postDetails = new JsonObject();
         }
 
         return ok(postArray.toString());
     }
+
 
     public Result getPostById(long id, String format) {
 
@@ -290,7 +479,7 @@ import com.google.gson.JsonArray;
         int privacy = Integer.parseInt(json.findPath("privacy").asText());
         String text = json.findPath("text").asText();
 
-        System.out.println("text=" + text);
+//        System.out.println("text=" + text);
 
         Date time = new Date();
         SimpleDateFormat format = new SimpleDateFormat(Common.DATE_PATTERN);
@@ -377,6 +566,8 @@ import com.google.gson.JsonArray;
         String textP = "";
         Date timeP = null;
         Long postId = 0l;
+        String addressP = "";
+        String userNameP = "";
 
         ArrayList<rankHelper> allPosts = new ArrayList<rankHelper>();
         for (Post p : posts){
@@ -410,12 +601,16 @@ import com.google.gson.JsonArray;
             privacyP = p.getPrivacy();
             textP = p.getText();
             timeP = p.getTime();
+            addressP = p.getAddress();
+            userNameP = userRepository.findOne(Long.parseLong(userIdP)).getUserName();
 
             postDetails.addProperty("id", post_id);
             postDetails.addProperty("userId", userIdP);
             postDetails.addProperty("privacy", privacyP + "");
             postDetails.addProperty("text", textP);
             postDetails.addProperty("time", timeP + "");
+            postDetails.addProperty("address", addressP + "");
+            postDetails.addProperty("userName", userNameP);
 
             JsonArray commentArray = new JsonArray();
             List<UserComment> userComments = userCommentRepository.findCommentWithPostId(post_id);
@@ -423,14 +618,18 @@ import com.google.gson.JsonArray;
             String userIdC = "";
             String textC = "";
             Date timeC = null;
+            String userNameC = "";
+
             for (UserComment c : userComments) {
                 userIdC = c.getUserId();
                 textC = c.getText();
                 timeC = c.getTime();
+                userNameC = userRepository.findOne(Long.parseLong(userIdC)).getUserName();
                 comDetails.addProperty("postId", post_id);
                 comDetails.addProperty("userId", userIdC);
                 comDetails.addProperty("text", textC);
                 comDetails.addProperty("time", timeC.toString());
+                comDetails.addProperty("userName", userNameC);
 
                 commentArray.add(comDetails);
                 comDetails = new JsonObject();
@@ -438,28 +637,16 @@ import com.google.gson.JsonArray;
 
             postDetails.add("userComments", commentArray);
 
-            JsonArray likeArray = new JsonArray();
             List<UserLike> likes = userLikeRepository.findLikeWithPostId(post_id);
-            JsonObject likeDetails = new JsonObject();
-            String userIdL = "";
-            Date timeL = null;
-            for (UserLike l : likes) {
-                userIdL = l.getUserId();
-                timeL = l.getTime();
-                likeDetails.addProperty("postId", post_id);
-                likeDetails.addProperty("userId", userIdL);
-                likeDetails.addProperty("time", timeL.toString());
+            int numOfLikes = likes.size();
 
-                likeArray.add(likeDetails);
-                likeDetails = new JsonObject();
-            }
-
-            postDetails.add("userLikes", likeArray);
+            postDetails.addProperty("userLikes", numOfLikes);
             postArray.add(postDetails);
             postDetails = new JsonObject();
             count++;
             if(count == 10) break;
         }
+
         return ok(postArray.toString());
     }
 
@@ -484,6 +671,7 @@ import com.google.gson.JsonArray;
         String textP = "";
         Date timeP = null;
         Long postId = 0l;
+        String userNameP = "";
 
         for(Post p : posts){
             postId = p.getId();
@@ -491,12 +679,14 @@ import com.google.gson.JsonArray;
             privacyP = p.getPrivacy();
             textP = p.getText();
             timeP = p.getTime();
+            userNameP = userRepository.findOne(Long.parseLong(userIdP)).getUserName();
 
             postDetails.addProperty("id", postId);
             postDetails.addProperty("userId", userIdP);
             postDetails.addProperty("privacy", privacyP + "");
             postDetails.addProperty("text", textP);
             postDetails.addProperty("time", timeP + "");
+            postDetails.addProperty("userName", userNameP);
 
             JsonArray commentArray = new JsonArray();
             List<UserComment> userComments = userCommentRepository.findCommentWithPostId(postId);
@@ -505,15 +695,20 @@ import com.google.gson.JsonArray;
             String userIdC = "";
             String textC = "";
             Date timeC = null;
+            String userNameC = "";
+
             for(UserComment c : userComments) {
                 postIdC = c.getPostId();
                 userIdC = c.getUserId();
                 textC = c.getText();
                 timeC = c.getTime();
+                userNameC = userRepository.findOne(Long.parseLong(userIdC)).getUserName();
+
                 comDetails.addProperty("postId", postIdC);
                 comDetails.addProperty("userId", userIdC);
                 comDetails.addProperty("text", textC);
                 comDetails.addProperty("time", timeC.toString());
+                comDetails.addProperty("userName", userNameC);
 
                 commentArray.add(comDetails);
                 comDetails = new JsonObject();
@@ -521,25 +716,10 @@ import com.google.gson.JsonArray;
 
             postDetails.add("userComments", commentArray);
 
-            JsonArray likeArray = new JsonArray();
             List<UserLike> likes = userLikeRepository.findLikeWithPostId(postId);
-            JsonObject likeDetails = new JsonObject();
-            Long postIdL = 0l;
-            String userIdL = "";
-            Date timeL = null;
-            for(UserLike l : likes) {
-                postIdL = l.getPostId();
-                userIdL = l.getUserId();
-                timeL = l.getTime();
-                likeDetails.addProperty("postId", postIdL);
-                likeDetails.addProperty("userId", userIdL);
-                likeDetails.addProperty("time", timeL.toString());
+            int numOfLikes = likes.size();
 
-                likeArray.add(likeDetails);
-                likeDetails = new JsonObject();
-            }
-
-            postDetails.add("userLikes", likeArray);
+            postDetails.addProperty("userLikes", numOfLikes);
             postArray.add(postDetails);
             postDetails = new JsonObject();
         }
@@ -561,13 +741,18 @@ import com.google.gson.JsonArray;
 
         Date time = new Date();
         SimpleDateFormat format = new SimpleDateFormat(Common.DATE_PATTERN);
+//        String address = json.findPath("address").asText();
         try {
             time = format.parse(json.findPath("time").asText());
         } catch (ParseException e) {
             System.out.println("No creation date specified, set to current time");
         }
         try {
-            Post post = new Post(userId, 0, sharePost.getText(), time);
+            String newText = sharePost.getText();
+            String address = sharePost.getAddress();
+            if(!newText.startsWith("[Shared] "))
+                newText="[Shared] "+newText;
+            Post post = new Post(userId, 0, newText, time, address);
             postRepository.save(post);
             System.out.println("Share post saved: " + post.getId());
             return created(new Gson().toJson(post.getId()));
@@ -624,6 +809,15 @@ class rankComparator implements Comparator<rankHelper>{
         int sum1 = rh1.getSum();
         int sum2 = rh2.getSum();
         return (sum2 - sum1);
+    }
+}
+
+class timeComparator implements Comparator<JsonObject>{
+    @Override
+    public int compare(JsonObject o1, JsonObject o2){
+        String s1 = o1.get("time").getAsString();
+        String s2 = o2.get("time").getAsString();
+        return s2.compareTo(s1);
     }
 }
 

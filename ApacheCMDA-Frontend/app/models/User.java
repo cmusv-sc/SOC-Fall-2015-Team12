@@ -21,184 +21,313 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
+import util.APICall;
+import util.Constants;
+import com.google.gson.Gson;
+import com.google.gson.JsonArray;
+import com.google.gson.JsonParser;
+
+import com.amazonaws.util.json.JSONArray;
+import com.amazonaws.util.json.JSONException;
+import com.fasterxml.jackson.databind.JsonNode;
+
 import play.data.validation.Constraints;
+import util.Constants;
+
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 public class User {
 
-	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
-	private long id;
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private long id;
 
-	private String userName;
-	@Constraints.Required
-	private String password;
-	@Constraints.Required
-	private String firstName;
-	@Constraints.Required
-	private String lastName;
-	private String middleInitial;
-	private String affiliation;
-	private String title;
-	@Constraints.Required
-	private String email;
-	private String mailingAddress;
-	private String phoneNumber;
-	private String faxNumber;
-	private String researchFields;
-	private String highestDegree;
+    private String userName;
+    @Constraints.Required
+    private String password;
+    @Constraints.Required
+    private String firstName;
+    @Constraints.Required
+    private String lastName;
+    private String middleInitial;
+    private String affiliation;
+    private String title;
+    @Constraints.Required
+    private String email;
+    private String mailingAddress;
+    private String phoneNumber;
+    private String faxNumber;
+    private String researchFields;
+    private String highestDegree;
 
-	// @OneToMany(mappedBy = "user", cascade={CascadeType.ALL})
-	// private Set<ClimateService> climateServices = new
-	// HashSet<ClimateService>();
+    private String searchStatus;
 
-	public User() {
-	}
+    public String getSearchStatus() {
+        return searchStatus;
+    }
 
-	public User(String userName, String password, String firstName,
-			String lastName, String middleInitial, String affiliation,
-			String title, String email, String mailingAddress,
-			String phoneNumber, String faxNumber, String researchFields,
-			String highestDegree) {
-		super();
-		this.userName = userName;
-		this.password = password;
-		this.firstName = firstName;
-		this.lastName = lastName;
-		this.middleInitial = middleInitial;
-		this.affiliation = affiliation;
-		this.title = title;
-		this.email = email;
-		this.mailingAddress = mailingAddress;
-		this.phoneNumber = phoneNumber;
-		this.faxNumber = faxNumber;
-		this.researchFields = researchFields;
-		this.highestDegree = highestDegree;
-	}
+    private long followerCount;
 
-	public long getId() {
-		return id;
-	}
+    public long getFollowerCount() {
+        return followerCount;
+    }
 
-	public String getUserName() {
-		return userName;
-	}
+    public void setFollowerCount(long followerCount) {
+        this.followerCount = followerCount;
+    }
 
-	public String getPassword() {
-		return password;
-	}
+    private long followId;
 
-	public String getFirstName() {
-		return firstName;
-	}
+    public long getFollowId() {
+        return followId;
+    }
 
-	public String getLastName() {
-		return lastName;
-	}
+    public void setFollowId(long followId) {
+        this.followId = followId;
+    }
 
-	public String getMiddleInitial() {
-		return middleInitial;
-	}
+    // @OneToMany(mappedBy = "user", cascade={CascadeType.ALL})
+    // private Set<ClimateService> climateServices = new
+    // HashSet<ClimateService>();
+    private static final String SEARCH_USERS = Constants.NEW_BACKEND + "users/search/";
 
-	public String getAffiliation() {
-		return affiliation;
-	}
+    public User() {
+    }
 
-	public String getTitle() {
-		return title;
-	}
+    public User(String userName, String password, String firstName,
+                String lastName, String middleInitial, String affiliation,
+                String title, String email, String mailingAddress,
+                String phoneNumber, String faxNumber, String researchFields,
+                String highestDegree) {
+        super();
+        this.userName = userName;
+        this.password = password;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.middleInitial = middleInitial;
+        this.affiliation = affiliation;
+        this.title = title;
+        this.email = email;
+        this.mailingAddress = mailingAddress;
+        this.phoneNumber = phoneNumber;
+        this.faxNumber = faxNumber;
+        this.researchFields = researchFields;
+        this.highestDegree = highestDegree;
+    }
 
-	public String getEmail() {
-		return email;
-	}
+    public long getId() {
+        return id;
+    }
 
-	public String getMailingAddress() {
-		return mailingAddress;
-	}
+    public String getUserName() {
+        return userName;
+    }
 
-	public String getPhoneNumber() {
-		return phoneNumber;
-	}
+    public String getPassword() {
+        return password;
+    }
 
-	public String getFaxNumber() {
-		return faxNumber;
-	}
+    public String getFirstName() {
+        return firstName;
+    }
 
-	public String getResearchFields() {
-		return researchFields;
-	}
+    public String getLastName() {
+        return lastName;
+    }
 
-	public String getHighestDegree() {
-		return highestDegree;
-	}
-	
-	public void setId(long id) {
-		this.id = id;
-	}
+    public String getMiddleInitial() {
+        return middleInitial;
+    }
 
-	public void setUserName(String userName) {
-		this.userName = userName;
-	}
+    public String getAffiliation() {
+        return affiliation;
+    }
 
-	public void setPassword(String password) {
-		this.password = password;
-	}
+    public String getTitle() {
+        return title;
+    }
 
-	public void setFirstName(String firstName) {
-		this.firstName = firstName;
-	}
+    public String getEmail() {
+        return email;
+    }
 
-	public void setLastName(String lastName) {
-		this.lastName = lastName;
-	}
+    public String getMailingAddress() {
+        return mailingAddress;
+    }
 
-	public void setMiddleInitial(String middleInitial) {
-		this.middleInitial = middleInitial;
-	}
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
 
-	public void setAffiliation(String affiliation) {
-		this.affiliation = affiliation;
-	}
+    public String getFaxNumber() {
+        return faxNumber;
+    }
 
-	public void setTitle(String title) {
-		this.title = title;
-	}
+    public String getResearchFields() {
+        return researchFields;
+    }
 
-	public void setEmail(String email) {
-		this.email = email;
-	}
+    public String getHighestDegree() {
+        return highestDegree;
+    }
 
-	public void setMailingAddress(String mailingAddress) {
-		this.mailingAddress = mailingAddress;
-	}
+    public void setId(long id) {
+        this.id = id;
+    }
 
-	public void setPhoneNumber(String phoneNumber) {
-		this.phoneNumber = phoneNumber;
-	}
+    public void setUserName(String userName) {
+        this.userName = userName;
+    }
 
-	public void setFaxNumber(String faxNumber) {
-		this.faxNumber = faxNumber;
-	}
+    public void setPassword(String password) {
+        this.password = password;
+    }
 
-	public void setResearchFields(String researchFields) {
-		this.researchFields = researchFields;
-	}
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
 
-	public void setHighestDegree(String highestDegree) {
-		this.highestDegree = highestDegree;
-	}
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
 
-	@Override
-	public String toString() {
-		return "User [id=" + id + ", userName=" + userName + ", password="
-				+ password + ", firstName=" + firstName + ", lastName="
-				+ lastName + ", middleInitial=" + middleInitial
-				+ ", affiliation=" + affiliation + ", title=" + title
-				+ ", email=" + email + ", mailingAddress=" + mailingAddress
-				+ ", phoneNumber=" + phoneNumber + ", faxNumber=" + faxNumber
-				+ ", researchFields=" + researchFields + ", highestDegree="
-				+ highestDegree + "]";
-	}
+    public void setMiddleInitial(String middleInitial) {
+        this.middleInitial = middleInitial;
+    }
+
+    public void setAffiliation(String affiliation) {
+        this.affiliation = affiliation;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public void setMailingAddress(String mailingAddress) {
+        this.mailingAddress = mailingAddress;
+    }
+
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
+    }
+
+    public void setFaxNumber(String faxNumber) {
+        this.faxNumber = faxNumber;
+    }
+
+    public void setResearchFields(String researchFields) {
+        this.researchFields = researchFields;
+    }
+
+    public void setHighestDegree(String highestDegree) {
+        this.highestDegree = highestDegree;
+    }
+
+    public static List<User> search(String userName, String id,String searchStatus) throws Exception {
+
+        System.out.println("userName " + userName);
+        List<User> userSets = new ArrayList<User>();
+
+        JsonNode userSet = APICall.callAPI(SEARCH_USERS +"userName/"+ userName.replaceAll(" ",":")+"/id/"+id+"/"+searchStatus);
+        String userString = userSet.toString();
+
+//		System.out.println("debug: " + postString);
+
+        if (userString.contains("error"))
+            return userSets;
+
+        JsonParser parser = new JsonParser();
+        JsonArray userSetNode = parser.parse(userString).getAsJsonArray();
+
+        if (userSetNode == null || !userSetNode.isJsonArray()) {
+            return userSets;
+        }
+
+        for (int i = 0; i < userSetNode.size(); i++) {
+            User user = new User();
+            user.setUserName(userSetNode.get(i).getAsJsonObject().get("username").toString());
+            user.setId(Long.parseLong(userSetNode.get(i).getAsJsonObject().get("id").toString()));
+            user.setFollowerCount(Long.parseLong(userSetNode.get(i).getAsJsonObject().get("count").toString()));
+            user.setFollowId(Long.parseLong(userSetNode.get(i).getAsJsonObject().get("followId").toString()));
+            System.out.println("id "+Long.parseLong(userSetNode.get(i).getAsJsonObject().get("followId").toString()));
+            userSets.add(user);
+        }
+        return userSets;
+    }
+
+    public static List<User> getFollowerList(String id) throws Exception {
+
+        List<User> userSets = new ArrayList<User>();
+
+        JsonNode userSet = APICall.callAPI(Constants.NEW_BACKEND +"follow/getFollower/"+id);
+        String userString = userSet.toString();
+
+//		System.out.println("debug: " + postString);
+
+        if (userString.contains("error"))
+            return userSets;
+
+        JsonParser parser = new JsonParser();
+        JsonArray userSetNode = parser.parse(userString).getAsJsonArray();
+
+        if (userSetNode == null || !userSetNode.isJsonArray()) {
+            return userSets;
+        }
+
+        for (int i = 0; i < userSetNode.size(); i++) {
+            User user = new User();
+            user.setUserName(userSetNode.get(i).getAsJsonObject().get("name").toString());
+            userSets.add(user);
+        }
+        return userSets;
+    }
+
+    public static List<User> getTopFollowee() throws Exception {
+
+        List<User> userSets = new ArrayList<User>();
+
+        JsonNode userSet = APICall.callAPI(Constants.NEW_BACKEND +"follow/getTopFollowee");
+        String userString = userSet.toString();
+
+//		System.out.println("debug: " + postString);
+
+        if (userString.contains("error"))
+            return userSets;
+
+        JsonParser parser = new JsonParser();
+        JsonArray userSetNode = parser.parse(userString).getAsJsonArray();
+
+        if (userSetNode == null || !userSetNode.isJsonArray()) {
+            return userSets;
+        }
+
+        for (int i = 0; i < userSetNode.size(); i++) {
+            User user = new User();
+            user.setId(Long.parseLong(userSetNode.get(i).getAsJsonObject().get("id").toString()));
+            user.setUserName(userSetNode.get(i).getAsJsonObject().get("name").toString());
+            user.setFollowerCount(Long.parseLong(userSetNode.get(i).getAsJsonObject().get("count").toString()));
+            userSets.add(user);
+        }
+        return userSets;
+    }
+
+    @Override
+    public String toString() {
+        return "User [id=" + id + ", userName=" + userName + ", password="
+                + password + ", firstName=" + firstName + ", lastName="
+                + lastName + ", middleInitial=" + middleInitial
+                + ", affiliation=" + affiliation + ", title=" + title
+                + ", email=" + email + ", mailingAddress=" + mailingAddress
+                + ", phoneNumber=" + phoneNumber + ", faxNumber=" + faxNumber
+                + ", researchFields=" + researchFields + ", highestDegree="
+                + highestDegree + "]";
+    }
 
 }
 

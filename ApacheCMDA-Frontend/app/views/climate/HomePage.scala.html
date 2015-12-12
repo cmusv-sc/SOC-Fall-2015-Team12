@@ -1,56 +1,360 @@
 @*******************************************************************************
-* Licensed to the Apache Software Foundation (ASF) under one or more		   *
-* contributor license agreements.  See the NOTICE file distributed with	   *
+* Licensed to the Apache Software Foundation (ASF) under one or more       *
+* contributor license agreements.  See the NOTICE file distributed with    *
 * this work for additional information regarding copyright ownership.         *
 * The ASF licenses this file to You under the Apache License, Version 2.0     *
 * (the "License"); you may not use this file except in compliance with        *
 * the License.  You may obtain a copy of the License at                       *
 *                                                                             *
 *    http://www.apache.org/licenses/LICENSE-2.0                               *
-*																			   *
+*                                        *
 * Unless required by applicable law or agreed to in writing, software         *
 * distributed under the License is distributed on an "AS IS" BASIS,           *
 * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.    *
 * See the License for the specific language governing permissions and         *
-* limitations under the License.											   *
+* limitations under the License.                         *
 *******************************************************************************@
 
-@(postSets: List[PostSet])
+@(postSets: List[PostSet], postSetForm: play.data.Form[PostSet])
 
 @import helper._
-
 @scripts = {
-<script src='@routes.Assets.at("javascripts/edit_button.js")'></script>
-<script type="text/javascript">
-	$(document).ready(function(){
-		//alert($("#url").text());
-	});
+	<script src='@routes.Assets.at("javascripts/edit_button.js")'></script>
+	<script type="text/javascript">
+  $(document).ready(function(){
+    //alert($("#url").text());
+  });
+  </script>
+
+<script
+		src="http://maps.googleapis.com/maps/api/js">
 </script>
-}
 
-@main("Postset List", scripts) {
+<script>
+	var myCenter=new google.maps.LatLng(37.41,-122.05);
 
-@flash_message()
+	function initialize()
+	{
+		var mapProp = {
+			center:myCenter,
+			zoom:12,
+			panControl:true,
+			zoomControl:true,
+			mapTypeControl:true,
+			scaleControl:true,
+			streetViewControl:true,
+			overviewMapControl:true,
+			rotateControl:true,
+			mapTypeId:google.maps.MapTypeId.ROADMAP
+		};
 
-<h1>Personal Posts</h1>
-	@for(postSet <- postSets){
+		var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
 
-		<h3><font size="=1">Post</font> </h3>
-		<td><span class="@postSet.getPostId() editable" data-name='text'>
-				@postSet.getPostText() </span></td><br>
-		<td><font size="2">Post Status: @postSet.getPostStatus()</font></td>
-		<br>
-		<td><font size="2">Post Time: @postSet.getPostTime()</font></td>
-		<br>
+		var marker=new google.maps.Marker({
+			position:myCenter,
+		});
 
-	<td class="operation">
-		<input type="button" class="edit-btn btn btn-primary" value="Edit"
-		   data-pk='@postSet.getPostId()'
-			   data-url='@routes.MainPageController.editPost()'
-			>
-	</td>
+		marker.setMap(map);
 
+		// return to initial map when clicking on marker
+		google.maps.event.addListener(marker,'click',function() {
+			map.setZoom(12);
+			map.setCenter(marker.getPosition());
+		});
 	}
 
-</div>
+	google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+
+<style>
+	.map {
+		margin: auto;
+		width: 60%;
+		border:5px solid #73AD21;
+		padding: 10px;
+	}
+</style>
+}
+
+
+@main("Public Page", scripts) {
+	@flash_message()
+
+	<html class="st-layout ls-top-navbar ls-bottom-footer show-sidebar sidebar-l2" lang="en">
+				<!-- Sidebar component with st-effect-1 (set on the toggle button within the navbar) -->
+			<div class="sidebar left sidebar-size-2 sidebar-offset-0 sidebar-visible-desktop sidebar-visible-mobile sidebar-skin-dark" id="sidebar-menu">
+				<div data-scrollable>
+					<div class="sidebar-block">
+						<div class="profile">
+							<img src='@routes.Assets.at("images/people/110/guy-5.jpg")' alt="people" class="img-circle" />
+
+							<h4>@session.get("firstName")</h4>
+						</div>
+					</div>
+					<div class="category">About</div>
+					<div class="sidebar-block">
+						<ul class="list-about">
+							<li><i class="fa fa-map-marker"></i> @session.get("affiliation")</li>
+							<li><i class="fa fa-link"></i> <a href="#">@session.get("email")</a></li>
+							<li><i class="fa fa-twitter"></i> @session.get("researchInterests")</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="st-pusher" id="content">
+
+					<!-- sidebar effects INSIDE of st-pusher: -->
+					<!-- st-effect-3, st-effect-6, st-effect-7, st-effect-8, st-effect-14 -->
+
+					<!-- extra div for emulating position:fixed of the menu -->
+				<div class="st-content-inner">
+
+					<nav class="navbar navbar-subnav navbar-static-top margin-bottom-none" role="navigation">
+						<div class="container-fluid">
+								<!-- Brand and toggle get grouped for better mobile display -->
+							<div class="navbar-header">
+								<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#subnav">
+									<span class="sr-only">Toggle navigation</span>
+									<span class="fa fa-ellipsis-h"></span>
+								</button>
+							</div>
+
+								<!-- Collect the nav links, forms, and other content for toggling -->
+							<div class="collapse navbar-collapse" id="subnav">
+								<ul class="nav navbar-nav ">
+									<li class="active"><a href="@routes.HomePageController.homepage()"><i class="fa fa-fw icon-ship-wheel"></i> Public Page</a></li>
+									<li><a href="@routes.MainPageController.mainpage()"><i class="fa fa-fw icon-user-1"></i> Personal Page</a></li>
+									<li><a href="@routes.SearchController.searchUser()"><i class="fa fa-fw fa-users"></i> Friends</a></li>
+								</ul>
+							</div>
+								<!-- /.navbar-collapse -->
+						</div>
+					</nav>
+
+					<div class="cover overlay cover-image-full height-300-lg">
+
+						<img src='@routes.Assets.at("images/profile-cover.jpg")' alt="cover" />
+						<div class="overlay overlay-full">
+							<div class="v-top">
+								<a href="#" class="btn btn-cover"><i class="fa fa-pencil"></i></a>
+							</div>
+						</div>
+					</div>
+
+						@for(postSet <- postSets) {
+
+								<link href='@routes.Assets.at("css/bootstrap.min.css")' rel="stylesheet">
+
+								<div class="detailBox">
+									<div class="titleBox">
+										<label>@postSet.getAuthorS()</label>
+										<button type="button" class="close" aria-hidden="true">&times;</button>
+									</div>
+									<div class="commentBox">
+
+										<p class="taskDescription">
+									<td><span class="@postSet.getPostId() editable" data-name='text'>
+									@postSet.getPostTextS() </span></td><br>
+										<td><font size="2">Post Status: @postSet.getPostStatusS()</font></td>
+										<br>
+										<td><font size="2">Post Time: @postSet.getPostTimeS()</font></td>
+										<br>
+										<td><font size="2">Address: @postSet.getAddressS()</font></td>
+										<br>
+										<td><font size="2">Likes: @postSet.getNumberOfLike() </font></td>
+										<br>
+										<div class="input-group">
+											@form(routes.HomePageController.likePost){
+												<input
+												name="idHolder" class="hidden" type="hidden"
+												value="@postSet.getPostId()">
+												<input
+												type="submit" class="btn btn-danger delete-btn span2" value="Like"
+												onclick="return confirm('Are you sure you want to like this post?')">
+												}
+
+											@form(routes.HomePageController.sharePost){
+											<input
+													name="idHolder"  type="hidden" value="@postSet.getPostId()">
+											<input
+													type="submit" class="btn" value="Share"
+													onclick="return confirm('Are you sure you want to share this post?')">
+											}
+										</div>
+										</p>
+									<div class="actionBox">
+										<ul class="commentList">
+											<li>
+												<div class="commenterImage">
+													<img src="http://lorempixel.com/50/50/people/6" />
+												</div>
+												<div class="commentText">
+													<p class=""></p> <span class="date sub-text">On @postSet.getPostTimeS()</span>
+												</div>
+												<br>
+												<div class="commentText">
+													<form class="form-inline" role="form" method="get" action="@routes.HomePageController.commentPost">
+														@for(comments <- postSet.getCommentList) {
+														@form(routes.HomePageController.commentPost) {
+															<span >[@comments.getAuthorS()] commented:</span>
+															<span >@comments.getTextS()</span>
+														    <br>
+															@comments.getTimeS()
+														}
+														}
+													</form>
+												</div>
+											</li>
+										</ul>
+										<form class="form-inline" role="form" method="post" action=@routes.HomePageController.commentPost>
+											<div class="form-group">
+											@form(routes.HomePageController.commentPost){
+												<textarea name="text" id="text" class="form-control"
+												placeholder="Write comments here" value="@postSet.getPostComment()"></textarea>
+												<input
+												name="idHolder" class="hidden" type="hidden"
+												value="@postSet.getPostId()">
+												<input
+												type="submit" class="btn-primary" value="Comment">
+												}
+											</div>
+										</form>
+									</div>
+								</div>
+									</div>
+						}
+
+					<nav>
+						<ul class="pager">
+							<li><a href="@routes.HomePageController.previousPage()">Previous</a></li>
+							<li><a href="@routes.HomePageController.homepage()">First Page</a></li>
+							<li><a href="@routes.HomePageController.nextPage()">Next</a></li>
+						</ul>
+					</nav>
+
+					<br>
+					<br>
+					<div class="map" id="googleMap" style="width:500px;height:380px;"></div>
+					<br>
+					<p style="text-align: center; font-size:160%"> Your current location </p>
+					<br>
+					<br>
+
+
+
+							<!-- /st-content-inner -->
+
+						<!-- /st-pusher -->
+
+							<!-- Inline Script for colors and config objects; used by various external scripts; -->
+						<script>
+ var colors = {
+  "danger-color": "#e74c3c",
+  "success-color": "#81b53e",
+  "warning-color": "#f0ad4e",
+  "inverse-color": "#2c3e50",
+  "info-color": "#2d7cb5",
+  "default-color": "#6e7882",
+  "default-light-color": "#cfd9db",
+  "purple-color": "#9D8AC7",
+  "mustard-color": "#d4d171",
+  "lightred-color": "#e15258",
+  "body-bg": "#f6f6f6"
+ };
+ var config = {
+  theme: "social-2",
+  skins: {
+   "default": {
+    "primary-color": "#16ae9f"
+   },
+   "orange": {
+    "primary-color": "#e74c3c"
+   },
+   "blue": {
+    "primary-color": "#4687ce"
+   },
+   "purple": {
+    "primary-color": "#af86b9"
+   },
+   "brown": {
+    "primary-color": "#c3a961"
+   },
+   "default-nav-inverse": {
+    "color-block": "#242424"
+   }
+  }
+ };
+</script>
+
+							<!-- Vendor Scripts Bundle
+  Includes all of the 3rd party JavaScript libraries above.
+  The bundle was generated using modern frontend development tools that are provided with the package
+  To learn more about the development process, please refer to the documentation.
+  Do not use it simultaneously with the separate bundles above. -->
+						<script src="js/vendor/all.js"></script>
+
+							<!-- Vendor Scripts Standalone Libraries -->
+							<!-- <script src="js/vendor/core/all.js"></script> -->
+							<!-- <script src="js/vendor/core/jquery.js"></script> -->
+							<!-- <script src="js/vendor/core/bootstrap.js"></script> -->
+							<!-- <script src="js/vendor/core/breakpoints.js"></script> -->
+							<!-- <script src="js/vendor/core/jquery.nicescroll.js"></script> -->
+							<!-- <script src="js/vendor/core/isotope.pkgd.js"></script> -->
+							<!-- <script src="js/vendor/core/packery-mode.pkgd.js"></script> -->
+							<!-- <script src="js/vendor/core/jquery.grid-a-licious.js"></script> -->
+							<!-- <script src="js/vendor/core/jquery.cookie.js"></script> -->
+							<!-- <script src="js/vendor/core/jquery-ui.custom.js"></script> -->
+							<!-- <script src="js/vendor/core/jquery.hotkeys.js"></script> -->
+							<!-- <script src="js/vendor/core/handlebars.js"></script> -->
+							<!-- <script src="js/vendor/core/jquery.hotkeys.js"></script> -->
+							<!-- <script src="js/vendor/core/load_image.js"></script> -->
+							<!-- <script src="js/vendor/core/jquery.debouncedresize.js"></script> -->
+							<!-- <script src="js/vendor/tables/all.js"></script> -->
+							<!-- <script src="js/vendor/forms/all.js"></script> -->
+							<!-- <script src="js/vendor/media/all.js"></script> -->
+							<!-- <script src="js/vendor/player/all.js"></script> -->
+							<!-- <script src="js/vendor/charts/all.js"></script> -->
+							<!-- <script src="js/vendor/charts/flot/all.js"></script> -->
+							<!-- <script src="js/vendor/charts/easy-pie/jquery.easypiechart.js"></script> -->
+							<!-- <script src="js/vendor/charts/morris/all.js"></script> -->
+							<!-- <script src="js/vendor/charts/sparkline/all.js"></script> -->
+							<!-- <script src="js/vendor/maps/vector/all.js"></script> -->
+							<!-- <script src="js/vendor/tree/jquery.fancytree-all.js"></script> -->
+							<!-- <script src="js/vendor/nestable/jquery.nestable.js"></script> -->
+							<!-- <script src="js/vendor/angular/all.js"></script> -->
+
+							<!-- App Scripts Bundle
+  Includes Custom Application JavaScript used for the current theme/module;
+  Do not use it simultaneously with the standalone modules below. -->
+						<script src="js/app/app.js"></script>
+
+							<!-- App Scripts Standalone Modules
+  As a convenience, we provide the entire UI framework broke down in separate modules
+  Some of the standalone modules may have not been used with the current theme/module
+  but ALL the modules are 100% compatible -->
+
+							<!-- <script src="js/app/essentials.js"></script> -->
+							<!-- <script src="js/app/layout.js"></script> -->
+							<!-- <script src="js/app/sidebar.js"></script> -->
+							<!-- <script src="js/app/media.js"></script> -->
+							<!-- <script src="js/app/player.js"></script> -->
+							<!-- <script src="js/app/timeline.js"></script> -->
+							<!-- <script src="js/app/chat.js"></script> -->
+							<!-- <script src="js/app/maps.js"></script> -->
+							<!-- <script src="js/app/charts/all.js"></script> -->
+							<!-- <script src="js/app/charts/flot.js"></script> -->
+							<!-- <script src="js/app/charts/easy-pie.js"></script> -->
+							<!-- <script src="js/app/charts/morris.js"></script> -->
+							<!-- <script src="js/app/charts/sparkline.js"></script> -->
+
+							<!-- App Scripts CORE [social-2]:
+      Includes the custom JavaScript for this theme/module;
+      The file has to be loaded in addition to the UI modules above;
+      app.js already includes main.js so this should be loaded
+      ONLY when using the standalone modules; -->
+							<!-- <script src="js/app/main.js"></script> -->
+
+		</body>
+	</html>
 }

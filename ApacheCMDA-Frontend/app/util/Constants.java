@@ -48,12 +48,12 @@ public class Constants {
 	public static final String CONFIG_ITEM =	"serviceConfigurationItem/";
 	public static final String GET_CONFIG_ITEMS_BY_CONFIG= "serviceConfigurationItemByServiceConfig/";
 
-
 	// login & signup
 	public static final String URL_HOST = "http://localhost";
-	public static final String CMU_BACKEND_PORT = ":9035";
-	public static final String IS_USER_VALID = "/users/isUserValid";
-	public static final String ADD_USER = "/users/add";
-	public static final String IS_EMAIL_EXISTED = "/users/isEmailExisted";
+//	public static final String CMU_BACKEND_PORT = ":9034";
+public static final String USER_LOG_IN = "users/login";
+	//	public static final String IS_USER_VALID = "users/isUserValid";
+	public static final String ADD_USER = "users/signUp";
+	public static final String IS_EMAIL_EXISTED = "users/isEmailExisted";
 
 }

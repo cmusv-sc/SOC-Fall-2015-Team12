@@ -1,6 +1,6 @@
-// @SOURCE:/Users/K/SOC-Fall-2015-Team12/ApacheCMDA-Frontend/conf/routes
-// @HASH:ad2c3e8e2c952e25249c40d111ff5b13595f879b
-// @DATE:Fri Nov 20 14:15:05 PST 2015
+// @SOURCE:/Users/K/SOC-Team12-Final-Version/SOC-ApacheCMDA-Frontend/conf/routes
+// @HASH:4d7ae7d33bdd455c46019b61fcf02d0edfc3550a
+// @DATE:Fri Dec 11 14:49:57 PST 2015
 
 import Routes.{prefix => _prefix, defaultPrefix => _defaultPrefix}
 import play.core._
@@ -13,7 +13,20 @@ import play.libs.F
 import Router.queryString
 
 
+// @LINE:74
+// @LINE:73
+// @LINE:72
+// @LINE:69
+// @LINE:68
+// @LINE:65
+// @LINE:62
+// @LINE:61
+// @LINE:60
+// @LINE:59
+// @LINE:58
+// @LINE:57
 // @LINE:55
+// @LINE:54
 // @LINE:53
 // @LINE:52
 // @LINE:51
@@ -85,13 +98,55 @@ def aboutUs(): Call = {
 }
                           
 
-// @LINE:55
+// @LINE:65
+// @LINE:62
+// @LINE:61
+// @LINE:60
+// @LINE:59
+// @LINE:58
+// @LINE:57
 class ReverseHomePageController {
     
 
-// @LINE:55
+// @LINE:59
+def nextPage(): Call = {
+   Call("GET", _prefix + { _defaultPrefix } + "nextHomePage")
+}
+                                                
+
+// @LINE:57
 def homepage(): Call = {
    Call("GET", _prefix + { _defaultPrefix } + "homepage")
+}
+                                                
+
+// @LINE:65
+def topPosts(): Call = {
+   Call("GET", _prefix + { _defaultPrefix } + "topPosts")
+}
+                                                
+
+// @LINE:62
+def sharePost(): Call = {
+   Call("POST", _prefix + { _defaultPrefix } + "sharePost")
+}
+                                                
+
+// @LINE:61
+def commentPost(): Call = {
+   Call("POST", _prefix + { _defaultPrefix } + "commentPost")
+}
+                                                
+
+// @LINE:60
+def likePost(): Call = {
+   Call("POST", _prefix + { _defaultPrefix } + "likePost")
+}
+                                                
+
+// @LINE:58
+def previousPage(): Call = {
+   Call("GET", _prefix + { _defaultPrefix } + "previousHomePage")
 }
                                                 
     
@@ -139,6 +194,10 @@ def newReport(): Call = {
 }
                           
 
+// @LINE:69
+// @LINE:68
+// @LINE:55
+// @LINE:54
 // @LINE:53
 // @LINE:52
 // @LINE:51
@@ -146,27 +205,51 @@ def newReport(): Call = {
 class ReverseMainPageController {
     
 
+// @LINE:52
+def nextPage(): Call = {
+   Call("GET", _prefix + { _defaultPrefix } + "nextMainPage")
+}
+                                                
+
+// @LINE:53
+def createNewPost(): Call = {
+   Call("GET", _prefix + { _defaultPrefix } + "createNewPost")
+}
+                                                
+
+// @LINE:54
+def editPost(): Call = {
+   Call("POST", _prefix + { _defaultPrefix } + "editPost")
+}
+                                                
+
 // @LINE:50
 def mainpage(): Call = {
    Call("GET", _prefix + { _defaultPrefix } + "mainpage")
 }
                                                 
 
-// @LINE:53
+// @LINE:69
+def searchPostsClick(): Call = {
+   Call("GET", _prefix + { _defaultPrefix } + "searchPostsClick")
+}
+                                                
+
+// @LINE:55
 def deletePost(): Call = {
    Call("POST", _prefix + { _defaultPrefix } + "deletePost")
 }
                                                 
 
-// @LINE:52
-def editPost(): Call = {
-   Call("POST", _prefix + { _defaultPrefix } + "edit/mainpage")
+// @LINE:51
+def previousPage(): Call = {
+   Call("GET", _prefix + { _defaultPrefix } + "previousMainPage")
 }
                                                 
 
-// @LINE:51
-def createNewPost(): Call = {
-   Call("GET", _prefix + { _defaultPrefix } + "createNewPost")
+// @LINE:68
+def searchPosts(): Call = {
+   Call("GET", _prefix + { _defaultPrefix } + "searchPosts")
 }
                                                 
     
@@ -180,6 +263,7 @@ def createNewPost(): Call = {
 // @LINE:10
 // @LINE:9
 // @LINE:8
+// @LINE:7
 class ReverseApplication {
     
 
@@ -220,8 +304,43 @@ def authenticate(): Call = {
                                                 
 
 // @LINE:8
+// @LINE:7
 def login(): Call = {
-   Call("GET", _prefix + { _defaultPrefix } + "login")
+   () match {
+// @LINE:7
+case () if true => Call("GET", _prefix)
+                                                        
+// @LINE:8
+case () if true => Call("GET", _prefix + { _defaultPrefix } + "login")
+                                                        
+   }
+}
+                                                
+    
+}
+                          
+
+// @LINE:74
+// @LINE:73
+// @LINE:72
+class ReverseSearchController {
+    
+
+// @LINE:74
+def addfollow(): Call = {
+   Call("POST", _prefix + { _defaultPrefix } + "addfollow")
+}
+                                                
+
+// @LINE:73
+def searchUserClick(): Call = {
+   Call("GET", _prefix + { _defaultPrefix } + "searchUsersClick")
+}
+                                                
+
+// @LINE:72
+def searchUser(): Call = {
+   Call("GET", _prefix + { _defaultPrefix } + "searchUsers")
 }
                                                 
     
@@ -267,7 +386,6 @@ def datasetList(): Call = {
 // @LINE:30
 // @LINE:29
 // @LINE:28
-// @LINE:7
 // @LINE:6
 class ReverseClimateServiceController {
     
@@ -333,15 +451,11 @@ def newClimateService(): Call = {
                                                 
 
 // @LINE:28
-// @LINE:7
 // @LINE:6
 def home(email:String = null, vfile:String = null, dataset:String = null): Call = {
    (email: @unchecked, vfile: @unchecked, dataset: @unchecked) match {
 // @LINE:6
 case (email, vfile, dataset) if true => Call("GET", _prefix + { _defaultPrefix } + "home" + queryString(List(if(email == null) None else Some(implicitly[QueryStringBindable[String]].unbind("email", email)), if(vfile == null) None else Some(implicitly[QueryStringBindable[String]].unbind("vfile", vfile)), if(dataset == null) None else Some(implicitly[QueryStringBindable[String]].unbind("dataset", dataset)))))
-                                                        
-// @LINE:7
-case (email, vfile, dataset) if true => Call("GET", _prefix + queryString(List(if(email == null) None else Some(implicitly[QueryStringBindable[String]].unbind("email", email)), if(vfile == null) None else Some(implicitly[QueryStringBindable[String]].unbind("vfile", vfile)), if(dataset == null) None else Some(implicitly[QueryStringBindable[String]].unbind("dataset", dataset)))))
                                                         
 // @LINE:28
 case (email, vfile, dataset) if true => Call("GET", _prefix + { _defaultPrefix } + "climate" + queryString(List(if(email == null) None else Some(implicitly[QueryStringBindable[String]].unbind("email", email)), if(vfile == null) None else Some(implicitly[QueryStringBindable[String]].unbind("vfile", vfile)), if(dataset == null) None else Some(implicitly[QueryStringBindable[String]].unbind("dataset", dataset)))))
@@ -362,7 +476,20 @@ def deleteClimateService(): Call = {
                   
 
 
+// @LINE:74
+// @LINE:73
+// @LINE:72
+// @LINE:69
+// @LINE:68
+// @LINE:65
+// @LINE:62
+// @LINE:61
+// @LINE:60
+// @LINE:59
+// @LINE:58
+// @LINE:57
 // @LINE:55
+// @LINE:54
 // @LINE:53
 // @LINE:52
 // @LINE:51
@@ -449,16 +576,88 @@ def aboutUs : JavascriptReverseRoute = JavascriptReverseRoute(
 }
               
 
-// @LINE:55
+// @LINE:65
+// @LINE:62
+// @LINE:61
+// @LINE:60
+// @LINE:59
+// @LINE:58
+// @LINE:57
 class ReverseHomePageController {
     
 
-// @LINE:55
+// @LINE:59
+def nextPage : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.HomePageController.nextPage",
+   """
+      function() {
+      return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "nextHomePage"})
+      }
+   """
+)
+                        
+
+// @LINE:57
 def homepage : JavascriptReverseRoute = JavascriptReverseRoute(
    "controllers.HomePageController.homepage",
    """
       function() {
       return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "homepage"})
+      }
+   """
+)
+                        
+
+// @LINE:65
+def topPosts : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.HomePageController.topPosts",
+   """
+      function() {
+      return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "topPosts"})
+      }
+   """
+)
+                        
+
+// @LINE:62
+def sharePost : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.HomePageController.sharePost",
+   """
+      function() {
+      return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "sharePost"})
+      }
+   """
+)
+                        
+
+// @LINE:61
+def commentPost : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.HomePageController.commentPost",
+   """
+      function() {
+      return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "commentPost"})
+      }
+   """
+)
+                        
+
+// @LINE:60
+def likePost : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.HomePageController.likePost",
+   """
+      function() {
+      return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "likePost"})
+      }
+   """
+)
+                        
+
+// @LINE:58
+def previousPage : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.HomePageController.previousPage",
+   """
+      function() {
+      return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "previousHomePage"})
       }
    """
 )
@@ -533,12 +732,49 @@ def newReport : JavascriptReverseRoute = JavascriptReverseRoute(
 }
               
 
+// @LINE:69
+// @LINE:68
+// @LINE:55
+// @LINE:54
 // @LINE:53
 // @LINE:52
 // @LINE:51
 // @LINE:50
 class ReverseMainPageController {
     
+
+// @LINE:52
+def nextPage : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.MainPageController.nextPage",
+   """
+      function() {
+      return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "nextMainPage"})
+      }
+   """
+)
+                        
+
+// @LINE:53
+def createNewPost : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.MainPageController.createNewPost",
+   """
+      function() {
+      return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "createNewPost"})
+      }
+   """
+)
+                        
+
+// @LINE:54
+def editPost : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.MainPageController.editPost",
+   """
+      function() {
+      return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "editPost"})
+      }
+   """
+)
+                        
 
 // @LINE:50
 def mainpage : JavascriptReverseRoute = JavascriptReverseRoute(
@@ -551,7 +787,18 @@ def mainpage : JavascriptReverseRoute = JavascriptReverseRoute(
 )
                         
 
-// @LINE:53
+// @LINE:69
+def searchPostsClick : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.MainPageController.searchPostsClick",
+   """
+      function() {
+      return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "searchPostsClick"})
+      }
+   """
+)
+                        
+
+// @LINE:55
 def deletePost : JavascriptReverseRoute = JavascriptReverseRoute(
    "controllers.MainPageController.deletePost",
    """
@@ -562,23 +809,23 @@ def deletePost : JavascriptReverseRoute = JavascriptReverseRoute(
 )
                         
 
-// @LINE:52
-def editPost : JavascriptReverseRoute = JavascriptReverseRoute(
-   "controllers.MainPageController.editPost",
+// @LINE:51
+def previousPage : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.MainPageController.previousPage",
    """
       function() {
-      return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "edit/mainpage"})
+      return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "previousMainPage"})
       }
    """
 )
                         
 
-// @LINE:51
-def createNewPost : JavascriptReverseRoute = JavascriptReverseRoute(
-   "controllers.MainPageController.createNewPost",
+// @LINE:68
+def searchPosts : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.MainPageController.searchPosts",
    """
       function() {
-      return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "createNewPost"})
+      return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "searchPosts"})
       }
    """
 )
@@ -594,6 +841,7 @@ def createNewPost : JavascriptReverseRoute = JavascriptReverseRoute(
 // @LINE:10
 // @LINE:9
 // @LINE:8
+// @LINE:7
 class ReverseApplication {
     
 
@@ -664,11 +912,59 @@ def authenticate : JavascriptReverseRoute = JavascriptReverseRoute(
                         
 
 // @LINE:8
+// @LINE:7
 def login : JavascriptReverseRoute = JavascriptReverseRoute(
    "controllers.Application.login",
    """
       function() {
+      if (true) {
+      return _wA({method:"GET", url:"""" + _prefix + """"})
+      }
+      if (true) {
       return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "login"})
+      }
+      }
+   """
+)
+                        
+    
+}
+              
+
+// @LINE:74
+// @LINE:73
+// @LINE:72
+class ReverseSearchController {
+    
+
+// @LINE:74
+def addfollow : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.SearchController.addfollow",
+   """
+      function() {
+      return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "addfollow"})
+      }
+   """
+)
+                        
+
+// @LINE:73
+def searchUserClick : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.SearchController.searchUserClick",
+   """
+      function() {
+      return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "searchUsersClick"})
+      }
+   """
+)
+                        
+
+// @LINE:72
+def searchUser : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.SearchController.searchUser",
+   """
+      function() {
+      return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "searchUsers"})
       }
    """
 )
@@ -731,7 +1027,6 @@ def datasetList : JavascriptReverseRoute = JavascriptReverseRoute(
 // @LINE:30
 // @LINE:29
 // @LINE:28
-// @LINE:7
 // @LINE:6
 class ReverseClimateServiceController {
     
@@ -847,7 +1142,6 @@ def newClimateService : JavascriptReverseRoute = JavascriptReverseRoute(
                         
 
 // @LINE:28
-// @LINE:7
 // @LINE:6
 def home : JavascriptReverseRoute = JavascriptReverseRoute(
    "controllers.ClimateServiceController.home",
@@ -855,9 +1149,6 @@ def home : JavascriptReverseRoute = JavascriptReverseRoute(
       function(email, vfile, dataset) {
       if (true) {
       return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "home" + _qS([(email == null ? null : (""" + implicitly[QueryStringBindable[String]].javascriptUnbind + """)("email", email)), (vfile == null ? null : (""" + implicitly[QueryStringBindable[String]].javascriptUnbind + """)("vfile", vfile)), (dataset == null ? null : (""" + implicitly[QueryStringBindable[String]].javascriptUnbind + """)("dataset", dataset))])})
-      }
-      if (true) {
-      return _wA({method:"GET", url:"""" + _prefix + """" + _qS([(email == null ? null : (""" + implicitly[QueryStringBindable[String]].javascriptUnbind + """)("email", email)), (vfile == null ? null : (""" + implicitly[QueryStringBindable[String]].javascriptUnbind + """)("vfile", vfile)), (dataset == null ? null : (""" + implicitly[QueryStringBindable[String]].javascriptUnbind + """)("dataset", dataset))])})
       }
       if (true) {
       return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "climate" + _qS([(email == null ? null : (""" + implicitly[QueryStringBindable[String]].javascriptUnbind + """)("email", email)), (vfile == null ? null : (""" + implicitly[QueryStringBindable[String]].javascriptUnbind + """)("vfile", vfile)), (dataset == null ? null : (""" + implicitly[QueryStringBindable[String]].javascriptUnbind + """)("dataset", dataset))])})
@@ -884,7 +1175,20 @@ def deleteClimateService : JavascriptReverseRoute = JavascriptReverseRoute(
         
 
 
+// @LINE:74
+// @LINE:73
+// @LINE:72
+// @LINE:69
+// @LINE:68
+// @LINE:65
+// @LINE:62
+// @LINE:61
+// @LINE:60
+// @LINE:59
+// @LINE:58
+// @LINE:57
 // @LINE:55
+// @LINE:54
 // @LINE:53
 // @LINE:52
 // @LINE:51
@@ -957,13 +1261,55 @@ def aboutUs(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
 }
                           
 
-// @LINE:55
+// @LINE:65
+// @LINE:62
+// @LINE:61
+// @LINE:60
+// @LINE:59
+// @LINE:58
+// @LINE:57
 class ReverseHomePageController {
     
 
-// @LINE:55
+// @LINE:59
+def nextPage(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.HomePageController.nextPage(), HandlerDef(this, "controllers.HomePageController", "nextPage", Seq(), "GET", """""", _prefix + """nextHomePage""")
+)
+                      
+
+// @LINE:57
 def homepage(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    controllers.HomePageController.homepage(), HandlerDef(this, "controllers.HomePageController", "homepage", Seq(), "GET", """Homepage""", _prefix + """homepage""")
+)
+                      
+
+// @LINE:65
+def topPosts(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.HomePageController.topPosts(), HandlerDef(this, "controllers.HomePageController", "topPosts", Seq(), "GET", """top10Posts""", _prefix + """topPosts""")
+)
+                      
+
+// @LINE:62
+def sharePost(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.HomePageController.sharePost(), HandlerDef(this, "controllers.HomePageController", "sharePost", Seq(), "POST", """""", _prefix + """sharePost""")
+)
+                      
+
+// @LINE:61
+def commentPost(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.HomePageController.commentPost(), HandlerDef(this, "controllers.HomePageController", "commentPost", Seq(), "POST", """""", _prefix + """commentPost""")
+)
+                      
+
+// @LINE:60
+def likePost(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.HomePageController.likePost(), HandlerDef(this, "controllers.HomePageController", "likePost", Seq(), "POST", """""", _prefix + """likePost""")
+)
+                      
+
+// @LINE:58
+def previousPage(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.HomePageController.previousPage(), HandlerDef(this, "controllers.HomePageController", "previousPage", Seq(), "GET", """""", _prefix + """previousHomePage""")
 )
                       
     
@@ -1011,12 +1357,34 @@ def newReport(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
 }
                           
 
+// @LINE:69
+// @LINE:68
+// @LINE:55
+// @LINE:54
 // @LINE:53
 // @LINE:52
 // @LINE:51
 // @LINE:50
 class ReverseMainPageController {
     
+
+// @LINE:52
+def nextPage(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.MainPageController.nextPage(), HandlerDef(this, "controllers.MainPageController", "nextPage", Seq(), "GET", """""", _prefix + """nextMainPage""")
+)
+                      
+
+// @LINE:53
+def createNewPost(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.MainPageController.createNewPost(), HandlerDef(this, "controllers.MainPageController", "createNewPost", Seq(), "GET", """""", _prefix + """createNewPost""")
+)
+                      
+
+// @LINE:54
+def editPost(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.MainPageController.editPost(), HandlerDef(this, "controllers.MainPageController", "editPost", Seq(), "POST", """""", _prefix + """editPost""")
+)
+                      
 
 // @LINE:50
 def mainpage(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
@@ -1025,21 +1393,27 @@ Mainpage""", _prefix + """mainpage""")
 )
                       
 
-// @LINE:53
+// @LINE:69
+def searchPostsClick(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.MainPageController.searchPostsClick(), HandlerDef(this, "controllers.MainPageController", "searchPostsClick", Seq(), "GET", """""", _prefix + """searchPostsClick""")
+)
+                      
+
+// @LINE:55
 def deletePost(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    controllers.MainPageController.deletePost(), HandlerDef(this, "controllers.MainPageController", "deletePost", Seq(), "POST", """""", _prefix + """deletePost""")
 )
                       
 
-// @LINE:52
-def editPost(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
-   controllers.MainPageController.editPost(), HandlerDef(this, "controllers.MainPageController", "editPost", Seq(), "POST", """""", _prefix + """edit/mainpage""")
+// @LINE:51
+def previousPage(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.MainPageController.previousPage(), HandlerDef(this, "controllers.MainPageController", "previousPage", Seq(), "GET", """""", _prefix + """previousMainPage""")
 )
                       
 
-// @LINE:51
-def createNewPost(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
-   controllers.MainPageController.createNewPost(), HandlerDef(this, "controllers.MainPageController", "createNewPost", Seq(), "GET", """""", _prefix + """createNewPost""")
+// @LINE:68
+def searchPosts(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.MainPageController.searchPosts(), HandlerDef(this, "controllers.MainPageController", "searchPosts", Seq(), "GET", """searchPosts""", _prefix + """searchPosts""")
 )
                       
     
@@ -1053,6 +1427,7 @@ def createNewPost(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
 // @LINE:10
 // @LINE:9
 // @LINE:8
+// @LINE:7
 class ReverseApplication {
     
 
@@ -1092,9 +1467,36 @@ def authenticate(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
 )
                       
 
-// @LINE:8
+// @LINE:7
 def login(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
-   controllers.Application.login(), HandlerDef(this, "controllers.Application", "login", Seq(), "GET", """""", _prefix + """login""")
+   controllers.Application.login(), HandlerDef(this, "controllers.Application", "login", Seq(), "GET", """""", _prefix + """""")
+)
+                      
+    
+}
+                          
+
+// @LINE:74
+// @LINE:73
+// @LINE:72
+class ReverseSearchController {
+    
+
+// @LINE:74
+def addfollow(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.SearchController.addfollow(), HandlerDef(this, "controllers.SearchController", "addfollow", Seq(), "POST", """""", _prefix + """addfollow""")
+)
+                      
+
+// @LINE:73
+def searchUserClick(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.SearchController.searchUserClick(), HandlerDef(this, "controllers.SearchController", "searchUserClick", Seq(), "GET", """""", _prefix + """searchUsersClick""")
+)
+                      
+
+// @LINE:72
+def searchUser(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.SearchController.searchUser(), HandlerDef(this, "controllers.SearchController", "searchUser", Seq(), "GET", """searchUsers""", _prefix + """searchUsers""")
 )
                       
     
@@ -1140,7 +1542,6 @@ def datasetList(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
 // @LINE:30
 // @LINE:29
 // @LINE:28
-// @LINE:7
 // @LINE:6
 class ReverseClimateServiceController {
     

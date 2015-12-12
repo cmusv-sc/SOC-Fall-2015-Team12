@@ -38,16 +38,44 @@ import java.util.List;
 
 public class MainPageController extends Controller {
 
+	static int currentPrivatePager = 1;
+
 	final static Form<PostSet> postsetForm = Form
 			.form(PostSet.class);
 
 	public static Result mainpage() throws Exception {
-		return ok(MainPage.render(PostSet.self("123456"),postsetForm));
+		currentPrivatePager = 1;
+		System.out.println("Current private page: " + currentPrivatePager);
+		String userId = session().get("userId");
+		return ok(MainPage.render(PostSet.self(userId, currentPrivatePager),postsetForm));
 	}
 
-	public static Result editPost() {
+	public static Result previousPage() throws Exception {
+		if (currentPrivatePager > 1) {
+			currentPrivatePager--;
+		}
+		System.out.println("Current private page: " + currentPrivatePager);
+		String userId = session().get("userId");
+		return ok(MainPage.render(PostSet.self(userId, currentPrivatePager),postsetForm));
+	}
+
+	public static Result nextPage() throws Exception {
+		currentPrivatePager++;
+		System.out.println("Current private page: " + currentPrivatePager);
+		String userId = session().get("userId");
+		return ok(MainPage.render(PostSet.self(userId, currentPrivatePager),postsetForm));
+	}
+
+	public static Result searchPosts() throws Exception {
+		String userId = session().get("userId");
+		String keyword = "aaaaaaa";
+		return ok(searchPosts.render(PostSet.search(userId, keyword),postsetForm));
+	}
+
+	public static Result editPost() throws Exception {
 
 		ObjectNode jsonData = Json.newObject();
+		String userId = session().get("userId");
 		try {
 			DynamicForm df = DynamicForm.form().bindFromRequest();
 			String postId = df.field("pk").value();
@@ -55,7 +83,7 @@ public class MainPageController extends Controller {
 			if (postId != null && !postId.isEmpty()) {
 				jsonData.put("id", postId);
 			}
-			PostSet originalPost = PostSet.findPostById(postId);
+			PostSet originalPost = PostSet.findPostById(postId, userId);
 
 			if (originalPost == null) {
 				Application.flashMsg(APICall.createResponse(ResponseType.UNKNOWN));
@@ -65,13 +93,13 @@ public class MainPageController extends Controller {
 			jsonData.put("id", Integer.parseInt(originalPost.getPostId()));
 			jsonData.put("userId", originalPost.getUserId());
 			String status = "";
-			if (originalPost.getPostStatus().contains("Private")) {
+			if (originalPost.getPostStatusL().contains("Private")) {
 				status = "1";
 			} else {
 				status = "0";
 			}
 			jsonData.put("privacy", status);
-			jsonData.put("time", String.valueOf(originalPost.getPostTime()));
+			jsonData.put("time", String.valueOf(originalPost.getPostTimeS()));
 
 			String editField = df.field("name").value();
 			if (editField != null && !editField.isEmpty()) {
@@ -90,6 +118,9 @@ public class MainPageController extends Controller {
 			// flash the response message
 			Application.flashMsg(response);
 
+//			String userId = session().get("userId");
+//			return ok(MainPage.render(PostSet.self(userId, currentPrivatePager),postsetForm));
+
 		} catch (IllegalStateException e) {
 			e.printStackTrace();
 			Application.flashMsg(APICall
@@ -99,6 +130,8 @@ public class MainPageController extends Controller {
 			Application.flashMsg(APICall.createResponse(ResponseType.UNKNOWN));
 		}
 		return ok("updated");
+//		String userId = session().get("userId");
+//		return ok(MainPage.render(PostSet.self(userId, currentPrivatePager),postsetForm));
 	}
 
 	public static Result deletePost() throws Exception{
@@ -108,8 +141,6 @@ public class MainPageController extends Controller {
 		System.out.println("Will delete: " + postId);
 		Logger.debug(postId);
 
-
-
 		// return a text message
 
 		// Call the delete() method
@@ -118,7 +149,18 @@ public class MainPageController extends Controller {
 		// flash the response message
 		Application.flashMsg(response);
 
-		return redirect("/mainpage");
+		String userId = session().get("userId");
+		return ok(MainPage.render(PostSet.self(userId, currentPrivatePager),postsetForm));
+//		return redirect("/mainpage");
+	}
+
+	public static Result searchPostsClick() throws Exception {
+		Form<PostSet> nu = postsetForm.bindFromRequest();
+		String userId = session().get("userId");
+		String keyword = nu.get().getKeyword();
+		System.out.println("userId " + userId + " keyword: " + keyword);
+		return ok(searchPosts.render(PostSet.search(userId, keyword),postsetForm));
+//		return redirect("/searchPosts");
 	}
 
 	public static Result createNewPost() throws Exception{
@@ -127,19 +169,23 @@ public class MainPageController extends Controller {
 //		ObjectNode jsonData = Json.newObject();
 //		String userName = null;
 //
-		System.out.println(nu.get().getPostText());
 
-		String userId = "123456";
-		String postId = nu.get().getPostId();
+		System.out.println("text here: ");
+		System.out.println(nu.get().getpostTextL());
 
+		String userId = session().get("userId");
+//		String postId = nu.get().getPostId();
 
+		String postText = nu.get().getpostTextL();
+		String postStatus = nu.get().getPostStatusL();
 
+		double latitude = nu.get().getLatitude();
+		double longitude = nu.get().getLongitude();
+		String address = nu.get().getAddressL();
 
+		System.out.println("Lat: " + latitude + " Long: " + longitude);
+		System.out.println("Address: " + address);
 
-
-
-		String postText = nu.get().getPostText();
-		String postStatus = nu.get().getPostStatus2();
 //		String postTime = nu.get().getPostTime().toString();
 //
 //		List<PostSet> res = PostSet.addPost(userId, postId, postText, postStatus);
@@ -152,6 +198,7 @@ public class MainPageController extends Controller {
 			jsonData.put("userId", userId);
 			jsonData.put("text", postText);
 			jsonData.put("privacy", postStatus);
+			jsonData.put("address", address);
 //			jsonData.put("PostTime", String.valueOf(originalPost.getPostTime()));
 
 			JsonNode response =   APICall.postAPI(Constants.NEW_BACKEND + "posts/add", jsonData);
@@ -166,42 +213,7 @@ public class MainPageController extends Controller {
 		}
 
 		return redirect("/mainpage");
-
-
-//		return ok("ID: "+ nu.get().getPostId()
-//				+ "\nText: " + nu.get().getPostText()
-//				+"\nStatus: "+nu.get().getPostStatus()+
-//				"\nPost time: "+nu.get().getPostTime());
-
-
-/*		try{
-			jsonData.put("postID", "123456");
-			jsonData.put("postText", nu.get().getPostText());
-			jsonData.put("postStatus", nu.get().getPostStatus());
-			jsonData.put("userID", "12345678");
-
-
-//			JsonNode response = APICall.postAPI(Constants.URL_HOST + Constants.CMU_BACKEND_PORT
-//					+ Constants.ADD_USER, jsonData);
-
-			// flash the response message
-			Application.flashMsg(response);
-			return redirect(routes.Application.createSuccess());
-
-		}catch (IllegalStateException e) {
-			e.printStackTrace();
-			Application.flashMsg(APICall
-					.createResponse(ResponseType.CONVERSIONERROR));
-		} catch (Exception e) {
-			e.printStackTrace();
-			Application.flashMsg(APICall
-					.createResponse(ResponseType.UNKNOWN));
-		}*/
-//		return ok(signup.render(nu));
-
-
-//		return ok(MainPage.render(PostSet.example(), postsetForm));
-
 	}
+
 
 }

@@ -1,816 +1,429 @@
-2015-11-24 15:00:12,472 - [INFO] - from play in pool-4-thread-5 
+2015-12-11 14:49:53,608 - [INFO] - from play in pool-5-thread-4 
 Listening for HTTP on /0:0:0:0:0:0:0:0:9000
 
-2015-11-24 15:01:11,578 - [INFO] - from play in play-internal-execution-context-1 
+2015-12-11 14:50:18,327 - [INFO] - from play in play-internal-execution-context-1 
 datasource [jdbc:h2:file:data/db;DB_CLOSE_DELAY=-1] bound to JNDI as DefaultDS
 
-2015-11-24 15:01:11,817 - [INFO] - from play in play-internal-execution-context-1 
+2015-12-11 14:50:18,539 - [INFO] - from play in play-internal-execution-context-1 
 database [default] connected at jdbc:h2:file:data/db
 
-2015-11-24 15:01:12,786 - [INFO] - from play in play-internal-execution-context-1 
+2015-12-11 14:50:19,403 - [INFO] - from play in play-internal-execution-context-1 
 Application started (Dev)
 
-2015-11-24 15:01:49,418 - [INFO] - from application in play-akka.actor.default-dispatcher-2 
-http://localhost:9034/posts/getPersonalPost/123456
+2015-12-11 14:50:49,322 - [INFO] - from application in play-akka.actor.default-dispatcher-10 
+http://localhost:9034/posts/getPersonalPost/7/1
 
-2015-11-24 15:03:19,525 - [INFO] - from application in play-akka.actor.default-dispatcher-6 
-http://localhost:9034/posts/getPersonalPost/123456
+2015-12-11 14:52:27,735 - [INFO] - from application in play-akka.actor.default-dispatcher-19 
+http://localhost:9034/posts/getPersonalPost/11/1
 
-2015-11-24 15:36:54,867 - [INFO] - from play in play-internal-execution-context-1 
+2015-12-11 14:52:27,741 - [INFO] - from application in play-akka.actor.default-dispatcher-23 
+400
+
+2015-12-11 14:52:36,929 - [INFO] - from application in play-akka.actor.default-dispatcher-24 
+http://localhost:9034/posts/search/userId/11/keyword/d
+
+2015-12-11 14:52:36,940 - [INFO] - from application in play-akka.actor.default-dispatcher-25 
+400
+
+2015-12-11 14:52:52,388 - [INFO] - from application in play-akka.actor.default-dispatcher-28 
+http://localhost:9034/posts/getPersonalPost/11/1
+
+2015-12-11 14:52:59,147 - [INFO] - from application in play-akka.actor.default-dispatcher-32 
+http://localhost:9034/posts/getPersonalPost/11
+
+2015-12-11 14:52:59,226 - [INFO] - from application in play-akka.actor.default-dispatcher-30 
+http://localhost:9034/posts/getPersonalPost/11/1
+
+2015-12-11 14:53:05,235 - [DEBUG] - from application in play-akka.actor.default-dispatcher-24 
+110
+
+2015-12-11 14:53:05,235 - [INFO] - from application in play-akka.actor.default-dispatcher-24 
+http://localhost:9034/posts/delete/110
+
+2015-12-11 14:53:05,259 - [INFO] - from application in play-akka.actor.default-dispatcher-24 
+http://localhost:9034/posts/getPersonalPost/11/1
+
+2015-12-11 14:53:05,265 - [INFO] - from application in play-akka.actor.default-dispatcher-30 
+400
+
+2015-12-11 14:53:26,766 - [INFO] - from application in play-akka.actor.default-dispatcher-24 
+http://localhost:9034/posts/getPersonalPost/11/1
+
+2015-12-11 14:53:35,140 - [INFO] - from application in play-akka.actor.default-dispatcher-33 
+http://localhost:9034/users/search/userName//id/11/accurate
+
+2015-12-11 14:53:35,169 - [INFO] - from application in play-akka.actor.default-dispatcher-24 
+404
+
+2015-12-11 14:53:35,170 - [INFO] - from application in play-akka.actor.default-dispatcher-33 
+http://localhost:9034/follow/getFollower/11
+
+2015-12-11 14:53:35,181 - [INFO] - from application in play-akka.actor.default-dispatcher-33 
+http://localhost:9034/follow/getTopFollowee
+
+2015-12-11 14:53:41,943 - [INFO] - from application in play-akka.actor.default-dispatcher-33 
+http://localhost:9034/users/search/userName/jiakai:zhang/id/11/fuzzy
+
+2015-12-11 14:53:41,969 - [INFO] - from application in play-akka.actor.default-dispatcher-33 
+http://localhost:9034/follow/getFollower/11
+
+2015-12-11 14:53:41,975 - [INFO] - from application in play-akka.actor.default-dispatcher-33 
+http://localhost:9034/follow/getTopFollowee
+
+2015-12-11 14:53:46,265 - [INFO] - from application in play-akka.actor.default-dispatcher-38 
+http://localhost:9034/users/search/userName/jiakai:zhang/id/11/fuzzy
+
+2015-12-11 14:53:46,277 - [INFO] - from application in play-akka.actor.default-dispatcher-38 
+http://localhost:9034/follow/getFollower/11
+
+2015-12-11 14:53:46,284 - [INFO] - from application in play-akka.actor.default-dispatcher-38 
+http://localhost:9034/follow/getTopFollowee
+
+2015-12-11 14:53:53,682 - [INFO] - from application in play-akka.actor.default-dispatcher-40 
+http://localhost:9034/posts/getPublicPost/11/1
+
+2015-12-11 14:54:02,924 - [DEBUG] - from application in play-akka.actor.default-dispatcher-44 
+109
+
+2015-12-11 14:54:02,946 - [INFO] - from application in play-akka.actor.default-dispatcher-44 
+http://localhost:9034/posts/getPublicPost/11/1
+
+2015-12-11 14:54:18,155 - [DEBUG] - from application in play-akka.actor.default-dispatcher-33 
+108
+
+2015-12-11 14:54:18,175 - [INFO] - from application in play-akka.actor.default-dispatcher-46 
+http://localhost:9034/posts/getPublicPost/11/1
+
+2015-12-11 14:54:25,659 - [DEBUG] - from application in play-akka.actor.default-dispatcher-47 
+108
+
+2015-12-11 14:54:25,678 - [INFO] - from application in play-akka.actor.default-dispatcher-47 
+http://localhost:9034/posts/getPublicPost/11/1
+
+2015-12-11 14:54:34,718 - [INFO] - from application in play-akka.actor.default-dispatcher-49 
+http://localhost:9034/posts/getPersonalPost/11/1
+
+2015-12-11 14:54:43,720 - [INFO] - from application in play-akka.actor.default-dispatcher-52 
+http://localhost:9034/posts/search/userId/11/keyword/happen
+
+2015-12-11 14:54:50,957 - [INFO] - from application in play-akka.actor.default-dispatcher-49 
+http://localhost:9034/posts/getTop10Posts/11
+
+2015-12-11 14:55:18,024 - [INFO] - from application in play-akka.actor.default-dispatcher-46 
+http://localhost:9034/posts/getPersonalPost/11/1
+
+2015-12-11 14:55:22,682 - [INFO] - from application in play-akka.actor.default-dispatcher-46 
+http://localhost:9034/posts/getPublicPost/11/1
+
+2015-12-11 14:55:25,816 - [DEBUG] - from application in play-akka.actor.default-dispatcher-53 
+113
+
+2015-12-11 14:55:25,830 - [INFO] - from application in play-akka.actor.default-dispatcher-53 
+http://localhost:9034/posts/getPublicPost/11/1
+
+2015-12-11 14:55:29,625 - [INFO] - from application in play-akka.actor.default-dispatcher-61 
+http://localhost:9034/posts/getPersonalPost/11/1
+
+2015-12-11 14:55:30,653 - [INFO] - from application in play-akka.actor.default-dispatcher-60 
+http://localhost:9034/posts/getTop10Posts/11
+
+2015-12-11 14:55:37,763 - [INFO] - from application in play-akka.actor.default-dispatcher-57 
+http://localhost:9034/posts/getPublicPost/11/1
+
+2015-12-11 14:55:45,959 - [INFO] - from application in play-akka.actor.default-dispatcher-63 
+http://localhost:9034/users/search/userName//id/11/accurate
+
+2015-12-11 14:55:45,973 - [INFO] - from application in play-akka.actor.default-dispatcher-60 
+404
+
+2015-12-11 14:55:45,973 - [INFO] - from application in play-akka.actor.default-dispatcher-63 
+http://localhost:9034/follow/getFollower/11
+
+2015-12-11 14:55:45,980 - [INFO] - from application in play-akka.actor.default-dispatcher-63 
+http://localhost:9034/follow/getTopFollowee
+
+2015-12-11 14:55:49,233 - [INFO] - from application in play-akka.actor.default-dispatcher-58 
+http://localhost:9034/posts/getPersonalPost/11/1
+
+2015-12-11 14:55:55,357 - [INFO] - from application in play-akka.actor.default-dispatcher-65 
+http://localhost:9034/posts/getPersonalPost/11/1
+
+2015-12-11 14:55:57,272 - [INFO] - from application in play-akka.actor.default-dispatcher-65 
+http://localhost:9034/posts/getPublicPost/11/1
+
+2015-12-11 15:04:47,208 - [INFO] - from application in play-akka.actor.default-dispatcher-58 
+http://localhost:9034/posts/getPersonalPost/7/1
+
+2015-12-11 15:05:12,305 - [INFO] - from application in play-akka.actor.default-dispatcher-76 
+http://localhost:9034/posts/getPersonalPost/7/1
+
+2015-12-11 15:06:25,153 - [INFO] - from application in play-akka.actor.default-dispatcher-76 
+http://localhost:9034/posts/getPublicPost/7/1
+
+2015-12-11 15:07:07,861 - [INFO] - from application in play-akka.actor.default-dispatcher-85 
+http://localhost:9034/users/search/userName//id/7/accurate
+
+2015-12-11 15:07:07,870 - [INFO] - from application in play-akka.actor.default-dispatcher-81 
+404
+
+2015-12-11 15:07:07,871 - [INFO] - from application in play-akka.actor.default-dispatcher-85 
+http://localhost:9034/follow/getFollower/7
+
+2015-12-11 15:07:07,885 - [INFO] - from application in play-akka.actor.default-dispatcher-85 
+http://localhost:9034/follow/getTopFollowee
+
+2015-12-11 15:07:17,712 - [INFO] - from application in play-akka.actor.default-dispatcher-81 
+http://localhost:9034/users/search/userName/jiakai:zhang/id/7/fuzzy
+
+2015-12-11 15:07:17,724 - [INFO] - from application in play-akka.actor.default-dispatcher-81 
+http://localhost:9034/follow/getFollower/7
+
+2015-12-11 15:07:17,736 - [INFO] - from application in play-akka.actor.default-dispatcher-81 
+http://localhost:9034/follow/getTopFollowee
+
+2015-12-11 15:08:25,100 - [INFO] - from application in play-akka.actor.default-dispatcher-90 
+http://localhost:9034/users/search/userName/lifei:chen/id/7/fuzzy
+
+2015-12-11 15:08:25,116 - [INFO] - from application in play-akka.actor.default-dispatcher-90 
+http://localhost:9034/follow/getFollower/7
+
+2015-12-11 15:08:25,129 - [INFO] - from application in play-akka.actor.default-dispatcher-90 
+http://localhost:9034/follow/getTopFollowee
+
+2015-12-11 15:08:32,543 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+http://localhost:9034/users/search/userName/jiakai:zhang/id/7/fuzzy
+
+2015-12-11 15:08:32,554 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+http://localhost:9034/follow/getFollower/7
+
+2015-12-11 15:08:32,567 - [INFO] - from application in play-akka.actor.default-dispatcher-101 
+http://localhost:9034/follow/getTopFollowee
+
+2015-12-11 15:08:41,996 - [INFO] - from application in play-akka.actor.default-dispatcher-104 
+http://localhost:9034/follow/delete/11
+
+2015-12-11 15:08:42,018 - [INFO] - from application in play-akka.actor.default-dispatcher-98 
+http://localhost:9034/users/search/userName/jiakai:zhang/id/7/fuzzy
+
+2015-12-11 15:08:42,027 - [INFO] - from application in play-akka.actor.default-dispatcher-98 
+http://localhost:9034/follow/getFollower/7
+
+2015-12-11 15:08:42,037 - [INFO] - from application in play-akka.actor.default-dispatcher-98 
+http://localhost:9034/follow/getTopFollowee
+
+2015-12-11 15:08:49,865 - [INFO] - from application in play-akka.actor.default-dispatcher-100 
+http://localhost:9034/users/search/userName/jiakai:zhang/id/7/fuzzy
+
+2015-12-11 15:08:49,876 - [INFO] - from application in play-akka.actor.default-dispatcher-100 
+http://localhost:9034/follow/getFollower/7
+
+2015-12-11 15:08:49,888 - [INFO] - from application in play-akka.actor.default-dispatcher-100 
+http://localhost:9034/follow/getTopFollowee
+
+2015-12-11 15:09:47,595 - [INFO] - from application in play-akka.actor.default-dispatcher-99 
+http://localhost:9034/posts/getPublicPost/7/1
+
+2015-12-11 15:10:29,888 - [INFO] - from application in play-akka.actor.default-dispatcher-99 
+http://localhost:9034/posts/getPublicPost/7/2
+
+2015-12-11 15:10:42,963 - [INFO] - from application in play-akka.actor.default-dispatcher-119 
+http://localhost:9034/posts/getPublicPost/7/1
+
+2015-12-11 15:10:48,189 - [INFO] - from application in play-akka.actor.default-dispatcher-117 
+http://localhost:9034/posts/getPublicPost/7/1
+
+2015-12-11 15:11:16,815 - [DEBUG] - from application in play-akka.actor.default-dispatcher-125 
+107
+
+2015-12-11 15:11:16,837 - [INFO] - from application in play-akka.actor.default-dispatcher-124 
+http://localhost:9034/posts/getPublicPost/7/1
+
+2015-12-11 15:11:37,346 - [DEBUG] - from application in play-akka.actor.default-dispatcher-122 
+107
+
+2015-12-11 15:11:37,362 - [INFO] - from application in play-akka.actor.default-dispatcher-122 
+http://localhost:9034/posts/getPublicPost/7/1
+
+2015-12-11 15:12:07,176 - [INFO] - from application in play-akka.actor.default-dispatcher-131 
+http://localhost:9034/users/search/userName//id/7/accurate
+
+2015-12-11 15:12:07,183 - [INFO] - from application in play-akka.actor.default-dispatcher-125 
+404
+
+2015-12-11 15:12:07,183 - [INFO] - from application in play-akka.actor.default-dispatcher-131 
+http://localhost:9034/follow/getFollower/7
+
+2015-12-11 15:12:07,209 - [INFO] - from application in play-akka.actor.default-dispatcher-131 
+http://localhost:9034/follow/getTopFollowee
+
+2015-12-11 15:12:54,384 - [INFO] - from application in play-akka.actor.default-dispatcher-131 
+http://localhost:9034/posts/getPublicPost/7/1
+
+2015-12-11 15:15:32,451 - [DEBUG] - from application in play-akka.actor.default-dispatcher-140 
+115
+
+2015-12-11 15:15:32,466 - [INFO] - from application in play-akka.actor.default-dispatcher-140 
+http://localhost:9034/posts/getPublicPost/7/1
+
+2015-12-11 15:16:34,597 - [INFO] - from application in play-akka.actor.default-dispatcher-146 
+http://localhost:9034/posts/getPersonalPost/7/1
+
+2015-12-11 15:16:35,963 - [INFO] - from application in play-akka.actor.default-dispatcher-154 
+http://localhost:9034/posts/getTop10Posts/7
+
+2015-12-11 15:19:07,947 - [INFO] - from application in play-akka.actor.default-dispatcher-154 
+http://localhost:9034/posts/getPublicPost/7/1
+
+2015-12-11 15:19:10,659 - [INFO] - from application in play-akka.actor.default-dispatcher-158 
+http://localhost:9034/posts/getPersonalPost/7/1
+
+2015-12-11 15:24:36,513 - [INFO] - from application in play-akka.actor.default-dispatcher-159 
+http://localhost:9034/posts/getPersonalPost/7/1
+
+2015-12-11 15:25:04,222 - [INFO] - from play in play-internal-execution-context-1 
 datasource [jdbc:h2:file:data/db;DB_CLOSE_DELAY=-1] bound to JNDI as DefaultDS
 
-2015-11-24 15:36:54,869 - [INFO] - from play in play-internal-execution-context-1 
+2015-12-11 15:25:04,224 - [INFO] - from play in play-internal-execution-context-1 
 database [default] connected at jdbc:h2:file:data/db
 
-2015-11-24 15:36:54,966 - [INFO] - from play in play-internal-execution-context-1 
+2015-12-11 15:25:04,310 - [INFO] - from play in play-internal-execution-context-1 
 Application started (Dev)
 
-2015-11-24 15:36:55,298 - [INFO] - from application in play-akka.actor.default-dispatcher-25 
-http://localhost:9034/posts/getPublicPost/123456
+2015-12-11 15:25:04,315 - [INFO] - from application in play-akka.actor.default-dispatcher-164 
+http://localhost:9034/posts/getPersonalPost/7/1
 
-2015-11-24 15:36:56,029 - [INFO] - from application in play-akka.actor.default-dispatcher-30 
-http://localhost:9034/posts/getPublicPost/123456
+2015-12-11 15:25:11,058 - [INFO] - from application in play-akka.actor.default-dispatcher-171 
+http://localhost:9034/posts/getPublicPost/7/1
 
-2015-11-24 15:37:11,647 - [INFO] - from play in play-internal-execution-context-1 
+2015-12-11 15:35:25,762 - [INFO] - from application in play-akka.actor.default-dispatcher-159 
+http://localhost:9034/posts/getPublicPost/7/1
+
+2015-12-11 15:35:30,189 - [INFO] - from application in play-akka.actor.default-dispatcher-183 
+http://localhost:9034/posts/getPublicPost/7/1
+
+2015-12-11 15:35:45,581 - [INFO] - from play in play-internal-execution-context-1 
 datasource [jdbc:h2:file:data/db;DB_CLOSE_DELAY=-1] bound to JNDI as DefaultDS
 
-2015-11-24 15:37:11,649 - [INFO] - from play in play-internal-execution-context-1 
+2015-12-11 15:35:45,582 - [INFO] - from play in play-internal-execution-context-1 
 database [default] connected at jdbc:h2:file:data/db
 
-2015-11-24 15:37:11,729 - [INFO] - from play in play-internal-execution-context-1 
+2015-12-11 15:35:45,728 - [INFO] - from play in play-internal-execution-context-1 
 Application started (Dev)
 
-2015-11-24 15:37:24,924 - [INFO] - from play in play-internal-execution-context-1 
+2015-12-11 15:35:45,735 - [INFO] - from application in play-akka.actor.default-dispatcher-181 
+http://localhost:9034/posts/getPublicPost/7/1
+
+2015-12-11 15:36:31,627 - [INFO] - from application in play-akka.actor.default-dispatcher-185 
+http://localhost:9034/posts/getPublicPost/7/1
+
+2015-12-11 15:36:58,704 - [INFO] - from application in play-akka.actor.default-dispatcher-191 
+http://localhost:9034/posts/getPersonalPost/7/1
+
+2015-12-11 15:37:21,656 - [INFO] - from application in play-akka.actor.default-dispatcher-194 
+http://localhost:9034/users/search/userName//id/7/accurate
+
+2015-12-11 15:37:21,662 - [INFO] - from application in play-akka.actor.default-dispatcher-190 
+404
+
+2015-12-11 15:37:21,663 - [INFO] - from application in play-akka.actor.default-dispatcher-194 
+http://localhost:9034/follow/getFollower/7
+
+2015-12-11 15:37:21,676 - [INFO] - from application in play-akka.actor.default-dispatcher-194 
+http://localhost:9034/follow/getTopFollowee
+
+2015-12-11 15:37:22,529 - [INFO] - from application in play-akka.actor.default-dispatcher-198 
+http://localhost:9034/posts/getPersonalPost/7/1
+
+2015-12-11 15:37:23,186 - [INFO] - from application in play-akka.actor.default-dispatcher-200 
+http://localhost:9034/posts/getPublicPost/7/1
+
+2015-12-11 15:37:24,219 - [INFO] - from application in play-akka.actor.default-dispatcher-200 
+http://localhost:9034/posts/getPersonalPost/7/1
+
+2015-12-11 15:37:36,057 - [INFO] - from application in play-akka.actor.default-dispatcher-194 
+http://localhost:9034/posts/getPersonalPost/7/1
+
+2015-12-11 15:42:47,078 - [INFO] - from play in play-internal-execution-context-1 
 datasource [jdbc:h2:file:data/db;DB_CLOSE_DELAY=-1] bound to JNDI as DefaultDS
 
-2015-11-24 15:37:24,927 - [INFO] - from play in play-internal-execution-context-1 
+2015-12-11 15:42:47,080 - [INFO] - from play in play-internal-execution-context-1 
 database [default] connected at jdbc:h2:file:data/db
 
-2015-11-24 15:37:24,998 - [INFO] - from play in play-internal-execution-context-1 
+2015-12-11 15:42:47,212 - [INFO] - from play in play-internal-execution-context-1 
 Application started (Dev)
 
-2015-11-24 15:42:01,727 - [INFO] - from play in play-internal-execution-context-3 
-datasource [jdbc:h2:file:data/db;DB_CLOSE_DELAY=-1] bound to JNDI as DefaultDS
+2015-12-11 15:42:47,220 - [INFO] - from application in play-akka.actor.default-dispatcher-185 
+http://localhost:9034/posts/getPersonalPost/7/1
 
-2015-11-24 15:42:01,729 - [INFO] - from play in play-internal-execution-context-3 
-database [default] connected at jdbc:h2:file:data/db
+2015-12-11 15:43:53,025 - [INFO] - from application in play-akka.actor.default-dispatcher-210 
+http://localhost:9034/posts/getPersonalPost/7/1
 
-2015-11-24 15:42:01,800 - [INFO] - from play in play-internal-execution-context-3 
-Application started (Dev)
+2015-12-11 15:45:13,494 - [INFO] - from application in play-akka.actor.default-dispatcher-210 
+http://localhost:9034/posts/getPersonalPost/7/1
 
-2015-11-24 15:42:18,825 - [INFO] - from play in play-internal-execution-context-3 
-datasource [jdbc:h2:file:data/db;DB_CLOSE_DELAY=-1] bound to JNDI as DefaultDS
+2015-12-11 15:46:48,677 - [INFO] - from application in play-akka.actor.default-dispatcher-218 
+http://localhost:9034/posts/getPersonalPost/7/1
 
-2015-11-24 15:42:18,828 - [INFO] - from play in play-internal-execution-context-3 
-database [default] connected at jdbc:h2:file:data/db
+2015-12-11 15:47:51,114 - [INFO] - from application in play-akka.actor.default-dispatcher-229 
+http://localhost:9034/posts/getPersonalPost/7/1
 
-2015-11-24 15:42:18,903 - [INFO] - from play in play-internal-execution-context-3 
-Application started (Dev)
+2015-12-11 15:48:23,284 - [INFO] - from application in play-akka.actor.default-dispatcher-229 
+http://localhost:9034/posts/getPersonalPost/7/1
 
-2015-11-24 15:43:15,097 - [INFO] - from play in play-internal-execution-context-3 
-datasource [jdbc:h2:file:data/db;DB_CLOSE_DELAY=-1] bound to JNDI as DefaultDS
+2015-12-11 15:48:51,162 - [INFO] - from application in play-akka.actor.default-dispatcher-240 
+http://localhost:9034/posts/getPublicPost/7/1
 
-2015-11-24 15:43:15,100 - [INFO] - from play in play-internal-execution-context-3 
-database [default] connected at jdbc:h2:file:data/db
+2015-12-11 15:48:52,390 - [INFO] - from application in play-akka.actor.default-dispatcher-246 
+http://localhost:9034/posts/getPersonalPost/7/1
 
-2015-11-24 15:43:15,166 - [INFO] - from play in play-internal-execution-context-3 
-Application started (Dev)
+2015-12-11 15:48:53,240 - [INFO] - from application in play-akka.actor.default-dispatcher-247 
+http://localhost:9034/users/search/userName//id/7/accurate
 
-2015-11-24 15:43:58,898 - [INFO] - from play in play-internal-execution-context-3 
-datasource [jdbc:h2:file:data/db;DB_CLOSE_DELAY=-1] bound to JNDI as DefaultDS
+2015-12-11 15:48:53,247 - [INFO] - from application in play-akka.actor.default-dispatcher-244 
+404
 
-2015-11-24 15:43:58,900 - [INFO] - from play in play-internal-execution-context-3 
-database [default] connected at jdbc:h2:file:data/db
+2015-12-11 15:48:53,248 - [INFO] - from application in play-akka.actor.default-dispatcher-247 
+http://localhost:9034/follow/getFollower/7
 
-2015-11-24 15:43:58,973 - [INFO] - from play in play-internal-execution-context-3 
-Application started (Dev)
+2015-12-11 15:48:53,262 - [INFO] - from application in play-akka.actor.default-dispatcher-247 
+http://localhost:9034/follow/getTopFollowee
 
-2015-11-24 15:51:34,416 - [ERROR] - from application in New I/O worker #15 
+2015-12-11 15:48:54,919 - [INFO] - from application in play-akka.actor.default-dispatcher-243 
+http://localhost:9034/posts/getPublicPost/7/1
 
+2015-12-11 15:48:57,035 - [INFO] - from application in play-akka.actor.default-dispatcher-246 
+http://localhost:9034/posts/getPersonalPost/7/1
 
-! @6o8hlk7eh - Internal server error, for (GET) [/aboutus] ->
+2015-12-11 15:48:58,206 - [INFO] - from application in play-akka.actor.default-dispatcher-241 
+http://localhost:9034/posts/getTop10Posts/7
 
-play.PlayExceptions$CompilationException: Compilation error[not found: value css]
-	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14$$anonfun$apply$16.apply(PlayReloader.scala:304) ~[na:na]
-	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14$$anonfun$apply$16.apply(PlayReloader.scala:304) ~[na:na]
-	at scala.Option.map(Option.scala:145) ~[scala-library-2.10.3.jar:na]
-	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14.apply(PlayReloader.scala:304) ~[na:na]
-	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14.apply(PlayReloader.scala:298) ~[na:na]
-	at scala.Option.map(Option.scala:145) ~[scala-library-2.10.3.jar:na]
-	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:298) ~[na:na]
-	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:296) ~[na:na]
-	at scala.util.Either$LeftProjection.map(Either.scala:377) ~[scala-library-2.10.3.jar:na]
-	at play.PlayReloader$$anon$1.reload(PlayReloader.scala:296) ~[na:na]
-	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:104) ~[play_2.10-2.2.3.jar:2.2.3]
-	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:102) ~[play_2.10-2.2.3.jar:2.2.3]
-	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library-2.10.3.jar:na]
-	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library-2.10.3.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) ~[scala-library-2.10.3.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[scala-library-2.10.3.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[scala-library-2.10.3.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library-2.10.3.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library-2.10.3.jar:na]
+2015-12-11 15:50:08,350 - [INFO] - from application in play-akka.actor.default-dispatcher-246 
+http://localhost:9034/posts/getPersonalPost/7/1
 
-2015-11-24 15:52:05,379 - [ERROR] - from application in New I/O worker #15 
+2015-12-11 15:50:53,372 - [INFO] - from application in play-akka.actor.default-dispatcher-253 
+http://localhost:9034/posts/getPersonalPost/7/1
 
+2015-12-11 15:51:17,650 - [INFO] - from application in play-akka.actor.default-dispatcher-256 
+http://localhost:9034/posts/getPersonalPost/7/1
 
-! @6o8hlm19l - Internal server error, for (GET) [/aboutus] ->
+2015-12-11 15:51:22,046 - [INFO] - from application in play-akka.actor.default-dispatcher-261 
+http://localhost:9034/users/search/userName//id/7/accurate
 
-play.PlayExceptions$CompilationException: Compilation error[unclosed character literal]
-	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14$$anonfun$apply$16.apply(PlayReloader.scala:304) ~[na:na]
-	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14$$anonfun$apply$16.apply(PlayReloader.scala:304) ~[na:na]
-	at scala.Option.map(Option.scala:145) ~[scala-library-2.10.3.jar:na]
-	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14.apply(PlayReloader.scala:304) ~[na:na]
-	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14.apply(PlayReloader.scala:298) ~[na:na]
-	at scala.Option.map(Option.scala:145) ~[scala-library-2.10.3.jar:na]
-	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:298) ~[na:na]
-	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:296) ~[na:na]
-	at scala.util.Either$LeftProjection.map(Either.scala:377) ~[scala-library-2.10.3.jar:na]
-	at play.PlayReloader$$anon$1.reload(PlayReloader.scala:296) ~[na:na]
-	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:104) ~[play_2.10-2.2.3.jar:2.2.3]
-	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:102) ~[play_2.10-2.2.3.jar:2.2.3]
-	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library-2.10.3.jar:na]
-	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library-2.10.3.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) ~[scala-library-2.10.3.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[scala-library-2.10.3.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[scala-library-2.10.3.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library-2.10.3.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library-2.10.3.jar:na]
+2015-12-11 15:51:22,052 - [INFO] - from application in play-akka.actor.default-dispatcher-253 
+404
 
-2015-11-24 15:52:07,751 - [ERROR] - from application in New I/O worker #15 
+2015-12-11 15:51:22,052 - [INFO] - from application in play-akka.actor.default-dispatcher-261 
+http://localhost:9034/follow/getFollower/7
 
+2015-12-11 15:51:22,066 - [INFO] - from application in play-akka.actor.default-dispatcher-261 
+http://localhost:9034/follow/getTopFollowee
 
-! @6o8hlm4n0 - Internal server error, for (GET) [/aboutus] ->
+2015-12-11 15:51:22,822 - [INFO] - from application in play-akka.actor.default-dispatcher-251 
+http://localhost:9034/posts/getPublicPost/7/1
 
-play.PlayExceptions$CompilationException: Compilation error[unclosed character literal]
-	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14$$anonfun$apply$16.apply(PlayReloader.scala:304) ~[na:na]
-	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14$$anonfun$apply$16.apply(PlayReloader.scala:304) ~[na:na]
-	at scala.Option.map(Option.scala:145) ~[scala-library-2.10.3.jar:na]
-	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14.apply(PlayReloader.scala:304) ~[na:na]
-	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14.apply(PlayReloader.scala:298) ~[na:na]
-	at scala.Option.map(Option.scala:145) ~[scala-library-2.10.3.jar:na]
-	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:298) ~[na:na]
-	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:296) ~[na:na]
-	at scala.util.Either$LeftProjection.map(Either.scala:377) ~[scala-library-2.10.3.jar:na]
-	at play.PlayReloader$$anon$1.reload(PlayReloader.scala:296) ~[na:na]
-	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:104) ~[play_2.10-2.2.3.jar:2.2.3]
-	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:102) ~[play_2.10-2.2.3.jar:2.2.3]
-	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library-2.10.3.jar:na]
-	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library-2.10.3.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) ~[scala-library-2.10.3.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[scala-library-2.10.3.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[scala-library-2.10.3.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library-2.10.3.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library-2.10.3.jar:na]
+2015-12-11 15:51:30,112 - [INFO] - from application in play-akka.actor.default-dispatcher-255 
+http://localhost:9034/posts/getPersonalPost/7/1
 
-2015-11-24 15:52:37,620 - [ERROR] - from application in New I/O worker #15 
-
-
-! @6o8hlnn1m - Internal server error, for (GET) [/aboutus] ->
-
-play.PlayExceptions$CompilationException: Compilation error[value Asset is not a member of object controllers.routes]
-	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14$$anonfun$apply$16.apply(PlayReloader.scala:304) ~[na:na]
-	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14$$anonfun$apply$16.apply(PlayReloader.scala:304) ~[na:na]
-	at scala.Option.map(Option.scala:145) ~[scala-library-2.10.3.jar:na]
-	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14.apply(PlayReloader.scala:304) ~[na:na]
-	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14.apply(PlayReloader.scala:298) ~[na:na]
-	at scala.Option.map(Option.scala:145) ~[scala-library-2.10.3.jar:na]
-	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:298) ~[na:na]
-	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:296) ~[na:na]
-	at scala.util.Either$LeftProjection.map(Either.scala:377) ~[scala-library-2.10.3.jar:na]
-	at play.PlayReloader$$anon$1.reload(PlayReloader.scala:296) ~[na:na]
-	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:104) ~[play_2.10-2.2.3.jar:2.2.3]
-	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:102) ~[play_2.10-2.2.3.jar:2.2.3]
-	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library-2.10.3.jar:na]
-	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library-2.10.3.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) ~[scala-library-2.10.3.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[scala-library-2.10.3.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[scala-library-2.10.3.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library-2.10.3.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library-2.10.3.jar:na]
-
-2015-11-24 15:52:54,885 - [INFO] - from play in play-internal-execution-context-3 
-datasource [jdbc:h2:file:data/db;DB_CLOSE_DELAY=-1] bound to JNDI as DefaultDS
-
-2015-11-24 15:52:54,886 - [INFO] - from play in play-internal-execution-context-3 
-database [default] connected at jdbc:h2:file:data/db
-
-2015-11-24 15:52:54,948 - [INFO] - from play in play-internal-execution-context-3 
-Application started (Dev)
-
-2015-11-24 15:59:24,429 - [ERROR] - from application in New I/O worker #5 
-
-
-! @6o8hml0m8 - Internal server error, for (GET) [/aboutus] ->
-
-play.PlayExceptions$CompilationException: Compilation error[value alt is not a member of String]
-	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14$$anonfun$apply$16.apply(PlayReloader.scala:304) ~[na:na]
-	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14$$anonfun$apply$16.apply(PlayReloader.scala:304) ~[na:na]
-	at scala.Option.map(Option.scala:145) ~[scala-library-2.10.3.jar:na]
-	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14.apply(PlayReloader.scala:304) ~[na:na]
-	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14.apply(PlayReloader.scala:298) ~[na:na]
-	at scala.Option.map(Option.scala:145) ~[scala-library-2.10.3.jar:na]
-	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:298) ~[na:na]
-	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:296) ~[na:na]
-	at scala.util.Either$LeftProjection.map(Either.scala:377) ~[scala-library-2.10.3.jar:na]
-	at play.PlayReloader$$anon$1.reload(PlayReloader.scala:296) ~[na:na]
-	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:104) ~[play_2.10-2.2.3.jar:2.2.3]
-	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:102) ~[play_2.10-2.2.3.jar:2.2.3]
-	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library-2.10.3.jar:na]
-	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library-2.10.3.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) ~[scala-library-2.10.3.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[scala-library-2.10.3.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[scala-library-2.10.3.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library-2.10.3.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library-2.10.3.jar:na]
-
-2015-11-24 16:00:04,108 - [ERROR] - from application in New I/O worker #5 
-
-
-! @6o8hmn7ec - Internal server error, for (GET) [/aboutus] ->
-
-play.PlayExceptions$CompilationException: Compilation error[value alt is not a member of String]
-	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14$$anonfun$apply$16.apply(PlayReloader.scala:304) ~[na:na]
-	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14$$anonfun$apply$16.apply(PlayReloader.scala:304) ~[na:na]
-	at scala.Option.map(Option.scala:145) ~[scala-library-2.10.3.jar:na]
-	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14.apply(PlayReloader.scala:304) ~[na:na]
-	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14.apply(PlayReloader.scala:298) ~[na:na]
-	at scala.Option.map(Option.scala:145) ~[scala-library-2.10.3.jar:na]
-	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:298) ~[na:na]
-	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:296) ~[na:na]
-	at scala.util.Either$LeftProjection.map(Either.scala:377) ~[scala-library-2.10.3.jar:na]
-	at play.PlayReloader$$anon$1.reload(PlayReloader.scala:296) ~[na:na]
-	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:104) ~[play_2.10-2.2.3.jar:2.2.3]
-	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:102) ~[play_2.10-2.2.3.jar:2.2.3]
-	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library-2.10.3.jar:na]
-	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library-2.10.3.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) ~[scala-library-2.10.3.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[scala-library-2.10.3.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[scala-library-2.10.3.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library-2.10.3.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library-2.10.3.jar:na]
-
-2015-11-24 16:00:08,711 - [ERROR] - from application in New I/O worker #5 
-
-
-! @6o8hmne9d - Internal server error, for (GET) [/aboutus] ->
-
-play.PlayExceptions$CompilationException: Compilation error[value alt is not a member of String]
-	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14$$anonfun$apply$16.apply(PlayReloader.scala:304) ~[na:na]
-	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14$$anonfun$apply$16.apply(PlayReloader.scala:304) ~[na:na]
-	at scala.Option.map(Option.scala:145) ~[scala-library-2.10.3.jar:na]
-	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14.apply(PlayReloader.scala:304) ~[na:na]
-	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14.apply(PlayReloader.scala:298) ~[na:na]
-	at scala.Option.map(Option.scala:145) ~[scala-library-2.10.3.jar:na]
-	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:298) ~[na:na]
-	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:296) ~[na:na]
-	at scala.util.Either$LeftProjection.map(Either.scala:377) ~[scala-library-2.10.3.jar:na]
-	at play.PlayReloader$$anon$1.reload(PlayReloader.scala:296) ~[na:na]
-	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:104) ~[play_2.10-2.2.3.jar:2.2.3]
-	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:102) ~[play_2.10-2.2.3.jar:2.2.3]
-	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library-2.10.3.jar:na]
-	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library-2.10.3.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) ~[scala-library-2.10.3.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[scala-library-2.10.3.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[scala-library-2.10.3.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library-2.10.3.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library-2.10.3.jar:na]
-
-2015-11-24 16:00:55,099 - [INFO] - from play in play-internal-execution-context-3 
-datasource [jdbc:h2:file:data/db;DB_CLOSE_DELAY=-1] bound to JNDI as DefaultDS
-
-2015-11-24 16:00:55,100 - [INFO] - from play in play-internal-execution-context-3 
-database [default] connected at jdbc:h2:file:data/db
-
-2015-11-24 16:00:55,162 - [INFO] - from play in play-internal-execution-context-3 
-Application started (Dev)
-
-2015-11-24 16:01:57,853 - [INFO] - from application in play-akka.actor.default-dispatcher-68 
-http://localhost:9034/posts/getPersonalPost/123456
-
-2015-11-24 16:02:02,468 - [INFO] - from application in play-akka.actor.default-dispatcher-77 
-http://localhost:9034/dataset/getAllDatasets/json
-
-2015-11-24 16:06:19,698 - [INFO] - from play in play-internal-execution-context-3 
-datasource [jdbc:h2:file:data/db;DB_CLOSE_DELAY=-1] bound to JNDI as DefaultDS
-
-2015-11-24 16:06:19,699 - [INFO] - from play in play-internal-execution-context-3 
-database [default] connected at jdbc:h2:file:data/db
-
-2015-11-24 16:06:19,766 - [INFO] - from play in play-internal-execution-context-3 
-Application started (Dev)
-
-2015-11-24 16:07:50,046 - [INFO] - from play in play-internal-execution-context-3 
-datasource [jdbc:h2:file:data/db;DB_CLOSE_DELAY=-1] bound to JNDI as DefaultDS
-
-2015-11-24 16:07:50,048 - [INFO] - from play in play-internal-execution-context-3 
-database [default] connected at jdbc:h2:file:data/db
-
-2015-11-24 16:07:50,108 - [INFO] - from play in play-internal-execution-context-3 
-Application started (Dev)
-
-2015-11-24 16:08:18,386 - [INFO] - from play in play-internal-execution-context-3 
-datasource [jdbc:h2:file:data/db;DB_CLOSE_DELAY=-1] bound to JNDI as DefaultDS
-
-2015-11-24 16:08:18,388 - [INFO] - from play in play-internal-execution-context-3 
-database [default] connected at jdbc:h2:file:data/db
-
-2015-11-24 16:08:18,449 - [INFO] - from play in play-internal-execution-context-3 
-Application started (Dev)
-
-2015-11-24 16:09:05,938 - [INFO] - from play in play-internal-execution-context-3 
-datasource [jdbc:h2:file:data/db;DB_CLOSE_DELAY=-1] bound to JNDI as DefaultDS
-
-2015-11-24 16:09:05,939 - [INFO] - from play in play-internal-execution-context-3 
-database [default] connected at jdbc:h2:file:data/db
-
-2015-11-24 16:09:05,999 - [INFO] - from play in play-internal-execution-context-3 
-Application started (Dev)
-
-2015-11-24 16:10:36,525 - [INFO] - from play in play-internal-execution-context-3 
-datasource [jdbc:h2:file:data/db;DB_CLOSE_DELAY=-1] bound to JNDI as DefaultDS
-
-2015-11-24 16:10:36,526 - [INFO] - from play in play-internal-execution-context-3 
-database [default] connected at jdbc:h2:file:data/db
-
-2015-11-24 16:10:36,585 - [INFO] - from play in play-internal-execution-context-3 
-Application started (Dev)
-
-2015-11-24 16:11:47,899 - [INFO] - from play in play-internal-execution-context-3 
-datasource [jdbc:h2:file:data/db;DB_CLOSE_DELAY=-1] bound to JNDI as DefaultDS
-
-2015-11-24 16:11:47,901 - [INFO] - from play in play-internal-execution-context-3 
-database [default] connected at jdbc:h2:file:data/db
-
-2015-11-24 16:11:47,966 - [INFO] - from play in play-internal-execution-context-3 
-Application started (Dev)
-
-2015-11-24 16:11:55,880 - [INFO] - from play in play-internal-execution-context-3 
-datasource [jdbc:h2:file:data/db;DB_CLOSE_DELAY=-1] bound to JNDI as DefaultDS
-
-2015-11-24 16:11:55,882 - [INFO] - from play in play-internal-execution-context-3 
-database [default] connected at jdbc:h2:file:data/db
-
-2015-11-24 16:11:55,940 - [INFO] - from play in play-internal-execution-context-3 
-Application started (Dev)
-
-2015-11-24 16:13:24,868 - [INFO] - from play in play-internal-execution-context-3 
-datasource [jdbc:h2:file:data/db;DB_CLOSE_DELAY=-1] bound to JNDI as DefaultDS
-
-2015-11-24 16:13:24,870 - [INFO] - from play in play-internal-execution-context-3 
-database [default] connected at jdbc:h2:file:data/db
-
-2015-11-24 16:13:24,924 - [INFO] - from play in play-internal-execution-context-3 
-Application started (Dev)
-
-2015-11-24 16:13:44,086 - [INFO] - from play in play-internal-execution-context-3 
-datasource [jdbc:h2:file:data/db;DB_CLOSE_DELAY=-1] bound to JNDI as DefaultDS
-
-2015-11-24 16:13:44,088 - [INFO] - from play in play-internal-execution-context-3 
-database [default] connected at jdbc:h2:file:data/db
-
-2015-11-24 16:13:44,141 - [INFO] - from play in play-internal-execution-context-3 
-Application started (Dev)
-
-2015-11-24 16:15:28,227 - [INFO] - from play in play-internal-execution-context-3 
-datasource [jdbc:h2:file:data/db;DB_CLOSE_DELAY=-1] bound to JNDI as DefaultDS
-
-2015-11-24 16:15:28,228 - [INFO] - from play in play-internal-execution-context-3 
-database [default] connected at jdbc:h2:file:data/db
-
-2015-11-24 16:15:28,286 - [INFO] - from play in play-internal-execution-context-3 
-Application started (Dev)
-
-2015-11-24 16:16:31,383 - [INFO] - from play in play-internal-execution-context-3 
-datasource [jdbc:h2:file:data/db;DB_CLOSE_DELAY=-1] bound to JNDI as DefaultDS
-
-2015-11-24 16:16:31,385 - [INFO] - from play in play-internal-execution-context-3 
-database [default] connected at jdbc:h2:file:data/db
-
-2015-11-24 16:16:31,436 - [INFO] - from play in play-internal-execution-context-3 
-Application started (Dev)
-
-2015-11-24 16:17:15,417 - [INFO] - from play in play-internal-execution-context-3 
-datasource [jdbc:h2:file:data/db;DB_CLOSE_DELAY=-1] bound to JNDI as DefaultDS
-
-2015-11-24 16:17:15,418 - [INFO] - from play in play-internal-execution-context-3 
-database [default] connected at jdbc:h2:file:data/db
-
-2015-11-24 16:17:15,470 - [INFO] - from play in play-internal-execution-context-3 
-Application started (Dev)
-
-2015-11-24 16:18:29,653 - [INFO] - from play in play-internal-execution-context-3 
-datasource [jdbc:h2:file:data/db;DB_CLOSE_DELAY=-1] bound to JNDI as DefaultDS
-
-2015-11-24 16:18:29,654 - [INFO] - from play in play-internal-execution-context-3 
-database [default] connected at jdbc:h2:file:data/db
-
-2015-11-24 16:18:29,708 - [INFO] - from play in play-internal-execution-context-3 
-Application started (Dev)
-
-2015-11-24 16:18:50,674 - [INFO] - from play in play-internal-execution-context-3 
-datasource [jdbc:h2:file:data/db;DB_CLOSE_DELAY=-1] bound to JNDI as DefaultDS
-
-2015-11-24 16:18:50,675 - [INFO] - from play in play-internal-execution-context-3 
-database [default] connected at jdbc:h2:file:data/db
-
-2015-11-24 16:18:50,728 - [INFO] - from play in play-internal-execution-context-3 
-Application started (Dev)
-
-2015-11-24 16:20:09,575 - [INFO] - from play in play-internal-execution-context-3 
-datasource [jdbc:h2:file:data/db;DB_CLOSE_DELAY=-1] bound to JNDI as DefaultDS
-
-2015-11-24 16:20:09,577 - [INFO] - from play in play-internal-execution-context-3 
-database [default] connected at jdbc:h2:file:data/db
-
-2015-11-24 16:20:09,628 - [INFO] - from play in play-internal-execution-context-3 
-Application started (Dev)
-
-2015-11-24 16:21:07,427 - [INFO] - from play in play-internal-execution-context-3 
-datasource [jdbc:h2:file:data/db;DB_CLOSE_DELAY=-1] bound to JNDI as DefaultDS
-
-2015-11-24 16:21:07,429 - [INFO] - from play in play-internal-execution-context-3 
-database [default] connected at jdbc:h2:file:data/db
-
-2015-11-24 16:21:07,477 - [INFO] - from play in play-internal-execution-context-3 
-Application started (Dev)
-
-2015-11-24 16:21:16,350 - [INFO] - from play in play-internal-execution-context-3 
-datasource [jdbc:h2:file:data/db;DB_CLOSE_DELAY=-1] bound to JNDI as DefaultDS
-
-2015-11-24 16:21:16,351 - [INFO] - from play in play-internal-execution-context-3 
-database [default] connected at jdbc:h2:file:data/db
-
-2015-11-24 16:21:16,399 - [INFO] - from play in play-internal-execution-context-3 
-Application started (Dev)
-
-2015-11-24 16:28:19,589 - [INFO] - from play in play-internal-execution-context-3 
-datasource [jdbc:h2:file:data/db;DB_CLOSE_DELAY=-1] bound to JNDI as DefaultDS
-
-2015-11-24 16:28:19,591 - [INFO] - from play in play-internal-execution-context-3 
-database [default] connected at jdbc:h2:file:data/db
-
-2015-11-24 16:28:19,654 - [INFO] - from play in play-internal-execution-context-3 
-Application started (Dev)
-
-2015-11-24 16:29:05,936 - [INFO] - from play in play-internal-execution-context-3 
-datasource [jdbc:h2:file:data/db;DB_CLOSE_DELAY=-1] bound to JNDI as DefaultDS
-
-2015-11-24 16:29:05,938 - [INFO] - from play in play-internal-execution-context-3 
-database [default] connected at jdbc:h2:file:data/db
-
-2015-11-24 16:29:05,990 - [INFO] - from play in play-internal-execution-context-3 
-Application started (Dev)
-
-2015-11-24 16:29:28,235 - [INFO] - from play in play-internal-execution-context-3 
-datasource [jdbc:h2:file:data/db;DB_CLOSE_DELAY=-1] bound to JNDI as DefaultDS
-
-2015-11-24 16:29:28,236 - [INFO] - from play in play-internal-execution-context-3 
-database [default] connected at jdbc:h2:file:data/db
-
-2015-11-24 16:29:28,297 - [INFO] - from play in play-internal-execution-context-3 
-Application started (Dev)
-
-2015-11-24 16:30:06,409 - [INFO] - from play in play-internal-execution-context-3 
-datasource [jdbc:h2:file:data/db;DB_CLOSE_DELAY=-1] bound to JNDI as DefaultDS
-
-2015-11-24 16:30:06,411 - [INFO] - from play in play-internal-execution-context-3 
-database [default] connected at jdbc:h2:file:data/db
-
-2015-11-24 16:30:06,461 - [INFO] - from play in play-internal-execution-context-3 
-Application started (Dev)
-
-2015-11-24 16:33:13,637 - [INFO] - from play in play-internal-execution-context-3 
-datasource [jdbc:h2:file:data/db;DB_CLOSE_DELAY=-1] bound to JNDI as DefaultDS
-
-2015-11-24 16:33:13,639 - [INFO] - from play in play-internal-execution-context-3 
-database [default] connected at jdbc:h2:file:data/db
-
-2015-11-24 16:33:13,707 - [INFO] - from play in play-internal-execution-context-3 
-Application started (Dev)
-
-2015-11-24 16:38:02,617 - [INFO] - from play in play-internal-execution-context-3 
-datasource [jdbc:h2:file:data/db;DB_CLOSE_DELAY=-1] bound to JNDI as DefaultDS
-
-2015-11-24 16:38:02,619 - [INFO] - from play in play-internal-execution-context-3 
-database [default] connected at jdbc:h2:file:data/db
-
-2015-11-24 16:38:02,679 - [INFO] - from play in play-internal-execution-context-3 
-Application started (Dev)
-
-2015-11-24 16:42:41,714 - [INFO] - from play in play-internal-execution-context-3 
-datasource [jdbc:h2:file:data/db;DB_CLOSE_DELAY=-1] bound to JNDI as DefaultDS
-
-2015-11-24 16:42:41,715 - [INFO] - from play in play-internal-execution-context-3 
-database [default] connected at jdbc:h2:file:data/db
-
-2015-11-24 16:42:41,772 - [INFO] - from play in play-internal-execution-context-3 
-Application started (Dev)
-
-2015-11-24 16:44:49,466 - [INFO] - from play in play-internal-execution-context-3 
-datasource [jdbc:h2:file:data/db;DB_CLOSE_DELAY=-1] bound to JNDI as DefaultDS
-
-2015-11-24 16:44:49,468 - [INFO] - from play in play-internal-execution-context-3 
-database [default] connected at jdbc:h2:file:data/db
-
-2015-11-24 16:44:49,522 - [INFO] - from play in play-internal-execution-context-3 
-Application started (Dev)
-
-2015-11-24 16:47:16,062 - [INFO] - from application in play-akka.actor.default-dispatcher-248 
-http://localhost:9034/posts/getPublicPost/123456
-
-2015-11-24 16:47:48,619 - [INFO] - from play in play-internal-execution-context-3 
-datasource [jdbc:h2:file:data/db;DB_CLOSE_DELAY=-1] bound to JNDI as DefaultDS
-
-2015-11-24 16:47:48,621 - [INFO] - from play in play-internal-execution-context-3 
-database [default] connected at jdbc:h2:file:data/db
-
-2015-11-24 16:47:48,669 - [INFO] - from play in play-internal-execution-context-3 
-Application started (Dev)
-
-2015-11-24 16:47:50,340 - [INFO] - from application in play-akka.actor.default-dispatcher-257 
-http://localhost:9034/posts/getPublicPost/123456
-
-2015-11-24 16:50:43,247 - [INFO] - from application in play-akka.actor.default-dispatcher-260 
-http://localhost:9034/posts/getPersonalPost/123456
-
-2015-11-24 16:51:42,824 - [INFO] - from application in play-akka.actor.default-dispatcher-266 
-http://localhost:9034/posts/getPublicPost/123456
-
-2015-11-24 16:53:52,642 - [INFO] - from play in play-internal-execution-context-3 
-datasource [jdbc:h2:file:data/db;DB_CLOSE_DELAY=-1] bound to JNDI as DefaultDS
-
-2015-11-24 16:53:52,643 - [INFO] - from play in play-internal-execution-context-3 
-database [default] connected at jdbc:h2:file:data/db
-
-2015-11-24 16:53:52,700 - [INFO] - from play in play-internal-execution-context-3 
-Application started (Dev)
-
-2015-11-24 16:53:52,706 - [INFO] - from application in play-akka.actor.default-dispatcher-277 
-http://localhost:9034/posts/getPersonalPost/123456
-
-2015-11-24 16:59:04,263 - [ERROR] - from application in New I/O worker #1 
-
-
-! @6o8i4gibk - Internal server error, for (GET) [/aboutus] ->
-
-play.PlayExceptions$TemplateCompilationException: Compilation error[Unmatched bracket]
-	at play.PlaySourceGenerators$$anonfun$3.apply(PlaySourceGenerators.scala:55) ~[na:na]
-	at play.PlaySourceGenerators$$anonfun$3.apply(PlaySourceGenerators.scala:30) ~[na:na]
-	at scala.Function5$$anonfun$tupled$1.apply(Function5.scala:35) ~[scala-library-2.10.3.jar:na]
-	at scala.Function5$$anonfun$tupled$1.apply(Function5.scala:34) ~[scala-library-2.10.3.jar:na]
-	at scala.Function1$$anonfun$compose$1.apply(Function1.scala:47) ~[scala-library-2.10.3.jar:na]
-	at sbt.$tilde$greater$$anonfun$$u2219$1.apply(TypeFunctions.scala:42) ~[na:na]
-	at sbt.std.Transform$$anon$4.work(System.scala:64) ~[na:na]
-	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:237) ~[na:na]
-	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:237) ~[na:na]
-	at sbt.ErrorHandling$.wideConvert(ErrorHandling.scala:18) ~[na:na]
-	at sbt.Execute.work(Execute.scala:244) ~[na:na]
-	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:237) ~[na:na]
-	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:237) ~[na:na]
-	at sbt.ConcurrentRestrictions$$anon$4$$anonfun$1.apply(ConcurrentRestrictions.scala:160) ~[na:na]
-	at sbt.CompletionService$$anon$2.call(CompletionService.scala:30) ~[na:na]
-	at java.util.concurrent.FutureTask.run(FutureTask.java:262) ~[na:1.7.0_79]
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471) ~[na:1.7.0_79]
-	at java.util.concurrent.FutureTask.run(FutureTask.java:262) ~[na:1.7.0_79]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145) [na:1.7.0_79]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615) [na:1.7.0_79]
-	at java.lang.Thread.run(Thread.java:745) [na:1.7.0_79]
-
-2015-11-24 17:00:00,865 - [ERROR] - from application in New I/O worker #1 
-
-
-! @6o8i4jo57 - Internal server error, for (GET) [/aboutus] ->
-
-play.PlayExceptions$CompilationException: Compilation error[not found: value postSetForm]
-	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14$$anonfun$apply$16.apply(PlayReloader.scala:304) ~[na:na]
-	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14$$anonfun$apply$16.apply(PlayReloader.scala:304) ~[na:na]
-	at scala.Option.map(Option.scala:145) ~[scala-library-2.10.3.jar:na]
-	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14.apply(PlayReloader.scala:304) ~[na:na]
-	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14.apply(PlayReloader.scala:298) ~[na:na]
-	at scala.Option.map(Option.scala:145) ~[scala-library-2.10.3.jar:na]
-	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:298) ~[na:na]
-	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:296) ~[na:na]
-	at scala.util.Either$LeftProjection.map(Either.scala:377) ~[scala-library-2.10.3.jar:na]
-	at play.PlayReloader$$anon$1.reload(PlayReloader.scala:296) ~[na:na]
-	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:104) ~[play_2.10-2.2.3.jar:2.2.3]
-	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:102) ~[play_2.10-2.2.3.jar:2.2.3]
-	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library-2.10.3.jar:na]
-	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library-2.10.3.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) ~[scala-library-2.10.3.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[scala-library-2.10.3.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[scala-library-2.10.3.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library-2.10.3.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library-2.10.3.jar:na]
-
-2015-11-24 17:00:39,182 - [ERROR] - from application in New I/O worker #1 
-
-
-! @6o8i4m2mp - Internal server error, for (GET) [/aboutus] ->
-
-play.PlayExceptions$CompilationException: Compilation error[not found: value postSets]
-	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14$$anonfun$apply$16.apply(PlayReloader.scala:304) ~[na:na]
-	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14$$anonfun$apply$16.apply(PlayReloader.scala:304) ~[na:na]
-	at scala.Option.map(Option.scala:145) ~[scala-library-2.10.3.jar:na]
-	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14.apply(PlayReloader.scala:304) ~[na:na]
-	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14.apply(PlayReloader.scala:298) ~[na:na]
-	at scala.Option.map(Option.scala:145) ~[scala-library-2.10.3.jar:na]
-	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:298) ~[na:na]
-	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:296) ~[na:na]
-	at scala.util.Either$LeftProjection.map(Either.scala:377) ~[scala-library-2.10.3.jar:na]
-	at play.PlayReloader$$anon$1.reload(PlayReloader.scala:296) ~[na:na]
-	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:104) ~[play_2.10-2.2.3.jar:2.2.3]
-	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:102) ~[play_2.10-2.2.3.jar:2.2.3]
-	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library-2.10.3.jar:na]
-	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library-2.10.3.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) ~[scala-library-2.10.3.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[scala-library-2.10.3.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[scala-library-2.10.3.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library-2.10.3.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library-2.10.3.jar:na]
-
-2015-11-24 17:00:57,813 - [ERROR] - from application in New I/O worker #1 
-
-
-! @6o8i4n4bf - Internal server error, for (GET) [/aboutus] ->
-
-play.PlayExceptions$CompilationException: Compilation error[not found: value postSetForm]
-	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14$$anonfun$apply$16.apply(PlayReloader.scala:304) ~[na:na]
-	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14$$anonfun$apply$16.apply(PlayReloader.scala:304) ~[na:na]
-	at scala.Option.map(Option.scala:145) ~[scala-library-2.10.3.jar:na]
-	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14.apply(PlayReloader.scala:304) ~[na:na]
-	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14.apply(PlayReloader.scala:298) ~[na:na]
-	at scala.Option.map(Option.scala:145) ~[scala-library-2.10.3.jar:na]
-	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:298) ~[na:na]
-	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:296) ~[na:na]
-	at scala.util.Either$LeftProjection.map(Either.scala:377) ~[scala-library-2.10.3.jar:na]
-	at play.PlayReloader$$anon$1.reload(PlayReloader.scala:296) ~[na:na]
-	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:104) ~[play_2.10-2.2.3.jar:2.2.3]
-	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:102) ~[play_2.10-2.2.3.jar:2.2.3]
-	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library-2.10.3.jar:na]
-	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library-2.10.3.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) ~[scala-library-2.10.3.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[scala-library-2.10.3.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[scala-library-2.10.3.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library-2.10.3.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library-2.10.3.jar:na]
-
-2015-11-24 17:05:07,167 - [INFO] - from play in play-internal-execution-context-3 
-datasource [jdbc:h2:file:data/db;DB_CLOSE_DELAY=-1] bound to JNDI as DefaultDS
-
-2015-11-24 17:05:07,168 - [INFO] - from play in play-internal-execution-context-3 
-database [default] connected at jdbc:h2:file:data/db
-
-2015-11-24 17:05:07,217 - [INFO] - from play in play-internal-execution-context-3 
-Application started (Dev)
-
-2015-11-24 17:05:07,222 - [INFO] - from application in play-akka.actor.default-dispatcher-291 
-http://localhost:9034/posts/getPersonalPost/123456
-
-2015-11-24 17:05:07,548 - [INFO] - from play in play-internal-execution-context-3 
-datasource [jdbc:h2:file:data/db;DB_CLOSE_DELAY=-1] bound to JNDI as DefaultDS
-
-2015-11-24 17:05:07,549 - [INFO] - from play in play-internal-execution-context-3 
-database [default] connected at jdbc:h2:file:data/db
-
-2015-11-24 17:05:07,598 - [INFO] - from play in play-internal-execution-context-3 
-Application started (Dev)
-
-2015-11-24 17:06:04,580 - [INFO] - from application in play-akka.actor.default-dispatcher-297 
-http://localhost:9034/posts/getPersonalPost/123456
-
-2015-11-24 17:06:11,502 - [DEBUG] - from application in play-akka.actor.default-dispatcher-302 
-31
-
-2015-11-24 17:06:11,503 - [INFO] - from application in play-akka.actor.default-dispatcher-302 
-http://localhost:9034/posts/delete/31
-
-2015-11-24 17:06:11,546 - [INFO] - from application in play-akka.actor.default-dispatcher-302 
-http://localhost:9034/posts/getPersonalPost/123456
-
-2015-11-24 17:06:16,339 - [INFO] - from application in play-akka.actor.default-dispatcher-303 
-http://localhost:9034/posts/getPersonalPost/123456
-
-2015-11-24 17:08:22,634 - [INFO] - from play in play-internal-execution-context-3 
-datasource [jdbc:h2:file:data/db;DB_CLOSE_DELAY=-1] bound to JNDI as DefaultDS
-
-2015-11-24 17:08:22,636 - [INFO] - from play in play-internal-execution-context-3 
-database [default] connected at jdbc:h2:file:data/db
-
-2015-11-24 17:08:22,692 - [INFO] - from play in play-internal-execution-context-3 
-Application started (Dev)
-
-2015-11-24 17:08:22,698 - [INFO] - from application in play-akka.actor.default-dispatcher-302 
-http://localhost:9034/posts/getPersonalPost/123456
-
-2015-11-24 17:08:24,351 - [INFO] - from application in play-akka.actor.default-dispatcher-311 
-http://localhost:9034/posts/getPublicPost/123456
-
-2015-11-24 17:08:25,984 - [INFO] - from application in play-akka.actor.default-dispatcher-316 
-http://localhost:9034/posts/getPersonalPost/123456
-
-2015-11-24 17:09:27,694 - [INFO] - from play in play-internal-execution-context-3 
-datasource [jdbc:h2:file:data/db;DB_CLOSE_DELAY=-1] bound to JNDI as DefaultDS
-
-2015-11-24 17:09:27,697 - [INFO] - from play in play-internal-execution-context-3 
-database [default] connected at jdbc:h2:file:data/db
-
-2015-11-24 17:09:27,749 - [INFO] - from play in play-internal-execution-context-3 
-Application started (Dev)
-
-2015-11-24 17:09:27,754 - [INFO] - from application in play-akka.actor.default-dispatcher-311 
-http://localhost:9034/posts/getPersonalPost/123456
-
-2015-11-24 17:09:54,639 - [INFO] - from application in play-akka.actor.default-dispatcher-317 
-http://localhost:9034/posts/getPersonalPost/123456
-
-2015-11-24 17:12:21,563 - [INFO] - from application in play-akka.actor.default-dispatcher-319 
-http://localhost:9034/posts/getPublicPost/123456
-
-2015-11-24 17:21:23,117 - [INFO] - from play in play-internal-execution-context-3 
-datasource [jdbc:h2:file:data/db;DB_CLOSE_DELAY=-1] bound to JNDI as DefaultDS
-
-2015-11-24 17:21:23,119 - [INFO] - from play in play-internal-execution-context-3 
-database [default] connected at jdbc:h2:file:data/db
-
-2015-11-24 17:21:23,173 - [INFO] - from play in play-internal-execution-context-3 
-Application started (Dev)
-
-2015-11-24 17:21:23,178 - [INFO] - from application in play-akka.actor.default-dispatcher-329 
-http://localhost:9034/posts/getPersonalPost/123456
-
-2015-11-24 17:23:14,325 - [INFO] - from play in play-internal-execution-context-3 
-datasource [jdbc:h2:file:data/db;DB_CLOSE_DELAY=-1] bound to JNDI as DefaultDS
-
-2015-11-24 17:23:14,326 - [INFO] - from play in play-internal-execution-context-3 
-database [default] connected at jdbc:h2:file:data/db
-
-2015-11-24 17:23:14,374 - [INFO] - from play in play-internal-execution-context-3 
-Application started (Dev)
-
-2015-11-24 17:23:14,379 - [INFO] - from application in play-akka.actor.default-dispatcher-329 
-http://localhost:9034/posts/getPersonalPost/123456
-
-2015-11-24 17:23:34,898 - [INFO] - from play in play-internal-execution-context-3 
-datasource [jdbc:h2:file:data/db;DB_CLOSE_DELAY=-1] bound to JNDI as DefaultDS
-
-2015-11-24 17:23:34,899 - [INFO] - from play in play-internal-execution-context-3 
-database [default] connected at jdbc:h2:file:data/db
-
-2015-11-24 17:23:34,951 - [INFO] - from play in play-internal-execution-context-3 
-Application started (Dev)
-
-2015-11-24 17:23:34,956 - [INFO] - from application in play-akka.actor.default-dispatcher-346 
-http://localhost:9034/posts/getPersonalPost/123456
-
-2015-11-24 17:24:03,972 - [INFO] - from play in play-internal-execution-context-3 
-datasource [jdbc:h2:file:data/db;DB_CLOSE_DELAY=-1] bound to JNDI as DefaultDS
-
-2015-11-24 17:24:03,974 - [INFO] - from play in play-internal-execution-context-3 
-database [default] connected at jdbc:h2:file:data/db
-
-2015-11-24 17:24:04,020 - [INFO] - from play in play-internal-execution-context-3 
-Application started (Dev)
-
-2015-11-24 17:24:04,026 - [INFO] - from application in play-akka.actor.default-dispatcher-346 
-http://localhost:9034/posts/getPersonalPost/123456
-
-2015-11-24 17:25:11,732 - [INFO] - from play in play-internal-execution-context-3 
-datasource [jdbc:h2:file:data/db;DB_CLOSE_DELAY=-1] bound to JNDI as DefaultDS
-
-2015-11-24 17:25:11,734 - [INFO] - from play in play-internal-execution-context-3 
-database [default] connected at jdbc:h2:file:data/db
-
-2015-11-24 17:25:11,781 - [INFO] - from play in play-internal-execution-context-3 
-Application started (Dev)
-
-2015-11-24 17:25:11,787 - [INFO] - from application in play-akka.actor.default-dispatcher-355 
-http://localhost:9034/posts/getPersonalPost/123456
-
-2015-11-24 17:26:52,724 - [DEBUG] - from application in play-akka.actor.default-dispatcher-357 
-30
-
-2015-11-24 17:26:52,725 - [INFO] - from application in play-akka.actor.default-dispatcher-357 
-http://localhost:9034/posts/delete/30
-
-2015-11-24 17:26:52,747 - [INFO] - from application in play-akka.actor.default-dispatcher-357 
-http://localhost:9034/posts/getPersonalPost/123456
-
-2015-11-24 17:26:55,686 - [INFO] - from application in play-akka.actor.default-dispatcher-368 
-http://localhost:9034/posts/getPersonalPost/123456
-
-2015-11-24 17:47:12,268 - [INFO] - from application in play-akka.actor.default-dispatcher-367 
-http://localhost:9034/posts/getPersonalPost/123456
-
-2015-11-24 17:52:34,465 - [INFO] - from play in play-internal-execution-context-3 
-datasource [jdbc:h2:file:data/db;DB_CLOSE_DELAY=-1] bound to JNDI as DefaultDS
-
-2015-11-24 17:52:34,466 - [INFO] - from play in play-internal-execution-context-3 
-database [default] connected at jdbc:h2:file:data/db
-
-2015-11-24 17:52:34,529 - [INFO] - from play in play-internal-execution-context-3 
-Application started (Dev)
-
-2015-11-24 17:52:39,324 - [INFO] - from application in play-akka.actor.default-dispatcher-377 
-http://localhost:9034/posts/getPublicPost/123456
+2015-12-11 15:51:31,186 - [INFO] - from application in play-akka.actor.default-dispatcher-263 
+http://localhost:9034/posts/getPublicPost/7/1
 

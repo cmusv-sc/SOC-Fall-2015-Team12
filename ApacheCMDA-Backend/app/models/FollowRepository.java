@@ -31,4 +31,16 @@ public interface FollowRepository extends CrudRepository<Follow, Long> {
 
     @Query(value = "select l.* from Follow l where l.follower=?1", nativeQuery = true)
     Set<Follow> findAllByFollower(Long id);
+
+    @Query(value = "select l.* from Follow l where l.follower=?1 and l.followee=?2", nativeQuery = true)
+    List<Follow> check(Long id, Long id2);
+
+    @Query(value = "select followee from (select followee, count(*) as cnt from Follow group by followee order by cnt desc limit ?1) a", nativeQuery = true)
+    List<Object> getTopFollwee(Long cnt);
+
+    @Query(value = "select l.* from Follow l where l.followee=?1", nativeQuery = true)
+    List<Follow> getFollowerById(Long id);
+
+    @Query(value = "select count(*) from Follow where followee=?1", nativeQuery = true)
+    Long countFollwer(String id);
 }

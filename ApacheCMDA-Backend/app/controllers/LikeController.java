@@ -15,7 +15,9 @@
  * limitations under the License.
  */
 package controllers;
-import models.UserLikeRepository;
+import com.google.gson.JsonArray;
+import com.google.gson.JsonObject;
+import models.*;
 import play.mvc.*;
 import javax.inject.Inject;
 import javax.inject.Named;
@@ -29,6 +31,8 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 
 import models.UserLike;
+import models.Post;
+import java.util.List;
 import play.mvc.*;
 import javax.inject.Inject;
 import javax.inject.Named;
@@ -43,11 +47,13 @@ import com.google.gson.Gson;
 @Named @Singleton public class LikeController extends Controller {
 
     private final UserLikeRepository userLikeRepository;
+    private final PostRepository postRepository;
 
     // We are using constructor injection to receive a repository to support our
     // desire for immutability.
-    @Inject public LikeController(final UserLikeRepository userLikeRepository) {
+    @Inject public LikeController(final UserLikeRepository userLikeRepository, final PostRepository postRepository) {
         this.userLikeRepository = userLikeRepository;
+        this.postRepository = postRepository;
     }
 
     public Result addLike() {
@@ -79,6 +85,23 @@ import com.google.gson.Gson;
             return badRequest("Like not saved:s " + userId);
         }
     }
+
+    public Result getNumOfLikes(Long postId) {
+        if(postId == null){
+            System.out.println("User id is null!");
+            return badRequest("User id is null!");
+        }
+
+        Post posts = postRepository.findById(postId);
+        if (posts == null) {
+            System.out.println("Post not exist!");
+            return badRequest("Post not exist!");
+        }
+
+        List<UserLike> likes = userLikeRepository.findLikeWithPostId(postId);
+        return created(new Gson().toJson((likes.size())));
+    }
+
 
 
 }

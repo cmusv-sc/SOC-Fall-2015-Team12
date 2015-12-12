@@ -57,94 +57,80 @@ object header extends BaseScalaTemplate[play.api.templates.HtmlFormat.Appendable
         _display_ {
 
 Seq[Any](format.raw/*18.4*/("""
-	<div class="navbar navbar-default navbar-fixed-top" role="navigation">
-		<div class="container">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse"
-					data-target=".navbar-collapse">
-					<span class="sr-only">Toggle navigation</span> <span
-						class="icon-bar"></span> <span class="icon-bar"></span> <span
-						class="icon-bar"></span>
-				</button>
-				<a class="navbar-brand" style="padding-bottom: 0;" href="/climate"><img
-					src='"""),_display_(Seq[Any](/*29.12*/routes/*29.18*/.Assets.at("images/NASA_JPL_logo.png"))),format.raw/*29.56*/("""' style="height: 40px; width: 220px;">&nbsp&nbsp<img
-					src='"""),_display_(Seq[Any](/*30.12*/routes/*30.18*/.Assets.at("images/logo.png"))),format.raw/*30.47*/("""' style="height: 15px; width: 250px;"></a>
-			</div>
-			<div class="navbar-collapse collapse" style="height:">
-				<ul class="nav navbar-nav navbar-right">
-					
-					<li><a href=""""),_display_(Seq[Any](/*35.20*/routes/*35.26*/.HomePageController.homepage())),format.raw/*35.56*/("""">Home Page</a></li>
+<body>
+	<div class="navbar navbar-main navbar-primary navbar-fixed-top" role="navigation">
 
-					<li class="dropdown"><a href="#"
-						class="dropdown-toggle" data-toggle="dropdown">Dataset<b
-							class="caret"></b></a>
-						<ul class="dropdown-menu">
-						
-						<li><a href=""""),_display_(Seq[Any](/*42.21*/routes/*42.27*/.DatasetController.datasetList())),format.raw/*42.59*/("""">Dataset List</a></li>
-						<li><a href=""""),_display_(Seq[Any](/*43.21*/routes/*43.27*/.DatasetController.searchDataset())),format.raw/*43.61*/("""">Search dataset</a></li>
-						</ul>
-					</li>
-					"""),format.raw/*46.42*/("""
-						"""),format.raw/*47.67*/("""
-							"""),format.raw/*48.34*/("""
-						"""),format.raw/*49.37*/("""
-							"""),format.raw/*50.101*/("""
-							"""),format.raw/*51.106*/("""
-						"""),format.raw/*52.16*/("""
-					"""),format.raw/*53.15*/("""
-					
-					<li class="dropdown"><a href="#"
-						class="dropdown-toggle" data-toggle="dropdown">About<b
-							class="caret"></b></a>
-						<ul class="dropdown-menu">
-						<li><a href=""""),_display_(Seq[Any](/*59.21*/routes/*59.27*/.ClimateServiceController.home())),format.raw/*59.59*/("""">Home</a></li>
-						<li><a href=""""),_display_(Seq[Any](/*60.21*/routes/*60.27*/.AboutusController.aboutUs())),format.raw/*60.55*/("""">About Us</a></li>
-						<li><a href=""""),_display_(Seq[Any](/*61.21*/routes/*61.27*/.AboutusController.aboutProject())),format.raw/*61.60*/("""">About project</a></li>
-						</ul>
-					</li>
-
-					<li class="dropdown"><a href="#"
-											class="dropdown-toggle" data-toggle="dropdown">Profile<b
-							class="caret"></b></a>
-						<ul class="dropdown-menu">
-							<li><a href=""""),_display_(Seq[Any](/*69.22*/routes/*69.28*/.MainPageController.mainpage())),format.raw/*69.58*/("""">Main Page</a></li>
-							<li><a href=""""),_display_(Seq[Any](/*70.22*/routes/*70.28*/.AboutusController.aboutUs())),format.raw/*70.56*/("""">Log out</a></li>
-						</ul>
-					</li>
-					
-					"""),_display_(Seq[Any](/*74.7*/if(!session.get("email"))/*74.32*/ {_display_(Seq[Any](format.raw/*74.34*/("""
-						<form class="navbar-form navbar-right" action=""""),_display_(Seq[Any](/*75.55*/routes/*75.61*/.Application.login())),format.raw/*75.81*/("""">
-							<button type="submit" class="btn btn-success">Log in</button>
-						</form>
-					""")))}/*78.8*/else/*78.13*/{_display_(Seq[Any](format.raw/*78.14*/("""
-						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown">My Services<b class="caret"></b></a>
-							<ul class="dropdown-menu">
-								<li><a href="#">My climate services</a></li>
-								<li><a href="#">My datasets</a></li>
-							</ul>
-						</li>
-						
-						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown">"""),_display_(Seq[Any](/*88.68*/session/*88.75*/.get("email"))),format.raw/*88.88*/("""<b class="caret"></b></a>
-							<ul class="dropdown-menu">
-								<li><a href=""""),_display_(Seq[Any](/*90.23*/routes/*90.29*/.Application.logout())),format.raw/*90.50*/("""">Log out</a></li>
-							</ul>
-						</li>
-					""")))})),format.raw/*93.7*/("""	
-										
-					"""),_display_(Seq[Any](/*95.7*/if(false)/*95.16*/ {_display_(Seq[Any](format.raw/*95.18*/("""
-						<form class="navbar-form navbar-right" action="#">
-							<button type="submit" class="btn btn-success">Admin Console</button>
-						</form>
-					""")))})),format.raw/*99.7*/("""
-					
-				</ul>
-			</div>
-			<!--/.nav-collapse -->
+		<div class="navbar-header">
+			<a href="#sidebar-menu" data-effect="st-effect-1" data-toggle="sidebar-menu" class="toggle pull-left visible-xs"><i class="fa fa-ellipsis-v"></i></a>
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-nav">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a href="#sidebar-chat" data-toggle="sidebar-menu" data-effect="st-effect-1" class="toggle pull-right visible-xs"><i class="fa fa-comments"></i></a>
+			<a class="navbar-brand" href="index.html">Social Network</a>
 		</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="navbar-collapse collapse" style="height:">
+			<ul class="nav navbar-nav navbar-right">
+					<!--<h3 class="pull-left" >Social Network&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</h3>-->
+				<li><a href=""""),_display_(Seq[Any](/*38.19*/routes/*38.25*/.HomePageController.homepage())),format.raw/*38.55*/("""">Public Page</a></li>
+				<li><a href=""""),_display_(Seq[Any](/*39.19*/routes/*39.25*/.MainPageController.mainpage())),format.raw/*39.55*/("""">Private Page</a></li>
+
+				<li class="dropdown"><a href="#"
+				class="dropdown-toggle" data-toggle="dropdown">About<b
+				class="caret"></b></a>
+					<ul class="dropdown-menu">
+							<!--<li><a href=""""),_display_(Seq[Any](/*45.26*/routes/*45.32*/.ClimateServiceController.home())),format.raw/*45.64*/("""">Home</a></li>-->
+						<li><a href=""""),_display_(Seq[Any](/*46.21*/routes/*46.27*/.AboutusController.aboutUs())),format.raw/*46.55*/("""">About Us</a></li>
+					<!--<li><a href=""""),_display_(Seq[Any](/*47.24*/routes/*47.30*/.AboutusController.aboutProject())),format.raw/*47.63*/("""">About project</a></li>-->
+					</ul>
+				</li>
+
+				<!--<li class="dropdown"><a href="#"-->
+				<!--class="dropdown-toggle" data-toggle="dropdown">Profile<b-->
+				<!--class="caret"></b></a>-->
+				<!--<ul class="dropdown-menu">-->
+				<!--&lt;!&ndash;<li><a href=""""),_display_(Seq[Any](/*55.35*/routes/*55.41*/.MainPageController.mainpage())),format.raw/*55.71*/("""">Main Page</a></li>&ndash;&gt;-->
+			<!--<li><a href=""""),_display_(Seq[Any](/*56.22*/routes/*56.28*/.AboutusController.aboutUs())),format.raw/*56.56*/("""">Log out</a></li>-->
+			<!--</ul>-->
+			<!--</li>-->
+
+			"""),_display_(Seq[Any](/*60.5*/if(!session.get("email"))/*60.30*/ {_display_(Seq[Any](format.raw/*60.32*/("""
+				<form class="navbar-form navbar-right" action=""""),_display_(Seq[Any](/*61.53*/routes/*61.59*/.Application.login())),format.raw/*61.79*/("""">
+					<button type="submit" class="btn btn-success">Log in</button>
+				</form>
+			""")))}/*64.6*/else/*64.11*/{_display_(Seq[Any](format.raw/*64.12*/("""
+					<!--<li class="dropdown">-->
+					<!--<a href="#" class="dropdown-toggle" data-toggle="dropdown">My Services<b class="caret"></b></a>-->
+					<!--<ul class="dropdown-menu">-->
+					<!--<li><a href="#">My climate services</a></li>-->
+					<!--<li><a href="#">My datasets</a></li>-->
+					<!--</ul>-->
+					<!--</li>-->
+
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Welcome. """),_display_(Seq[Any](/*74.75*/session/*74.82*/.get("userName"))),format.raw/*74.98*/("""<b class="caret"></b></a>
+					<ul class="dropdown-menu">
+						<li><a href=""""),_display_(Seq[Any](/*76.21*/routes/*76.27*/.Application.logout())),format.raw/*76.48*/("""">Log out</a></li>
+					</ul>
+				</li>
+			""")))})),format.raw/*79.5*/("""
+
+			"""),_display_(Seq[Any](/*81.5*/if(false)/*81.14*/ {_display_(Seq[Any](format.raw/*81.16*/("""
+				<form class="navbar-form navbar-right" action="#">
+					<button type="submit" class="btn btn-success">Admin Console</button>
+				</form>
+			""")))})),format.raw/*85.5*/("""
+
+			</ul>
+		</div>
+			<!--/.nav-collapse -->
 	</div>
-"""))}
+</body>
+<!-- /.navbar-collapse -->"""))}
     }
     
     def render(): play.api.templates.HtmlFormat.Appendable = apply()
@@ -156,11 +142,11 @@ Seq[Any](format.raw/*18.4*/("""
 }
                 /*
                     -- GENERATED --
-                    DATE: Fri Nov 20 11:55:18 PST 2015
-                    SOURCE: /Users/K/SOC-Fall-2015-Team12/ApacheCMDA-Frontend/app/views/climate/header.scala.html
-                    HASH: 06fe06442e7aaf1e23f06e0b3e805c6fa8462d75
-                    MATRIX: 3171->1205|3267->1207|3799->1703|3814->1709|3874->1747|3974->1811|3989->1817|4040->1846|4257->2027|4272->2033|4324->2063|4573->2276|4588->2282|4642->2314|4722->2358|4737->2364|4793->2398|4875->2488|4910->2555|4946->2589|4981->2626|5018->2727|5055->2833|5090->2849|5124->2864|5349->3053|5364->3059|5418->3091|5490->3127|5505->3133|5555->3161|5631->3201|5646->3207|5701->3240|5976->3479|5991->3485|6043->3515|6121->3557|6136->3563|6186->3591|6275->3645|6309->3670|6349->3672|6440->3727|6455->3733|6497->3753|6607->3846|6620->3851|6659->3852|7086->4243|7102->4250|7137->4263|7255->4345|7270->4351|7313->4372|7394->4422|7448->4441|7466->4450|7506->4452|7691->4606
-                    LINES: 56->18|59->18|70->29|70->29|70->29|71->30|71->30|71->30|76->35|76->35|76->35|83->42|83->42|83->42|84->43|84->43|84->43|87->46|88->47|89->48|90->49|91->50|92->51|93->52|94->53|100->59|100->59|100->59|101->60|101->60|101->60|102->61|102->61|102->61|110->69|110->69|110->69|111->70|111->70|111->70|115->74|115->74|115->74|116->75|116->75|116->75|119->78|119->78|119->78|129->88|129->88|129->88|131->90|131->90|131->90|134->93|136->95|136->95|136->95|140->99
+                    DATE: Fri Dec 11 14:49:59 PST 2015
+                    SOURCE: /Users/K/SOC-Team12-Final-Version/SOC-ApacheCMDA-Frontend/app/views/climate/header.scala.html
+                    HASH: fb464770f1fe849c7d3175e19da31447dbf84624
+                    MATRIX: 3171->1204|3267->1206|4376->2279|4391->2285|4443->2315|4520->2356|4535->2362|4587->2392|4828->2597|4843->2603|4897->2635|4972->2674|4987->2680|5037->2708|5116->2751|5131->2757|5186->2790|5490->3058|5505->3064|5557->3094|5649->3150|5664->3156|5714->3184|5808->3243|5842->3268|5882->3270|5971->3323|5986->3329|6028->3349|6132->3436|6145->3441|6184->3442|6645->3867|6661->3874|6699->3890|6813->3968|6828->3974|6871->3995|6946->4039|6987->4045|7005->4054|7045->4056|7222->4202
+                    LINES: 56->18|59->18|79->38|79->38|79->38|80->39|80->39|80->39|86->45|86->45|86->45|87->46|87->46|87->46|88->47|88->47|88->47|96->55|96->55|96->55|97->56|97->56|97->56|101->60|101->60|101->60|102->61|102->61|102->61|105->64|105->64|105->64|115->74|115->74|115->74|117->76|117->76|117->76|120->79|122->81|122->81|122->81|126->85
                     -- GENERATED --
                 */
             

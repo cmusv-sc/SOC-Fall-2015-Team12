@@ -18,87 +18,456 @@
 @(postSets: List[PostSet], postSetForm: play.data.Form[PostSet])
 
 @import helper._
-
 @scripts = {
-<script src='@routes.Assets.at("javascripts/edit_button.js")'></script>
-<script type="text/javascript">
+    <script src='@routes.Assets.at("javascripts/edit_button.js")'></script>
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+    <script type="text/javascript">
+
+		var geocoder;
+		window.onload = function() {
+
+			if (navigator.geolocation) {
+				navigator.geolocation.getCurrentPosition(showPosition);
+			} else {
+				x.innerHTML = "Geolocation is not supported by this browser.";
+			}
+
+			function showPosition(position) {
+//			x.innerHTML = "Latitude: " + position.coords.latitude +
+//					"<br>Longitude: " + position.coords.longitude;
+				var lat = position.coords.latitude;
+				var lng = position.coords.longitude;
+				document.forms[1].latitude.value = lat;
+				document.forms[1].longitude.value = lng;
+				codeLatLng(lat, lng)
+			}
+
+			function codeLatLng(lat, lng) {
+
+				geocoder = new google.maps.Geocoder();
+				var latlng = new google.maps.LatLng(lat, lng);
+				geocoder.geocode({'latLng': latlng}, function(results, status) {
+					if (status == google.maps.GeocoderStatus.OK) {
+						console.log(results);
+						if (results[1]) {
+							//formatted address
+//						alert(results[0].formatted_address);
+							//find country name
+							for (var i=0; i<results[0].address_components.length; i++) {
+								for (var b=0;b<results[0].address_components[i].types.length;b++) {
+
+									//there are different types that might hold a city admin_area_lvl_1 usually does in come cases looking for sublocality type will be more appropriate
+									if (results[0].address_components[i].types[b] == "locality") {
+										//this is the object you are looking for
+										city= results[0].address_components[i];
+										break;
+									}
+									if (results[0].address_components[i].types[b] == "administrative_area_level_1") {
+										//this is the object you are looking for
+										state= results[0].address_components[i];
+										break;
+									}
+									if (results[0].address_components[i].types[b] == "postal_code") {
+										//this is the object you are looking for
+										postCode= results[0].address_components[i];
+										break;
+									}
+
+								}
+							}
+							//city data
+//						alert(city.long_name + ", " + state.short_name);
+							document.forms[1].address.value = postCode.long_name + ", " + city.long_name + ", " + state.short_name;
+						} else {
+							alert("No results found");
+						}
+					} else {
+						alert("Geocoder failed due to: " + status);
+					}
+				});
+			}
+
+//		document.forms[0].locs.value = position.coords.latitude;
+		}
+
 	$(document).ready(function(){
 		//alert($("#url").text());
 	});
-</script>
+	</script>
 }
 
-@main("Postset List", scripts) {
+@main("Private Page", scripts) {
+	@flash_message()
+	<!--<div class="navbar navbar-main navbar-primary navbar-fixed-top" role="navigation">-->
+		<!--<div class="navbar-header">-->
+			<!--<a href="#sidebar-menu" data-effect="st-effect-1" data-toggle="sidebar-menu" class="toggle pull-left visible-xs"><i class="fa fa-ellipsis-v"></i></a>-->
+			<!--<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-nav">-->
+				<!--<span class="sr-only">Toggle navigation</span>-->
+				<!--<span class="icon-bar"></span>-->
+				<!--<span class="icon-bar"></span>-->
+				<!--<span class="icon-bar"></span>-->
+			<!--</button>-->
+			<!--<a href="#sidebar-chat" data-toggle="sidebar-menu" data-effect="st-effect-1" class="toggle pull-right visible-xs"><i class="fa fa-comments"></i></a>-->
+			<!--<a class="navbar-brand" href="index.html">Social Network</a>-->
+		<!--</div>-->
 
-@flash_message()
+			<!-- Collect the nav links, forms, and other content for toggling -->
+		<!--<div class="navbar-collapse collapse" style="height:">-->
+			<!--<ul class="nav navbar-nav navbar-right">-->
+			<!--@if(!session.get("email")) {-->
+				<!--<form class="navbar-form navbar-right" action="@routes.Application.login()">-->
+					<!--<button type="submit" class="btn btn-success">Log in</button>-->
+				<!--</form>-->
+			<!--} else {-->
 
-@helper.form(action = routes.MainPageController.createNewPost) {
-<div class="container"
-	 style="background-image: url('@routes.Assets.at("images/login-background.jpg")'); height: 30vh; background-size: 100%; ">
-<div
-		class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
-	<form class="form-signin">
-		<h1 class="form-signin-heading" align="left">Create Posts</h1>
+				<!--<li class="dropdown">-->
+					<!--<a href="#" class="dropdown-toggle" data-toggle="dropdown">Welcome. UserID: @session.get("userId"), Email: @session.get("email")<b class="caret"></b></a>-->
+					<!--<ul class="dropdown-menu">-->
+						<!--<li><a href="@routes.Application.logout()">Log out</a></li>-->
+					<!--</ul>-->
+				<!--</li>-->
+			<!--}-->
 
-		<div class="form-group">
-			<input type="postText" name="postText" id="postText" class="form-control"
-				   placeholder="Please type in a new post" required=""
-				   value='@postSetForm("postText").value'>
-		</div>
+			<!--@if(false) {-->
+				<!--<form class="navbar-form navbar-right" action="#">-->
+					<!--<button type="submit" class="btn btn-success">Admin Console</button>-->
+				<!--</form>-->
+			<!--}-->
 
-		<div class="form-group" id="msg1" style="color: red;"></div>
+			<!--</ul>-->
+		<!--</div>-->
+			<!--/.nav-collapse -->
+	<!--</div>-->
+	<html class="st-layout ls-top-navbar ls-bottom-footer show-sidebar sidebar-l2" lang="en">
 
-		<div class="row">
-			<div class="col-xs-12 col-sm-6 col-md-6">
-				<div class="form-group">
-					<input type="postStatus" name="postStatus" id="postStatus"
-						   class="form-control" placeholder="0 for Public / 1 for Private" required=""
-						   value='@postSetForm("postStatus").value'>
+		<body>
+				<!-- Sidebar component with st-effect-1 (set on the toggle button within the navbar) -->
+			<div class="sidebar left sidebar-size-2 sidebar-offset-0 sidebar-visible-desktop sidebar-visible-mobile sidebar-skin-dark" id="sidebar-menu">
+				<div data-scrollable>
+					<div class="sidebar-block">
+						<div class="profile">
+							<img src='@routes.Assets.at("images/people/110/guy-5.jpg")' alt="people" class="img-circle" />
+							<h4>@session.get("firstName")</h4>
+						</div>
+					</div>
+					<div class="category">About</div>
+					<div class="sidebar-block">
+						<ul class="list-about">
+							<li><i class="fa fa-map-marker"></i> @session.get("affiliation")</li>
+							<li><i class="fa fa-link"></i> <a href="#">@session.get("email")</a></li>
+							<li><i class="fa fa-twitter"></i> <a href="#">@session.get("researchInterests")</a></li>
+						</ul>
+					</div>
 				</div>
 			</div>
-		</div>
 
-		<div class="actions row">
-			<div class="col-xs-12 col-sm-6 col-md-6">
-				<input type="submit" class="btn btn-primary btn-block"
-					   value="Add" id="add">
-			</div>
-		</div>
-	</form>
-</div>
-</div>
-}
+			<div class="st-pusher" id="content">
 
-<div>
-<h1>Personal Posts</h1>
-	@for(postSet <- postSets){
+					<!-- sidebar effects INSIDE of st-pusher: -->
+					<!-- st-effect-3, st-effect-6, st-effect-7, st-effect-8, st-effect-14 -->
 
-		<h3><font size="=1">Post</font> </h3>
-		<td><span class="@postSet.getPostId() editable" data-name='text'>
-				@postSet.getPostText() </span></td><br>
-		<td><font size="2">Post Status: @postSet.getPostStatus()</font></td>
-		<br>
-		<td><font size="2">Post Time: @postSet.getPostTime()</font></td>
-		<br>
+					<!-- extra div for emulating position:fixed of the menu -->
+				<div class="st-content-inner">
 
-	<td class="operation">
-		<input type="button" class="edit-btn btn btn-primary" value="Edit"
-		   data-pk='@postSet.getPostId()'
-			   data-url='@routes.MainPageController.editPost()'
-			>
-	</td>
+					<nav class="navbar navbar-subnav navbar-static-top margin-bottom-none" role="navigation">
+						<div class="container-fluid">
+								<!-- Brand and toggle get grouped for better mobile display -->
+							<div class="navbar-header">
+								<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#subnav">
+									<span class="sr-only">Toggle navigation</span>
+									<span class="fa fa-ellipsis-h"></span>
+								</button>
+							</div>
 
-	@form(routes.MainPageController.deletePost){
-	<input
-			name="idHolder" class="hidden" type="hidden"
-			value="@postSet.getPostId()">
-	<input
-			type="submit" class="btn btn-danger delete-btn span2" value="Delete"
-			onclick="return confirm('Are you sure you want to delete this post?')">
-	}
+								<!-- Collect the nav links, forms, and other content for toggling -->
+							<div class="collapse navbar-collapse" id="subnav">
+								<ul class="nav navbar-nav ">
+									<li><a href="@routes.HomePageController.homepage()"><i class="fa fa-fw icon-ship-wheel"></i> Public Page</a></li>
+									<li class="active"><a href="@routes.MainPageController.mainpage()"><i class="fa fa-fw icon-user-1"></i> Personal Page</a></li>
+									<li><a href="@routes.SearchController.searchUser()"><i class="fa fa-fw fa-users"></i> Friends</a></li>
+									<li><a href="@routes.HomePageController.topPosts()"><i class="fa fa-fw fa-users"></i> My Top 10</a></li>
+								</ul>
+							</div>
+								<!-- /.navbar-collapse -->
+						</div>
 
-	}
-</div>
+					</nav>
+					<div class="cover overlay cover-image-full height-300-lg">
 
+						<img src='@routes.Assets.at("images/profile-cover.jpg")' alt="cover" />
+						<div class="overlay overlay-full">
+							<div class="v-top">
+								<a href="#" class="btn btn-cover"><i class="fa fa-pencil"></i></a>
+							</div>
+						</div>
+					</div>
 
+					<div class="container-fluid">
+						@helper.form(action = routes.MainPageController.searchPostsClick) {
+							<div class="input-group">
+								<span class="input-group-btn">
+									<input type="submit" class="btn btn-primary btn-block"
+									value="Search" id="submit">
+								</span>
+								<div class="col-xs-12 col-sm-6 col-md-6">
+									<input type="keyword" name="keyword" id="keyword" class="form-control"
+									placeholder="Please type in a keyword" required=""
+									value='@postSetForm("keyword").value'>
+								</div>
+							</div>
+						}
+						@helper.form(action = routes.MainPageController.createNewPost) {
+							<div class="timeline row" data-toggle="isotope">
+								<div class="col-xs-12 col-md-6 col-lg-10 item">
+								<div class="timeline-block">
+									<div class="panel panel-default share clearfix-xs">
+										<div class="panel-heading panel-heading-gray title">
+											What&acute;s new
+										</div>
+										<div class="panel-body">
+											<textarea type="postText" name="postText" class="form-control share-text" rows="5" placeholder="New Post here 1..."
+											value='@postSetForm("postText").value'></textarea>
+										</div>
+										<div class="panel-footer share-buttons">
+											<div class="input-group-btn">
+												<button type="submit" class="btn btn-primary" value="Post" id="add" href="#">
+													<i class="fa fa-envelope"></i> Send
+												</button>
+												<!--<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">-->
+													<!--Status<span class="caret"></span>-->
+												<!--</button>-->
+
+												<!--<ul class="dropdown-menu">-->
+													<!--<li><a href="@postSetForm("postStatus").value" value="1">private</a></li>-->
+													<!--<li><a href="@postSetForm("postStatus").value" value="0">public</a></li>-->
+												<!--</ul>-->
+												<label class="btn btn-sm">
+													<input class="btn btn-sm" type="radio" name="postStatus" checked="checked" value="0" /> Public
+												</label>
+
+												<label class="btn btn-sm">
+													<input class="btn btn-sm" type="radio" name="postStatus" value="1" /> Private
+												</label>
+
+												<a href="#"><i class="fa fa-map-marker"></i></a>
+												<a href="#"><i class="fa fa-photo"></i></a>
+												<a href="#"><i class="fa fa-video-camera"></i></a>
+											</div>
+										</div>
+									</div>
+									</div>
+								</div>
+							</div>
+							<div class="container">
+						        <div>
+							       <input value='@postSetForm("latitude").value' name="latitude" type="hidden">
+							       <input value='@postSetForm("longitude").value' name="longitude" type="hidden">
+							       <input value='@postSetForm("address").value' name="address" type="hidden">
+						        </div>
+							</div>
+						}
+							@for(postSet <- postSets){
+								<link href='@routes.Assets.at("css/bootstrap.min.css")' rel="stylesheet">
+
+								<div class="detailBox">
+									<div class="titleBox">
+										<label>@postSet.getAuthorS()</label>
+										<button type="button" class="close" aria-hidden="true">&times;</button>
+									</div>
+									<div class="commentBox">
+
+										<p class="taskDescription">
+								<td><span class="@postSet.getPostId() editable" data-name='text'>
+								@postSet.getPostTextS() </span></td><br>
+								<td><font size="2">Post Status: @postSet.getPostStatusS()</font></td>
+								<br>
+								<td><font size="2">Post Time: @postSet.getPostTimeS()</font></td>
+								<br>
+								<td><font size="2">Address: @postSet.getAddressS()</font></td>
+								<br>
+								<td><font size="2">Likes: @postSet.getNumberOfLike() </font></td>
+								<br>
+								<div class="input-group">
+								<td class="operation">
+									<input type="button" class="edit-btn btn btn-primary pull-left" value="Edit"
+									data-pk='@postSet.getPostId()'
+									data-url='@routes.MainPageController.editPost()'>
+								</td>
+
+								@form(routes.MainPageController.deletePost){
+									<input
+									name="idHolder" class="hidden" type="hidden"
+									value="@postSet.getPostId()">
+									<input
+									type="submit" class="btn btn-danger delete-btn span2" value="Delete"
+									onclick="return confirm('Are you sure you want to delete this post?')">
+									}
+											</div>
+										</p>
+										<div class="actionBox">
+											<ul class="commentList">
+												<li>
+													<div class="commenterImage">
+														<img src="http://lorempixel.com/50/50/people/6" />
+													</div>
+													<div class="commentText">
+														<p class=""></p> <span class="date sub-text">On @postSet.getPostTimeS()</span>
+													</div>
+													<br>
+													<div class="commentText">
+														<form class="form-inline" role="form" method="get" action="@routes.MainPageController.mainpage">
+														@for(comments <- postSet.getCommentList) {
+															@form(routes.HomePageController.commentPost) {
+															<span >[@comments.getAuthorS()] commented:</span>
+															<span >@comments.getTextS()</span>
+															<br>
+															@comments.getTimeS()
+															}
+														}
+														</form>
+													</div>
+												</li>
+											</ul>
+											</div>
+										</div>
+									</div>
+							}
+					<nav>
+						<ul class="pager">
+							<li><a href="@routes.MainPageController.previousPage()">Previous</a></li>
+							<li><a href="@routes.MainPageController.mainpage()">First Page</a></li>
+							<li><a href="@routes.MainPageController.nextPage()">Next</a></li>
+						</ul>
+					</nav>
+
+						<!-- /photos and albums -->
+						<div class="tabbable">
+							<ul class="nav nav-tabs">
+								<li class="active"><a href="#home" data-toggle="tab"><i class="fa fa-fw fa-picture-o"></i> Photos</a></li>
+								<li class=""><a href="#profile" data-toggle="tab"><i class="fa fa-fw fa-folder"></i> Albums</a></li>
+							</ul>
+							<div class="tab-content">
+								<div class="tab-pane fade active in" id="home">
+									<img src='@routes.Assets.at("images/nasa1.jpg")' alt="image" />
+									<img src='@routes.Assets.at("images/nasa2.jpg")' alt="image" />
+									<img src='@routes.Assets.at("images/nasa3.jpg")' alt="image" />
+								</div>
+								<div class="tab-pane fade" id="profile">
+									<p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth
+										letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit sapiente labore stumptown.
+										Vegan fanny pack odio cillum wes anderson 8-bit, sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester stumptown, tumblr butcher vero sint qui sapiente accusamus tattooed echo park.</p>
+								</div>
+								<div class="tab-pane fade" id="dropdown1">
+									<p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy
+										salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork. Williamsburg banh mi whatever gluten-free, carles pitchfork biodiesel fixie etsy retro mlkshk vice blog. Scenester cred you probably
+										haven't heard of them, vinyl craft beer blog stumptown. Pitchfork sustainable tofu synth chambray yr.</p>
+								</div>
+								<div class="tab-pane fade" id="dropdown2">
+									<p>Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland seitan DIY, art party locavore wolf cliche high life echo
+										park Austin. Cred vinyl keffiyeh DIY salvia PBR, banh mi before they sold out farm-to-table VHS viral locavore cosby sweater. Lomo wolf viral, mustache readymade thundercats keffiyeh craft beer marfa ethical. Wolf salvia freegan, sartorial
+										keffiyeh echo park vegan.</p>
+								</div>
+							</div>
+						</div>
+
+						<!-- /personal information -->
+						<div class="row">
+							<div class="col-md-6">
+								<div class="panel panel-default">
+									<div class="panel-heading panel-heading-gray">
+										<a href="#" class="btn btn-white btn-xs pull-right"><i class="fa fa-pencil"></i></a>
+										<i class="fa fa-fw fa-info-circle"></i> About
+									</div>
+									<div class="panel-body">
+										<ul class="list-unstyled profile-about margin-none">
+											<li class="padding-v-5">
+												<div class="row">
+													<div class="col-sm-4"><span class="text-muted">First Name</span></div>
+													<div class="col-sm-8">@session.get("firstName")</div>
+												</div>
+											</li>
+											<li class="padding-v-5">
+												<div class="row">
+													<div class="col-sm-4"><span class="text-muted">Last Name</span></div>
+													<div class="col-sm-8">@session.get("lastName")</div>
+												</div>
+											</li>
+											<li class="padding-v-5">
+												<div class="row">
+													<div class="col-sm-4"><span class="text-muted">Email</span></div>
+													<div class="col-sm-8">@session.get("email")</div>
+												</div>
+											</li>
+											<li class="padding-v-5">
+												<div class="row">
+													<div class="col-sm-4"><span class="text-muted">Affiliation</span></div>
+													<div class="col-sm-8">@session.get("affiliation")</div>
+												</div>
+											</li>
+											<li class="padding-v-5">
+												<div class="row">
+													<div class="col-sm-4"><span class="text-muted">Research Interests</span></div>
+													<div class="col-sm-8">@session.get("researchInterests")</div>
+												</div>
+											</li>
+											<li class="padding-v-5">
+												<div class="row">
+													<div class="col-sm-4"><span class="text-muted">Phone number</span></div>
+													<div class="col-sm-8">@session.get("phoneNumber")</div>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- /st-content-inner -->
+				<!-- /st-pusher -->
+
+				<!-- Inline Script for colors and config objects; used by various external scripts; -->
+			<script>
+ var colors = {
+  "danger-color": "#e74c3c",
+  "success-color": "#81b53e",
+  "warning-color": "#f0ad4e",
+  "inverse-color": "#2c3e50",
+  "info-color": "#2d7cb5",
+  "default-color": "#6e7882",
+  "default-light-color": "#cfd9db",
+  "purple-color": "#9D8AC7",
+  "mustard-color": "#d4d171",
+  "lightred-color": "#e15258",
+  "body-bg": "#f6f6f6"
+ };
+ var config = {
+  theme: "social-2",
+  skins: {
+   "default": {
+    "primary-color": "#16ae9f"
+   },
+   "orange": {
+    "primary-color": "#e74c3c"
+   },
+   "blue": {
+    "primary-color": "#4687ce"
+   },
+   "purple": {
+    "primary-color": "#af86b9"
+   },
+   "brown": {
+    "primary-color": "#c3a961"
+   },
+   "default-nav-inverse": {
+    "color-block": "#242424"
+   }
+  }
+ };
+</script>
+			<script src="js/vendor/all.js"></script>
+
+			<script src="js/app/app.js"></script>
+
+		</body>
+	</html>
 }

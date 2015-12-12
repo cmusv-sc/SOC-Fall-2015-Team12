@@ -18,6 +18,7 @@ package models;
 
 import java.util.List;
 
+import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
 
 import javax.inject.Named;
@@ -32,4 +33,11 @@ import javax.inject.Singleton;
 public interface UserRepository extends CrudRepository<User, Long> {
 	List<User> findByUserName(String userName);
 	User findByEmail(String email);
+	User findById(Long id);
+
+	@Query(value = "select c.* from User c where c.userName like %?1%", nativeQuery = true)
+	List<User> searchUsers(String username);
+
+	@Query(value = "select c.* from User c where c.userName = ?1", nativeQuery = true)
+	List<User> searchExactUsers(String username);
 }

@@ -32,7 +32,9 @@ public class User {
 	private String firstName;
 	private String lastName;
 	private String email;
-
+	private String affiliation;
+	private String researchInterests;
+	private String phoneNumber;
 	// @OneToMany(mappedBy = "user", cascade={CascadeType.ALL})
 	// private Set<ClimateService> climateServices = new
 	// HashSet<ClimateService>();
@@ -41,13 +43,16 @@ public class User {
 	}
 
 	public User(String userName, String password, String firstName,
-			String lastName, String email) {
+				String lastName, String email, String affiliation, String researchInterests, String phoneNumber) {
 		super();
 		this.userName = userName;
 		this.password = password;
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.email = email;
+		this.affiliation = affiliation;
+		this.researchInterests = researchInterests;
+		this.phoneNumber = phoneNumber;
 	}
 
 	public long getId() {
@@ -92,6 +97,30 @@ public class User {
 
 	public void setEmail(String email) {
 		this.email = email;
+	}
+
+	public String getAffiliation() {
+		return affiliation;
+	}
+
+	public String getPhoneNumber() {
+		return phoneNumber;
+	}
+
+	public String getResearchInterests() {
+		return researchInterests;
+	}
+
+	public void setAffiliation(String affiliation) {
+		this.affiliation = affiliation;
+	}
+
+	public void setPhoneNumber(String phoneNumber) {
+		this.phoneNumber = phoneNumber;
+	}
+
+	public void setResearchInterests(String researchInterests) {
+		this.researchInterests = researchInterests;
 	}
 
 	@Override

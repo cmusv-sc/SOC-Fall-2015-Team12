@@ -1,0 +1,133 @@
+@*******************************************************************************
+* Licensed to the Apache Software Foundation (ASF) under one or more		   *
+* contributor license agreements.  See the NOTICE file distributed with	   *
+* this work for additional information regarding copyright ownership.         *
+* The ASF licenses this file to You under the Apache License, Version 2.0     *
+* (the "License"); you may not use this file except in compliance with        *
+* the License.  You may obtain a copy of the License at                       *
+*                                                                             *
+*    http://www.apache.org/licenses/LICENSE-2.0                               *
+*																			   *
+* Unless required by applicable law or agreed to in writing, software         *
+* distributed under the License is distributed on an "AS IS" BASIS,           *
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.    *
+* See the License for the specific language governing permissions and         *
+* limitations under the License.											   *
+*******************************************************************************@
+
+@(postSets: List[PostSet], postSetForm: play.data.Form[PostSet])
+
+@import helper._
+
+@scripts = {
+<script src='@routes.Assets.at("javascripts/edit_button.js")'></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        //alert($("#url").text());
+    });
+</script>
+}
+
+@main("Search Posts", scripts) {
+
+@flash_message()
+
+
+<html class="st-layout ls-top-navbar ls-bottom-footer show-sidebar sidebar-l2" lang="en">
+<!-- Sidebar component with st-effect-1 (set on the toggle button within the navbar) -->
+<div class="sidebar left sidebar-size-2 sidebar-offset-0 sidebar-visible-desktop sidebar-visible-mobile sidebar-skin-dark" id="sidebar-menu">
+    <div data-scrollable>
+        <div class="sidebar-block">
+            <div class="profile">
+                <img src='@routes.Assets.at("images/people/110/guy-5.jpg")' alt="people" class="img-circle" />
+                <h4>@session.get("firstName")</h4>
+            </div>
+        </div>
+        <div class="category">About</div>
+        <div class="sidebar-block">
+            <ul class="list-about">
+                <li><i class="fa fa-map-marker"></i> @session.get("affiliation")</li>
+                <li><i class="fa fa-link"></i> <a href="#">@session.get("email")</a></li>
+                <li><i class="fa fa-twitter"></i> @session.get("researchInterests")</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="st-pusher" id="content">
+
+    <!-- sidebar effects INSIDE of st-pusher: -->
+    <!-- st-effect-3, st-effect-6, st-effect-7, st-effect-8, st-effect-14 -->
+
+    <!-- extra div for emulating position:fixed of the menu -->
+    <div class="st-content-inner">
+
+        <nav class="navbar navbar-subnav navbar-static-top margin-bottom-none" role="navigation">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#subnav">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="fa fa-ellipsis-h"></span>
+                    </button>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="subnav">
+                    <ul class="nav navbar-nav ">
+                        <li class="active"><a href="@routes.MainPageController.searchPosts()"><i class="fa fa-fw fa-users"></i> Search Posts</a></li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+        </nav>
+
+        <div class="cover overlay cover-image-full height-300-lg">
+
+            <img src='@routes.Assets.at("images/profile-cover.jpg")' alt="cover" />
+            <div class="overlay overlay-full">
+                <div class="v-top">
+                    <a href="#" class="btn btn-cover"><i class="fa fa-pencil"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <p style="text-align: center; font-size:160%">Search Results for Post</p>
+        <div class="st-content-inner">
+            <div class="container-fluid">
+
+                @for(postSet <- postSets){
+
+                <link href='@routes.Assets.at("css/bootstrap.min.css")' rel="stylesheet">
+                <div class="detailBox">
+                    <div class="titleBox">
+                        <label>Post</label>
+                        <button type="button" class="close" aria-hidden="true">&times;</button>
+                    </div>
+                    <div class="commentBox">
+
+                        <p class="taskDescription">
+                        <div>
+                            <td><span class="@postSet.getPostId()" data-name='text'>
+				            @postSet.getPostTextS() </span></td><br>
+                            <td><font size="2">Post Status: @postSet.getPostStatusS()</font></td>
+                            <br>
+                            <td><font size="2">Post Time: @postSet.getPostTimeS()</font></td>
+                            <br>
+                        </div>
+                        </p>
+                    </div>
+                </div>
+                }
+            </div>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>
+
+
+
+
+}

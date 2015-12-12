@@ -108,12 +108,24 @@ public class Application extends Controller {
 			lastName = lastName.substring(1, lastName.length() - 1);
 			String email = UserJson.get("email").toString();
 			email = email.substring(1, email.length() - 1);
-			String affiliation = UserJson.get("affiliation").toString();
-			affiliation = affiliation.substring(1, affiliation.length() - 1);
-			String researchInterests = UserJson.get("researchInterests").toString();
-			researchInterests = researchInterests.substring(1, researchInterests.length() - 1);
-			String phoneNumber = UserJson.get("phoneNumber").toString();
-			phoneNumber = phoneNumber.substring(1, phoneNumber.length() - 1);
+			String affiliation = "";
+			if (UserJson.get("affiliation")!= null) {
+				affiliation = UserJson.get("affiliation").toString();
+				affiliation = affiliation.substring(1, affiliation.length() - 1);
+			}
+
+			String researchInterests = "";
+			if(UserJson.get("researchInterests")!=null) {
+				researchInterests = UserJson.get("researchInterests").toString();
+				researchInterests = researchInterests.substring(1, researchInterests.length() - 1);
+			}
+
+			String phoneNumber = "";
+			if(UserJson.get("phoneNumber")!=null) {
+				phoneNumber = UserJson.get("phoneNumber").toString();
+				phoneNumber = phoneNumber.substring(1, phoneNumber.length() - 1);
+			}
+
 			System.out.println("UserId: " + userID + " User name: " + userName + " Email: " + email + " Affiliation: " + affiliation +
 					" Resarch Interests: " + researchInterests + " Phone Number: " + phoneNumber);
 
@@ -175,7 +187,6 @@ public class Application extends Controller {
 			jsonData.put("email", nu.get().getEmail());
 			jsonData.put("mailingAddress", nu.get().getMailingAddress());
 			jsonData.put("phoneNumber", nu.get().getPhoneNumber());
-			jsonData.put("faxNumber", nu.get().getFaxNumber());
 			jsonData.put("researchInterests", nu.get().getResearchFields());
 			jsonData.put("highestDegree", nu.get().getHighestDegree());
 

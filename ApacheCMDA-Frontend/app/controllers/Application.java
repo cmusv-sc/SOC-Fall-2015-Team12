@@ -28,6 +28,7 @@ import models.User;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 
+import play.data.DynamicForm;
 import play.data.Form;
 import play.libs.Json;
 import play.mvc.*;
@@ -45,8 +46,8 @@ public class Application extends Controller {
 
 	public static class Login {
 
-		public String email;
-		public String password;
+		public String email=userID;
+		public String password=userString;
 //		public String currentAddress;
 //		public double latitude;
 //		public double longitude;
@@ -55,15 +56,12 @@ public class Application extends Controller {
 			ObjectNode jsonData = Json.newObject();
 			jsonData.put("email", email);
 			jsonData.put("password", password);
-//			System.out.println("validate2 " + email);
-//			System.out.println("validate2 " + password);
+			System.out.println("validate2 " + email);
+			System.out.println("validate2 " + password);
 			// POST Climate Service JSON data
 			JsonNode response = APICall.postAPI(Constants.NEW_BACKEND
 					+ Constants.USER_LOG_IN, jsonData);
-//			JsonNode response = APICall.postAPI(Constants.NEW_BACKEND
-//					+ Constants.IS_USER_VALID, jsonData);
 			userString = response.toString();
-//			System.out.print(userString);
 			if (response.toString().contains("error")) {
 				return "Invalid user or password";
 			}
@@ -92,7 +90,11 @@ public class Application extends Controller {
 	}
 
 	public static Result authenticate() {
+		DynamicForm df = DynamicForm.form().bindFromRequest();
+		userID=df.field("email").value();
+		userString=df.field("password").value();
 		Form<Login> loginForm = Form.form(Login.class).bindFromRequest();
+
 		if (loginForm.hasErrors()) {
 			return badRequest(login.render(loginForm));
 		} else {

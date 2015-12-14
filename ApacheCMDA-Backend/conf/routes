@@ -46,11 +46,13 @@ PUT           /parameter/updateParameter/name/:oldName                          
 DELETE        /parameter/deleteParameter/service/:id/name/:name                                         @controllers.ParameterController.deleteParameterByName(id:Long, name: String)
 
 # Users
-GET           /users/:id                                                                                @controllers.UserController.getUser(id: Long, format: String="json")
+GET           /users/:id                                                                                @controllers.UserController.getUser(id: Long)
 POST          /users/add                                                                                @controllers.UserController.addUser
 PUT           /users/update/:id                                                                         @controllers.UserController.updateUser(id: Long)
+POST          /users/uploadPhoto/:id                                                                    @controllers.UserController.uploadUserPhoto(id: Long)
 DELETE        /users/delete/:id                                                                         @controllers.UserController.deleteUser(id: Long)
 GET			  /users/getAllUsers/json																	@controllers.UserController.getAllUsers(format: String="json")
+GET           /users/getPhoto/:id                                                                       @controllers.UserController.getUserPhoto(id: Long)
 POST		  /users/isUserValid																		@controllers.UserController.isUserValid
 POST		  /users/isEmailExisted																		@controllers.UserController.isEmailExisted
 DELETE		  /users/delete/userName/:userName/password/:password										@controllers.UserController.deleteUserByUserNameandPassword(userName: String, password: String)

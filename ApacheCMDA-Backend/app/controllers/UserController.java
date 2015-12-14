@@ -16,6 +16,8 @@
  */
 package controllers;
 
+import java.io.File;
+import java.util.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -52,34 +54,6 @@ public class UserController extends Controller {
     }
 
     public Result addUser() {
-//        JsonNode json = request().body().asJson();
-//        if (json == null) {
-//            System.out.println("User not created, expecting Json data");
-//            return badRequest("User not created, expecting Json data");
-//        }
-//
-//        // Parse JSON file
-//        String userName = json.path("userName").asText();
-//        String password = json.path("password").asText();
-//        String firstName = json.path("firstName").asText();
-//        String lastName = json.path("lastName").asText();
-//        String email = json.path("email").asText();
-//
-//        try {
-//            if (userRepository.findByUserName(userName).size() > 0) {
-//                System.out.println("UserName has been used: " + userName);
-//                return badRequest("UserName has been used");
-//            }
-//            User user = new User(userName, password, firstName, lastName, email);
-//            userRepository.save(user);
-//            System.out.println("User saved: " + user.getId());
-//            return created(new Gson().toJson(user.getId()));
-//        } catch (PersistenceException pe) {
-//            pe.printStackTrace();
-//            System.out.println("User not saved: " + firstName + " " + lastName);
-//            return badRequest("User not saved: " + firstName + " " + lastName);
-//        }
-
         JsonNode json = request().body().asJson();
         if (json == null) {
             System.out.println("User not created, expecting Json data");
@@ -119,6 +93,10 @@ public class UserController extends Controller {
             return notFound("User not found with id: " + id);
         }
 
+        File photo = new File("images/" + deleteUser.getId());
+        if (photo.exists() && photo.isFile()) {
+            photo.delete();
+        }
         userRepository.delete(deleteUser);
         System.out.println("User is deleted: " + id);
         return ok("User is deleted: " + id);
@@ -156,7 +134,7 @@ public class UserController extends Controller {
         }
     }
 
-    public Result getUser(Long id, String format) {
+    public Result getUser(Long id) {
         if (id == null) {
             System.out.println("User id is null or empty!");
             return badRequest("User id is null or empty!");
@@ -168,11 +146,7 @@ public class UserController extends Controller {
             System.out.println("User not found with with id: " + id);
             return notFound("User not found with with id: " + id);
         }
-        String result = new String();
-        if (format.equals("json")) {
-            result = new Gson().toJson(user);
-        }
-
+        String result = new Gson().toJson(user);
         return ok(result);
     }
 
@@ -197,8 +171,6 @@ public class UserController extends Controller {
         }
         String email = json.path("email").asText();
         String password = json.path("password").asText();
-
-        System.out.println("**************" + email + "************" + password);
 
         User user = userRepository.findByEmail(email);
         if (user.getPassword().equals(password)) {
@@ -373,5 +345,78 @@ public class UserController extends Controller {
         }
         return ok(userArray.toString());
     }
+
+    public Result uploadUserPhoto(Long id) {
+        Http.MultipartFormData body = request().body().asMultipartFormData();
+
+        Http.MultipartFormData.FilePart photo = body.getFile("photo");
+        if (photo == null) {
+            System.out.println("User photo not saved, expecting binary data");
+            return notFound("User photon not saved, expecting binary data");
+        }
+
+        User user = userRepository.findOne(id);
+        if (user == null) {
+            System.out.println("User not found with id: " + id);
+            return notFound("User not found with id: " + id);
+        }
+
+        File dir = new File("images");
+        if (!dir.exists()) {
+            dir.mkdir();
+        }
+
+        File oldFile = new File("images/" + user.getId());
+        if (oldFile.exists() && oldFile.isFile()) {
+            oldFile.delete();
+        }
+
+        File newFile = photo.getFile();
+        String filename = newFile.getName();
+		/*System.out.println("****************************");
+		Map<String, String[]> headerMap = request().headers();
+		for(Map.Entry<String, String[]> entry: headerMap.entrySet()) {
+			System.out.println(entry.getKey());
+			for(String s: entry.getValue()) {
+				System.out.println("\t" + s);
+			}
+		}
+		System.out.print(filename);*/
+        user.setPhotoContentType(photo.getContentType());
+
+        newFile.renameTo(new File("images/" + user.getId()));
+
+        try {
+            User savedUser = userRepository.save(user);
+            System.out.println("User photo updated: " + savedUser.getFirstName()
+                    + " " + savedUser.getLastName());
+            return ok("User photo updated: " + savedUser.getFirstName() + " "
+                    + savedUser.getLastName());
+        } catch (PersistenceException pe) {
+            pe.printStackTrace();
+            System.out.println("User not updated: " + user.getFirstName() + " "
+                    + user.getLastName());
+            return badRequest("User not updated: " + user.getFirstName() + " " +
+                    user.getLastName());
+        }
+    }
+
+    public Result getUserPhoto(Long id) {
+        User user = userRepository.findOne(id);
+        if (user == null) {
+            System.out.println("User not found with id: " + id);
+            return notFound("User not found with id: " + id);
+        }
+
+        File photo = new File("images/" + user.getId());
+        if (!photo.exists() || !photo.isFile()) {
+            System.out.println("User photo not found with id: " + id);
+            return notFound("User photo not found with id: " + id);
+        }
+
+        response().setContentType(user.getPhotoContentType());
+        return ok(photo);
+    }
+
 
 }

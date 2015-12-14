@@ -35,6 +35,7 @@ public class User {
 	private String affiliation;
 	private String researchInterests;
 	private String phoneNumber;
+	private String photoContentType;
 	// @OneToMany(mappedBy = "user", cascade={CascadeType.ALL})
 	// private Set<ClimateService> climateServices = new
 	// HashSet<ClimateService>();
@@ -79,6 +80,8 @@ public class User {
 		return email;
 	}
 
+	public String getPhotoContentType() { return photoContentType; }
+
 	public void setUserName(String userName) {
 		this.userName = userName;
 	}
@@ -98,6 +101,8 @@ public class User {
 	public void setEmail(String email) {
 		this.email = email;
 	}
+
+	public void setPhotoContentType(String photoName) { this.photoContentType = photoName; }
 
 	public String getAffiliation() {
 		return affiliation;

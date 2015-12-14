@@ -297,7 +297,7 @@ import com.google.gson.JsonArray;
             textP = p.getText();
             timeP = p.getTime();
             addressP = p.getAddress();
-            userNameP = userRepository.findOne(Long.parseLong(userId)).getUserName();
+            userNameP = userRepository.findOne(Long.parseLong(userIdP)).getUserName();
 
             postDetails.addProperty("id", postId);
             postDetails.addProperty("userId", userIdP);
@@ -321,7 +321,7 @@ import com.google.gson.JsonArray;
                 userIdC = c.getUserId();
                 textC = c.getText();
                 timeC = c.getTime();
-                userNameC = userRepository.findOne(Long.parseLong(userId)).getUserName();
+                userNameC = userRepository.findOne(Long.parseLong(userIdC)).getUserName();
 
                 comDetails.addProperty("postId", postIdC);
                 comDetails.addProperty("userId", userIdC);
@@ -400,7 +400,7 @@ import com.google.gson.JsonArray;
             textP = p.getText();
             timeP = p.getTime();
             addressP = p.getAddress();
-            userNameP = userRepository.findOne(Long.parseLong(userId)).getUserName();
+            userNameP = userRepository.findOne(Long.parseLong(userIdP)).getUserName();
 
             postDetails.addProperty("id", postId);
             postDetails.addProperty("userId", userIdP);
@@ -424,7 +424,7 @@ import com.google.gson.JsonArray;
                 userIdC = c.getUserId();
                 textC = c.getText();
                 timeC = c.getTime();
-                userNameC = userRepository.findOne(Long.parseLong(userId)).getUserName();
+                userNameC = userRepository.findOne(Long.parseLong(userIdC)).getUserName();
 
                 comDetails.addProperty("postId", postIdC);
                 comDetails.addProperty("userId", userIdC);
